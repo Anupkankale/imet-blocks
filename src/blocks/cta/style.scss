@@ -1,0 +1,33 @@
+/* IMET Call to Action (imet/cta). Root element: .imet-section.cta-wrap */
+.imet-section.cta-wrap { padding: 40px 0 80px; }
+.imet-section .cta {
+	background: var(--navy);
+	border-radius: 50px;
+	padding: 36px 30px;
+	text-align: center;
+	width: min(1031px, 100%);
+	margin-inline: auto;
+}
+.imet-section .cta-eyebrow {
+	color: #f2c461;
+	font-size: clamp(1.125rem, 0.9930rem + 0.5634vw, 1.5rem);
+	font-weight: 600;
+}
+.imet-section .cta h2 {
+	color: #fff;
+	font-size: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+	font-weight: 600;
+	margin: 18px 0 26px;
+}
+.imet-section .cta .wp-block-buttons { justify-content: center; }
+.imet-section .btn-cta .wp-block-button__link {
+	font-family: var(--head);
+	font-weight: 700;
+	font-size: clamp(1.0625rem, 0.9745rem + 0.3756vw, 1.3125rem);
+	letter-spacing: .06em;
+	padding: 24px 40px;
+	border-radius: 8px;
+}
+@media (max-width: 640px) {
+	.imet-section .cta { border-radius: 28px; }
+}

@@ -1,0 +1,50 @@
+/* IMET Highlights (imet/highlights). Root element: .imet-section.highlights */
+.imet-section.highlights { padding: 52px 0 40px; }
+.imet-section .hl-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 530px;
+	gap: 0;
+	align-items: center;
+	width: min(1310px, 100% - 40px);
+}
+.imet-section.highlights .title { font-size: clamp(1.5rem, 1.2799rem + 0.9390vw, 2.125rem); }
+.imet-section .hl-list {
+	display: grid;
+	gap: 24px;
+	margin: 26px 0 30px;
+	max-width: 740px;
+}
+.imet-section .hl-list li {
+	position: relative;
+	padding-left: 50px;
+	min-height: 38px;
+	font-size: 1.125rem;
+	line-height: 1.4;
+}
+.imet-section .hl-list li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 38px;
+	height: 38px;
+	background: center / contain no-repeat;
+}
+.imet-section .hl-list li:nth-child(5n+1)::before { background-image: url("../../../assets/images/hl-1.png"); }
+.imet-section .hl-list li:nth-child(5n+2)::before { background-image: url("../../../assets/images/hl-2.png"); }
+.imet-section .hl-list li:nth-child(5n+3)::before { background-image: url("../../../assets/images/hl-3.png"); }
+.imet-section .hl-list li:nth-child(5n+4)::before { background-image: url("../../../assets/images/hl-4.png"); }
+.imet-section .hl-list li:nth-child(5n+5)::before { background-image: url("../../../assets/images/hl-5.png"); }
+.imet-section .hl-list strong { color: var(--gold); font-weight: 500; }
+.imet-section .hl-visual img {
+	width: 100%;
+	max-width: 530px;
+	margin-left: auto;
+}
+@media (max-width: 1200px) {
+	.imet-section .hl-grid { grid-template-columns: minmax(0, 1fr) 440px; }
+}
+@media (max-width: 900px) {
+	.imet-section .hl-grid { grid-template-columns: 1fr; }
+	.imet-section .hl-visual img { margin-inline: auto; }
+}

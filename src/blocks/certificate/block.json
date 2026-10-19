@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "imet/certificate",
+	"title": "IMET Certificate",
+	"category": "imet",
+	"icon": "media-document",
+	"description": "Photo overlapping a card with a tick list.",
+	"keywords": [
+		"imet",
+		"section"
+	],
+	"version": "1.0.0",
+	"textdomain": "imet-blocks",
+	"supports": {
+		"anchor": true,
+		"html": false
+	},
+	"imet": {
+		"tagName": "section",
+		"className": "section cert",
+		"anchor": ""
+	},
+	"editorScript": "file:./index.js",
+	"style": [
+		"imet-base",
+		"file:./style-index.css"
+	]
+}

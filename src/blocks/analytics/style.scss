@@ -1,0 +1,44 @@
+/* IMET Image + Bullet List (imet/analytics). Root element: .imet-section.analytics */
+.imet-section.analytics { padding-top: 46px; padding-bottom: 50px; }
+.imet-section .an-grid {
+	display: grid;
+	grid-template-columns: 580px minmax(0, 1fr);
+	gap: 34px;
+	align-items: center;
+	padding-left: 37px;
+}
+.imet-section .an-visual img {
+	width: 100%;
+	border-radius: 22px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.3);
+}
+.imet-section.analytics .title { margin-bottom: 14px; }
+.imet-section .dots {
+	display: grid;
+	gap: 28px;
+	margin-bottom: 22px;
+}
+.imet-section .dots li {
+	position: relative;
+	padding-left: 18px;
+	font-size: 1.0625rem;
+	line-height: 1.65;
+	color: #111;
+}
+.imet-section .dots li::before {
+	content: "·";
+	position: absolute;
+	left: 2px;
+	top: 0;
+	font-weight: 700;
+}
+@media (max-width: 1200px) {
+	.imet-section .an-grid { grid-template-columns: 1fr 1fr; padding-left: 0; }
+}
+@media (max-width: 900px) {
+	.imet-section .an-grid { grid-template-columns: 1fr; }
+}
+/* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
+@media (max-width: 640px) {
+	.imet-section.analytics { padding: 48px 0; }
+}

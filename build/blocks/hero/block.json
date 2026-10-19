@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "imet/hero",
+  "title": "IMET Hero",
+  "category": "imet",
+  "icon": "cover-image",
+  "description": "Headline, stats, CTA, enquiry form card and accreditation logos.",
+  "keywords": [
+    "imet",
+    "section"
+  ],
+  "version": "1.0.0",
+  "textdomain": "imet-blocks",
+  "supports": {
+    "anchor": true,
+    "html": false
+  },
+  "imet": {
+    "tagName": "section",
+    "className": "hero",
+    "anchor": "top"
+  },
+  "editorScript": "file:./index.js",
+  "style": [
+    "imet-base",
+    "file:./style-index.css"
+  ],
+  "viewScript": "file:./view.js"
+}

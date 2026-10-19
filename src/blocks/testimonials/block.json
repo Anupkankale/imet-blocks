@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "imet/testimonials",
+	"title": "IMET Testimonials",
+	"category": "imet",
+	"icon": "format-quote",
+	"description": "Auto-scrolling testimonial cards.",
+	"keywords": [
+		"imet",
+		"section"
+	],
+	"version": "1.0.0",
+	"textdomain": "imet-blocks",
+	"supports": {
+		"anchor": true,
+		"html": false
+	},
+	"imet": {
+		"tagName": "section",
+		"className": "section testimonials",
+		"anchor": ""
+	},
+	"editorScript": "file:./index.js",
+	"style": [
+		"imet-base",
+		"file:./style-index.css"
+	],
+	"viewScript": "file:./view.js"
+}

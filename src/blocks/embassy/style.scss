@@ -1,0 +1,32 @@
+/* IMET Recognition Logos (imet/embassy). Root element: .imet-section.embassy */
+.imet-section.embassy { padding: 36px 0 58px; }
+.imet-section .emblem-row {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 24px;
+	margin-top: 44px;
+}
+.imet-section .emblem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+.imet-section .emblem img { width: 170px; }
+.imet-section .emblem figcaption {
+	font-family: var(--ui);
+	font-size: 0.7812rem;
+	font-weight: 600;
+	color: #222;
+	text-align: center;
+}
+@media (max-width: 1100px) {
+	.imet-section .emblem-row { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 640px) {
+	.imet-section .emblem-row { grid-template-columns: repeat(2, 1fr); }
+}
+/* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
+@media (max-width: 640px) {
+	.imet-section.embassy { padding: 48px 0; }
+}

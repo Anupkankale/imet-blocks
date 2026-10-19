@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "imet/subnav",
+  "title": "IMET Section Navigation",
+  "category": "imet",
+  "icon": "menu",
+  "description": "Sticky bar with links to sections on the page (highlights the section in view).",
+  "keywords": [
+    "imet",
+    "section"
+  ],
+  "version": "1.0.0",
+  "textdomain": "imet-blocks",
+  "supports": {
+    "anchor": true,
+    "html": false
+  },
+  "imet": {
+    "tagName": "nav",
+    "className": "subnav",
+    "anchor": "subnav"
+  },
+  "editorScript": "file:./index.js",
+  "style": [
+    "imet-base",
+    "file:./style-index.css"
+  ],
+  "viewScript": "file:./view.js"
+}

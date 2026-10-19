@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "imet/faq",
+	"title": "IMET FAQ",
+	"category": "imet",
+	"icon": "editor-help",
+	"description": "Accordion of Details blocks; outputs FAQPage structured data.",
+	"keywords": [
+		"imet",
+		"section"
+	],
+	"version": "1.0.0",
+	"textdomain": "imet-blocks",
+	"supports": {
+		"anchor": true,
+		"html": false
+	},
+	"imet": {
+		"tagName": "section",
+		"className": "section faq",
+		"anchor": "faq"
+	},
+	"editorScript": "file:./index.js",
+	"style": [
+		"imet-base",
+		"file:./style-index.css"
+	],
+	"viewScript": "file:./view.js"
+}

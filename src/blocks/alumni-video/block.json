@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "imet/alumni-video",
+	"title": "IMET Video",
+	"category": "imet",
+	"icon": "video-alt3",
+	"description": "Title, text and a YouTube thumbnail that plays in place.",
+	"keywords": [
+		"imet",
+		"section"
+	],
+	"version": "1.0.0",
+	"textdomain": "imet-blocks",
+	"supports": {
+		"anchor": true,
+		"html": false
+	},
+	"imet": {
+		"tagName": "section",
+		"className": "section alumni",
+		"anchor": ""
+	},
+	"editorScript": "file:./index.js",
+	"style": [
+		"imet-base",
+		"file:./style-index.css"
+	],
+	"viewScript": "file:./view.js"
+}

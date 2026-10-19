@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "imet/dba-vs-phd",
+  "title": "IMET Comparison Table",
+  "category": "imet",
+  "icon": "columns",
+  "description": "Split heading and a highlighted two-column comparison table.",
+  "keywords": [
+    "imet",
+    "section"
+  ],
+  "version": "1.0.0",
+  "textdomain": "imet-blocks",
+  "supports": {
+    "anchor": true,
+    "html": false
+  },
+  "imet": {
+    "tagName": "section",
+    "className": "section vs",
+    "anchor": "dba-vs-phd"
+  },
+  "editorScript": "file:./index.js",
+  "style": [
+    "imet-base",
+    "file:./style-index.css"
+  ]
+}

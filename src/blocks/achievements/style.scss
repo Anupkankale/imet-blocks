@@ -1,0 +1,72 @@
+/* IMET Achievements (imet/achievements). Root element: .imet-section.achieve */
+.imet-section.achieve {
+	position: relative;
+	overflow: hidden;
+	background: var(--navy-band);
+	color: #fff;
+	padding: 52px 0;
+}
+.imet-section.achieve::before,
+.imet-section.achieve::after {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	pointer-events: none;
+}
+.imet-section.achieve::before {
+	width: 260px;
+	height: 260px;
+	left: -110px;
+	top: 0;
+	background: rgba(255,255,255,.035);
+}
+.imet-section.achieve::after {
+	width: 200px;
+	height: 200px;
+	right: 0;
+	top: 0;
+	background: #1c3a78;
+	opacity: .7;
+}
+.imet-section .achieve-inner {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	gap: 64px;
+	padding-left: 38px;
+}
+.imet-section.achieve h2 {
+	flex-shrink: 0;
+	color: #fff;
+	font-size: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem);
+	font-weight: 600;
+	padding-right: 36px;
+	border-right: 1.5px solid rgba(255,255,255,.5);
+}
+.imet-section .achieve-stats {
+	display: flex;
+	gap: 24px 60px;
+	flex-wrap: wrap;
+}
+.imet-section .achieve-stats .stat { display: flex; flex-direction: column; }
+.imet-section .count {
+	font-size: clamp(1.875rem, 1.6549rem + 0.9390vw, 2.5rem);
+	font-weight: 600;
+	color: #f4b740;
+	line-height: 1.1;
+}
+.imet-section .count-label {
+	color: #fff;
+	font-size: 1.0625rem;
+	font-weight: 300;
+}
+@media (max-width: 1100px) {
+	.imet-section .achieve-inner {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 24px;
+	}
+	.imet-section.achieve h2 { border-right: 0; padding-right: 0; }
+	.imet-section .achieve-stats { width: 100%; }
+}

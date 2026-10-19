@@ -1,0 +1,52 @@
+/* IMET Career Path Table (imet/career-table). Root element: .imet-section.career */
+.imet-section.career { padding-bottom: 20px; }
+.imet-section .career-table {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	border: 1px solid #e3a531;
+	border-radius: 16px;
+	overflow: hidden;
+	width: min(1140px, 100%);
+	margin: 34px auto 0;
+}
+.imet-section .ct-col {
+	border-left: 1px solid #e3a531;
+	display: flex;
+	flex-direction: column;
+}
+.imet-section .ct-col:first-child { border-left: 0; }
+.imet-section .ct-col h4 {
+	background: var(--navy-band);
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: 400;
+	text-align: center;
+	min-height: 104px;
+	padding: 12px;
+	display: grid;
+	place-items: center;
+	line-height: 1.4;
+}
+.imet-section .ct-col p {
+	padding: 26px 10px 50px;
+	font-size: 1.125rem;
+	line-height: 1.55;
+	text-align: center;
+	font-weight: 300;
+	color: #000;
+}
+@media (max-width: 900px) {
+	.imet-section .career-table { grid-template-columns: 1fr; }
+	.imet-section .ct-col { border-left: 0; border-top: 1px solid #e3a531; }
+	.imet-section .ct-col:first-child { border-top: 0; }
+	.imet-section .ct-col h4 {
+		min-height: 0;
+		padding: 16px;
+		font-size: 1.125rem;
+	}
+	.imet-section .ct-col p { padding: 16px 16px 20px; font-size: 1rem; }
+}
+/* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
+@media (max-width: 640px) {
+	.imet-section.career { padding: 48px 0; }
+}

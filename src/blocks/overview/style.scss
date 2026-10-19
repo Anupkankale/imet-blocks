@@ -1,0 +1,77 @@
+/* IMET Program Overview (imet/overview). Root element: .imet-section.overview */
+.imet-section.overview { padding: 44px 0 24px; }
+.imet-section.overview .split-head {
+	grid-template-columns: 632px minmax(0, 1fr);
+	gap: 0;
+	padding-left: 4px;
+}
+.imet-section.overview .title { line-height: 1.15; margin: 0; }
+.imet-section .ov-grid {
+	display: grid;
+	grid-template-columns: 446px minmax(0, 1fr);
+	gap: 88px;
+	align-items: start;
+	margin-top: 2px;
+	padding-left: 16px;
+}
+.imet-section .ov-visual { padding-top: 30px; }
+.imet-section .ov-visual img { width: 100%; max-width: 575px; }
+.imet-section .benefit-list { display: grid; gap: 13px; }
+.imet-section .ben-item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 76px;
+	padding: 6px 10px 6px 81px;
+	border: 1px solid var(--line);
+	border-radius: 4px;
+}
+.imet-section .ben-item:first-child { justify-content: flex-start; }
+.imet-section .ben-item::before {
+	content: "";
+	position: absolute;
+	left: 5px;
+	top: 6px;
+	width: 62px;
+	height: 62px;
+	background: center / contain no-repeat;
+}
+.imet-section .ben-item:nth-child(6n+1)::before { background-image: url("../../../assets/images/ben-1.png"); }
+.imet-section .ben-item:nth-child(6n+2)::before { background-image: url("../../../assets/images/ben-2.png"); }
+.imet-section .ben-item:nth-child(6n+3)::before { background-image: url("../../../assets/images/ben-3.png"); }
+.imet-section .ben-item:nth-child(6n+4)::before { background-image: url("../../../assets/images/ben-4.png"); }
+.imet-section .ben-item:nth-child(6n+5)::before { background-image: url("../../../assets/images/ben-5.png"); }
+.imet-section .ben-item:nth-child(6n+6)::before { background-image: url("../../../assets/images/ben-6.png"); }
+.imet-section .ben-item h4 {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #000;
+}
+.imet-section .ben-item p {
+	font-size: 1rem;
+	line-height: 1.5;
+	margin-top: 6px;
+	color: #111;
+}
+@media (max-width: 1200px) {
+	.imet-section .ov-grid {
+		grid-template-columns: 420px minmax(0, 1fr);
+		gap: 40px;
+		padding-left: 0;
+	}
+	.imet-section.overview .split-head { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 900px) {
+	.imet-section .ov-grid { grid-template-columns: 1fr; }
+	.imet-section.overview .split-head {
+		grid-template-columns: 1fr;
+		gap: 16px;
+		padding: 0;
+	}
+	.imet-section .ov-visual img { margin-inline: auto; }
+}
+/* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
+@media (max-width: 640px) {
+	.imet-section.overview { padding: 48px 0; }
+}

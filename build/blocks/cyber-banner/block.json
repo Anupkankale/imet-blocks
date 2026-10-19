@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "imet/cyber-banner",
+  "title": "IMET CTA Banner with Avatars",
+  "category": "imet",
+  "icon": "megaphone",
+  "description": "Blue banner, heading, two buttons and floating avatars.",
+  "keywords": [
+    "imet",
+    "section"
+  ],
+  "version": "1.0.0",
+  "textdomain": "imet-blocks",
+  "supports": {
+    "anchor": true,
+    "html": false
+  },
+  "imet": {
+    "tagName": "section",
+    "className": "cyber",
+    "anchor": ""
+  },
+  "editorScript": "file:./index.js",
+  "style": [
+    "imet-base",
+    "file:./style-index.css"
+  ]
+}

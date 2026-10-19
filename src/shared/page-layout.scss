@@ -1,0 +1,13 @@
+/* IMET Landing page template only: full-width wrapper inside the theme (Glidex #main), no theme title banner. */
+.imet-page { background: #fff; overflow-x: clip; }
+/* Let the template run full width inside the Glidex #main container. */
+.imet-landing-template #main > .container {
+	width: 100%;
+	max-width: none;
+	padding: 0;
+	margin: 0;
+}
+/* The design has its own hero, so drop the theme's page-title banner and the gaps Glidex adds around content. */
+.imet-landing-template .main-title-section-wrapper { display: none; }
+.imet-landing-template #header-wrapper { margin-bottom: 0; }
+#main#main > .container > .imet-page:last-child { margin: 0; }
