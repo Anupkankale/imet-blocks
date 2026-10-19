@@ -24,6 +24,18 @@ function imet_blocks_is_landing_page() {
 	return is_page() && IMET_BLOCKS_TEMPLATE === get_page_template_slug( get_queried_object_id() );
 }
 
+// A page built from IMET blocks with no template chosen gets the IMET Landing template when saved, so a page
+// started from a pattern is ready without a trip to the Template setting. A template chosen on purpose is kept.
+add_action( 'save_post_page', function ( $post_id, $post ) {
+	if ( wp_is_post_revision( $post_id ) || false === strpos( $post->post_content, '<!-- wp:imet/' ) ) {
+		return;
+	}
+	$template = get_page_template_slug( $post_id );
+	if ( '' === $template || 'default' === $template ) {
+		update_post_meta( $post_id, '_wp_page_template', IMET_BLOCKS_TEMPLATE );
+	}
+}, 10, 2 );
+
 /* -----------------------------------------------------------------------------------------------------------
  * Page patterns: patterns/<slug>.php (header: Title, Description; body: blocks with {{ID:…}}/{{URL:…}} tokens).
  * Offered in "Choose a pattern" for new pages and in the inserter (Patterns → IMET). A new page type = a new file.
@@ -55,7 +67,8 @@ add_action( 'init', function () {
 			'description'   => $pattern['description'],
 			'content'       => imet_blocks_pattern_content( $slug ),
 			'categories'    => array( 'imet' ),
-			'postTypes'     => array( 'page' ),
+			// No 'postTypes': with block themes the page editor resolves patterns for the template it shows the page
+			// in, so a page-only pattern disappears. "Choose a pattern" still offers it on new pages only.
 			'blockTypes'    => array( 'core/post-content' ),
 			'viewportWidth' => 1440,
 		) );
