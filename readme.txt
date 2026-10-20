@@ -32,6 +32,9 @@ build/                  Compiled output — what WordPress loads. Rebuild after 
 * New page → "Choose a pattern" → pick a page (e.g. "Online Doctorate of Business Administration (DBA)"),
   or insert single blocks from the "IMET" category. On save, a page with IMET blocks and no template chosen
   gets Template → IMET Landing automatically. Plugins screen → "Create: <page>" makes a draft from a pattern.
+* Sites using the Classic Editor: IMET pages (IMET blocks in the content, or Template → IMET Landing) always
+  open in the block editor; other pages are unchanged. Start an IMET page from Plugins → "Create: <page>", or
+  set Template → IMET Landing in Page Attributes and Update.
 * Every block's content is normal blocks: edit text/images in place, add/remove/reorder freely.
 * Links like #faq jump to the block with that HTML anchor (Block → Advanced → HTML anchor).
 

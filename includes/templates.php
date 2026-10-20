@@ -24,6 +24,18 @@ function imet_blocks_is_landing_page() {
 	return is_page() && IMET_BLOCKS_TEMPLATE === get_page_template_slug( get_queried_object_id() );
 }
 
+/**
+ * Pages built from IMET blocks always open in the block editor, even where the Classic Editor plugin (or a theme /
+ * page-builder setting) turns it off site-wide. Other pages keep whatever editor the site uses.
+ */
+function imet_blocks_is_imet_page( $post ) {
+	return $post instanceof WP_Post && 'page' === $post->post_type
+		&& ( IMET_BLOCKS_TEMPLATE === get_page_template_slug( $post ) || false !== strpos( $post->post_content, '<!-- wp:imet/' ) );
+}
+add_filter( 'use_block_editor_for_post', function ( $use, $post ) {
+	return imet_blocks_is_imet_page( $post ) ? true : $use;
+}, PHP_INT_MAX, 2 );
+
 // A page built from IMET blocks with no template chosen gets the IMET Landing template when saved, so a page
 // started from a pattern is ready without a trip to the Template setting. A template chosen on purpose is kept.
 add_action( 'save_post_page', function ( $post_id, $post ) {
