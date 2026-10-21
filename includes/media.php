@@ -24,6 +24,7 @@ function imet_blocks_media_files() {
 		'video-thumb.webp' => 'Repositioning the Leader in Me: My Doctorate Journey to Global Visibility – podcast with Dr. Raj Srirambatla',
 		'avatar-1.webp' => '', 'avatar-2.webp' => '', 'avatar-3.webp' => '',
 		'certificate.webp' => 'Framed IMET Doctor of Business Administration certificate',
+		'alumni-left.png' => '', 'alumni-right.png' => '',
 	);
 }
 
@@ -70,6 +71,15 @@ function imet_blocks_import_media() {
 	update_option( 'imet_blocks_media', $map, false );
 	return $map;
 }
+
+/** After a plugin update (activation doesn't run again): import images added in the new version. */
+add_action( 'admin_init', function () {
+	if ( get_option( 'imet_blocks_version' ) === IMET_BLOCKS_VERSION || ! current_user_can( 'upload_files' ) ) {
+		return;
+	}
+	imet_blocks_import_media();
+	update_option( 'imet_blocks_version', IMET_BLOCKS_VERSION, false );
+} );
 
 /** Replace {{ID:file}} / {{URL:file}} with the Media Library attachment (or the plugin's copy if not imported). */
 function imet_blocks_media_tokens( $html ) {
