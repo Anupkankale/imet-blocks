@@ -338,6 +338,7 @@
 }
 /* One column: centre the text, stats and button */
 @media (max-width: 1100px) {
+	.imet-section .hero-grid { padding-right: 0; } /* the 46px offset only lines the form card up on desktop */
 	.imet-section .hero-text { text-align: center; }
 	.imet-section .hero-lead { margin-inline: auto; }
 	.imet-section .h-stats { justify-content: center; margin-left: 0; }
