@@ -1,6 +1,6 @@
 /* IMET Highlights (imet/highlights). Root element: .imet-section.highlights
    Figma: left-aligned eyebrow + title, icon list, button | image (472px) on the right. */
-.imet-section.highlights { padding: 6px 0 24px; }
+.imet-section.highlights { padding: 44px 0 40px; } /* between the hero's accreditation card and the section menu bar */
 .imet-section .hl-grid {
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) 472px;

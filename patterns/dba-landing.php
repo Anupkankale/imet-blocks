@@ -91,14 +91,6 @@
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/hero -->
-<!-- wp:imet/subnav {"anchor":"subnav"} -->
-<nav id="subnav" class="wp-block-imet-subnav imet-section subnav"><!-- wp:group {"className":"imet-container subnav-inner","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container subnav-inner"><!-- wp:paragraph {"className":"subnav-links"} -->
-<p class="subnav-links"><a href="#overview">Program Overview</a><a href="#programs">Our Programs</a><a href="#presence">Digital Presence</a><a href="#specializations">Specializations</a><a href="#who-can-join">Who can Join</a><a href="#dba-vs-phd">DBA v/s Ph.D</a><a href="#faq">FAQ</a></p>
-<!-- /wp:paragraph -->
-</div>
-<!-- /wp:group --></nav>
-<!-- /wp:imet/subnav -->
 <!-- wp:imet/highlights {"anchor":"overview"} -->
 <section id="overview" class="wp-block-imet-highlights imet-section highlights"><!-- wp:group {"className":"imet-container hl-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container hl-grid"><!-- wp:group {"className":"hl-text","layout":{"type":"default"}} -->
@@ -137,6 +129,14 @@
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/highlights -->
+<!-- wp:imet/subnav {"anchor":"subnav"} -->
+<nav id="subnav" class="wp-block-imet-subnav imet-section subnav"><!-- wp:group {"className":"imet-container subnav-inner","layout":{"type":"default"}} -->
+<div class="wp-block-group imet-container subnav-inner"><!-- wp:paragraph {"className":"subnav-links"} -->
+<p class="subnav-links"><a href="#overview">Program Overview</a><a href="#programs">Our Programs</a><a href="#presence">Digital Presence</a><a href="#specializations">Specializations</a><a href="#who-can-join">Who can Join</a><a href="#dba-vs-phd">DBA v/s Ph.D</a><a href="#faq">FAQ</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group --></nav>
+<!-- /wp:imet/subnav -->
 <!-- wp:imet/specializations {"anchor":"specializations"} -->
 <section id="specializations" class="wp-block-imet-specializations imet-section section specs"><!-- wp:group {"className":"imet-container sec-head","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container sec-head"><!-- wp:paragraph {"className":"eyebrow-line"} -->

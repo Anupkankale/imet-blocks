@@ -1,7 +1,7 @@
 === IMET Blocks ===
 Requires at least: 6.5
 Requires PHP: 7.4
-Stable tag: 1.7.0
+Stable tag: 1.7.1
 License: GPLv2 or later
 
 Reusable IMET section blocks (Hero, FAQ, Testimonials, CTA…) built from normal WordPress blocks, and page
@@ -86,7 +86,7 @@ Buttons have a "Text link (underlined)" colour for links like "View More".
 
 == DBA page (Figma: imetworldwide.com/online-doctorate-programs) ==
 
-Section order: Hero → Section navigation → Program Highlights → Specializations → Fee card → What is a DBA →
+Section order: Hero → Program Highlights → Section navigation → Specializations → Fee card → What is a DBA →
 Achievements → Career table → USP bento → Embassy logos → DBA v/s PhD → Who can Join → Industry Analytics →
 Alumni videos → Cybersecurity banner → Testimonials → Certification → FAQ (first 5, "See More" shows the
 rest) → CTA. Sections are separated by a thin grey line.
