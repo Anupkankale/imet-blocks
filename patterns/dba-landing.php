@@ -732,14 +732,17 @@
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"video-gallery","layout":{"type":"default"}} -->
 <div class="wp-block-group video-gallery"><!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-main yt-auto"} -->
-<figure class="wp-block-image size-full video-main yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="DBA alumni testimonial" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a></figure>
+<figure class="wp-block-image size-full video-main yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="DBA alumni testimonial" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">Convocation Day: our DBA graduates share their journey</figcaption></figure>
 <!-- /wp:image -->
 <!-- wp:group {"className":"video-list","layout":{"type":"default"}} -->
 <div class="wp-block-group video-list"><!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
-<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="Testimonial 1" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a></figure>
+<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="Testimonial 1" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">Convocation Day highlights</figcaption></figure>
 <!-- /wp:image -->
 <!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
-<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="Testimonial 2" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a></figure>
+<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="Testimonial 2" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">Alumni podcast: the doctorate journey</figcaption></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
+<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="Testimonial 3" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">From IT leader to “Dr.”</figcaption></figure>
 <!-- /wp:image -->
 <!-- wp:buttons {"className":"video-more"} -->
 <div class="wp-block-buttons video-more"><!-- wp:button {"className":"btn-navy btn-md"} -->

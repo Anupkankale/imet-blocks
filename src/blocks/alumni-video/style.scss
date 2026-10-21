@@ -21,18 +21,19 @@
 	color: #000;
 }
 
-/* ---------- Gallery: main player 652px | thumbnails 256px (929px in all) ---------- */
+/* ---------- Gallery: main player | three thumbnails + View More, full content width ---------- */
 .imet-section .video-gallery {
 	display: grid;
-	grid-template-columns: 652fr 256fr;
-	gap: 21px;
+	grid-template-columns: minmax(0, 2.55fr) minmax(0, 1fr);
+	gap: 20px;
 	align-items: stretch;
-	width: min(929px, 100%);
-	margin: 0 auto 0 max(0px, calc(50% - 496px)); /* not centred: 104px in from the container edge (Figma) */
+	width: 100%; /* the full content width */
+	margin: 0;
 	text-align: left;
 }
 
-/* Main player: navy frame, 16:11, YouTube-style play button */
+/* Main player: navy frame, 16:11, photo with a dark gradient, a caption and a play button that pulses gently.
+   Clicking plays the YouTube video in place (view.js); the caption and button hide while it plays. */
 .imet-section .video-main {
 	position: relative;
 	box-sizing: content-box; /* the ratio is for the picture inside the frame */
@@ -40,10 +41,11 @@
 	margin: 0;
 	overflow: hidden;
 	border: 9px solid var(--navy);
-	border-radius: 6px;
+	border-radius: 10px;
 	background: #000;
+	box-shadow: 0 14px 30px rgba(21, 41, 78, .22);
 }
-.imet-section :is(.video-main, .video-item) a { display: block; width: 100%; height: 100%; }
+.imet-section :is(.video-main, .video-item) a { position: relative; display: block; width: 100%; height: 100%; }
 .imet-section .video-main img,
 .imet-section .video-main iframe {
 	position: absolute;
@@ -52,45 +54,144 @@
 	height: 100%;
 	object-fit: cover;
 	border: 0;
+	transition: transform .5s;
 }
+.imet-section .video-main iframe { z-index: 3; }
+.imet-section .video-main a:hover img { transform: scale(1.03); }
+/* Gradient so the caption reads on any photo */
+.imet-section .video-main a::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	background: linear-gradient(180deg, rgba(3, 26, 67, 0) 45%, rgba(3, 26, 67, .78) 100%);
+}
+/* Play button */
 .imet-section .video-main a::after {
 	content: "";
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	width: 78px;
-	height: 54px;
-	border-radius: 14px;
-	background: rgba(255, 0, 0, .9) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 24'%3E%3Cpath d='M0 0l20 12L0 24z' fill='%23fff'/%3E%3C/svg%3E") 54% 50% / 20px 24px no-repeat;
+	z-index: 2;
+	width: 84px;
+	height: 84px;
+	border-radius: 50%;
+	background: var(--gold) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 24'%3E%3Cpath d='M0 0l20 12L0 24z' fill='%23fff'/%3E%3C/svg%3E") 56% 50% / 26px 30px no-repeat;
+	box-shadow: 0 0 0 0 rgba(207, 145, 35, .55);
 	transform: translate(-50%, -50%);
-	transition: transform .2s, background-color .2s, opacity .2s;
+	animation: imet-play-pulse 2.2s ease-out infinite;
+	transition: transform .25s, background-color .25s;
 }
-/* Play button only on hover / keyboard focus: the Figma shows a clean photo */
-.imet-section .video-main a::after { opacity: 0; }
-.imet-section .video-main a:is(:hover, :focus-visible)::after { opacity: 1; background-color: #f00; transform: translate(-50%, -50%) scale(1.08); }
-@media (hover: none) {
-	.imet-section .video-main a::after { opacity: 1; } /* phones: no hover, keep it visible */
+.imet-section .video-main a:is(:hover, :focus-visible)::after { background-color: #b57c18; transform: translate(-50%, -50%) scale(1.08); }
+@keyframes imet-play-pulse {
+	0% { box-shadow: 0 0 0 0 rgba(207, 145, 35, .55); }
+	70%, 100% { box-shadow: 0 0 0 18px rgba(207, 145, 35, 0); }
 }
+.imet-section .video-main figcaption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	margin: 0;
+	padding: 18px 22px;
+	color: #fff;
+	font-size: 1.125rem;
+	font-weight: 600;
+	line-height: 1.35;
+	text-align: left;
+	pointer-events: none;
+}
+.imet-section .video-main figcaption::before {
+	content: "▶  Watch now";
+	display: block;
+	margin-bottom: 4px;
+	color: #f6c35a;
+	font-size: .75rem;
+	font-weight: 600;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+}
+.imet-section .video-main.is-playing figcaption,
+.imet-section .video-main.is-playing a::before,
+.imet-section .video-main.is-playing a::after { display: none; }
 
-/* Thumbnails */
-.imet-section .video-list { display: flex; flex-direction: column; gap: 14px; }
+/* Thumbnails: three, sharing the player's full height with "View More" */
+.imet-section .video-list { display: flex; flex-direction: column; gap: 12px; height: 100%; }
 .imet-section .video-item {
 	position: relative;
+	flex: 1 1 0;
+	min-height: 0;
 	margin: 0;
 	overflow: hidden;
-	border: 9px solid var(--navy);
-	border-radius: 2px;
+	border: 4px solid var(--navy);
+	border-radius: 8px;
 	background: var(--navy);
 	cursor: pointer;
 	transition: transform .2s, box-shadow .2s, border-color .2s;
 }
-.imet-section .video-item img { width: 100%; aspect-ratio: 238 / 92; object-fit: cover; object-position: center 18%; }
-.imet-section .video-item:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(21, 41, 78, .25); }
+.imet-section .video-item img { width: 100%; height: 100%; object-fit: cover; object-position: center 18%; transition: transform .4s; }
+/* Dark veil + small play icon; on hover the veil lifts and the caption shows */
+.imet-section .video-item a::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	background: linear-gradient(180deg, rgba(3, 26, 67, .15), rgba(3, 26, 67, .7));
+	transition: opacity .25s;
+}
+.imet-section .video-item a::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 2;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, .92) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 24'%3E%3Cpath d='M0 0l20 12L0 24z' fill='%2315294e'/%3E%3C/svg%3E") 57% 50% / 13px 15px no-repeat;
+	transform: translate(-50%, -50%);
+	transition: transform .25s, background-color .25s;
+}
+.imet-section .video-item figcaption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	margin: 0;
+	padding: 6px 10px 7px;
+	color: #fff;
+	font-size: .8125rem;
+	font-weight: 500;
+	line-height: 1.3;
+	text-align: left;
+	pointer-events: none;
+}
+.imet-section .video-item:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(21, 41, 78, .25); }
+.imet-section .video-item:hover img { transform: scale(1.06); }
+.imet-section .video-item:hover a::after { background-color: var(--gold); transform: translate(-50%, -50%) scale(1.1); }
 .imet-section .video-item.is-active { border-color: var(--gold); }
+.imet-section .video-item.is-active a::after { background-color: var(--gold); }
+.imet-section .video-item.is-active::before {
+	content: "Now playing";
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	z-index: 3;
+	padding: 2px 8px;
+	border-radius: 20px;
+	background: var(--gold);
+	color: #fff;
+	font-size: .6875rem;
+	font-weight: 600;
+	letter-spacing: .03em;
+}
 
-/* "View More": at the bottom of the thumbnail column, 25px above the player's bottom edge */
-.imet-section .video-more { justify-content: center; margin-top: auto; margin-bottom: 25px; }
-.imet-section .video-more .wp-block-button__link { min-width: 222px; }
+/* "View More" at the bottom of the thumbnail column */
+.imet-section .video-more { justify-content: center; margin: 0; }
+.imet-section .video-more > .wp-block-button { width: 100%; }
+.imet-section .video-more .wp-block-button__link { width: 100%; }
 
 /* Earlier version: one thumbnail that plays in place (pages built before the gallery) */
 .imet-section .video-thumb {
@@ -112,14 +213,20 @@
 	.imet-section .video-gallery { grid-template-columns: 1fr; }
 	.imet-section .video-main { aspect-ratio: 16 / 9; border-width: 8px; }
 	.imet-section .video-more { margin: 6px 0 0; }
-	.imet-section .video-list { flex-direction: row; flex-wrap: wrap; gap: 12px; }
-	.imet-section .video-item { flex: 1 1 calc(33.333% - 8px); border-width: 6px; }
+	.imet-section .video-list { flex-direction: row; flex-wrap: wrap; gap: 12px; height: auto; }
+	.imet-section .video-item { flex: 1 1 calc(33.333% - 8px); aspect-ratio: 16 / 10; }
 	.imet-section .video-more { flex: 1 1 100%; margin-top: 6px; }
 	.imet-section .video-more > .wp-block-button { width: 100%; }
 }
 @media (max-width: 480px) {
 	.imet-section.alumni { --eyebrow-size: 1.25rem; }
-	.imet-section .video-item { flex-basis: 100%; }
+	.imet-section .video-list { gap: 8px; }
+	.imet-section .video-item { flex-basis: calc(33.333% - 6px); aspect-ratio: 4 / 3; border-width: 3px; }
+	.imet-section .video-item figcaption { display: none; } /* too small for text on phones */
+	.imet-section .video-item a::after { width: 30px; height: 30px; background-size: 10px 12px; }
+	.imet-section .video-item.is-active::before { top: 3px; left: 3px; padding: 1px 6px; font-size: .5625rem; }
+	.imet-section .video-main figcaption { padding: 12px 14px; font-size: 1rem; }
+	.imet-section .video-main a::after { width: 64px; height: 64px; background-size: 20px 24px; }
 }
 /* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
 @media (max-width: 640px) {

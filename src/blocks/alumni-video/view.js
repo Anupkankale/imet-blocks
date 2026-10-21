@@ -46,6 +46,11 @@ each( '.wp-block-imet-alumni-video .video-gallery', ( gallery ) => {
 			e.preventDefault();
 			setActive( item );
 			mainLink.href = a.href; // the main player now stands for this video
+			const caption = item.querySelector( 'figcaption' );
+			const mainCaption = main.querySelector( 'figcaption' );
+			if ( caption && mainCaption ) {
+				mainCaption.textContent = caption.textContent;
+			}
 			play( main, id, titleOf( a ) );
 			if ( window.innerWidth < 900 ) {
 				main.scrollIntoView( { behavior: 'smooth', block: 'center' } );
