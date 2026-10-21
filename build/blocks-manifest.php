@@ -502,7 +502,8 @@ return array(
 		'style' => array(
 			'imet-base',
 			'file:./style-index.css'
-		)
+		),
+		'viewScript' => 'file:./view.js'
 	),
 	'subnav' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
