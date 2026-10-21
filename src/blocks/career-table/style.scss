@@ -1,16 +1,24 @@
 /* IMET Career Path Table (imet/career-table). Root element: .imet-section.career
-   Figma: centred header, 916px table (navy header row, gold lines), grey "See More" over the bottom border. */
+   Centred header, then a table: 5 columns (navy header + 5 rows each). The first row shows; "See More" (on the
+   bottom border) opens the rest and becomes "Close" (view.js). Columns share row heights through subgrid, so
+   each row lines up across the table. */
 .imet-section.career { padding: 14px 0 24px; }
 .imet-section .career-table {
 	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
-	width: min(916px, 100%);
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	grid-template-rows: auto repeat(5, auto);
+	width: min(1140px, 100%);
 	margin: 0 auto;
 	border: 1px solid #e3a531;
 	border-radius: 10px 10px 16px 16px;
 	overflow: hidden;
 }
-.imet-section .ct-col { display: flex; flex-direction: column; border-left: 1px solid #e3a531; }
+.imet-section .ct-col {
+	display: grid;
+	grid-row: span 6;
+	grid-template-rows: subgrid;
+	border-left: 1px solid #e3a531;
+}
 .imet-section .ct-col:first-child { border-left: 0; }
 .imet-section .ct-col h4 {
 	display: grid;
@@ -20,28 +28,53 @@
 	background: var(--navy-band);
 	color: #fff;
 	font-size: 1.125rem;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 1.4;
 	text-align: center;
 }
 .imet-section .ct-col p {
-	padding: 28px 18px 52px;
-	color: #000;
-	font-size: clamp(1rem, 0.85rem + 0.35vw, 1.1875rem); /* 16px → 19px */
+	display: grid;
+	place-items: center;
+	padding: 24px 18px;
+	border-top: 1px solid #f0d9a8;
+	color: #222;
+	font-size: clamp(0.9375rem, 0.85rem + 0.2vw, 1.0625rem); /* 15px → 17px */
 	font-weight: 400;
-	line-height: 1.48;
+	line-height: 1.6;
 	text-align: center;
 }
-/* "See More" sits on the table's bottom border */
+.imet-section .ct-col p:nth-of-type(odd) { background: #f6f6f6; }
+.imet-section .ct-col p:first-of-type { border-top: 0; padding-bottom: 52px; } /* room for "See More" when closed */
+
+/* Closed (front end only; the editor shows every row) */
+:where(body:not(.editor-styles-wrapper)) .imet-section .career-table:not(.is-open) { grid-template-rows: auto auto; }
+:where(body:not(.editor-styles-wrapper)) .imet-section .career-table:not(.is-open) .ct-col { grid-row: span 2; }
+:where(body:not(.editor-styles-wrapper)) .imet-section .career-table:not(.is-open) .ct-col p:nth-of-type(n+2) { display: none; }
+.imet-section .career-table.is-open .ct-col p:first-of-type { padding-bottom: 24px; }
+.imet-section .career-table.is-open .ct-col p:last-of-type { padding-bottom: 52px; }
+.imet-section .career-table.is-open .ct-col p { animation: imet-ct-in .3s ease-out; }
+@keyframes imet-ct-in { from { opacity: 0; } }
+
+/* "See More" / "Close" sits on the table's bottom border */
 .imet-section .ct-more { position: relative; z-index: 1; justify-content: center; margin-top: -26px; }
 .imet-section .ct-more .wp-block-button__link { min-width: 180px; }
-@media (max-width: 900px) {
-	.imet-section .career-table { grid-template-columns: 1fr; }
-	.imet-section .ct-col { border-left: 0; border-top: 1px solid #e3a531; }
-	.imet-section .ct-col:first-child { border-top: 0; }
+
+@media (max-width: 1000px) {
+	.imet-section .career-table { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; }
+	.imet-section .ct-col { grid-row: auto; grid-template-rows: none; border-left: 0; border-top: 1px solid #e3a531; }
+	.imet-section .ct-col:nth-child(even) { border-left: 1px solid #e3a531; }
+	.imet-section .ct-col:nth-child(-n+2) { border-top: 0; }
+	:where(body:not(.editor-styles-wrapper)) .imet-section .career-table:not(.is-open) { grid-template-rows: none; }
+	:where(body:not(.editor-styles-wrapper)) .imet-section .career-table:not(.is-open) .ct-col { grid-row: auto; }
 	.imet-section .ct-col h4 { min-height: 0; padding: 16px; }
-	.imet-section .ct-col p { padding: 16px 16px 20px; }
+	.imet-section .ct-col p:first-of-type { padding-bottom: 24px; }
+	.imet-section .career-table.is-open .ct-col p:last-of-type { padding-bottom: 24px; }
 	.imet-section .ct-more { margin-top: 16px; }
+}
+@media (max-width: 640px) {
+	.imet-section .career-table { grid-template-columns: 1fr; }
+	.imet-section .ct-col:nth-child(even) { border-left: 0; }
+	.imet-section .ct-col:nth-child(2) { border-top: 1px solid #e3a531; }
 }
 /* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
 @media (max-width: 640px) {
