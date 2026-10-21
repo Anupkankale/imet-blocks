@@ -10,13 +10,13 @@
 	padding-left: 16px;
 }
 .imet-section .ov-visual img { width: 100%; max-width: 566px; margin-left: auto; }
-.imet-section .benefit-list { display: grid; gap: 6px; }
+.imet-section .benefit-list { display: grid; gap: 10px; }
 .imet-section .ben-item {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 68px;
+	min-height: 72px;
 	padding: 5px 12px 5px 81px;
 	border: 1px solid var(--line);
 	border-radius: 4px;
@@ -48,6 +48,16 @@
 	margin-top: 2px;
 	color: #333;
 }
+/* Tabs (view.js): one card open at a time; the others show their title only. The editor shows every
+   description (the script doesn't run there). */
+.imet-section .ben-item.is-tab { cursor: pointer; transition: border-color .2s, background-color .2s; }
+.imet-section .ben-item.is-tab:not(.is-open) p { display: none; }
+.imet-section .ben-item.is-open { border-color: var(--gold); background: #fffaf2; }
+.imet-section .ben-item.is-open p { animation: imet-ben-in .3s ease-out; }
+.imet-section .ben-item.is-tab:not(.is-open):hover { border-color: #d8c49c; }
+.imet-section .ben-item.is-tab:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+@keyframes imet-ben-in { from { opacity: 0; transform: translateY(-3px); } }
+
 @media (max-width: 1200px) {
 	.imet-section .ov-grid {
 		grid-template-columns: 420px minmax(0, 1fr);

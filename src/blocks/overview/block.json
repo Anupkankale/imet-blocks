@@ -25,5 +25,6 @@
 	"style": [
 		"imet-base",
 		"file:./style-index.css"
-	]
+	],
+	"viewScript": "file:./view.js"
 }
