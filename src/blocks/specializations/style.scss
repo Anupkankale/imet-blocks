@@ -1,6 +1,6 @@
 /* IMET Specializations (imet/specializations). Root element: .imet-section.specs
    Centred header, then a row of program cards: 4 visible inside the container, the rest scroll sideways
-   (auto-scroll from view.js, or swipe / trackpad). Each card is a paragraph whose link is the program page. */
+   (marquee scroll from view.js, or swipe / trackpad). Each card is a paragraph whose link is the program page. */
 .imet-section.specs { background: linear-gradient(180deg, #fdf3e3 0%, #d1defe 100%); padding: 26px 0 66px; }
 .imet-section.specs .sub { margin-bottom: 24px; }
 
@@ -21,6 +21,8 @@
 }
 .imet-section .spec-grid::-webkit-scrollbar { display: none; }
 .imet-section .spec-card { flex: 0 0 calc((100% - (var(--per-view) - 1) * var(--gap)) / var(--per-view)); scroll-snap-align: start; }
+/* Marquee: continuous movement, so no snapping or smooth-scroll easing */
+.imet-section .spec-grid.is-marquee { scroll-snap-type: none; scroll-behavior: auto; }
 
 /* Card */
 .imet-section .spec-card a {
