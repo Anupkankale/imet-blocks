@@ -1,6 +1,6 @@
 /* Enquiry form: the flag and the phone placeholder follow the selected country code
    (for forms built with #phoneCode, #phoneInput and .h-flag, e.g. the Contact Form 7 form). */
-import { each } from '../../shared/view';
+import { each, marquee } from '../../shared/view';
 
 const FLAGS = { '+971': 'ae', '+91': 'in', '+1': 'us', '+44': 'gb', '+65': 'sg' };
 
@@ -23,3 +23,6 @@ each( '.wp-block-imet-hero', ( hero ) => {
 		}
 	} );
 } );
+
+/* Accreditation logos: a marquee on phones (CSS makes the row scroll there; on wider screens it fits). */
+each( '.wp-block-imet-hero .ac-logos', ( row ) => marquee( row, [ ...row.querySelectorAll( '.ac-logo' ) ], { speed: 30 } ) );
