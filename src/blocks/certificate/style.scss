@@ -47,3 +47,9 @@
 @media (max-width: 640px) {
 	.imet-section.cert { padding: 48px 0; }
 }
+/* One column: centred header, intro and button; the tick list stays left-aligned */
+@media (max-width: 900px) {
+	.imet-section .cert-sub { text-align: center; }
+	.imet-section .ticks { margin-inline: auto; }
+	.imet-section .cert-card .wp-block-buttons { justify-content: center; }
+}

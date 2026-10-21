@@ -1,6 +1,6 @@
 /* IMET Call to Action (imet/cta). Root element: .imet-section.cta-wrap
    Figma: a 1171 × 336px card, deep blue on the left with the text, a group photo fading in on the right. */
-.imet-section.cta-wrap { padding: 38px 0 32px; }
+.imet-section.cta-wrap { padding: 21px 0 32px; }
 .imet-section.cta-wrap .imet-container { width: min(1171px, 100% - 40px); }
 .imet-section .cta {
 	position: relative;
@@ -37,4 +37,9 @@
 }
 @media (max-width: 640px) {
 	.imet-section .cta { border-radius: 28px; }
+}
+/* One column: centred text and button */
+@media (max-width: 900px) {
+	.imet-section .cta-text { max-width: none; text-align: center; }
+	.imet-section .cta .wp-block-buttons { justify-content: center; }
 }

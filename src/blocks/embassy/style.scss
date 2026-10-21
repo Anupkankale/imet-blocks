@@ -1,7 +1,7 @@
 /* IMET Recognition Logos (imet/embassy). Root element: .imet-section.embassy
    Figma: centred header, then 6 emblems (about 128px tall) with captions, 180px apart. */
-.imet-section.embassy { padding: 26px 0 36px; }
-.imet-section.embassy .sub { margin-bottom: 26px; }
+.imet-section.embassy { padding: 26px 0 31px; }
+.imet-section.embassy .sub { margin-bottom: 15px; }
 .imet-section .emblem-row {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -10,7 +10,7 @@
 	margin: 0 auto;
 }
 .imet-section .emblem { display: flex; flex-direction: column; align-items: center; gap: 6px; }
-.imet-section .emblem img { width: auto; height: 128px; max-width: 130px; object-fit: contain; }
+.imet-section .emblem img { width: auto; height: 140px; max-width: 150px; object-fit: contain; }
 .imet-section .emblem figcaption {
 	margin: 0;
 	color: #222;

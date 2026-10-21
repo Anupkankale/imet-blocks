@@ -1,47 +1,73 @@
 /* IMET Specializations (imet/specializations). Root element: .imet-section.specs
-   Figma: centred header, then one full-width row of 218px cards that runs past the screen edge (swipe/scroll). */
-.imet-section.specs { background: linear-gradient(180deg, #fdf3e3 0%, #d1defe 100%); padding: 26px 0 54px; }
-.imet-section.specs .sub { margin-bottom: 30px; }
+   Centred header, then a row of program cards: 4 visible inside the container, the rest scroll sideways
+   (marquee scroll from view.js, or swipe / trackpad). Each card is a paragraph whose link is the program page. */
+.imet-section.specs { background: linear-gradient(180deg, #fdf3e3 0%, #d1defe 100%); padding: 26px 0 66px; }
+.imet-section.specs .sub { margin-bottom: 24px; }
+
+/* Scroll row: 4 cards per view (3 gaps of 26px) */
 .imet-section .spec-grid {
+	--per-view: 4;
+	--gap: 26px;
 	display: flex;
-	gap: 26px;
-	width: 100vw;
-	margin-inline: calc(50% - 50vw);
-	padding: 0 22px 8px;
+	gap: var(--gap);
+	width: min(1200px, 100% - 40px); /* the content width (also before the script runs, and in the editor) */
+	margin-inline: auto;
+	padding: 0 6px 10px 0; /* room for the card shadow */
 	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
 	scrollbar-width: none;
+	overscroll-behavior-x: contain;
 }
 .imet-section .spec-grid::-webkit-scrollbar { display: none; }
-.imet-section .spec-card { flex: 0 0 218px; }
+.imet-section .spec-card { flex: 0 0 calc((100% - (var(--per-view) - 1) * var(--gap)) / var(--per-view)); scroll-snap-align: start; }
+/* Marquee: continuous movement, so no snapping or smooth-scroll easing */
+.imet-section .spec-grid.is-marquee { scroll-snap-type: none; scroll-behavior: auto; }
+
+/* Card */
 .imet-section .spec-card a {
 	position: relative;
-	display: block;
-	min-height: 68px;
-	padding: 14px 12px 12px 19px;
-	background: #fff;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	min-height: 68px; /* Figma */
+	padding: 12px 54px 12px 20px;
 	border-radius: 12px;
+	background: #fff;
 	box-shadow: 5px 6px 0 var(--navy);
+	color: #000;
 	font-size: 1.03125rem; /* 16.5px */
 	font-weight: 500;
-	line-height: 1.25;
-	color: #000;
-	transition: transform .2s;
+	line-height: 1.3;
+	text-decoration: none;
+	transition: background-color .25s, color .25s, box-shadow .25s;
 }
+/* Arrow (mask, so it takes the text colour) */
 .imet-section .spec-card a::after {
 	content: "";
 	position: absolute;
-	right: 14px;
-	bottom: 9px;
+	right: 16px;
+	bottom: 12px;
 	width: 26px;
 	height: 26px;
-	transition: transform .2s;
-	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 12h17m-6-7 7 7-7 7' fill='none' stroke='%2315294e' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+	background: currentColor;
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 12h17m-6-7 7 7-7 7' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 12h17m-6-7 7 7-7 7' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+	transition: transform .25s;
 }
-.imet-section .spec-card a:hover { transform: translateY(-2px); }
-.imet-section .spec-card a:hover::after { transform: translateX(3px); }
-@media (hover: none) {
-	.imet-section .spec-card a:hover,
-	.imet-section .spec-card a:hover::after { transform: none; }
+.imet-section .spec-card a::before { content: none; }
+/* Hover / focus: brand colours (navy card, gold shadow) */
+.imet-section .spec-card a:is(:hover, :focus-visible) { background: var(--navy); color: #fff; box-shadow: 5px 6px 0 var(--gold); }
+.imet-section .spec-card a:is(:hover, :focus-visible)::after { transform: translateX(4px); }
+
+@media (max-width: 1100px) {
+	.imet-section .spec-grid { --per-view: 3; }
+}
+@media (max-width: 800px) {
+	.imet-section .spec-grid { --per-view: 2; --gap: 16px; }
+}
+@media (max-width: 520px) {
+	.imet-section .spec-grid { --per-view: 1.2; }
 }
 /* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
 @media (max-width: 640px) {

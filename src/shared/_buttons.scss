@@ -62,6 +62,9 @@
 .imet-section .wp-block-button__link:hover,
 .imet-section .wp-block-button__link:focus-visible { color: var(--fg-hover); background: var(--bg-hover); border-color: var(--bd-hover); }
 
+/* No theme focus outline after a mouse click (keyboard focus keeps the gold ring from base.scss) */
+.imet-section .wp-block-button__link:focus:not(:focus-visible) { outline: none; }
+
 /* Sizes (btn-xs, btn-eligible, btn-cta: names used by earlier versions of the page) */
 .imet-section :is(.btn-sm, .btn-xs) .wp-block-button__link { --h: var(--btn-sm-h); --px: var(--btn-sm-px); --fs: var(--btn-sm-fs); }
 .imet-section .btn-md .wp-block-button__link { --h: var(--btn-md-h); --px: var(--btn-md-px); --fs: var(--btn-md-fs); }

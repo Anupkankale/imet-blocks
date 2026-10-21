@@ -333,6 +333,29 @@
 	.imet-section .ac-title::after {
 		max-width: 40px;
 	}
-	.imet-section .ac-logos { grid-template-columns: repeat(2, 1fr); }
-	.imet-section .ac-logo { border-left: 0; }
+}
+/* One column: centre the text, stats and button */
+@media (max-width: 1100px) {
+	.imet-section .hero-grid { padding-right: 0; } /* the 46px offset only lines the form card up on desktop */
+	.imet-section .hero-text { text-align: center; }
+	.imet-section .hero-lead { margin-inline: auto; }
+	.imet-section .h-stats { justify-content: center; margin-left: 0; }
+	.imet-section .hero-text .wp-block-buttons { justify-content: center; }
+}
+/* Logo copies for the phone marquee (view.js) only show on phones */
+.imet-section .ac-logo.is-clone { display: none; }
+/* Phones: the logos are one row that scrolls sideways (marquee, or swipe) instead of a tall grid */
+@media (max-width: 640px) {
+	.imet-section .ac-logos {
+		display: flex;
+		margin-inline: -16px; /* to the card's edges */
+		overflow-x: auto;
+		scrollbar-width: none;
+		overscroll-behavior-x: contain;
+	}
+	.imet-section .ac-logos::-webkit-scrollbar { display: none; }
+	.imet-section .ac-logo,
+	.imet-section .ac-logo.is-clone { display: grid; flex: 0 0 132px; min-height: 64px; padding: 0 14px; border-left: 2px solid #ddd; }
+	.imet-section .ac-logo:first-child { border-left: 0; }
+	.imet-section .ac-logo img { max-height: 64px; }
 }

@@ -38,3 +38,8 @@
 @media (max-width: 640px) {
 	.imet-section.analytics { padding: 48px 0; }
 }
+/* One column: centred header and button; the bullet list stays left-aligned */
+@media (max-width: 900px) {
+	.imet-section .an-grid { padding-left: 0; }
+	.imet-section.analytics .wp-block-buttons { justify-content: center; }
+}

@@ -54,3 +54,11 @@
 	.imet-section.achieve h2 { border-right: 0; padding-right: 0; }
 	.imet-section .achieve-stats { width: 100%; }
 }
+/* Stacked: centred title, stats in a centred row (2 × 2 on phones) */
+@media (max-width: 1100px) {
+	.imet-section .achieve-inner { align-items: center; text-align: center; }
+	.imet-section .achieve-stats { justify-content: center; }
+}
+@media (max-width: 640px) {
+	.imet-section .achieve-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 16px; }
+}

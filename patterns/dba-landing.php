@@ -91,14 +91,6 @@
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/hero -->
-<!-- wp:imet/subnav {"anchor":"subnav"} -->
-<nav id="subnav" class="wp-block-imet-subnav imet-section subnav"><!-- wp:group {"className":"imet-container subnav-inner","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container subnav-inner"><!-- wp:paragraph {"className":"subnav-links"} -->
-<p class="subnav-links"><a href="#overview">Program Overview</a><a href="#programs">Our Programs</a><a href="#presence">Digital Presence</a><a href="#specializations">Specializations</a><a href="#who-can-join">Who can Join</a><a href="#dba-vs-phd">DBA v/s Ph.D</a><a href="#faq">FAQ</a></p>
-<!-- /wp:paragraph -->
-</div>
-<!-- /wp:group --></nav>
-<!-- /wp:imet/subnav -->
 <!-- wp:imet/highlights {"anchor":"overview"} -->
 <section id="overview" class="wp-block-imet-highlights imet-section highlights"><!-- wp:group {"className":"imet-container hl-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container hl-grid"><!-- wp:group {"className":"hl-text","layout":{"type":"default"}} -->
@@ -137,6 +129,14 @@
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/highlights -->
+<!-- wp:imet/subnav {"anchor":"subnav"} -->
+<nav id="subnav" class="wp-block-imet-subnav imet-section subnav"><!-- wp:group {"className":"imet-container subnav-inner","layout":{"type":"default"}} -->
+<div class="wp-block-group imet-container subnav-inner"><!-- wp:paragraph {"className":"subnav-links"} -->
+<p class="subnav-links"><a href="#overview">Program Overview</a><a href="#programs">Our Programs</a><a href="#presence">Digital Presence</a><a href="#specializations">Specializations</a><a href="#who-can-join">Who can Join</a><a href="#dba-vs-phd">DBA v/s Ph.D</a><a href="#faq">FAQ</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group --></nav>
+<!-- /wp:imet/subnav -->
 <!-- wp:imet/specializations {"anchor":"specializations"} -->
 <section id="specializations" class="wp-block-imet-specializations imet-section section specs"><!-- wp:group {"className":"imet-container sec-head","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container sec-head"><!-- wp:paragraph {"className":"eyebrow-line"} -->
@@ -151,22 +151,22 @@
 <!-- /wp:group -->
 <!-- wp:group {"className":"spec-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group spec-grid"><!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="#">MBA in Digital Transformation</a></p>
+<p class="spec-card"><a href="https://imetworldwide.com/online-doctorate-cybersecurity-certificate-program/">DBA in Cybersecurity</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="#">MBA in Digital Transformation</a></p>
+<p class="spec-card"><a href="https://imetworldwide.com/online-doctorate-dba-artificial-intelligence-ml/">DBA in AI &amp; Machine Learning</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="#">MBA in Digital Transformation</a></p>
+<p class="spec-card"><a href="https://imetworldwide.com/online-doctorate-digital-transformation-program/">DBA in Digital Transformation</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="#">MBA in Digital Transformation</a></p>
+<p class="spec-card"><a href="https://imetworldwide.com/online-doctorate-dba-project-management/">DBA in Project Management</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="#">Doctorate in Digital Transformation</a></p>
+<p class="spec-card"><a href="https://imetworldwide.com/online-doctorate-dba-generative-ai/">DBA in Generative AI</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="#">Doctorate in Digital Transformation</a></p>
+<p class="spec-card"><a href="https://imetworldwide.com/online-doctorate-it-governance-risk-compliance/">DBA in IT Governance, Risk &amp; Compliance</a></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group --></section>
@@ -229,7 +229,7 @@
 <h4 class="wp-block-heading">Boardroom-Level Expertise</h4>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Acquire the strategic knowledge to provide direction on cybersecurity to the external executives.</p>
+<p>Gain the strategic knowledge to guide boards and executives on cybersecurity.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -237,30 +237,45 @@
 <div class="wp-block-group ben-item"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Future-Proof Leadership</h4>
 <!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Lead digital transformation with skills that stay relevant as technology and markets change.</p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"ben-item","layout":{"type":"default"}} -->
 <div class="wp-block-group ben-item"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Global Career Opportunities</h4>
 <!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Open doors to senior roles worldwide with a widely recognised doctorate.</p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"ben-item","layout":{"type":"default"}} -->
 <div class="wp-block-group ben-item"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Research-Driven Authority</h4>
 <!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Turn your experience into published research that makes you the expert others cite.</p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"ben-item","layout":{"type":"default"}} -->
 <div class="wp-block-group ben-item"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Stronger Digital Brand</h4>
 <!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Build visibility on LinkedIn, Google Scholar and industry platforms with the “Dr.” title.</p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"ben-item","layout":{"type":"default"}} -->
 <div class="wp-block-group ben-item"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Policy &amp; Governance Influence</h4>
 <!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Shape cybersecurity policy, risk and governance decisions at board and regulator level.</p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -341,14 +356,38 @@
 <!-- wp:paragraph -->
 <p>Earn the “Dr.” prefix to command authority in C-suites, boardrooms, and investor circles</p>
 <!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Build decision-making models that scale beyond projects into enterprise strategy</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Lead innovation and transformation initiatives with doctor-level credibility</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Become eligible for board memberships, think tanks, and teaching roles</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>A research-based leadership legacy that survives longer than your job designation</p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"ct-col","layout":{"type":"default"}} -->
 <div class="wp-block-group ct-col"><!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Career Capital</h4>
+<h4 class="wp-block-heading">C-Suite Momentum</h4>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Earn the “Dr.” prefix to command authority in C-suites, boardrooms, and investor circles</p>
+<p>Break into elite roles: CXO, Advisor, Strategic Consultant, or Policy Influencer</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Make the leap from operational roles to visionary leadership positions</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Leverage the doctorate for consulting engagements and speaking fees</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Strengthen your CV for global strategic or advisory mandates</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Get invited to guest lectures, government panels, and policy boards</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -357,7 +396,19 @@
 <h4 class="wp-block-heading">Digital Visibility &amp; Personal Branding</h4>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Earn the “Dr.” prefix to command authority in C-suites, boardrooms, and investor circles</p>
+<p>Build an executive-grade LinkedIn presence and Google-first discoverability</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Turn your dissertation into a personal brand asset that opens global doors</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Drive organic reach through thought-led content as “Dr.”</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Expand your influence through reputation engineering</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Use the DBA as a platform to monetize expertise</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -366,7 +417,40 @@
 <h4 class="wp-block-heading">Academic Recognition</h4>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Earn the “Dr.” prefix to command authority in C-suites, boardrooms, and investor circles</p>
+<p>Publish as scholar-practitioner with approving thesis &amp; citations</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Appear in journals, business media, and academic blogs</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Join international research ecosystems and doctoral alumni networks</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Build academic credibility without leaving your corporate role</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Codify your frameworks into IP, whitepapers, or toolkits</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"className":"ct-col","layout":{"type":"default"}} -->
+<div class="wp-block-group ct-col"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Global Thought Leadership</h4>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Become a go-to industry voice through articles, podcasts, and keynote sessions</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Get featured on panels, conferences, and research roundtables</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Share your frameworks and IP models on global platforms</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Start your own consulting/advisor/coach brand</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Position yourself as an expert in AI, Cybersecurity, GRC, or Strategy</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -442,6 +526,19 @@
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
+<!-- wp:group {"className":"b-card b-global","layout":{"type":"default"}} -->
+<div class="wp-block-group b-card b-global"><!-- wp:group {"className":"b-text","layout":{"type":"default"}} -->
+<div class="wp-block-group b-text"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Global Accreditation</h4>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Globally Recognized Degrees – Accredited programs accepted in the US, UK, and EU.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:image {"id":{{ID:bento-map.webp}},"sizeSlug":"full","linkDestination":"none","className":"b-map"} -->
+<figure class="wp-block-image size-full b-map"><img src="{{URL:bento-map.webp}}" alt="" class="wp-image-{{ID:bento-map.webp}}"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
 <!-- wp:group {"className":"b-card b-roi","layout":{"type":"default"}} -->
 <div class="wp-block-group b-card b-roi"><!-- wp:group {"className":"b-text","layout":{"type":"default"}} -->
 <div class="wp-block-group b-text"><!-- wp:heading {"level":4} -->
@@ -475,8 +572,8 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:buttons {"className":"center"} -->
-<div class="wp-block-buttons center"><!-- wp:button {"className":"btn-navy btn-md"} -->
-<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
+<div class="wp-block-buttons center"><!-- wp:button {"className":"btn-navy btn-lg"} -->
+<div class="wp-block-button btn-navy btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 </div>
@@ -634,15 +731,18 @@
 <p class="sub">Hear real experiences and success stories from our clients through DBA podcasts. Discover how the program transformed their careers and enhanced their leadership journey. Gain valuable insights from professionals who have walked the same path.</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"video-gallery","layout":{"type":"default"}} -->
-<div class="wp-block-group video-gallery"><!-- wp:image {"id":{{ID:video-thumb.webp}},"sizeSlug":"full","linkDestination":"custom","className":"video-main yt-auto"} -->
-<figure class="wp-block-image size-full video-main yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:video-thumb.webp}}" alt="DBA alumni testimonial" class="wp-image-{{ID:video-thumb.webp}}"/></a></figure>
+<div class="wp-block-group video-gallery"><!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-main yt-auto"} -->
+<figure class="wp-block-image size-full video-main yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="DBA alumni testimonial" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">Convocation Day: our DBA graduates share their journey</figcaption></figure>
 <!-- /wp:image -->
 <!-- wp:group {"className":"video-list","layout":{"type":"default"}} -->
-<div class="wp-block-group video-list"><!-- wp:image {"id":{{ID:video-thumb.webp}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
-<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:video-thumb.webp}}" alt="Testimonial 1" class="wp-image-{{ID:video-thumb.webp}}"/></a></figure>
+<div class="wp-block-group video-list"><!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
+<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="Testimonial 1" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">Convocation Day highlights</figcaption></figure>
 <!-- /wp:image -->
-<!-- wp:image {"id":{{ID:alumni-video.png}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
-<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-video.png}}" alt="Testimonial 2" class="wp-image-{{ID:alumni-video.png}}"/></a></figure>
+<!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
+<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="Testimonial 2" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">Alumni podcast: the doctorate journey</figcaption></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
+<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="Testimonial 3" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">From IT leader to “Dr.”</figcaption></figure>
 <!-- /wp:image -->
 <!-- wp:buttons {"className":"video-more"} -->
 <div class="wp-block-buttons video-more"><!-- wp:button {"className":"btn-navy btn-md"} -->
