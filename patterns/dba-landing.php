@@ -5,11 +5,11 @@
  * Kind: page
  */
 ?>
-<!-- wp:imet/hero -->
+<!-- wp:imet/hero {"anchor":"top"} -->
 <section id="top" class="wp-block-imet-hero imet-section hero"><!-- wp:group {"className":"imet-container hero-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container hero-grid"><!-- wp:group {"className":"hero-text","layout":{"type":"default"}} -->
 <div class="wp-block-group hero-text"><!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading"><strong>Doctorate</strong> in Business Administration</h1>
+<h1 class="wp-block-heading">Online Doctor of Business Administration (DBA) Program</h1>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"className":"hero-lead"} -->
 <p class="hero-lead">Pursue a globally recognized Doctorate Program (DBA), tailored for Senior IT Leaders and CXOs ready to turn their industry experience into thought leadership, boardroom influence, and digital visibility.</p>
@@ -20,7 +20,7 @@
 <p class="h-num">12-24</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"h-label"} -->
-<p class="h-label">Month Duration<br>Months</p>
+<p class="h-label">Month Program<br>Duration</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -29,16 +29,16 @@
 <p class="h-num">100%</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"h-label"} -->
-<p class="h-label">Online</p>
+<p class="h-label">Online Study<br>Format</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"h-stat","layout":{"type":"default"}} -->
 <div class="wp-block-group h-stat"><!-- wp:paragraph {"className":"h-num"} -->
-<p class="h-num">45%</p>
+<p class="h-num"><sub>upto</sub>45%</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"h-label"} -->
-<p class="h-label">Scholarships &amp;<br>Feed</p>
+<p class="h-label">Scholarships &amp;<br>Fees</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -46,7 +46,7 @@
 <!-- /wp:group -->
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-lg"} -->
-<div class="wp-block-button btn-navy btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
+<div class="wp-block-button btn-navy btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a DBA Advisor</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
@@ -54,7 +54,7 @@
 <!-- /wp:group -->
 <!-- wp:group {"anchor":"advisor-form","className":"h-form","layout":{"type":"default"}} -->
 <div id="advisor-form" class="wp-block-group h-form"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Speak with a Program Advisor</h3>
+<h3 class="wp-block-heading">Talk to an Advisor</h3>
 <!-- /wp:heading -->
 <!-- wp:shortcode -->
 [imet_advisor_form]
@@ -66,7 +66,7 @@
 <!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container"><!-- wp:group {"className":"ac-card","layout":{"type":"default"}} -->
 <div class="wp-block-group ac-card"><!-- wp:heading {"className":"ac-title"} -->
-<h2 class="wp-block-heading ac-title">Accreditations and logo presentation</h2>
+<h2 class="wp-block-heading ac-title">Institutional Recognition &amp; Credential Evaluation</h2>
 <!-- /wp:heading -->
 <!-- wp:group {"className":"ac-logos","layout":{"type":"default"}} -->
 <div class="wp-block-group ac-logos"><!-- wp:image {"id":{{ID:logo-singapore.webp}},"sizeSlug":"full","linkDestination":"none","className":"ac-logo"} -->
@@ -89,23 +89,24 @@
 </div>
 <!-- /wp:group -->
 </div>
-<!-- /wp:group -->
-</section>
+<!-- /wp:group --></section>
 <!-- /wp:imet/hero -->
-<!-- wp:imet/subnav -->
+<!-- wp:imet/subnav {"anchor":"subnav"} -->
 <nav id="subnav" class="wp-block-imet-subnav imet-section subnav"><!-- wp:group {"className":"imet-container subnav-inner","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container subnav-inner"><!-- wp:paragraph {"className":"subnav-links"} -->
-<p class="subnav-links"><a href="#usp">Our USP</a><a href="#overview">Program Overview</a><a href="#presence">Digital Presence</a><a href="#specializations">Specializations</a><a href="#who-can-join">Who can Join</a><a href="#dba-vs-phd">DBA v/s Ph.D</a><a href="#faq">FAQ</a></p>
+<p class="subnav-links"><a href="#overview">Program Overview</a><a href="#programs">Our Programs</a><a href="#presence">Digital Presence</a><a href="#specializations">Specializations</a><a href="#who-can-join">Who can Join</a><a href="#dba-vs-phd">DBA v/s Ph.D</a><a href="#faq">FAQ</a></p>
 <!-- /wp:paragraph -->
 </div>
-<!-- /wp:group -->
-</nav>
+<!-- /wp:group --></nav>
 <!-- /wp:imet/subnav -->
-<!-- wp:imet/highlights -->
-<section class="wp-block-imet-highlights imet-section highlights"><!-- wp:group {"className":"imet-container hl-grid","layout":{"type":"default"}} -->
+<!-- wp:imet/highlights {"anchor":"overview"} -->
+<section id="overview" class="wp-block-imet-highlights imet-section highlights"><!-- wp:group {"className":"imet-container hl-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container hl-grid"><!-- wp:group {"className":"hl-text","layout":{"type":"default"}} -->
-<div class="wp-block-group hl-text"><!-- wp:heading {"className":"title left"} -->
-<h2 class="wp-block-heading title left">Program Highlights of DBA in CyberSecurity</h2>
+<div class="wp-block-group hl-text"><!-- wp:paragraph {"className":"eyebrow-line left"} -->
+<p class="eyebrow-line left">Overview</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"className":"title left"} -->
+<h2 class="wp-block-heading title left">Program Highlights</h2>
 <!-- /wp:heading -->
 <!-- wp:list {"className":"hl-list"} -->
 <ul class="wp-block-list hl-list"><!-- wp:list-item -->
@@ -115,19 +116,16 @@
 <li><strong>Thesis Support:</strong> Full guidance on industry-focused cybersecurity research &amp; dissertation.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Research Papers:</strong> Publication Assistance for international journals like IEEE, Google Scholar citations.</li>
+<li><strong>Research Papers:</strong> Assistance for publishing in SCOPUS/IEEE journals and boosting citations on Google Scholar, ResearchGate, and similar platforms.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Academic Outcome:</strong> Earn the prestigious ‘Dr.’ prefix and global recognition with an online doctorate in cybersecurity.</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
-<li><strong>Career Outcome:</strong> Improve leadership impact and stabilise career prospects through visibility.</li>
+<li><strong>Career Outcome:</strong> Boardroom opportunities, consulting roles, and digital branding for thought leadership.</li>
 <!-- /wp:list-item -->
 </ul>
 <!-- /wp:list -->
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-lg"} -->
-<div class="wp-block-button btn-navy btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to an Executive Program Guide</a></div>
+<div class="wp-block-button btn-navy btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a DBA Advisor</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
@@ -137,16 +135,49 @@
 <figure class="wp-block-image size-full hl-visual"><img src="{{URL:highlights.webp}}" alt="DBA graduates: promoted to CxO, 15+ top global specializations, skill growth" class="wp-image-{{ID:highlights.webp}}"/></figure>
 <!-- /wp:image -->
 </div>
-<!-- /wp:group -->
-</section>
+<!-- /wp:group --></section>
 <!-- /wp:imet/highlights -->
+<!-- wp:imet/specializations {"anchor":"specializations"} -->
+<section id="specializations" class="wp-block-imet-specializations imet-section section specs"><!-- wp:group {"className":"imet-container sec-head","layout":{"type":"default"}} -->
+<div class="wp-block-group imet-container sec-head"><!-- wp:paragraph {"className":"eyebrow-line"} -->
+<p class="eyebrow-line">Our Programs</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"className":"title"} -->
+<h2 class="wp-block-heading title">Our DBA Doctorate Specializations</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"className":"sub"} -->
+<p class="sub">IMET Worldwide also provides internationally marketable MBA majors to modern professionals:</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"className":"spec-grid","layout":{"type":"default"}} -->
+<div class="wp-block-group spec-grid"><!-- wp:paragraph {"className":"spec-card"} -->
+<p class="spec-card"><a href="#">MBA in Digital Transformation</a></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"spec-card"} -->
+<p class="spec-card"><a href="#">MBA in Digital Transformation</a></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"spec-card"} -->
+<p class="spec-card"><a href="#">MBA in Digital Transformation</a></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"spec-card"} -->
+<p class="spec-card"><a href="#">MBA in Digital Transformation</a></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"spec-card"} -->
+<p class="spec-card"><a href="#">Doctorate in Digital Transformation</a></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"spec-card"} -->
+<p class="spec-card"><a href="#">Doctorate in Digital Transformation</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group --></section>
+<!-- /wp:imet/specializations -->
 <!-- wp:imet/cost-banner -->
 <section class="wp-block-imet-cost-banner imet-section cost-banner"><!-- wp:group {"className":"cost-left","layout":{"type":"default"}} -->
 <div class="wp-block-group cost-left"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Doctorate (DBA)<br>Program Cost</h3>
+<h3 class="wp-block-heading">Doctorate (DBA)<br>Program Fee</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"className":"price-tag"} -->
-<p class="price-tag">USD $8500</p>
+<p class="price-tag">USD $6500</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -170,88 +201,26 @@
 <p>(Granted to senior tech professionals based on leadership depth, career trajectory, and visibility potential.)</p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"btn-white btn-lg"} -->
-<div class="wp-block-button btn-white btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Am I eligible ?</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-white btn-sm btn-arrow"} -->
+<div class="wp-block-button btn-white btn-sm btn-arrow"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Check Your Eligibility</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
 </div>
-<!-- /wp:group -->
-</section>
+<!-- /wp:group --></section>
 <!-- /wp:imet/cost-banner -->
-<!-- wp:imet/embassy -->
-<section class="wp-block-imet-embassy imet-section section embassy"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container"><!-- wp:heading {"className":"title"} -->
-<h2 class="wp-block-heading title">Online Doctor of Business Administration<br>(DBA) Program</h2>
-<!-- /wp:heading -->
-<!-- wp:group {"className":"emblem-row","layout":{"type":"default"}} -->
-<div class="wp-block-group emblem-row"><!-- wp:image {"id":{{ID:emb-uae.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
-<figure class="wp-block-image size-full emblem"><img src="{{URL:emb-uae.webp}}" alt="Embassy of UAE" class="wp-image-{{ID:emb-uae.webp}}"/><figcaption class="wp-element-caption">Embassy of UAE</figcaption></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:emb-bahrain.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
-<figure class="wp-block-image size-full emblem"><img src="{{URL:emb-bahrain.webp}}" alt="Embassy of Bahrain" class="wp-image-{{ID:emb-bahrain.webp}}"/><figcaption class="wp-element-caption">Embassy of Bahrain</figcaption></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:emb-usa.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
-<figure class="wp-block-image size-full emblem"><img src="{{URL:emb-usa.webp}}" alt="Embassy of United States" class="wp-image-{{ID:emb-usa.webp}}"/><figcaption class="wp-element-caption">Embassy of United States</figcaption></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:emb-qatar.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
-<figure class="wp-block-image size-full emblem"><img src="{{URL:emb-qatar.webp}}" alt="Embassy of Qatar" class="wp-image-{{ID:emb-qatar.webp}}"/><figcaption class="wp-element-caption">Embassy of Qatar</figcaption></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:emb-nz.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
-<figure class="wp-block-image size-full emblem"><img src="{{URL:emb-nz.webp}}" alt="Embassy of New Zealand" class="wp-image-{{ID:emb-nz.webp}}"/><figcaption class="wp-element-caption">Embassy of New Zealand</figcaption></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:emb-singapore.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
-<figure class="wp-block-image size-full emblem"><img src="{{URL:emb-singapore.webp}}" alt="Embassy of Singapore" class="wp-image-{{ID:emb-singapore.webp}}"/><figcaption class="wp-element-caption">Embassy of Singapore</figcaption></figure>
-<!-- /wp:image -->
-</div>
-<!-- /wp:group -->
-</div>
-<!-- /wp:group -->
-</section>
-<!-- /wp:imet/embassy -->
-<!-- wp:imet/specializations -->
-<section id="specializations" class="wp-block-imet-specializations imet-section section specs"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container"><!-- wp:heading {"className":"title xl"} -->
-<h2 class="wp-block-heading title xl">Our MBA Specializations</h2>
+<!-- wp:imet/overview {"anchor":"programs"} -->
+<section id="programs" class="wp-block-imet-overview imet-section section overview"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
+<div class="wp-block-group sec-head"><!-- wp:paragraph {"className":"eyebrow-line ov-eyebrow"} -->
+<p class="eyebrow-line ov-eyebrow">What is a Doctor of Business Administration (DBA)?</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"className":"title"} -->
+<h2 class="wp-block-heading title">Get Accredited Online Doctorate (DBA)<br>Degree Programs &amp; Earn Global Recognition</h2>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"className":"sub"} -->
-<p class="sub">IMET Worldwide also provides internationally marketable MBA majors to modern professionals:</p>
-<!-- /wp:paragraph -->
-<!-- wp:group {"className":"spec-grid","layout":{"type":"default"}} -->
-<div class="wp-block-group spec-grid"><!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="#">MBA in Digital Transformation</a></p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="#">MBA in Digital Transformation</a></p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="#">MBA in Digital Transformation</a></p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="#">Doctorate in Digital Transformation</a></p>
-<!-- /wp:paragraph -->
-</div>
-<!-- /wp:group -->
-<!-- wp:buttons {"className":"center"} -->
-<div class="wp-block-buttons center"><!-- wp:button {"className":"btn-navy btn-md"} -->
-<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
-<!-- /wp:button -->
-</div>
-<!-- /wp:buttons -->
-</div>
-<!-- /wp:group -->
-</section>
-<!-- /wp:imet/specializations -->
-<!-- wp:imet/overview -->
-<section id="overview" class="wp-block-imet-overview imet-section section overview"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container"><!-- wp:group {"className":"split-head","layout":{"type":"default"}} -->
-<div class="wp-block-group split-head"><!-- wp:heading {"className":"title left"} -->
-<h2 class="wp-block-heading title left">Get Accredited Online Doctorate (DBA) Degree Programs &amp; Earn Global Recognition</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>The most recognized master’s program across the globe is the MBA. It combines business theory and leadership practice, equipping professionals with top management, consulting, and entrepreneurial performance.</p>
-<!-- /wp:paragraph -->
-</div>
+<p class="sub">The most recognized master’s program across the globe is the MBA. It combines business theory and leadership practice, equipping professionals with top management, consulting, and entrepreneurial performance.</p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"ov-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group ov-grid"><!-- wp:group {"className":"benefit-list","layout":{"type":"default"}} -->
@@ -302,10 +271,9 @@
 </div>
 <!-- /wp:group -->
 </div>
-<!-- /wp:group -->
-</section>
+<!-- /wp:group --></section>
 <!-- /wp:imet/overview -->
-<!-- wp:imet/achievements -->
+<!-- wp:imet/achievements {"anchor":"presence"} -->
 <section id="presence" class="wp-block-imet-achievements imet-section achieve"><!-- wp:group {"className":"imet-container achieve-inner","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container achieve-inner"><!-- wp:heading -->
 <h2 class="wp-block-heading">Our Achievement</h2>
@@ -313,7 +281,7 @@
 <!-- wp:group {"className":"achieve-stats","layout":{"type":"default"}} -->
 <div class="wp-block-group achieve-stats"><!-- wp:group {"className":"stat","layout":{"type":"default"}} -->
 <div class="wp-block-group stat"><!-- wp:paragraph {"className":"count"} -->
-<p class="count">2,000+</p>
+<p class="count">2,100+</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"count-label"} -->
 <p class="count-label">Doctorates Enrolled</p>
@@ -322,7 +290,7 @@
 <!-- /wp:group -->
 <!-- wp:group {"className":"stat","layout":{"type":"default"}} -->
 <div class="wp-block-group stat"><!-- wp:paragraph {"className":"count"} -->
-<p class="count">60+</p>
+<p class="count">25+</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"count-label"} -->
 <p class="count-label">Countries</p>
@@ -350,14 +318,21 @@
 </div>
 <!-- /wp:group -->
 </div>
-<!-- /wp:group -->
-</section>
+<!-- /wp:group --></section>
 <!-- /wp:imet/achievements -->
 <!-- wp:imet/career-table -->
 <section class="wp-block-imet-career-table imet-section section career"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container"><!-- wp:heading {"className":"title"} -->
-<h2 class="wp-block-heading title">Online Doctor of Business Administration<br>(DBA) Program</h2>
+<div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
+<div class="wp-block-group sec-head"><!-- wp:paragraph {"className":"eyebrow-line"} -->
+<p class="eyebrow-line">Our USP's</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"className":"title"} -->
+<h2 class="wp-block-heading title">Online Doctor of Business Administration (DBA) Program</h2>
 <!-- /wp:heading -->
+<!-- wp:paragraph {"className":"sub"} -->
+<p class="sub">The most recognized master’s program across the globe is the MBA. It combines business theory and leadership practice, equipping professionals with top management, consulting, and entrepreneurial performance.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 <!-- wp:group {"className":"career-table","layout":{"type":"default"}} -->
 <div class="wp-block-group career-table"><!-- wp:group {"className":"ct-col","layout":{"type":"default"}} -->
 <div class="wp-block-group ct-col"><!-- wp:heading {"level":4} -->
@@ -395,45 +370,48 @@
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"className":"ct-col","layout":{"type":"default"}} -->
-<div class="wp-block-group ct-col"><!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Global Thought Leadership</h4>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Earn the “Dr.” prefix to command authority in C-suites, boardrooms, and investor circles</p>
-<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-</div>
-<!-- /wp:group -->
-</div>
-<!-- /wp:group -->
-</section>
+<!-- wp:buttons {"className":"ct-more"} -->
+<div class="wp-block-buttons ct-more"><!-- wp:button {"className":"btn-light btn-sm"} -->
+<div class="wp-block-button btn-light btn-sm"><a class="wp-block-button__link wp-element-button" href="#">See More</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></section>
 <!-- /wp:imet/career-table -->
-<!-- wp:imet/usp-bento -->
+<!-- wp:imet/usp-bento {"anchor":"usp"} -->
 <section id="usp" class="wp-block-imet-usp-bento imet-section section usp"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container"><!-- wp:paragraph {"className":"eyebrow"} -->
-<p class="eyebrow">Our USP's</p>
+<div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
+<div class="wp-block-group sec-head"><!-- wp:paragraph {"className":"eyebrow-line"} -->
+<p class="eyebrow-line">Our USP's</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"className":"title"} -->
 <h2 class="wp-block-heading title">Doctorate for Visionaries, Built on<br>Business Realities</h2>
 <!-- /wp:heading -->
+<!-- wp:paragraph {"className":"sub"} -->
+<p class="sub">The most recognized master’s program across the globe is the MBA. It combines business theory and leadership practice, equipping professionals with top management, consulting, and entrepreneurial performance.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
 <!-- wp:group {"className":"bento","layout":{"type":"default"}} -->
 <div class="wp-block-group bento"><!-- wp:group {"className":"b-card b-flex","layout":{"type":"default"}} -->
-<div class="wp-block-group b-card b-flex"><!-- wp:heading {"level":4} -->
+<div class="wp-block-group b-card b-flex"><!-- wp:group {"className":"b-text","layout":{"type":"default"}} -->
+<div class="wp-block-group b-text"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Flexibility</h4>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
 <p>100% Online &amp; Self-Paced – Study from anywhere at your convenience while managing your career.</p>
 <!-- /wp:paragraph -->
-<!-- wp:image {"id":{{ID:bento-flex.webp}},"sizeSlug":"full","linkDestination":"none","className":"b-img"} -->
-<figure class="wp-block-image size-full b-img"><img src="{{URL:bento-flex.webp}}" alt="" class="wp-image-{{ID:bento-flex.webp}}"/></figure>
+</div>
+<!-- /wp:group -->
+<!-- wp:image {"id":{{ID:bento-flex-man.png}},"sizeSlug":"full","linkDestination":"none","className":"b-img"} -->
+<figure class="wp-block-image size-full b-img"><img src="{{URL:bento-flex-man.png}}" alt="" class="wp-image-{{ID:bento-flex-man.png}}"/></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"b-card b-industry dark","layout":{"type":"default"}} -->
-<div class="wp-block-group b-card b-industry dark"><!-- wp:group {"className":"b-industry-text","layout":{"type":"default"}} -->
-<div class="wp-block-group b-industry-text"><!-- wp:heading {"level":4} -->
+<div class="wp-block-group b-card b-industry dark"><!-- wp:group {"className":"b-text","layout":{"type":"default"}} -->
+<div class="wp-block-group b-text"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Industry-Focused Doctorate</h4>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
@@ -446,107 +424,77 @@
 <!-- /wp:image -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"className":"b-card b-global","layout":{"type":"default"}} -->
-<div class="wp-block-group b-card b-global"><!-- wp:image {"id":{{ID:bento-map.webp}},"sizeSlug":"full","linkDestination":"none","className":"b-map"} -->
-<figure class="wp-block-image size-full b-map"><img src="{{URL:bento-map.webp}}" alt="" class="wp-image-{{ID:bento-map.webp}}"/></figure>
-<!-- /wp:image -->
-<!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Global Accreditation</h4>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Globally Recognized Degrees – Accredited programs accepted in the US, UK, and EU.</p>
-<!-- /wp:paragraph -->
-</div>
-<!-- /wp:group -->
-</div>
-<!-- /wp:group -->
 <!-- wp:group {"className":"b-card b-alumni dark","layout":{"type":"default"}} -->
-<div class="wp-block-group b-card b-alumni dark"><!-- wp:paragraph {"className":"big"} -->
+<div class="wp-block-group b-card b-alumni dark"><!-- wp:group {"className":"b-alumni-top","layout":{"type":"default"}} -->
+<div class="wp-block-group b-alumni-top"><!-- wp:image {"id":{{ID:bento-avatars.webp}},"sizeSlug":"full","linkDestination":"none","className":"b-avatars"} -->
+<figure class="wp-block-image size-full b-avatars"><img src="{{URL:bento-avatars.webp}}" alt="50+ alumni" class="wp-image-{{ID:bento-avatars.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph {"className":"big"} -->
 <p class="big">500+</p>
 <!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
 <!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Alumni Network</h4>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
 <p>Global Peer Network in Tech Leadership – Collaborate with professionals from top tech firms.</p>
 <!-- /wp:paragraph -->
-<!-- wp:image {"id":{{ID:bento-avatars.webp}},"sizeSlug":"full","linkDestination":"none","className":"b-avatars"} -->
-<figure class="wp-block-image size-full b-avatars"><img src="{{URL:bento-avatars.webp}}" alt="50+ alumni" class="wp-image-{{ID:bento-avatars.webp}}"/></figure>
-<!-- /wp:image -->
-</div>
-<!-- /wp:group -->
-<!-- wp:group {"className":"b-card b-work","layout":{"type":"default"}} -->
-<div class="wp-block-group b-card b-work"><!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Work-<br>Integrated Curriculum</h4>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Apply What You Learn Instantly – Research and projects aligned with your workplace challenges.</p>
-<!-- /wp:paragraph -->
-</div>
-<!-- /wp:group -->
-<!-- wp:group {"className":"b-card b-mentor dark","layout":{"type":"default"}} -->
-<div class="wp-block-group b-card b-mentor dark"><!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Executive Mentorship</h4>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>One-on-One Guidance by Industry Leaders – Get mentored by experienced PhDs and tech strategists.</p>
-<!-- /wp:paragraph -->
-<!-- wp:image {"id":{{ID:bento-mentor.webp}},"sizeSlug":"full","linkDestination":"none","className":"b-img"} -->
-<figure class="wp-block-image size-full b-img"><img src="{{URL:bento-mentor.webp}}" alt="" class="wp-image-{{ID:bento-mentor.webp}}"/></figure>
-<!-- /wp:image -->
-</div>
-<!-- /wp:group -->
-<!-- wp:group {"className":"b-card b-emi soft","layout":{"type":"default"}} -->
-<div class="wp-block-group b-card b-emi soft"><!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Affordable Tuition with EMI</h4>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Pay-As-You-Go Model – EMI options, scholarships, and company reimbursement assistance.</p>
-<!-- /wp:paragraph -->
-</div>
-<!-- /wp:group -->
-<!-- wp:group {"className":"b-card b-short soft","layout":{"type":"default"}} -->
-<div class="wp-block-group b-card b-short soft"><!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Short Completion Time</h4>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Finish in <strong>12–24 months</strong> Part-Time – Designed to fit the schedules of busy IT professionals</p>
-<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"b-card b-roi","layout":{"type":"default"}} -->
-<div class="wp-block-group b-card b-roi"><!-- wp:heading {"level":4} -->
+<div class="wp-block-group b-card b-roi"><!-- wp:group {"className":"b-text","layout":{"type":"default"}} -->
+<div class="wp-block-group b-text"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Doctorate with ROI</h4>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
 <p>Boost Career to C-Level Roles – Ideal for roles like CTO, CIO, or academic/research careers.</p>
 <!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
 <!-- wp:image {"id":{{ID:bento-roi.webp}},"sizeSlug":"full","linkDestination":"none","className":"b-chart"} -->
 <figure class="wp-block-image size-full b-chart"><img src="{{URL:bento-roi.webp}}" alt="" class="wp-image-{{ID:bento-roi.webp}}"/></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"className":"b-card b-gre","layout":{"type":"default"}} -->
-<div class="wp-block-group b-card b-gre"><!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">No GRE/ GMAT Required</h4>
+<!-- wp:group {"className":"b-card b-mentor dark","layout":{"type":"default"}} -->
+<div class="wp-block-group b-card b-mentor dark"><!-- wp:group {"className":"b-text","layout":{"type":"default"}} -->
+<div class="wp-block-group b-text"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Executive Mentorship</h4>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Admissions based on experience, not just test scores – perfect for seasoned professionals.</p>
+<p>One-on-One Guidance by Industry Leaders – Get mentored by experienced PhDs and tech strategists.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
+<!-- wp:image {"id":{{ID:bento-mentor-woman.png}},"sizeSlug":"full","linkDestination":"none","className":"b-img"} -->
+<figure class="wp-block-image size-full b-img"><img src="{{URL:bento-mentor-woman.png}}" alt="" class="wp-image-{{ID:bento-mentor-woman.png}}"/></figure>
+<!-- /wp:image -->
 </div>
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
-</section>
+<!-- wp:buttons {"className":"center"} -->
+<div class="wp-block-buttons center"><!-- wp:button {"className":"btn-navy btn-md"} -->
+<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group --></section>
 <!-- /wp:imet/usp-bento -->
 <!-- wp:imet/embassy -->
 <section class="wp-block-imet-embassy imet-section section embassy"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container"><!-- wp:heading {"className":"title"} -->
+<div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
+<div class="wp-block-group sec-head"><!-- wp:paragraph {"className":"eyebrow-line"} -->
+<p class="eyebrow-line">Our USP's</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"className":"title"} -->
 <h2 class="wp-block-heading title">Online Doctor of Business Administration<br>(DBA) Program</h2>
 <!-- /wp:heading -->
+<!-- wp:paragraph {"className":"sub"} -->
+<p class="sub">The most recognized master’s program across the globe is the MBA. It combines business theory and leadership practice, equipping professionals with top management, consulting, and entrepreneurial performance.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 <!-- wp:group {"className":"emblem-row","layout":{"type":"default"}} -->
 <div class="wp-block-group emblem-row"><!-- wp:image {"id":{{ID:emb-uae.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
 <figure class="wp-block-image size-full emblem"><img src="{{URL:emb-uae.webp}}" alt="Embassy of UAE" class="wp-image-{{ID:emb-uae.webp}}"/><figcaption class="wp-element-caption">Embassy of UAE</figcaption></figure>
@@ -569,62 +517,40 @@
 </div>
 <!-- /wp:group -->
 </div>
-<!-- /wp:group -->
-</section>
+<!-- /wp:group --></section>
 <!-- /wp:imet/embassy -->
-<!-- wp:imet/dba-vs-phd -->
+<!-- wp:imet/dba-vs-phd {"anchor":"dba-vs-phd"} -->
 <section id="dba-vs-phd" class="wp-block-imet-dba-vs-phd imet-section section vs"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container"><!-- wp:group {"className":"split-head","layout":{"type":"default"}} -->
-<div class="wp-block-group split-head"><!-- wp:heading {"className":"title left"} -->
-<h2 class="wp-block-heading title left">Why is the <strong>DBA v/s Phd</strong> Program the Top Business Leaders?</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Discover real journeys of transformation from professionals who turned experience into influence. Explore how our Alumni built personal brands, earned global recognition, and unlocked leadership opportunities through research, visibility, and the “Dr.” title.</p>
+<div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
+<div class="wp-block-group sec-head"><!-- wp:paragraph {"className":"eyebrow-line"} -->
+<p class="eyebrow-line">Our USP's</p>
 <!-- /wp:paragraph -->
-</div>
+<!-- wp:heading {"className":"title"} -->
+<h2 class="wp-block-heading title">Why is the <strong>DBA v/s Phd</strong> Program the Top<br>Business Leaders?</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"className":"sub"} -->
+<p class="sub">Discover real journeys of transformation from professionals who turned experience into influence. Explore how our Alumni built personal brands, earned global recognition, and unlocked leadership opportunities through research, visibility, and the “Dr.” title.</p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:table {"hasFixedLayout":false,"className":"vs-table"} -->
 <figure class="wp-block-table vs-table"><table><thead><tr><th>Criteria</th><th>DBA</th><th>PhD</th></tr></thead><tbody><tr><td>Focus</td><td>Applied research, industry problem-solving</td><td>Academic theory, original contribution</td></tr><tr><td>Time Commitment</td><td>Flexible, often 12-24 months even for working professionals</td><td>Full-time to part-time, ~3-5 years</td></tr><tr><td>Intended Outcome</td><td>C-suite roles, advisory, consulting, branding</td><td>Faculty, researcher role</td></tr><tr><td>Dissertation vs. Project</td><td>Applied capstone or dissertation</td><td>Full theoretical thesis</td></tr><tr><td>Credibility in Academia</td><td>Recognized but less ideal for high-tier PhD roles</td><td>High (tenure track possible)</td></tr><tr><td>Flexibility</td><td>Designed for executives and IT professionals</td><td>Often rigid and resource-intensive</td></tr><tr><td>Visibility/Branding</td><td>Central focus: personal brand and Dr. title</td><td>Minimal secondary emphasis</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 </div>
-<!-- /wp:group -->
-</section>
+<!-- /wp:group --></section>
 <!-- /wp:imet/dba-vs-phd -->
-<!-- wp:imet/cyber-banner -->
-<section class="wp-block-imet-cyber-banner imet-section cyber"><!-- wp:image {"id":{{ID:cyber-1.webp}},"sizeSlug":"full","linkDestination":"none","className":"cy-av cy-1"} -->
-<figure class="wp-block-image size-full cy-av cy-1"><img src="{{URL:cyber-1.webp}}" alt="" class="wp-image-{{ID:cyber-1.webp}}"/></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:cyber-2.webp}},"sizeSlug":"full","linkDestination":"none","className":"cy-av cy-2"} -->
-<figure class="wp-block-image size-full cy-av cy-2"><img src="{{URL:cyber-2.webp}}" alt="" class="wp-image-{{ID:cyber-2.webp}}"/></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:cyber-3.webp}},"sizeSlug":"full","linkDestination":"none","className":"cy-av cy-3"} -->
-<figure class="wp-block-image size-full cy-av cy-3"><img src="{{URL:cyber-3.webp}}" alt="" class="wp-image-{{ID:cyber-3.webp}}"/></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:cyber-4.webp}},"sizeSlug":"full","linkDestination":"none","className":"cy-av cy-4"} -->
-<figure class="wp-block-image size-full cy-av cy-4"><img src="{{URL:cyber-4.webp}}" alt="" class="wp-image-{{ID:cyber-4.webp}}"/></figure>
-<!-- /wp:image -->
-<!-- wp:group {"className":"imet-container cyber-inner","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container cyber-inner"><!-- wp:heading -->
-<h2 class="wp-block-heading">IMET Worldwide’s Online Doctorate<br>in Cybersecurity Program</h2>
-<!-- /wp:heading -->
-<!-- wp:buttons {"className":"btn-row"} -->
-<div class="wp-block-buttons btn-row"><!-- wp:button {"className":"btn-white btn-md"} -->
-<div class="wp-block-button btn-white btn-md"><a class="wp-block-button__link wp-element-button" href="#">View Case Studies</a></div>
-<!-- /wp:button -->
-<!-- wp:button {"className":"btn-white btn-md"} -->
-<div class="wp-block-button btn-white btn-md"><a class="wp-block-button__link wp-element-button" href="#">View Success Stories</a></div>
-<!-- /wp:button -->
-</div>
-<!-- /wp:buttons -->
-</div>
-<!-- /wp:group -->
-</section>
-<!-- /wp:imet/cyber-banner -->
-<!-- wp:imet/who-can-join -->
+<!-- wp:imet/who-can-join {"anchor":"who-can-join"} -->
 <section id="who-can-join" class="wp-block-imet-who-can-join imet-section section join"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container"><!-- wp:heading {"className":"title"} -->
+<div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
+<div class="wp-block-group sec-head"><!-- wp:paragraph {"className":"eyebrow-line"} -->
+<p class="eyebrow-line">Who can Join</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"className":"title"} -->
 <h2 class="wp-block-heading title">Who Can Join Our Online DBA Programs?</h2>
 <!-- /wp:heading -->
+<!-- wp:paragraph {"className":"sub"} -->
+<p class="sub">Discover real journeys of transformation from professionals who turned experience into influence. Explore how our Alumni built personal brands, earned global recognition, and unlocked leadership opportunities through research, visibility, and the “Dr.” title.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 <!-- wp:group {"className":"join-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group join-grid"><!-- wp:group {"className":"join-acc","layout":{"type":"default"}} -->
 <div class="wp-block-group join-acc"><!-- wp:details -->
@@ -653,20 +579,13 @@
 <!-- /wp:details -->
 </div>
 <!-- /wp:group -->
-<!-- wp:image {"id":{{ID:join-photo.webp}},"sizeSlug":"full","linkDestination":"none","className":"join-photo"} -->
-<figure class="wp-block-image size-full join-photo"><img src="{{URL:join-photo.webp}}" alt="Professionals collaborating in a meeting" class="wp-image-{{ID:join-photo.webp}}"/></figure>
+<!-- wp:image {"id":{{ID:join-graduates.jpg}},"sizeSlug":"full","linkDestination":"none","className":"join-photo"} -->
+<figure class="wp-block-image size-full join-photo"><img src="{{URL:join-graduates.jpg}}" alt="DBA graduates celebrating at convocation" class="wp-image-{{ID:join-graduates.jpg}}"/></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:group -->
-<!-- wp:buttons {"className":"center"} -->
-<div class="wp-block-buttons center"><!-- wp:button {"className":"btn-navy btn-md"} -->
-<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
-<!-- /wp:button -->
 </div>
-<!-- /wp:buttons -->
-</div>
-<!-- /wp:group -->
-</section>
+<!-- /wp:group --></section>
 <!-- /wp:imet/who-can-join -->
 <!-- wp:imet/analytics -->
 <section class="wp-block-imet-analytics imet-section section analytics"><!-- wp:group {"className":"imet-container an-grid","layout":{"type":"default"}} -->
@@ -674,7 +593,10 @@
 <figure class="wp-block-image size-full an-visual"><img src="{{URL:insights.webp}}" alt="Insights analytics: learner countries, salaries and career impact, industries" class="wp-image-{{ID:insights.webp}}"/></figure>
 <!-- /wp:image -->
 <!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"className":"title left"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"eyebrow-line left"} -->
+<p class="eyebrow-line left">Insights</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"className":"title left"} -->
 <h2 class="wp-block-heading title left">Industry Analytics</h2>
 <!-- /wp:heading -->
 <!-- wp:list {"className":"dots"} -->
@@ -698,13 +620,12 @@
 </div>
 <!-- /wp:group -->
 </div>
-<!-- /wp:group -->
-</section>
+<!-- /wp:group --></section>
 <!-- /wp:imet/analytics -->
 <!-- wp:imet/alumni-video -->
 <section class="wp-block-imet-alumni-video imet-section section alumni"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container"><!-- wp:paragraph {"className":"alumni-eyebrow"} -->
-<p class="alumni-eyebrow">What Our Clients Say</p>
+<div class="wp-block-group imet-container"><!-- wp:paragraph {"className":"eyebrow-line"} -->
+<p class="eyebrow-line">What Our Clients Say</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"className":"title"} -->
 <h2 class="wp-block-heading title">Doctorate of Business Administration (DBA) Alumni Speak</h2>
@@ -723,18 +644,44 @@
 <!-- wp:image {"id":{{ID:alumni-video.png}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
 <figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-video.png}}" alt="Testimonial 2" class="wp-image-{{ID:alumni-video.png}}"/></a></figure>
 <!-- /wp:image -->
-<!-- wp:image {"id":{{ID:join-photo.webp}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
-<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:join-photo.webp}}" alt="Testimonial 3" class="wp-image-{{ID:join-photo.webp}}"/></a></figure>
-<!-- /wp:image -->
 <!-- wp:buttons {"className":"video-more"} -->
-<div class="wp-block-buttons video-more"><!-- wp:button {"className":"btn-navy btn-lg"} -->
-<div class="wp-block-button btn-navy btn-lg"><a class="wp-block-button__link wp-element-button" href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener">View More</a></div>
+<div class="wp-block-buttons video-more"><!-- wp:button {"className":"btn-navy btn-md"} -->
+<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener">View More</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/alumni-video -->
+<!-- wp:imet/cyber-banner -->
+<section class="wp-block-imet-cyber-banner imet-section cyber"><!-- wp:image {"id":{{ID:cyber-1.webp}},"sizeSlug":"full","linkDestination":"none","className":"cy-av cy-1"} -->
+<figure class="wp-block-image size-full cy-av cy-1"><img src="{{URL:cyber-1.webp}}" alt="" class="wp-image-{{ID:cyber-1.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":{{ID:cyber-2.webp}},"sizeSlug":"full","linkDestination":"none","className":"cy-av cy-2"} -->
+<figure class="wp-block-image size-full cy-av cy-2"><img src="{{URL:cyber-2.webp}}" alt="" class="wp-image-{{ID:cyber-2.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":{{ID:cyber-3.webp}},"sizeSlug":"full","linkDestination":"none","className":"cy-av cy-3"} -->
+<figure class="wp-block-image size-full cy-av cy-3"><img src="{{URL:cyber-3.webp}}" alt="" class="wp-image-{{ID:cyber-3.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":{{ID:cyber-4.webp}},"sizeSlug":"full","linkDestination":"none","className":"cy-av cy-4"} -->
+<figure class="wp-block-image size-full cy-av cy-4"><img src="{{URL:cyber-4.webp}}" alt="" class="wp-image-{{ID:cyber-4.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:group {"className":"imet-container cyber-inner","layout":{"type":"default"}} -->
+<div class="wp-block-group imet-container cyber-inner"><!-- wp:heading -->
+<h2 class="wp-block-heading">IMET Worldwide’s Online Doctorate<br>in Cybersecurity Program</h2>
+<!-- /wp:heading -->
+<!-- wp:buttons {"className":"btn-row"} -->
+<div class="wp-block-buttons btn-row"><!-- wp:button {"className":"btn-white btn-md btn-icon-search"} -->
+<div class="wp-block-button btn-white btn-md btn-icon-search"><a class="wp-block-button__link wp-element-button" href="#">View Case Studies</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"btn-white btn-md btn-icon-out"} -->
+<div class="wp-block-button btn-white btn-md btn-icon-out"><a class="wp-block-button__link wp-element-button" href="#">View Success Stories</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group --></section>
+<!-- /wp:imet/cyber-banner -->
 <!-- wp:imet/testimonials -->
 <section class="wp-block-imet-testimonials imet-section section testimonials"><!-- wp:group {"className":"imet-container testi-head","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container testi-head"><!-- wp:paragraph {"className":"eyebrow-line"} -->
@@ -754,15 +701,7 @@
 <p class="testi-quote">Our Online Doctorate in Business Administration (DBA) program is designed for senior professionals and executives looking to advance</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-foot"><!-- wp:group {"className":"testi-who","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-who"><!-- wp:paragraph {"className":"testi-name"} -->
-<p class="testi-name"><strong>Dr. Ayathur R.</strong></p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph {"className":"testi-role"} -->
-<p class="testi-role">Chief Information Officer | Enterprise Technology | Saudi</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-<!-- wp:paragraph {"className":"testi-linkedin"} -->
+<div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -772,15 +711,7 @@
 <p class="testi-quote">Our Online Doctorate in Business Administration (DBA) program is designed for senior professionals and executives looking to advance</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-foot"><!-- wp:group {"className":"testi-who","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-who"><!-- wp:paragraph {"className":"testi-name"} -->
-<p class="testi-name"><strong>Dr. Ayathur R.</strong></p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph {"className":"testi-role"} -->
-<p class="testi-role">Chief Information Officer | Enterprise Technology | Saudi</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-<!-- wp:paragraph {"className":"testi-linkedin"} -->
+<div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -790,15 +721,7 @@
 <p class="testi-quote">Our Online Doctorate in Business Administration (DBA) program is designed for senior professionals and executives looking to advance</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-foot"><!-- wp:group {"className":"testi-who","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-who"><!-- wp:paragraph {"className":"testi-name"} -->
-<p class="testi-name"><strong>Dr. Ayathur R.</strong></p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph {"className":"testi-role"} -->
-<p class="testi-role">Chief Information Officer | Enterprise Technology | Saudi</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-<!-- wp:paragraph {"className":"testi-linkedin"} -->
+<div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -813,18 +736,21 @@
 <!-- /wp:imet/testimonials -->
 <!-- wp:imet/certificate -->
 <section class="wp-block-imet-certificate imet-section section cert"><!-- wp:group {"className":"imet-container cert-wrap","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container cert-wrap"><!-- wp:image {"id":{{ID:certificate.webp}},"sizeSlug":"full","linkDestination":"none","className":"cert-photo"} -->
-<figure class="wp-block-image size-full cert-photo"><img src="{{URL:certificate.webp}}" alt="Framed IMET Doctor of Business Administration certificate" class="wp-image-{{ID:certificate.webp}}"/></figure>
+<div class="wp-block-group imet-container cert-wrap"><!-- wp:image {"id":{{ID:cert-graduate.jpg}},"sizeSlug":"full","linkDestination":"none","className":"cert-photo"} -->
+<figure class="wp-block-image size-full cert-photo"><img src="{{URL:cert-graduate.jpg}}" alt="IMET DBA graduate holding his certificate" class="wp-image-{{ID:cert-graduate.jpg}}"/></figure>
 <!-- /wp:image -->
 <!-- wp:group {"className":"cert-card","layout":{"type":"default"}} -->
-<div class="wp-block-group cert-card"><!-- wp:heading {"className":"title"} -->
-<h2 class="wp-block-heading title">DBA Certificate</h2>
+<div class="wp-block-group cert-card"><!-- wp:paragraph {"className":"eyebrow-line left"} -->
+<p class="eyebrow-line left">Who can Join</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"className":"title left"} -->
+<h2 class="wp-block-heading title left">Doctorate of Business<br>Administration (DBA) Certification</h2>
 <!-- /wp:heading -->
+<!-- wp:paragraph {"className":"cert-sub"} -->
+<p class="cert-sub">Hear real experiences and success stories from our clients through DBA podcasts. Discover how the program transformed their careers and enhanced their leadership journey. Gain valuable insights from professionals who have walked the same path.</p>
+<!-- /wp:paragraph -->
 <!-- wp:list {"className":"ticks"} -->
 <ul class="wp-block-list ticks"><!-- wp:list-item -->
-<li>Demonstrate support of current and emerging business theory,</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
 <li>Practice, and influences that support business administration strategy and organizational missions in changing environments.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
@@ -836,22 +762,26 @@
 </ul>
 <!-- /wp:list -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-sm"} -->
-<div class="wp-block-button btn-navy btn-sm"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-md"} -->
+<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a DBA Advisor</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
 </div>
 <!-- /wp:group -->
 </div>
-<!-- /wp:group -->
-</section>
+<!-- /wp:group --></section>
 <!-- /wp:imet/certificate -->
-<!-- wp:imet/faq -->
+<!-- wp:imet/faq {"anchor":"faq"} -->
 <section id="faq" class="wp-block-imet-faq imet-section section faq"><!-- wp:group {"className":"imet-container narrow","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container narrow"><!-- wp:heading {"className":"faq-title"} -->
-<h2 class="wp-block-heading faq-title">Frequently Asked Questions (FAQs) - Online Doctorate of Business Administration (DBA) Programs</h2>
-<!-- /wp:heading -->
+<div class="wp-block-group imet-container narrow"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
+<div class="wp-block-group sec-head"><!-- wp:paragraph {"className":"eyebrow-line faq-eyebrow"} -->
+<p class="eyebrow-line faq-eyebrow">Frequently Asked Questions (FAQs)</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"className":"title"} -->
+<h2 class="wp-block-heading title">Online Doctorate of Business Administration<br>(DBA) Programs</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
 <!-- wp:group {"className":"faq-acc","layout":{"type":"default"}} -->
 <div class="wp-block-group faq-acc"><!-- wp:details -->
 <details class="wp-block-details"><summary>What is Doctor of Business Administration (DBA)?</summary><!-- wp:paragraph -->
@@ -903,34 +833,37 @@
 <!-- /wp:details -->
 </div>
 <!-- /wp:group -->
-</div>
-<!-- /wp:group -->
-</section>
+<!-- wp:buttons {"className":"center faq-more"} -->
+<div class="wp-block-buttons center faq-more"><!-- wp:button {"className":"btn-navy btn-sm"} -->
+<div class="wp-block-button btn-navy btn-sm"><a class="wp-block-button__link wp-element-button" href="#faq">See More</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></section>
 <!-- /wp:imet/faq -->
 <!-- wp:imet/cta -->
 <section class="wp-block-imet-cta imet-section cta-wrap"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container"><!-- wp:group {"className":"cta","layout":{"type":"default"}} -->
-<div class="wp-block-group cta"><!-- wp:paragraph {"className":"cta-eyebrow"} -->
-<p class="cta-eyebrow">Ready to Lead, Not Just Work?</p>
-<!-- /wp:paragraph -->
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Step into your next chapter as a Tech Advisor,<br>CxO, or Boardroom Leader.</h2>
+<div class="wp-block-group cta"><!-- wp:group {"className":"cta-text","layout":{"type":"default"}} -->
+<div class="wp-block-group cta-text"><!-- wp:heading -->
+<h2 class="wp-block-heading">Step into your next chapter<br>as a <strong>Tech Advisor, CxO, or<br>Boardroom Leader.</strong></h2>
 <!-- /wp:heading -->
+<!-- wp:paragraph {"className":"cta-sub"} -->
+<p class="cta-sub">Discover how the program transformed their careers and enhanced their leadership journey. Gain valuable insights from professionals who have walked the same path.</p>
+<!-- /wp:paragraph -->
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"btn-white btn-lg"} -->
-<div class="wp-block-button btn-white btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Start Leadership Journey Today</a></div>
-<!-- /wp:button -->
-</div>
-<!-- /wp:buttons -->
-</div>
+<div class="wp-block-button btn-white btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group -->
-</div>
-<!-- /wp:group -->
-</section>
+<!-- wp:image {"id":{{ID:cta-graduates.jpg}},"sizeSlug":"full","linkDestination":"none","className":"cta-photo"} -->
+<figure class="wp-block-image size-full cta-photo"><img src="{{URL:cta-graduates.jpg}}" alt="IMET DBA graduates at convocation" class="wp-image-{{ID:cta-graduates.jpg}}"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></section>
 <!-- /wp:imet/cta -->
 <!-- wp:imet/float-contact -->
 <div class="wp-block-imet-float-contact imet-section float-contact"><!-- wp:paragraph {"className":"wa-link"} -->
 <p class="wa-link"><a href="https://wa.me/" target="_blank" rel="noreferrer noopener">Contact us</a></p>
-<!-- /wp:paragraph -->
-</div>
+<!-- /wp:paragraph --></div>
 <!-- /wp:imet/float-contact -->

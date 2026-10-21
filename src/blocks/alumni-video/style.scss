@@ -1,36 +1,33 @@
 /* IMET Video (imet/alumni-video). Root element: .imet-section.alumni
    Alumni video gallery: header, then a main player (.video-main) beside a list of thumbnails (.video-item) and a
    "View More" button. Every video is an Image block linked to its YouTube URL (see view.js, includes/video.php). */
-.imet-section.alumni { padding: 30px 0 60px; }
+.imet-section.alumni { padding: 30px 0 0; }
 
-/* ---------- Header ---------- */
+/* ---------- Header (shared eyebrow-line / sub; title one line here) ---------- */
 .imet-section.alumni .imet-container { text-align: center; }
-/* Eyebrow: shared style (base.scss), bigger here */
-.imet-section.alumni { --eyebrow-size: 1.75rem; --eyebrow-line: 100px; } /* 28px */
-.imet-section .alumni-eyebrow { padding-bottom: 12px; }
+.imet-section .alumni-eyebrow { --eyebrow-size: 1.75rem; --eyebrow-line: 100px; padding-bottom: 12px; } /* earlier version */
 .imet-section.alumni .title {
-	margin: 14px 0 18px;
-	font-size: clamp(1.625rem, 4vw, 3.25rem); /* 26px → 52px */
-	font-weight: 600;
-	line-height: 1.2;
+	margin: 0 0 14px;
+	font-size: clamp(1.625rem, 0.7321rem + 1.8601vw, 2.40625rem); /* 26px → 38.5px */
+	font-weight: 500;
+	line-height: 1.25;
 }
 .imet-section.alumni .sub {
-	max-width: none;
-	margin: 0 0 44px;
-	font-size: clamp(0.9375rem, 1.4vw, 1.3125rem); /* 15px → 21px */
-	line-height: 1.8;
-	color: #333;
+	max-width: 1020px;
+	margin: 0 auto 36px;
+	font-size: 1rem;
+	line-height: 1.75;
+	color: #000;
 }
 
-/* ---------- Gallery: main player | thumbnails (wider than the container: up to 1270px) ---------- */
+/* ---------- Gallery: main player 652px | thumbnails 256px (929px in all) ---------- */
 .imet-section .video-gallery {
-	--gallery: min(1270px, 100vw - 32px);
 	display: grid;
-	grid-template-columns: 2.55fr 1fr;
-	gap: 30px;
-	align-items: start;
-	width: var(--gallery);
-	margin-inline: calc((100% - var(--gallery)) / 2);
+	grid-template-columns: 652fr 256fr;
+	gap: 21px;
+	align-items: stretch;
+	width: min(929px, 100%);
+	margin: 0 auto;
 	text-align: left;
 }
 
@@ -38,10 +35,10 @@
 .imet-section .video-main {
 	position: relative;
 	box-sizing: content-box; /* the ratio is for the picture inside the frame */
-	aspect-ratio: 16 / 11;
+	aspect-ratio: 634 / 454;
 	margin: 0;
 	overflow: hidden;
-	border: 12px solid var(--navy);
+	border: 9px solid var(--navy);
 	border-radius: 6px;
 	background: #000;
 }
@@ -70,25 +67,24 @@
 .imet-section .video-main a:hover::after { background-color: #f00; transform: translate(-50%, -50%) scale(1.08); }
 
 /* Thumbnails */
-.imet-section .video-list { display: flex; flex-direction: column; gap: 20px; }
+.imet-section .video-list { display: flex; flex-direction: column; gap: 14px; }
 .imet-section .video-item {
 	position: relative;
 	margin: 0;
 	overflow: hidden;
-	border: 10px solid var(--navy);
-	border-radius: 6px;
+	border: 9px solid var(--navy);
+	border-radius: 2px;
 	background: var(--navy);
 	cursor: pointer;
 	transition: transform .2s, box-shadow .2s, border-color .2s;
 }
-.imet-section .video-item img { width: 100%; aspect-ratio: 16 / 7.2; object-fit: cover; }
+.imet-section .video-item img { width: 100%; aspect-ratio: 238 / 92; object-fit: cover; }
 .imet-section .video-item:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(21, 41, 78, .25); }
 .imet-section .video-item.is-active { border-color: var(--gold); }
 
-/* "View More": a normal IMET button, 88% of the column, 14px below the last thumbnail (list gap is 20px) */
-.imet-section .video-more { margin-top: -6px; }
-.imet-section .video-more > .wp-block-button { width: 88%; }
-.imet-section .video-more .wp-block-button__link { width: 100%; }
+/* "View More": at the bottom of the thumbnail column, 25px above the player's bottom edge */
+.imet-section .video-more { justify-content: center; margin-top: auto; margin-bottom: 25px; }
+.imet-section .video-more .wp-block-button__link { min-width: 222px; }
 
 /* Earlier version: one thumbnail that plays in place (pages built before the gallery) */
 .imet-section .video-thumb {
@@ -109,6 +105,7 @@
 @media (max-width: 900px) {
 	.imet-section .video-gallery { grid-template-columns: 1fr; }
 	.imet-section .video-main { aspect-ratio: 16 / 9; border-width: 8px; }
+	.imet-section .video-more { margin: 6px 0 0; }
 	.imet-section .video-list { flex-direction: row; flex-wrap: wrap; gap: 12px; }
 	.imet-section .video-item { flex: 1 1 calc(33.333% - 8px); border-width: 6px; }
 	.imet-section .video-more { flex: 1 1 100%; margin-top: 6px; }

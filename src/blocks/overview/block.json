@@ -19,7 +19,7 @@
 	"imet": {
 		"tagName": "section",
 		"className": "section overview",
-		"anchor": "overview"
+		"anchor": "programs"
 	},
 	"editorScript": "file:./index.js",
 	"style": [

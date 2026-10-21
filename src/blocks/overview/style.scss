@@ -1,21 +1,15 @@
 /* IMET Program Overview (imet/overview). Root element: .imet-section.overview */
-.imet-section.overview { padding: 44px 0 24px; }
-.imet-section.overview .split-head {
-	grid-template-columns: 632px minmax(0, 1fr);
-	gap: 0;
-	padding-left: 4px;
-}
-.imet-section.overview .title { line-height: 1.15; margin: 0; }
+.imet-section.overview { padding: 34px 0 72px; }
+.imet-section .ov-eyebrow { --eyebrow-line: 246px; }
+.imet-section.overview .sub { margin-bottom: 56px; }
 .imet-section .ov-grid {
 	display: grid;
 	grid-template-columns: 446px minmax(0, 1fr);
-	gap: 88px;
-	align-items: start;
-	margin-top: 2px;
+	gap: 60px;
+	align-items: center;
 	padding-left: 16px;
 }
-.imet-section .ov-visual { padding-top: 30px; }
-.imet-section .ov-visual img { width: 100%; max-width: 575px; }
+.imet-section .ov-visual img { width: 100%; max-width: 566px; margin-left: auto; }
 .imet-section .benefit-list { display: grid; gap: 13px; }
 .imet-section .ben-item {
 	position: relative;

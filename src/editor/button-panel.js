@@ -19,6 +19,7 @@ const COLOURS = [
 	{ value: 'btn-gold', label: 'Gold' },
 	{ value: 'btn-outline', label: 'Outline' },
 	{ value: 'btn-outline-light', label: 'Outline light (on dark backgrounds)' },
+	{ value: 'btn-light', label: 'Light grey' },
 	{ value: 'btn-link', label: 'Text link (underlined)' },
 ];
 const SIZES = [

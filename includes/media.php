@@ -25,6 +25,10 @@ function imet_blocks_media_files() {
 		'avatar-1.webp' => '', 'avatar-2.webp' => '', 'avatar-3.webp' => '',
 		'certificate.webp' => 'Framed IMET Doctor of Business Administration certificate',
 		'alumni-video.png' => 'Video: IMET DBA graduate with a program advisor',
+		'bento-flex-man.png' => '', 'bento-mentor-woman.png' => '',
+		'join-graduates.jpg' => 'DBA graduates celebrating at convocation',
+		'cert-graduate.jpg' => 'IMET DBA graduate holding his certificate',
+		'cta-graduates.jpg' => 'IMET DBA graduates at convocation',
 	);
 }
 

@@ -1,25 +1,40 @@
-/* IMET Call to Action (imet/cta). Root element: .imet-section.cta-wrap */
-.imet-section.cta-wrap { padding: 40px 0 80px; }
+/* IMET Call to Action (imet/cta). Root element: .imet-section.cta-wrap
+   Figma: a 1171 × 336px card, deep blue on the left with the text, a group photo fading in on the right. */
+.imet-section.cta-wrap { padding: 38px 0 32px; }
+.imet-section.cta-wrap .imet-container { width: min(1171px, 100% - 40px); }
 .imet-section .cta {
-	background: var(--navy);
-	border-radius: 50px;
-	padding: 36px 30px;
-	text-align: center;
-	width: min(1031px, 100%);
-	margin-inline: auto;
+	position: relative;
+	overflow: hidden;
+	min-height: 336px;
+	border-radius: 56px;
+	background: #073179;
 }
-.imet-section .cta-eyebrow {
-	color: #f2c461;
-	font-size: clamp(1.125rem, 0.9930rem + 0.5634vw, 1.5rem);
-	font-weight: 600;
-}
+.imet-section .cta-text { position: relative; z-index: 1; max-width: 660px; padding: 30px 30px 32px 57px; }
 .imet-section .cta h2 {
 	color: #fff;
-	font-size: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
-	font-weight: 600;
-	margin: 18px 0 26px;
+	font-size: clamp(1.625rem, 0.5536rem + 2.2321vw, 2.5625rem); /* 26px → 41px */
+	font-weight: 400;
+	line-height: 1.12;
 }
-.imet-section .cta .wp-block-buttons { justify-content: center; }
+.imet-section .cta h2 strong { color: #fff; font-weight: 700; }
+.imet-section .cta-sub { margin: 12px 0 20px; color: #fff; font-size: 0.9375rem; line-height: 1.55; }
+.imet-section .cta .wp-block-button__link { min-width: 382px; }
+/* Photo: right side (509px), its left edge fades into the card colour */
+.imet-section .cta-photo { position: absolute; top: 0; right: 0; bottom: 0; width: 43.5%; margin: 0; }
+.imet-section .cta-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: left center;
+	-webkit-mask-image: linear-gradient(90deg, transparent 0, #000 22%);
+	mask-image: linear-gradient(90deg, transparent 0, #000 22%);
+}
+@media (max-width: 900px) {
+	.imet-section .cta-photo { position: relative; width: 100%; height: 240px; }
+	.imet-section .cta-photo img { -webkit-mask-image: linear-gradient(180deg, transparent, #000 30%); mask-image: linear-gradient(180deg, transparent, #000 30%); }
+	.imet-section .cta-text { padding: 32px 24px 8px; }
+	.imet-section .cta .wp-block-button__link { min-width: 0; }
+}
 @media (max-width: 640px) {
 	.imet-section .cta { border-radius: 28px; }
 }

@@ -1,18 +1,19 @@
 /* IMET Who Can Join (imet/who-can-join). Root element: .imet-section.join */
 /* Who can join */
-.imet-section.join { padding-top: 56px; }
-.imet-section.join .title { margin-bottom: 30px; }
+.imet-section.join { padding: 26px 0 62px; }
+.imet-section.join .sub { margin-bottom: 24px; }
+/* Accordion (x 190–847) | photo 474px (ends 19px past the container, as in the Figma) */
 .imet-section .join-grid {
 	display: grid;
-	grid-template-columns: minmax(0, 660px) minmax(0, 400px);
-	justify-content: space-between;
-	gap: 50px;
+	grid-template-columns: minmax(0, 1fr) 474px;
+	gap: 18px;
 	align-items: start;
-	padding-inline: 70px 20px;
+	margin-right: -19px;
+	padding-left: 70px;
 }
 .imet-section .join-acc details { border-bottom: 1.5px solid #ccc; }
 .imet-section .join-acc details:last-child { border-bottom: 0; }
-.imet-section .join-acc summary { padding: 17px 0; font: 400 1.3125rem/1.3 var(--head); }
+.imet-section .join-acc summary { padding: 15px 0; font: 400 1.25rem/1.3 var(--head); }
 .imet-section .join-acc summary::before {
 	content: "";
 	width: 34px;
@@ -43,9 +44,11 @@
 	line-height: 1.6;
 	color: #111;
 }
-.imet-section .join-photo img { width: 100%; border-radius: 40px; }
+.imet-section .join-photo { margin-top: 8px; }
+.imet-section .join-photo img { width: 100%; border-radius: 0; }
 .imet-section.join .wp-block-buttons.center { margin-top: 10px; }
 @media (max-width: 1200px) {
+	.imet-section .join-grid { margin-right: 0; }
 	.imet-section .join-grid { padding-inline: 0; }
 }
 @media (max-width: 900px) {

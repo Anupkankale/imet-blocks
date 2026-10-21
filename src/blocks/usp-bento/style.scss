@@ -1,196 +1,80 @@
-/* IMET USP Bento Grid (imet/usp-bento). Root element: .imet-section.usp */
-.imet-section.usp { padding-top: 66px; padding-bottom: 86px; }
-.imet-section.usp .title { margin-bottom: 40px; }
+/* IMET USP Bento Grid (imet/usp-bento). Root element: .imet-section.usp
+   Figma: centred header, then a 2-column grid of 460px cards (light cards with a gold border, navy cards with a
+   blue border), right cell of row 2 left empty, and a button. */
+.imet-section.usp { padding: 34px 0 30px; }
+.imet-section.usp .sub { margin-bottom: 30px; }
 .imet-section .bento {
 	display: grid;
-	gap: 0;
-	grid-template-columns: 298fr 20fr 18fr 290fr 12fr 318fr 14fr 46fr 14fr 166fr;
-	grid-template-rows: minmax(320px, auto) 12px minmax(226px, auto) 22px minmax(198px, auto) 22px 28px 12px minmax(280px, auto);
+	grid-template-columns: repeat(2, minmax(0, 460px));
 	grid-template-areas:
-    "flex  flex . ind  ind  ind  ind  ind  ind  ind"
-    "flex  flex . .    .    .    .    .    .    ."
-    "flex  flex . glob glob glob .    alum alum alum"
-    ".     .    . .    .    .    .    alum alum alum"
-    "work  .    ment ment .  emi  .    alum alum alum"
-    "work  .    ment ment .  .    .    .    .    ."
-    "work  .    ment ment .  roi  roi  roi  .    gre"
-    ".     .    ment ment .  roi  roi  roi  .    gre"
-    "short .    ment ment .  roi  roi  roi  .    gre";
+		"flex ind"
+		"alum ."
+		"roi  ment";
+	justify-content: center;
+	gap: 15px 28px;
 }
 .imet-section .b-card {
 	position: relative;
 	overflow: hidden;
-	border-radius: 16px;
-	padding: 26px 16px 22px 18px;
-	background: var(--card);
-	border: 1px solid #ececec;
 	display: flex;
-	flex-direction: column;
-	gap: 10px;
+	min-height: 188px;
+	border: 1.5px solid var(--gold);
+	border-radius: 10px;
+	background: #f1f3f3;
 }
-.imet-section .b-card h4 {
-	font-size: clamp(1.375rem, 1.2210rem + 0.6573vw, 1.8125rem);
-	font-weight: 600;
-	color: #000;
-	line-height: 1.18;
-}
-.imet-section .b-card p {
-	font-size: 0.9688rem;
-	line-height: 1.8;
-	color: #111;
-}
-.imet-section .b-card.dark { background: var(--navy-band); border-color: var(--navy-band); }
+.imet-section .b-card.dark { border-color: #4a79f8; background: var(--navy-band); }
+.imet-section .b-text { position: relative; z-index: 1; flex: 1; min-width: 0; padding: 20px 18px 20px 22px; }
+.imet-section .b-card h4 { color: #000; font-size: clamp(1.375rem, 1.1rem + 0.7vw, 1.75rem); font-weight: 600; line-height: 1.2; } /* → 28px */
+.imet-section .b-card p { margin-top: 12px; color: #111; font-size: 1rem; line-height: 1.75; }
 .imet-section .b-card.dark h4 { color: #fff; }
-.imet-section .b-card.dark p { color: #d9def0; }
-.imet-section .b-card.soft { background: linear-gradient(135deg, var(--lavender), var(--peach)); }
-.imet-section .b-flex { grid-area: flex; padding-bottom: 0; }
-.imet-section :is(.b-flex, .b-mentor, .b-flex > .wp-block-group__inner-container, .b-mentor > .wp-block-group__inner-container) > :not(.b-img, .wp-block-group__inner-container) {
-	position: relative;
-	z-index: 1;
+.imet-section .b-card.dark p { color: #e3e7f2; }
+.imet-section .b-card .b-img { margin: 0; flex-shrink: 0; align-self: flex-end; }
+.imet-section .b-card .b-img img { display: block; }
+
+/* Flexibility: photo fills the right side */
+.imet-section .b-flex { grid-area: flex; }
+.imet-section .b-flex .b-text { max-width: 320px; }
+.imet-section .b-flex .b-img { position: absolute; top: 0; right: 0; bottom: 0; width: 148px; }
+.imet-section .b-flex .b-img img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+
+/* Industry-focused: domain tags faded in behind the text */
+.imet-section .b-industry { grid-area: ind; }
+.imet-section .b-industry .b-text { max-width: 290px; }
+.imet-section .b-industry h4 { white-space: nowrap; }
+.imet-section .b-tags { position: absolute; inset: 0 0 0 auto; width: 74%; margin: 0; opacity: .35; }
+.imet-section .b-tags img { width: 100%; height: 100%; object-fit: cover; object-position: left center; }
+
+/* Alumni: avatars + big number, then title and text */
+.imet-section .b-alumni { grid-area: alum; flex-direction: column; padding: 10px 18px 18px 14px; }
+.imet-section .b-alumni-top { display: flex; align-items: center; gap: 18px; }
+.imet-section .b-avatars { margin: 0; }
+.imet-section .b-avatars img { width: 158px; }
+.imet-section .b-alumni .big { margin: 0; color: var(--blue); font-size: 3.5rem; font-weight: 600; line-height: 1; }
+.imet-section .b-alumni h4 { margin-top: 4px; font-weight: 500; }
+.imet-section .b-alumni p { margin-top: 6px; line-height: 1.55; }
+
+/* ROI: rising chart (with avatar + "Leadership" tag) at the bottom right */
+.imet-section .b-roi { grid-area: roi; }
+.imet-section .b-roi .b-text { max-width: 270px; padding-right: 0; }
+.imet-section .b-roi h4 { max-width: 220px; }
+.imet-section .b-chart { position: absolute; right: 0; bottom: 0; width: 64%; margin: 0; pointer-events: none; }
+.imet-section .b-chart img { width: 100%; }
+
+/* Mentorship: cut-out photo at the bottom right */
+.imet-section .b-mentor { grid-area: ment; }
+.imet-section .b-mentor .b-text { max-width: 330px; }
+.imet-section .b-mentor h4 { white-space: nowrap; }
+.imet-section .b-mentor .b-img { position: absolute; right: 8px; bottom: 0; width: 132px; }
+.imet-section .b-mentor .b-img img { width: 100%; }
+
+.imet-section.usp .wp-block-buttons.center { margin-top: 30px; }
+
+@media (max-width: 1000px) {
+	.imet-section .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-.imet-section .b-flex .b-img {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
-.imet-section .b-flex .b-img img,
-.imet-section .b-mentor .b-img img {
-	width: 100%;
-}
-.imet-section .b-industry {
-	grid-area: ind;
-	flex-direction: row;
-	align-items: center;
-	gap: 20px;
-	padding: 20px 0 20px 26px;
-}
-.imet-section .b-industry-text { flex: 0 0 170px; }
-.imet-section .b-industry-text p { margin-top: 18px; font-size: 0.9688rem; }
-.imet-section .b-tags { flex: 1; min-width: 0; }
-.imet-section .b-tags img {
-	width: 100%;
-	height: 278px;
-	object-fit: cover;
-	object-position: left center;
-}
-.imet-section .b-global {
-	grid-area: glob;
-	flex-direction: row;
-	align-items: center;
-	gap: 24px;
-	padding: 20px 26px 20px 12px;
-}
-.imet-section .b-map { width: 46%; flex-shrink: 0; }
-.imet-section .b-map img { width: 100%; }
-.imet-section .b-global h4 { font-size: clamp(1.25rem, 1.1180rem + 0.5634vw, 1.625rem); }
-.imet-section .b-global p { margin-top: 12px; }
-.imet-section .b-alumni { grid-area: alum; padding: 20px 22px; }
-.imet-section .b-alumni .big {
-	font-size: clamp(2.75rem, 2.3979rem + 1.5023vw, 3.75rem);
-	font-weight: 600;
-	color: var(--blue);
-	line-height: 1;
-}
-.imet-section .b-alumni p { line-height: 1.8; }
-.imet-section .b-avatars { width: 158px; margin-top: 10px; }
-.imet-section .b-work { grid-area: work; padding: 20px 16px 18px 26px; }
-.imet-section .b-work p { margin-top: 10px; }
-.imet-section .b-mentor { grid-area: ment; padding: 34px 18px 0 26px; }
-.imet-section .b-mentor p { margin-top: 14px; }
-.imet-section .b-mentor .b-img {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-}
-.imet-section .b-emi { grid-area: emi; padding: 18px 16px 14px 12px; }
-.imet-section .b-short { grid-area: short; padding: 20px 16px 16px 22px; }
-.imet-section .b-short h4 {
-	font-size: clamp(1.875rem, 1.6329rem + 1.0329vw, 2.5625rem);
-	max-width: 240px;
-	line-height: 1.12;
-}
-.imet-section .b-short p { margin-top: 12px; }
-.imet-section .b-short strong { color: #3c5fd8; font-weight: inherit; }
-.imet-section .b-short::after {
-	content: "";
-	position: absolute;
-	top: -10px;
-	right: -16px;
-	width: 93px;
-	height: 97px;
-	opacity: .9;
-	background: url("../../../assets/images/bento-clock.png") center / contain no-repeat;
-}
-.imet-section .b-roi {
-	grid-area: roi;
-	background: linear-gradient(180deg, #fff6e8, #fbe9cc);
-	border-color: #f5e3c3;
-	padding: 14px 0 0 18px;
-}
-.imet-section .b-roi h4,
-.imet-section .b-roi p {
-	max-width: 250px;
-	position: relative;
-	z-index: 1;
-}
-.imet-section .b-roi .b-chart {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	width: 94%;
-	pointer-events: none;
-}
-.imet-section .b-roi .b-chart img { width: 100%; }
-.imet-section .b-gre { grid-area: gre; padding: 18px 12px 14px 18px; }
-.imet-section .b-gre p { font-size: 0.9688rem; line-height: 1.6; }
-@media (max-width: 1100px) {
-	.imet-section .b-flex .b-img { position: static; margin: auto -16px 0 -18px; }
-	.imet-section .b-tags img { height: auto; }
-	.imet-section .b-global {
-		flex-direction: column;
-		align-items: flex-start;
-		padding: 22px;
-	}
-	.imet-section .b-map { width: 70%; max-width: 360px; }
-	.imet-section .b-roi { padding-bottom: 0; }
-	.imet-section .b-roi h4,
-	.imet-section .b-roi p {
-		max-width: none;
-	}
-	.imet-section .b-roi .b-chart {
-		position: static;
-		width: 100%;
-		max-width: 420px;
-		margin: auto 0 0 auto;
-	}
-	.imet-section .b-mentor .b-img {
-		position: static;
-		margin: auto auto 0;
-		width: 309px;
-		max-width: 100%;
-	}
-	.imet-section .bento {
-		gap: 14px;
-		grid-template-rows: none;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "ind ind" "flex glob" "flex alum" "work ment" "emi ment" "short roi" "gre gre";
-	}
-}
-@media (max-width: 640px) {
-	.imet-section .bento {
-		grid-template-rows: none;
-		grid-template-columns: 1fr;
-		grid-template-areas: "ind" "flex" "glob" "alum" "work" "ment" "emi" "short" "roi" "gre";
-	}
-	.imet-section .b-industry {
-		flex-direction: column;
-		align-items: stretch;
-		padding-right: 0;
-	}
-	.imet-section .b-industry-text { flex: none; padding-right: 20px; }
-	.imet-section .b-map { width: 70%; }
+@media (max-width: 700px) {
+	.imet-section .bento { grid-template-columns: 1fr; grid-template-areas: "flex" "ind" "alum" "roi" "ment"; }
+	.imet-section :is(.b-industry, .b-mentor) h4 { white-space: normal; }
 }
 /* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
 @media (max-width: 640px) {

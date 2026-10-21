@@ -4,7 +4,7 @@
 	top: 0;
 	z-index: 50;
 	background: var(--navy);
-	margin-top: 46px;
+	margin-top: 0; /* directly under the accreditation card */
 }
 .admin-bar .imet-section.subnav { top: 32px; }
 .imet-section .subnav-inner { overflow-x: auto; scrollbar-width: none; }
@@ -25,6 +25,7 @@
 	white-space: nowrap;
 	transition: background .2s;
 }
+.imet-section .subnav-links a { flex-shrink: 0; } /* the bar scrolls sideways instead of squashing links */
 .imet-section .subnav-links a:first-child { min-width: 203px; margin-right: 30px; }
 .imet-section .subnav-links a:hover,
 .imet-section .subnav-links a.active {
