@@ -1,7 +1,7 @@
 === IMET Blocks ===
 Requires at least: 6.5
 Requires PHP: 7.4
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 License: GPLv2 or later
 
 Reusable IMET section blocks (Hero, FAQ, Testimonials, CTA…) built from normal WordPress blocks, and page
@@ -53,7 +53,7 @@ sidebar → "IMET button": Colour (Navy, White, Gold, Outline, Outline light) an
 Classes (if typed by hand): btn-navy btn-white btn-gold btn-outline btn-outline-light btn-link + btn-sm btn-md btn-lg.
 Buttons row (core/buttons) classes: center (centred, 36px above), stack-mobile (full width on phones).
 To change every button at once, edit the variables at the top of src/shared/_buttons.scss and rebuild.
-Glass flash: a soft shine sweeps across each button every 6s (staggered) and on hover/focus; not on text
+Glass flash: a soft shine sweeps slowly (1.6s) across each button every 7s (staggered) and on hover/focus; not on text
 links, and off for visitors who ask for reduced motion. To remove it, delete the "Glass flash" block in
 _buttons.scss.
 
