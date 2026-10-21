@@ -38,3 +38,8 @@
 @media (max-width: 640px) {
 	.imet-section .cta { border-radius: 28px; }
 }
+/* One column: centred text and button */
+@media (max-width: 900px) {
+	.imet-section .cta-text { max-width: none; text-align: center; }
+	.imet-section .cta .wp-block-buttons { justify-content: center; }
+}

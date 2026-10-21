@@ -236,5 +236,12 @@ section.imet-section[id] { scroll-margin-top: 100px; }
 /* Wrapper for a centred section header (eyebrow + title + sub) */
 .imet-section .sec-head { text-align: center; }
 
+/* One-column layouts (tablet/phone): left-aligned section headers centre, like every other header. */
+@media (max-width: 900px) {
+	.imet-section .title.left { text-align: center; }
+	.imet-section .eyebrow-line.left { display: table; margin-inline: auto; }
+	.imet-section .eyebrow-line.left::after { left: 50%; transform: translateX(-50%); }
+}
+
 /* Utilities last, so they win over the rules above: see _utilities.scss */
 @include meta.load-css('utilities');

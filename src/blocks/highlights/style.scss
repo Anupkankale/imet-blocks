@@ -48,3 +48,9 @@
 	.imet-section .hl-grid { grid-template-columns: 1fr; }
 	.imet-section .hl-visual img { margin-inline: auto; }
 }
+/* One column: centred header and button; the list stays left-aligned */
+@media (max-width: 900px) {
+	.imet-section .hl-grid { padding-inline: 0; }
+	.imet-section .hl-list { margin-inline: auto; }
+	.imet-section .hl-text .wp-block-buttons { justify-content: center; }
+}

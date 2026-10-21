@@ -1,7 +1,7 @@
 === IMET Blocks ===
 Requires at least: 6.5
 Requires PHP: 7.4
-Stable tag: 1.6.7
+Stable tag: 1.6.8
 License: GPLv2 or later
 
 Reusable IMET section blocks (Hero, FAQ, Testimonials, CTA…) built from normal WordPress blocks, and page
