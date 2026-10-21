@@ -1,29 +1,25 @@
 /* IMET Image + Bullet List (imet/analytics). Root element: .imet-section.analytics */
-.imet-section.analytics { padding-top: 46px; padding-bottom: 50px; }
+.imet-section.analytics { padding: 32px 0 46px; }
 .imet-section .an-grid {
 	display: grid;
 	grid-template-columns: 580px minmax(0, 1fr);
-	gap: 34px;
-	align-items: center;
+	gap: 35px;
+	align-items: start;
 	padding-left: 37px;
 }
-.imet-section .an-visual img {
-	width: 100%;
-	border-radius: 22px;
-	box-shadow: 0 2px 3px rgba(0,0,0,.3);
-}
-.imet-section.analytics .title { margin-bottom: 14px; }
+.imet-section .an-visual img { width: 100%; border-radius: 22px; box-shadow: 0 2px 3px rgba(0,0,0,.3); }
+.imet-section.analytics .title { margin-bottom: 16px; font-size: clamp(1.75rem, 1.0357rem + 1.4881vw, 2.375rem); font-weight: 500; } /* → 38px */
 .imet-section .dots {
 	display: grid;
-	gap: 28px;
-	margin-bottom: 22px;
+	gap: 24px;
+	margin-bottom: 24px;
 }
 .imet-section .dots li {
 	position: relative;
 	padding-left: 18px;
-	font-size: 1.0625rem;
-	line-height: 1.65;
-	color: #111;
+	font-size: 1.03125rem; /* 16.5px */
+	line-height: 1.42;
+	color: #000;
 }
 .imet-section .dots li::before {
 	content: "·";

@@ -406,7 +406,7 @@ return array(
 		'imet' => array(
 			'tagName' => 'section',
 			'className' => 'highlights',
-			'anchor' => ''
+			'anchor' => 'overview'
 		),
 		'editorScript' => 'file:./index.js',
 		'style' => array(
@@ -435,7 +435,7 @@ return array(
 		'imet' => array(
 			'tagName' => 'section',
 			'className' => 'section overview',
-			'anchor' => 'overview'
+			'anchor' => 'programs'
 		),
 		'editorScript' => 'file:./index.js',
 		'style' => array(

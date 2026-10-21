@@ -1,21 +1,9 @@
 /* IMET Comparison Table (imet/dba-vs-phd). Root element: .imet-section.vs */
-.imet-section.vs { padding-top: 30px; }
-.imet-section.vs .split-head {
-	grid-template-columns: 551px minmax(0, 1fr);
-	gap: 0;
-	padding-left: 44px;
-	padding-right: 30px;
-}
-.imet-section.vs .split-head p {
-	padding-left: 38px;
-	color: var(--text-navy);
-	font-weight: 400;
-	font-size: 1.0938rem;
-	line-height: 1.6;
-}
+.imet-section.vs { padding: 28px 0 62px; }
+.imet-section.vs .sub { margin-bottom: 62px; }
 .imet-section .vs-table {
 	position: relative;
-	margin-top: 80px;
+	margin-top: 0;
 	max-width: 1160px;
 	padding-left: 4px;
 	overflow: visible; /* core's .wp-block-table scrolls (overflow-x: auto), which would clip the DBA card and spark */
@@ -63,8 +51,8 @@
 	min-height: 72px;
 	padding: 14px 0;
 	border: 0;
-	font-size: 1.0625rem;
-	line-height: 1.55;
+	font-size: 1.125rem; /* 18px */
+	line-height: 1.5;
 	color: var(--text-navy);
 	text-align: left;
 	font-weight: 400;
@@ -115,17 +103,6 @@
 .imet-section .vs-table tbody tr:nth-child(7n+5) td:first-child::before { background-image: url("../../../assets/images/vs-credibility.png"); }
 .imet-section .vs-table tbody tr:nth-child(7n+6) td:first-child::before { background-image: url("../../../assets/images/vs-flexibility.png"); }
 .imet-section .vs-table tbody tr:nth-child(7n+7) td:first-child::before { background-image: url("../../../assets/images/vs-visibility.png"); }
-@media (max-width: 1200px) {
-	.imet-section.vs .split-head { grid-template-columns: 1fr 1fr; padding-left: 0; }
-}
-@media (max-width: 900px) {
-	.imet-section.vs .split-head p { border-left: 0; padding-left: 0; }
-	.imet-section.vs .split-head {
-		grid-template-columns: 1fr;
-		gap: 16px;
-		padding: 0;
-	}
-}
 @media (max-width: 782px) {
 	.imet-section .vs-table { margin-top: 20px; padding-left: 0; }
 	.imet-section .vs-table table { grid-template-columns: 1fr 1fr; column-gap: 10px; }

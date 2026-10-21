@@ -1,7 +1,7 @@
 === IMET Blocks ===
 Requires at least: 6.5
 Requires PHP: 7.4
-Stable tag: 1.5.2
+Stable tag: 1.6.0
 License: GPLv2 or later
 
 Reusable IMET section blocks (Hero, FAQ, Testimonials, CTA…) built from normal WordPress blocks, and page
@@ -50,7 +50,8 @@ sidebar → "IMET button": Colour (Navy, White, Gold, Outline, Outline light) an
   M  60px tall, 18px text   (phones 54px / 16px)   ← default
   L  72px tall, 20px text   (phones 62px / 17px)
 
-Classes (if typed by hand): btn-navy btn-white btn-gold btn-outline btn-outline-light btn-link + btn-sm btn-md btn-lg.
+Classes (if typed by hand): btn-navy btn-white btn-gold btn-outline btn-outline-light btn-light btn-link + btn-sm btn-md btn-lg.
+Icons: btn-arrow (circled arrow after), btn-icon-search, btn-icon-out (icon before).
 Buttons row (core/buttons) classes: center (centred, 36px above), stack-mobile (full width on phones).
 To change every button at once, edit the variables at the top of src/shared/_buttons.scss and rebuild.
 Glass flash: a soft shine sweeps slowly (2.6s) across each button every 9s (staggered) and on hover/focus; not on text
@@ -78,8 +79,17 @@ Eyebrow + title + text, then cards: quote, name, role and a LinkedIn logo. Click
 person's LinkedIn profile. Duplicate a card to add one (3 per row; 2 on tablets; swipe on phones). "View More"
 is a Text link button: set its link to the full testimonials page.
 
-The gold eyebrow with a line under it is a shared style: add the class "eyebrow-line" to any paragraph.
+The gold eyebrow with a line under it is a shared style: add the class "eyebrow-line" to any paragraph
+(add "left" too for a left-aligned header). Section headers: eyebrow-line → heading "title" → paragraph "sub",
+inside a group with the class "sec-head" (Figma: 22px gold, 35px title, 18px text).
 Buttons have a "Text link (underlined)" colour for links like "View More".
+
+== DBA page (Figma: imetworldwide.com/online-doctorate-programs) ==
+
+Section order: Hero → Section navigation → Program Highlights → Specializations → Fee card → What is a DBA →
+Achievements → Career table → USP bento → Embassy logos → DBA v/s PhD → Who can Join → Industry Analytics →
+Alumni videos → Cybersecurity banner → Testimonials → Certification → FAQ (first 5, "See More" shows the
+rest) → CTA. Sections are separated by a thin grey line.
 
 == Ready-made sections ==
 

@@ -1,7 +1,7 @@
 /* IMET Hero (imet/hero). Root element: .imet-section.hero */
 .imet-section.hero {
 	position: relative;
-	padding: 40px 0 0;
+	padding: 80px 0 0;
 	background: linear-gradient(135deg, var(--lavender) 0%, #f5f0ed 55%, var(--peach) 100%);
 }
 .imet-section.hero::after {
@@ -10,7 +10,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	height: 100px;
+	height: 127px; /* the accreditation card overlaps the gradient by 57px */
 	background: #fff;
 	z-index: 0;
 }
@@ -18,14 +18,16 @@
 	position: relative;
 	z-index: 1;
 	display: grid;
-	grid-template-columns: minmax(0, 1fr) 438px;
+	grid-template-columns: minmax(0, 1fr) 354px;
 	gap: 60px;
 	align-items: start;
+	padding-right: 46px; /* form card ends 46px inside the container (Figma) */
 }
-.imet-section .hero-text { padding: 28px 0 0 30px; }
+.imet-section .hero-text { padding: 2px 0 0 30px; }
 .imet-section.hero h1 {
-	font-size: clamp(1.875rem, 1.6549rem + 0.9390vw, 2.5rem);
+	font-size: clamp(1.75rem, 1.0357rem + 1.4881vw, 2.375rem); /* 28px → 38px */
 	font-weight: 700;
+	line-height: 1.3;
 	color: #000;
 }
 .imet-section.hero h1 strong {
@@ -34,17 +36,17 @@
 	text-underline-offset: 6px;
 }
 .imet-section .hero-lead {
-	margin: 24px 0 30px;
-	font-size: clamp(1rem, 0.9230rem + 0.3286vw, 1.2188rem);
-	line-height: 1.8;
-	color: #111;
-	max-width: 640px;
+	margin: 18px 0 30px;
+	font-size: clamp(1rem, 0.85rem + 0.45vw, 1.25rem); /* 16px → 20px */
+	line-height: 1.75;
+	color: #000;
+	max-width: 650px;
 }
 .imet-section .h-stats {
 	display: flex;
-	gap: 26px;
+	gap: 30px;
 	flex-wrap: wrap;
-	margin: 0 0 56px -7px;
+	margin: 0 0 27px -7px;
 }
 /* Each stat: laurel | number + label | mirrored laurel. The laurels are decoration, so they live in CSS. */
 .imet-section .h-stat {
@@ -68,18 +70,19 @@
 	z-index: 1;
 	text-align: center;
 	white-space: nowrap;
-	margin: 0 -24px;
+	margin: 0 -12px;
 }
 .imet-section .h-num {
-	font-size: 1.875rem;
-	font-weight: 600;
-	color: #1a2340;
+	font-size: 1.75rem; /* 28px */
+	font-weight: 700;
+	color: #000;
 	line-height: 1.1;
 	align-self: end;
 }
+.imet-section .h-num sub { font-size: 0.4em; font-weight: 500; vertical-align: baseline; margin-right: 2px; } /* "upto" */
 .imet-section .h-label {
 	font-size: 0.9375rem;
-	color: #1a2340;
+	color: #000;
 	font-family: var(--ui);
 	line-height: 1.35;
 	align-self: start;
@@ -87,16 +90,17 @@
 /* Advisor form card: holds any form plugin's shortcode (generic field styles; extra polish for Contact Form 7). */
 .imet-section .h-form {
 	background: #fff;
-	border: 1px solid #3a3a3a;
-	padding: 12px 22px 28px;
+	border: 1px solid #000;
+	border-radius: 12px;
+	padding: 10px 16px 18px;
 	box-shadow: 0 2px 6px rgba(0,0,0,.08);
 }
 .imet-section .h-form h3 {
 	text-align: center;
-	font-size: 1.3125rem;
+	font-size: 1.21875rem; /* 19.5px */
 	font-weight: 700;
-	color: #1a2340;
-	margin-bottom: 14px;
+	color: var(--navy);
+	margin-bottom: 10px;
 }
 .imet-section .h-form form,
 .imet-section .h-form .imet-cf7-fields {
@@ -251,7 +255,7 @@
 .imet-section .ac-card {
 	position: relative;
 	z-index: 1;
-	margin: 50px 52px 0 80px;
+	margin: 35px 52px 0 80px;
 	background: #fff;
 	border-radius: 20px;
 	box-shadow: 0 2px 4px rgba(0,0,0,.18);
@@ -263,7 +267,7 @@
 	justify-content: center;
 	gap: 30px;
 	margin: 0;
-	font-size: clamp(1.25rem, 1.0299rem + 0.9390vw, 1.875rem);
+	font-size: clamp(1.125rem, 0.95rem + 0.5vw, 1.375rem); /* 18px → 22px */
 	font-weight: 400;
 	color: #000;
 	text-align: center;

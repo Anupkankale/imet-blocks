@@ -1,7 +1,7 @@
 /* ==========================================================================
    Buttons: one system for every IMET button (core/buttons + core/button).
    Classes sit on .wp-block-button and are set from the editor's "IMET button" panel:
-     colour  btn-navy (default) · btn-white · btn-gold · btn-outline · btn-outline-light · btn-link
+     colour  btn-navy (default) · btn-white · btn-gold · btn-outline · btn-outline-light · btn-light · btn-link
      size    btn-sm · btn-md (default) · btn-lg
    Every button: same font, weight, radius, border and hover. Heights are exact (min-height), so buttons
    of the same size line up across sections whatever their text.
@@ -79,6 +79,12 @@
 .imet-section .btn-outline .wp-block-button__link {
 	--bg: transparent; --fg: var(--navy); --bd: var(--navy);
 	--bg-hover: var(--navy); --fg-hover: #fff; --bd-hover: var(--navy);
+}
+/* Light grey (e.g. "See More" on a table) */
+.imet-section .btn-light .wp-block-button__link {
+	--bg: #d6d7da; --fg: #000; --bd: #d6d7da;
+	--bg-hover: #c5c7cc; --fg-hover: #000; --bd-hover: #c5c7cc;
+	--flash: rgba(255, 255, 255, .6);
 }
 /* Text link: underlined text, no box (e.g. "View More" under the testimonials). Same font and sizes. */
 .imet-section .btn-link .wp-block-button__link {
