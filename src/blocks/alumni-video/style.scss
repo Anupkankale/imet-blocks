@@ -2,19 +2,20 @@
    Alumni video gallery: header, then a main player (.video-main) beside a list of thumbnails (.video-item) and a
    "View More" button. Every video is an Image block linked to its YouTube URL (see view.js, includes/video.php). */
 .imet-section.alumni { padding: 30px 0 0; }
+.imet-section.alumni .eyebrow-line { margin-bottom: 0; }
 
 /* ---------- Header (shared eyebrow-line / sub; title one line here) ---------- */
 .imet-section.alumni .imet-container { text-align: center; }
 .imet-section .alumni-eyebrow { --eyebrow-size: 1.75rem; --eyebrow-line: 100px; padding-bottom: 12px; } /* earlier version */
 .imet-section.alumni .title {
-	margin: 0 0 14px;
+	margin: 0 0 8px;
 	font-size: clamp(1.625rem, 0.7321rem + 1.8601vw, 2.40625rem); /* 26px → 38.5px */
 	font-weight: 500;
 	line-height: 1.25;
 }
 .imet-section.alumni .sub {
 	max-width: 1020px;
-	margin: 0 auto 36px;
+	margin: 0 auto 30px;
 	font-size: 1rem;
 	line-height: 1.75;
 	color: #000;

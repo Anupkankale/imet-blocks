@@ -10,14 +10,14 @@
 	padding-left: 16px;
 }
 .imet-section .ov-visual img { width: 100%; max-width: 566px; margin-left: auto; }
-.imet-section .benefit-list { display: grid; gap: 13px; }
+.imet-section .benefit-list { display: grid; gap: 10px; }
 .imet-section .ben-item {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 76px;
-	padding: 6px 10px 6px 81px;
+	min-height: 68px;
+	padding: 4px 10px 4px 81px;
 	border: 1px solid var(--line);
 	border-radius: 4px;
 }

@@ -1,11 +1,11 @@
 /* IMET Career Path Table (imet/career-table). Root element: .imet-section.career
    Figma: centred header, 916px table (navy header row, gold lines), grey "See More" over the bottom border. */
-.imet-section.career { padding: 14px 0 26px; }
+.imet-section.career { padding: 14px 0 24px; }
 .imet-section .career-table {
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	width: min(916px, 100%);
-	margin: 4px auto 0;
+	margin: 0 auto;
 	border: 1px solid #e3a531;
 	border-radius: 10px 10px 16px 16px;
 	overflow: hidden;

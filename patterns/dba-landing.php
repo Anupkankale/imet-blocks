@@ -442,6 +442,19 @@
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
+<!-- wp:group {"className":"b-card b-global","layout":{"type":"default"}} -->
+<div class="wp-block-group b-card b-global"><!-- wp:group {"className":"b-text","layout":{"type":"default"}} -->
+<div class="wp-block-group b-text"><!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Global Accreditation</h4>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Globally Recognized Degrees – Accredited programs accepted in the US, UK, and EU.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:image {"id":{{ID:bento-map.webp}},"sizeSlug":"full","linkDestination":"none","className":"b-map"} -->
+<figure class="wp-block-image size-full b-map"><img src="{{URL:bento-map.webp}}" alt="" class="wp-image-{{ID:bento-map.webp}}"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
 <!-- wp:group {"className":"b-card b-roi","layout":{"type":"default"}} -->
 <div class="wp-block-group b-card b-roi"><!-- wp:group {"className":"b-text","layout":{"type":"default"}} -->
 <div class="wp-block-group b-text"><!-- wp:heading {"level":4} -->
@@ -475,8 +488,8 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:buttons {"className":"center"} -->
-<div class="wp-block-buttons center"><!-- wp:button {"className":"btn-navy btn-md"} -->
-<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
+<div class="wp-block-buttons center"><!-- wp:button {"className":"btn-navy btn-lg"} -->
+<div class="wp-block-button btn-navy btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 </div>
