@@ -27,9 +27,10 @@
 	transition: transform .25s;
 	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
 }
-.imet-section .faq-acc details[open] summary::after { transform: rotate(180deg); }
-.imet-section .faq-acc details > p {
-	margin-top: -6px;
+.imet-section .faq-acc details[open]:not(.is-closing) summary::after { transform: rotate(180deg); }
+.imet-section .faq-acc .acc-body { overflow: hidden; }
+.imet-section .faq-acc details[open] summary { padding-bottom: 9.5px; } /* question → answer spacing (was a negative margin) */
+.imet-section .faq-acc details p {
 	padding: 0 60px 14px 0;
 	color: #222;
 	font-size: 0.84375rem; /* 13.5px */
@@ -43,5 +44,7 @@
 /* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
 @media (max-width: 640px) {
 	.imet-section.faq { padding: 48px 0; }
-	.imet-section .faq-acc details > p { padding-right: 0; }
+	.imet-section .faq-acc .acc-body { overflow: hidden; }
+.imet-section .faq-acc details[open] summary { padding-bottom: 9.5px; } /* question → answer spacing (was a negative margin) */
+.imet-section .faq-acc details p { padding-right: 0; }
 }

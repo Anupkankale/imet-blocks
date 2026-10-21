@@ -150,6 +150,8 @@ html:has(.imet-section) { scroll-behavior: smooth; }
 }
 .imet-section details summary::-webkit-details-marker { display: none; }
 .imet-section details summary::marker { content: ""; }
+/* No theme focus box after a mouse click on a question (keyboard focus keeps the gold ring) */
+.imet-section details summary:focus:not(:focus-visible) { outline: none; }
 .imet-section .sr-only {
 	position: absolute;
 	width: 1px;

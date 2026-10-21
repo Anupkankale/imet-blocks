@@ -11,17 +11,60 @@ export function each( selector, fn ) {
 	}
 }
 
-/** Accordion of core/details blocks: one item open at a time. */
-export function accordion( group, { openFirst = false } = {} ) {
-	const items = group.querySelectorAll( 'details' ); // also inside .wp-block-group__inner-container (classic themes)
-	if ( openFirst && items[ 0 ] && ! group.querySelector( 'details[open]' ) ) {
+/**
+ * Accordion of core/details blocks: one item open at a time, opening and closing with a smooth height animation
+ * (instant for "reduce motion"). Each item's content is wrapped in .acc-body; .is-closing marks an item while it
+ * animates shut (it is still [open] until the animation ends).
+ */
+export function accordion( group, { openFirst = false, duration = 320 } = {} ) {
+	const items = [ ...group.querySelectorAll( 'details' ) ]; // also inside .wp-block-group__inner-container (classic themes)
+	const still = reduceMotion();
+	items.forEach( ( d ) => {
+		const body = document.createElement( 'div' );
+		body.className = 'acc-body';
+		[ ...d.children ].filter( ( c ) => c.tagName !== 'SUMMARY' ).forEach( ( c ) => body.appendChild( c ) );
+		d.appendChild( body );
+	} );
+	if ( openFirst && items[ 0 ] && ! items.some( ( d ) => d.open ) ) {
 		items[ 0 ].open = true;
 	}
-	items.forEach( ( d ) =>
-		d.addEventListener( 'toggle', () => {
-			if ( d.open ) {
-				items.forEach( ( o ) => o !== d && ( o.open = false ) );
+
+	const running = new Map();
+	const animate = ( d, opening ) => {
+		const body = d.querySelector( ':scope > .acc-body' );
+		running.get( d )?.cancel();
+		if ( still || ! body.animate ) {
+			d.open = opening;
+			return;
+		}
+		const from = d.open ? body.offsetHeight : 0;
+		if ( opening ) {
+			d.open = true;
+		}
+		d.classList.toggle( 'is-closing', ! opening );
+		const to = opening ? body.scrollHeight : 0;
+		const anim = body.animate(
+			[ { height: from + 'px', opacity: opening ? 0 : 1 }, { height: to + 'px', opacity: opening ? 1 : 0 } ],
+			{ duration, easing: 'cubic-bezier(.4, 0, .2, 1)' }
+		);
+		running.set( d, anim );
+		anim.onfinish = () => {
+			running.delete( d );
+			d.classList.remove( 'is-closing' );
+			if ( ! opening ) {
+				d.open = false;
 			}
+		};
+	};
+
+	items.forEach( ( d ) =>
+		d.querySelector( 'summary' ).addEventListener( 'click', ( e ) => {
+			e.preventDefault();
+			const opening = ! d.open || d.classList.contains( 'is-closing' );
+			if ( opening ) {
+				items.forEach( ( o ) => o !== d && o.open && ! o.classList.contains( 'is-closing' ) && animate( o, false ) );
+			}
+			animate( d, opening );
 		} )
 	);
 }
