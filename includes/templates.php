@@ -20,6 +20,22 @@ add_filter( 'template_include', function ( $template ) {
 	return imet_blocks_is_landing_page() ? IMET_BLOCKS_DIR . 'templates/page-landing.php' : $template;
 }, 99 );
 
+/*
+ * Block themes list templates by their block-template name, so the editor's Template panel would call this one
+ * by the theme's default ("Pages"). Registering it as a block template too gives it its name there. The front end
+ * still uses templates/page-landing.php (template_include above).
+ */
+add_action( 'init', function () {
+	if ( wp_is_block_theme() && function_exists( 'register_block_template' ) ) {
+		register_block_template( 'imet-blocks//' . IMET_BLOCKS_TEMPLATE, array(
+			'title'       => __( 'IMET Landing', 'imet-blocks' ),
+			'description' => __( 'Full-width IMET page between the theme header and footer.', 'imet-blocks' ),
+			'post_types'  => array( 'page' ),
+			'content'     => '<!-- wp:template-part {"slug":"header","tagName":"header"} /--><!-- wp:post-content {"layout":{"type":"default"}} /--><!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->',
+		) );
+	}
+} );
+
 function imet_blocks_is_landing_page() {
 	return is_page() && IMET_BLOCKS_TEMPLATE === get_page_template_slug( get_queried_object_id() );
 }
