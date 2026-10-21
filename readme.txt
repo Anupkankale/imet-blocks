@@ -1,7 +1,7 @@
 === IMET Blocks ===
 Requires at least: 6.5
 Requires PHP: 7.4
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GPLv2 or later
 
 Reusable IMET section blocks (Hero, FAQ, Testimonials, CTA…) built from normal WordPress blocks, and page
@@ -60,6 +60,14 @@ Helper classes for any block inside an IMET section (Block → Advanced → Addi
 spacing u-mt-0…64 / u-mb-0…64 / u-py-0|32|48|70, width u-narrow / u-wide / u-full, text u-center u-left
 u-right u-gold u-navy u-white u-muted, background u-bg-navy u-bg-soft u-bg-card, box u-card u-rounded,
 visibility u-hide-mobile u-hide-desktop. Full list: src/shared/_utilities.scss.
+
+== Alumni videos (IMET Alumni Videos block) ==
+
+A main player with thumbnails beside it and a "View More" button. Each video is an Image block:
+click it → Link → paste the YouTube URL (watch, youtu.be, shorts and live links all work). Images with the
+class "yt-auto" then show YouTube's own thumbnail; remove "yt-auto" to use the image you chose instead.
+Clicking the main player plays it in place; clicking a thumbnail plays it in the main player.
+Add or remove thumbnails by duplicating/deleting the images in the list. Set "View More" to the channel URL.
 
 == Ready-made sections ==
 

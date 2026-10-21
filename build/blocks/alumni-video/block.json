@@ -2,13 +2,16 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "imet/alumni-video",
-  "title": "IMET Video",
+  "title": "IMET Alumni Videos",
   "category": "imet",
   "icon": "video-alt3",
-  "description": "Title, text and a YouTube thumbnail that plays in place.",
+  "description": "Video gallery: main player and thumbnails. Click a video image → Link → paste its YouTube URL; the thumbnail comes from YouTube and it plays in place.",
   "keywords": [
     "imet",
-    "section"
+    "section",
+    "video",
+    "youtube",
+    "testimonials"
   ],
   "version": "1.0.0",
   "textdomain": "imet-blocks",
