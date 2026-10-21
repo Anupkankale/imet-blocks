@@ -26,9 +26,7 @@ each( '.wp-block-imet-alumni-video .video-gallery', ( gallery ) => {
 	const items = [ ...gallery.querySelectorAll( '.video-item' ) ];
 	const setActive = ( item ) => items.forEach( ( i ) => i.classList.toggle( 'is-active', i === item ) );
 
-	// The thumbnail showing the same video as the main player starts active.
-	const mainId = youtubeId( mainLink.href );
-	setActive( items.find( ( i ) => mainId && youtubeId( i.querySelector( 'a' )?.href ) === mainId ) || items[ 0 ] );
+	// No thumbnail is marked at first (Figma); the gold border shows the one picked.
 
 	mainLink.addEventListener( 'click', ( e ) => {
 		const id = youtubeId( mainLink.href );

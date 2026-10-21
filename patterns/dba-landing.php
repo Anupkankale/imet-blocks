@@ -647,15 +647,15 @@
 <p class="sub">Hear real experiences and success stories from our clients through DBA podcasts. Discover how the program transformed their careers and enhanced their leadership journey. Gain valuable insights from professionals who have walked the same path.</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"video-gallery","layout":{"type":"default"}} -->
-<div class="wp-block-group video-gallery"><!-- wp:image {"id":{{ID:video-thumb.webp}},"sizeSlug":"full","linkDestination":"custom","className":"video-main yt-auto"} -->
-<figure class="wp-block-image size-full video-main yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:video-thumb.webp}}" alt="DBA alumni testimonial" class="wp-image-{{ID:video-thumb.webp}}"/></a></figure>
+<div class="wp-block-group video-gallery"><!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-main yt-auto"} -->
+<figure class="wp-block-image size-full video-main yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="DBA alumni testimonial" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a></figure>
 <!-- /wp:image -->
 <!-- wp:group {"className":"video-list","layout":{"type":"default"}} -->
-<div class="wp-block-group video-list"><!-- wp:image {"id":{{ID:video-thumb.webp}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
-<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:video-thumb.webp}}" alt="Testimonial 1" class="wp-image-{{ID:video-thumb.webp}}"/></a></figure>
+<div class="wp-block-group video-list"><!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
+<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="Testimonial 1" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a></figure>
 <!-- /wp:image -->
-<!-- wp:image {"id":{{ID:alumni-video.png}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
-<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-video.png}}" alt="Testimonial 2" class="wp-image-{{ID:alumni-video.png}}"/></a></figure>
+<!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
+<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/"><img src="{{URL:alumni-convocation.jpg}}" alt="Testimonial 2" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a></figure>
 <!-- /wp:image -->
 <!-- wp:buttons {"className":"video-more"} -->
 <div class="wp-block-buttons video-more"><!-- wp:button {"className":"btn-navy btn-md"} -->

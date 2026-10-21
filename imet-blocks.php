@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       IMET Blocks
  * Description:       Reusable IMET section blocks (Hero, FAQ, Testimonials, CTA…) built from normal WordPress blocks, plus page patterns that compose them into full pages. Use with Template → IMET Landing.
- * Version:           1.6.1
+ * Version:           1.6.2
  * Requires at least: 6.5
  * Requires PHP:      7.4
  * Text Domain:       imet-blocks
@@ -11,7 +11,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'IMET_BLOCKS_VERSION', '1.6.1' );
+define( 'IMET_BLOCKS_VERSION', '1.6.2' );
 define( 'IMET_BLOCKS_DIR', plugin_dir_path( __FILE__ ) );
 define( 'IMET_BLOCKS_URL', plugin_dir_url( __FILE__ ) );
 

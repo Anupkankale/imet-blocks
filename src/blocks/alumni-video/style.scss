@@ -28,7 +28,7 @@
 	gap: 21px;
 	align-items: stretch;
 	width: min(929px, 100%);
-	margin: 0 auto;
+	margin: 0 auto 0 max(0px, calc(50% - 496px)); /* not centred: 104px in from the container edge (Figma) */
 	text-align: left;
 }
 
@@ -63,9 +63,14 @@
 	border-radius: 14px;
 	background: rgba(255, 0, 0, .9) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 24'%3E%3Cpath d='M0 0l20 12L0 24z' fill='%23fff'/%3E%3C/svg%3E") 54% 50% / 20px 24px no-repeat;
 	transform: translate(-50%, -50%);
-	transition: transform .2s, background-color .2s;
+	transition: transform .2s, background-color .2s, opacity .2s;
 }
-.imet-section .video-main a:hover::after { background-color: #f00; transform: translate(-50%, -50%) scale(1.08); }
+/* Play button only on hover / keyboard focus: the Figma shows a clean photo */
+.imet-section .video-main a::after { opacity: 0; }
+.imet-section .video-main a:is(:hover, :focus-visible)::after { opacity: 1; background-color: #f00; transform: translate(-50%, -50%) scale(1.08); }
+@media (hover: none) {
+	.imet-section .video-main a::after { opacity: 1; } /* phones: no hover, keep it visible */
+}
 
 /* Thumbnails */
 .imet-section .video-list { display: flex; flex-direction: column; gap: 14px; }
@@ -79,7 +84,7 @@
 	cursor: pointer;
 	transition: transform .2s, box-shadow .2s, border-color .2s;
 }
-.imet-section .video-item img { width: 100%; aspect-ratio: 238 / 92; object-fit: cover; }
+.imet-section .video-item img { width: 100%; aspect-ratio: 238 / 92; object-fit: cover; object-position: center 18%; }
 .imet-section .video-item:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(21, 41, 78, .25); }
 .imet-section .video-item.is-active { border-color: var(--gold); }
 

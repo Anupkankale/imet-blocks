@@ -29,6 +29,7 @@ function imet_blocks_media_files() {
 		'join-graduates.jpg' => 'DBA graduates celebrating at convocation',
 		'cert-graduate.jpg' => 'IMET DBA graduate holding his certificate',
 		'cta-graduates.jpg' => 'IMET DBA graduates at convocation',
+		'alumni-convocation.jpg' => 'IMET convocation day: a DBA graduate with a programme advisor',
 	);
 }
 
