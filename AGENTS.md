@@ -102,7 +102,7 @@ Every block in `src/blocks/<name>/` follows the same pattern:
 - `patterns/dba-landing.php` is a **static copy** of the blocks' default content in page order. When you change a
   block's `default.html`, update that block's section in the pattern too, or regenerate the pattern from the
   blocks in the same order. Existing pages are never changed by either edit; only new pages and new inserts are.
-- DBA page order: hero → subnav → highlights → specializations → cost-banner → overview → achievements →
+- DBA page order: hero → highlights → subnav → specializations → cost-banner → overview → achievements →
   career-table → usp-bento → embassy → dba-vs-phd → who-can-join → analytics → alumni-video → cyber-banner →
   testimonials → certificate → faq → cta → float-contact.
 - **Subnav links** (`#overview`, `#programs`, `#presence`, `#specializations`, `#who-can-join`, `#dba-vs-phd`,
@@ -123,7 +123,17 @@ Every block in `src/blocks/<name>/` follows the same pattern:
   pages only. Don't change that for other pages.
 - **In the editor**, IMET Landing pages switch to content-only mode (`src/editor/content-only.js`).
 - **The FAQ** hides questions 6 and up on the front end only (`:where(body:not(.editor-styles-wrapper))`).
-  Editors must still see every question.
+  Editors must still see every question. The same pattern hides rows 2–5 of the career table ("See More" /
+  "Close") and the closed benefit cards in the overview (tabs).
+- **Shared front-end helpers** live in `src/shared/view.js`:
+  - `accordion()` (Who can Join, FAQ) wraps each answer in `.acc-body` and animates its height; `.is-closing`
+    marks an item that is still `[open]` while it animates shut. Style answers with `details p`, not `details > p`.
+  - `marquee()` (Our Programs cards; accreditation logos on phones) clones the items (`.is-clone`, hidden from
+    screen readers) and only moves while CSS makes the row overflow.
+- **The career table** uses CSS subgrid so rows line up across columns. Keep five `p` per `.ct-col`.
+- **Image blocks with the class `yt-auto`** that link to YouTube show YouTube's thumbnail (`includes/video.php`).
+- **Buttons, accordion questions and menu links** drop the theme's focus outline after a mouse click only
+  (`:focus:not(:focus-visible)`). Keyboard focus keeps the gold ring.
 - **The `[imet_advisor_form]` shortcode** is a placeholder. Real sites paste a form plugin's shortcode in its
   place.
 - **Keep `perf.php` in step with the theme.** It dequeues Glidex/Elementor handles by name, so adding a
