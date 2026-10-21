@@ -5,7 +5,7 @@
   "title": "IMET Who Can Join",
   "category": "imet",
   "icon": "groups",
-  "description": "Accordion (one open at a time) beside a photo.",
+  "description": "Accordion (one open at a time, smooth animation) beside a photo.",
   "keywords": [
     "imet",
     "section"

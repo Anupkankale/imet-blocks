@@ -5,7 +5,7 @@
   "title": "IMET FAQ",
   "category": "imet",
   "icon": "editor-help",
-  "description": "Accordion of Details blocks; outputs FAQPage structured data.",
+  "description": "Accordion of Details blocks (first 5 shown, See More for the rest); outputs FAQPage structured data.",
   "keywords": [
     "imet",
     "section"

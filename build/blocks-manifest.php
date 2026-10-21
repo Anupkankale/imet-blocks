@@ -8,7 +8,7 @@ return array(
 		'title' => 'IMET Achievements',
 		'category' => 'imet',
 		'icon' => 'chart-bar',
-		'description' => 'Dark band with animated counters.',
+		'description' => 'Navy card with animated counters.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -38,7 +38,7 @@ return array(
 		'title' => 'IMET Alumni Videos',
 		'category' => 'imet',
 		'icon' => 'video-alt3',
-		'description' => 'Video gallery: main player and thumbnails. Click a video image → Link → paste its YouTube URL; the thumbnail comes from YouTube and it plays in place.',
+		'description' => 'Video gallery: main player and three thumbnails. Click a video image → Link → paste its YouTube URL; it plays in place.',
 		'keywords' => array(
 			'imet',
 			'section',
@@ -71,7 +71,7 @@ return array(
 		'title' => 'IMET Image + Bullet List',
 		'category' => 'imet',
 		'icon' => 'analytics',
-		'description' => 'Image beside a title and dotted list.',
+		'description' => 'Image beside an Insights header, dotted list and button.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -100,7 +100,7 @@ return array(
 		'title' => 'IMET Career Path Table',
 		'category' => 'imet',
 		'icon' => 'editor-table',
-		'description' => 'Columns of role heading + description.',
+		'description' => 'Our USP\'s table: 5 columns × 5 rows. The first row shows; See More / Close opens the rest. Keep five entries per column.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -130,7 +130,7 @@ return array(
 		'title' => 'IMET Certificate',
 		'category' => 'imet',
 		'icon' => 'media-document',
-		'description' => 'Photo overlapping a card with a tick list.',
+		'description' => 'Photo beside a header, tick list and button.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -159,7 +159,7 @@ return array(
 		'title' => 'IMET Cost Banner',
 		'category' => 'imet',
 		'icon' => 'money-alt',
-		'description' => 'Price, scholarship badge and eligibility CTA.',
+		'description' => 'Rounded fee card: price, scholarship ribbon and eligibility button.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -188,7 +188,7 @@ return array(
 		'title' => 'IMET Call to Action',
 		'category' => 'imet',
 		'icon' => 'button',
-		'description' => 'Rounded navy CTA card.',
+		'description' => 'Rounded deep-blue CTA card with heading, text, button and photo.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -217,7 +217,7 @@ return array(
 		'title' => 'IMET CTA Banner with Avatars',
 		'category' => 'imet',
 		'icon' => 'megaphone',
-		'description' => 'Blue banner, heading, two buttons and floating avatars.',
+		'description' => 'Blue rounded card: heading, two buttons and floating avatars.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -246,7 +246,7 @@ return array(
 		'title' => 'IMET Comparison Table',
 		'category' => 'imet',
 		'icon' => 'columns',
-		'description' => 'Split heading and a highlighted two-column comparison table.',
+		'description' => 'Header and a DBA vs PhD comparison table with a highlighted DBA column.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -275,7 +275,7 @@ return array(
 		'title' => 'IMET Recognition Logos',
 		'category' => 'imet',
 		'icon' => 'awards',
-		'description' => 'Title and a row of captioned emblems/logos.',
+		'description' => 'Header and a row of captioned emblems/logos.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -304,7 +304,7 @@ return array(
 		'title' => 'IMET FAQ',
 		'category' => 'imet',
 		'icon' => 'editor-help',
-		'description' => 'Accordion of Details blocks; outputs FAQPage structured data.',
+		'description' => 'Accordion of Details blocks (first 5 shown, See More for the rest); outputs FAQPage structured data.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -363,7 +363,7 @@ return array(
 		'title' => 'IMET Hero',
 		'category' => 'imet',
 		'icon' => 'cover-image',
-		'description' => 'Headline, stats, CTA, enquiry form card and accreditation logos.',
+		'description' => 'Headline, stats, button, enquiry form card and accreditation logos (a marquee on phones).',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -393,7 +393,7 @@ return array(
 		'title' => 'IMET Highlights',
 		'category' => 'imet',
 		'icon' => 'yes-alt',
-		'description' => 'Title, icon list, button and an image.',
+		'description' => 'Overview header, icon list (bold label in gold), button and an illustration.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -422,7 +422,7 @@ return array(
 		'title' => 'IMET Program Overview',
 		'category' => 'imet',
 		'icon' => 'text-page',
-		'description' => 'Split heading, image and benefit cards.',
+		'description' => 'What is a DBA?: header, six benefit cards that work as tabs (first open) and a photo.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -483,7 +483,7 @@ return array(
 		'title' => 'IMET Specializations',
 		'category' => 'imet',
 		'icon' => 'tag',
-		'description' => 'Title and linked specialization cards.',
+		'description' => 'Our Programs: linked program cards, 4 per view, continuous marquee scroll.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -543,7 +543,7 @@ return array(
 		'title' => 'IMET Testimonials',
 		'category' => 'imet',
 		'icon' => 'format-quote',
-		'description' => 'Eyebrow, title and text, then testimonial cards (quote, name, role, LinkedIn link) and a View More link. Duplicate a card to add one; set each LinkedIn link to the person\'s profile.',
+		'description' => 'Header, quote cards with a LinkedIn link, and a View More link. Duplicate a card to add one; set each LinkedIn link to the person\'s profile.',
 		'keywords' => array(
 			'imet',
 			'section',
@@ -576,7 +576,7 @@ return array(
 		'title' => 'IMET USP Bento Grid',
 		'category' => 'imet',
 		'icon' => 'grid-view',
-		'description' => 'Bento grid of feature cards.',
+		'description' => 'Six feature cards in a two-column grid and a button.',
 		'keywords' => array(
 			'imet',
 			'section'
@@ -605,7 +605,7 @@ return array(
 		'title' => 'IMET Who Can Join',
 		'category' => 'imet',
 		'icon' => 'groups',
-		'description' => 'Accordion (one open at a time) beside a photo.',
+		'description' => 'Accordion (one open at a time, smooth animation) beside a photo.',
 		'keywords' => array(
 			'imet',
 			'section'

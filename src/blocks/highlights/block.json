@@ -5,7 +5,7 @@
 	"title": "IMET Highlights",
 	"category": "imet",
 	"icon": "yes-alt",
-	"description": "Title, icon list, button and an image.",
+	"description": "Overview header, icon list (bold label in gold), button and an illustration.",
 	"keywords": [
 		"imet",
 		"section"
