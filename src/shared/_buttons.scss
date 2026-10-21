@@ -96,6 +96,43 @@
 	--bg-hover: #fff; --fg-hover: var(--navy); --bd-hover: #fff;
 }
 
+/* Glass flash: a soft diagonal shine sweeps across every button now and then (every 6s, staggered by
+   --flash-delay), and at once on hover / keyboard focus. Light buttons get a navy-tinted shine so it shows.
+   Off for visitors who ask for reduced motion (base.scss shortens every animation to nothing). */
+.imet-section .wp-block-button__link {
+	--flash: rgba(255, 255, 255, .5);
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
+}
+.imet-section .wp-block-button__link::after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	bottom: -2px;
+	left: 0;
+	width: 45%;
+	background: linear-gradient(100deg, transparent 0%, var(--flash) 50%, transparent 100%);
+	transform: translateX(-180%) skewX(-20deg);
+	pointer-events: none;
+	animation: imet-btn-flash 6s ease-in-out var(--flash-delay, 1.5s) infinite;
+}
+.imet-section .wp-block-button__link:is(:hover, :focus-visible)::after { animation: imet-btn-flash-now .75s ease-out; }
+.imet-section :is(.btn-white, .btn-outline) .wp-block-button__link { --flash: rgba(21, 41, 78, .14); }
+.imet-section .btn-outline .wp-block-button__link:hover { --flash: rgba(255, 255, 255, .5); } /* fills navy on hover */
+.imet-section .btn-link .wp-block-button__link::after { content: none; }
+/* Buttons side by side don't flash at the same moment */
+.imet-section .wp-block-button:nth-child(2n) .wp-block-button__link { --flash-delay: 2.6s; }
+.imet-section .wp-block-button:nth-child(3n) .wp-block-button__link { --flash-delay: 3.7s; }
+@keyframes imet-btn-flash {
+	0% { transform: translateX(-180%) skewX(-20deg); }
+	14%, 100% { transform: translateX(330%) skewX(-20deg); }
+}
+@keyframes imet-btn-flash-now {
+	from { transform: translateX(-180%) skewX(-20deg); }
+	to { transform: translateX(330%) skewX(-20deg); }
+}
+
 /* Full width (core "Width 100%" setting, or class btn-block) */
 .imet-section :is(.btn-block, .wp-block-button__width-100) { width: 100%; }
 .imet-section :is(.btn-block, .wp-block-button__width-100) .wp-block-button__link { width: 100%; }
