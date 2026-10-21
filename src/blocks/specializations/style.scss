@@ -1,12 +1,10 @@
 /* IMET Specializations (imet/specializations). Root element: .imet-section.specs
    Centred header, then a row of program cards: 4 visible inside the container, the rest scroll sideways
-   (swipe / trackpad, or the arrow buttons view.js adds). Each card is a paragraph whose link is the program page. */
+   (auto-scroll from view.js, or swipe / trackpad). Each card is a paragraph whose link is the program page. */
 .imet-section.specs { background: linear-gradient(180deg, #fdf3e3 0%, #d1defe 100%); padding: 26px 0 66px; }
 .imet-section.specs .sub { margin-bottom: 24px; }
 
 /* Scroll row: 4 cards per view (3 gaps of 26px) */
-.imet-section .spec-scroller { position: relative; width: min(1200px, 100% - 40px); margin-inline: auto; }
-.imet-section .spec-scroller > .spec-grid { width: 100%; }
 .imet-section .spec-grid {
 	--per-view: 4;
 	--gap: 26px;
@@ -60,41 +58,11 @@
 .imet-section .spec-card a:is(:hover, :focus-visible) { background: var(--navy); color: #fff; box-shadow: 5px 6px 0 var(--gold); }
 .imet-section .spec-card a:is(:hover, :focus-visible)::after { transform: translateX(4px); }
 
-/* Arrow buttons (added by view.js when the row overflows) */
-.imet-section .spec-nav {
-	position: absolute;
-	top: calc(50% - 5px);
-	z-index: 2;
-	display: grid;
-	place-items: center;
-	width: 40px;
-	height: 40px;
-	padding: 0;
-	border: 0;
-	border-radius: 50%;
-	background: var(--navy);
-	color: #fff;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
-	cursor: pointer;
-	transform: translateY(-50%);
-	transition: background-color .2s, opacity .2s;
-}
-.imet-section .spec-nav:hover { background: var(--gold); }
-.imet-section .spec-nav[disabled] { opacity: 0; pointer-events: none; }
-.imet-section .spec-nav.prev { left: -28px; }
-.imet-section .spec-nav.next { right: -28px; }
-.imet-section .spec-nav svg { width: 18px; height: 18px; }
-
-@media (max-width: 1300px) {
-	.imet-section .spec-nav.prev { left: -12px; }
-	.imet-section .spec-nav.next { right: -12px; }
-}
 @media (max-width: 1100px) {
 	.imet-section .spec-grid { --per-view: 3; }
 }
 @media (max-width: 800px) {
 	.imet-section .spec-grid { --per-view: 2; --gap: 16px; }
-	.imet-section .spec-nav { display: none; } /* swipe on touch screens */
 }
 @media (max-width: 520px) {
 	.imet-section .spec-grid { --per-view: 1.2; }
