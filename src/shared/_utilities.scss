@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Utilities: small helper classes for the most common tweaks. Add them to any block inside an IMET section
+   (Block → Advanced → Additional CSS class). All prefixed "u-" so they never clash with theme/plugin classes.
+
+   Spacing (top / bottom margin, px):   u-mt-0 u-mt-8 u-mt-16 u-mt-24 u-mt-32 u-mt-48 u-mt-64
+                                         u-mb-0 u-mb-8 u-mb-16 u-mb-24 u-mb-32 u-mb-48 u-mb-64
+   Section padding (top + bottom):       u-py-0 u-py-32 u-py-48 u-py-70 (70 = standard section)
+   Width:                                u-narrow (1020px) u-wide (1200px) u-full
+   Text:                                 u-center u-left u-right u-gold u-navy u-white u-muted
+   Background:                           u-bg-navy u-bg-soft (lavender→peach) u-bg-card (light grey)
+   Box:                                  u-card (white rounded card with shadow) u-rounded
+   Visibility:                           u-hide-mobile u-hide-desktop (breakpoint 640px)
+   ========================================================================== */
+$imet-space: 0, 8, 16, 24, 32, 48, 64;
+@each $s in $imet-space {
+	.imet-section .u-mt-#{$s} { margin-top: #{$s}px !important; }
+	.imet-section .u-mb-#{$s} { margin-bottom: #{$s}px !important; }
+}
+@each $s in 0, 32, 48, 70 {
+	.imet-section .u-py-#{$s},
+	.imet-section.u-py-#{$s} { padding-top: #{$s}px !important; padding-bottom: #{$s}px !important; }
+}
+
+.imet-section .u-narrow { width: min(1020px, 100% - 40px); margin-inline: auto; }
+.imet-section .u-wide { width: min(1200px, 100% - 40px); margin-inline: auto; }
+.imet-section .u-full { width: 100%; max-width: none; }
+
+.imet-section .u-center { text-align: center; }
+.imet-section .u-left { text-align: left; }
+.imet-section .u-right { text-align: right; }
+.imet-section .u-center.wp-block-buttons { justify-content: center; }
+.imet-section .u-gold { color: var(--gold) !important; }
+.imet-section .u-navy { color: var(--navy) !important; }
+.imet-section .u-white { color: #fff !important; }
+.imet-section .u-muted { color: var(--muted) !important; }
+
+.imet-section .u-bg-navy,
+.imet-section.u-bg-navy { background: var(--navy); color: #fff; }
+.imet-section .u-bg-navy :is(h1, h2, h3, h4, p),
+.imet-section.u-bg-navy :is(h1, h2, h3, h4, p) { color: #fff; }
+.imet-section .u-bg-soft,
+.imet-section.u-bg-soft { background: linear-gradient(135deg, var(--lavender), var(--peach)); }
+.imet-section .u-bg-card,
+.imet-section.u-bg-card { background: var(--card); }
+
+.imet-section .u-card { background: #fff; border-radius: 20px; box-shadow: 0 2px 6px rgba(0, 0, 0, .12); padding: 28px; }
+.imet-section .u-rounded { border-radius: var(--radius); overflow: hidden; }
+
+@media (max-width: 640px) {
+	.imet-section .u-hide-mobile { display: none !important; }
+}
+@media (min-width: 641px) {
+	.imet-section .u-hide-desktop { display: none !important; }
+}

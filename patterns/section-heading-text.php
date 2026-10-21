@@ -1,0 +1,22 @@
+<?php
+/**
+ * Title: Heading, text and button
+ * Description: Standard section intro: centred title (bold words turn gold), supporting text and a button.
+ * Kind: section
+ */
+?>
+<!-- wp:imet/section -->
+<section class="wp-block-imet-section imet-section section imet-blank"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<div class="wp-block-group imet-container"><!-- wp:heading {"className":"title"} -->
+<h2 class="wp-block-heading title">Section <strong>title</strong></h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"className":"sub"} -->
+<p class="sub">A short supporting line. Replace this text, then add any blocks you need below.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons {"className":"center"} -->
+<div class="wp-block-buttons center"><!-- wp:button {"className":"btn-navy btn-md"} -->
+<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></section>
+<!-- /wp:imet/section -->

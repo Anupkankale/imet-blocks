@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Buttons: one system for every IMET button (core/buttons + core/button).
+   Classes sit on .wp-block-button and are set from the editor's "IMET button" panel:
+     colour  btn-navy (default) · btn-white · btn-gold · btn-outline · btn-outline-light
+     size    btn-sm · btn-md (default) · btn-lg
+   Every button: same font, weight, radius, border and hover. Heights are exact (min-height), so buttons
+   of the same size line up across sections whatever their text.
+   ========================================================================== */
+.imet-section {
+	--btn-font: var(--ui);
+	--btn-weight: 600;
+	--btn-radius: 6px;
+	--btn-border: 2px;
+	/* size: height · horizontal padding · text */
+	--btn-sm-h: 48px; --btn-sm-px: 24px; --btn-sm-fs: 1rem;      /* 16px */
+	--btn-md-h: 60px; --btn-md-px: 32px; --btn-md-fs: 1.125rem;  /* 18px */
+	--btn-lg-h: 72px; --btn-lg-px: 40px; --btn-lg-fs: 1.25rem;   /* 20px */
+}
+@media (max-width: 640px) {
+	.imet-section {
+		--btn-sm-h: 44px; --btn-sm-px: 20px; --btn-sm-fs: 0.9375rem; /* 15px */
+		--btn-md-h: 54px; --btn-md-px: 26px; --btn-md-fs: 1rem;      /* 16px */
+		--btn-lg-h: 62px; --btn-lg-px: 22px; --btn-lg-fs: 1.0625rem; /* 17px */
+	}
+}
+
+/* Row of buttons */
+.imet-section .wp-block-buttons { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; }
+.imet-section .wp-block-buttons.center,
+.imet-section .wp-block-buttons.is-content-justification-center { justify-content: center; }
+.imet-section .wp-block-buttons.center { margin-top: 36px; }
+.imet-section .wp-block-buttons > .wp-block-button { margin: 0; }
+
+/* Base = Medium + Navy (a button with no IMET classes still looks right) */
+.imet-section .wp-block-button__link {
+	--h: var(--btn-md-h); --px: var(--btn-md-px); --fs: var(--btn-md-fs);
+	--bg: var(--navy); --fg: #fff; --bd: var(--navy);
+	--bg-hover: var(--navy-deep); --fg-hover: #fff; --bd-hover: var(--navy-deep);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	box-sizing: border-box;
+	min-height: var(--h);
+	padding: 8px var(--px);
+	font-family: var(--btn-font);
+	font-size: var(--fs);
+	font-weight: var(--btn-weight);
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-transform: none;
+	text-decoration: none;
+	text-align: center;
+	color: var(--fg);
+	background: var(--bg);
+	border: var(--btn-border) solid var(--bd);
+	border-radius: var(--btn-radius);
+	box-shadow: none;
+	cursor: pointer;
+	transition: background-color .2s, color .2s, border-color .2s;
+}
+.imet-section .wp-block-button__link:hover,
+.imet-section .wp-block-button__link:focus-visible { color: var(--fg-hover); background: var(--bg-hover); border-color: var(--bd-hover); }
+
+/* Sizes (btn-xs, btn-eligible, btn-cta: names used by earlier versions of the page) */
+.imet-section :is(.btn-sm, .btn-xs) .wp-block-button__link { --h: var(--btn-sm-h); --px: var(--btn-sm-px); --fs: var(--btn-sm-fs); }
+.imet-section .btn-md .wp-block-button__link { --h: var(--btn-md-h); --px: var(--btn-md-px); --fs: var(--btn-md-fs); }
+.imet-section :is(.btn-lg, .btn-eligible, .btn-cta) .wp-block-button__link { --h: var(--btn-lg-h); --px: var(--btn-lg-px); --fs: var(--btn-lg-fs); }
+
+/* Colours */
+.imet-section .btn-white .wp-block-button__link {
+	--bg: #fff; --fg: var(--navy); --bd: #fff;
+	--bg-hover: var(--gold-soft); --fg-hover: var(--navy); --bd-hover: var(--gold-soft);
+}
+.imet-section .btn-gold .wp-block-button__link {
+	--bg: var(--gold); --fg: #fff; --bd: var(--gold);
+	--bg-hover: #b57c18; --fg-hover: #fff; --bd-hover: #b57c18;
+}
+.imet-section .btn-outline .wp-block-button__link {
+	--bg: transparent; --fg: var(--navy); --bd: var(--navy);
+	--bg-hover: var(--navy); --fg-hover: #fff; --bd-hover: var(--navy);
+}
+/* Outline on dark backgrounds */
+.imet-section .btn-outline-light .wp-block-button__link {
+	--bg: transparent; --fg: #fff; --bd: #fff;
+	--bg-hover: #fff; --fg-hover: var(--navy); --bd-hover: #fff;
+}
+
+/* Full width (core "Width 100%" setting, or class btn-block) */
+.imet-section :is(.btn-block, .wp-block-button__width-100) { width: 100%; }
+.imet-section :is(.btn-block, .wp-block-button__width-100) .wp-block-button__link { width: 100%; }
+@media (max-width: 640px) {
+	/* Phones: buttons in a row marked "stack-mobile" go full width, one per line. */
+	.imet-section .wp-block-buttons.stack-mobile > .wp-block-button,
+	.imet-section .wp-block-buttons.stack-mobile .wp-block-button__link { width: 100%; }
+}

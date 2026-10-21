@@ -1,0 +1,6 @@
+/* IMET Section (imet/section): a blank section; its look comes from base.scss, _buttons.scss and _utilities.scss. */
+.imet-section.imet-blank .title + .sub { margin-top: -6px; }
+/* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
+@media (max-width: 640px) {
+	.imet-section.imet-blank { padding: 48px 0; }
+}

@@ -49,20 +49,30 @@ add_action( 'save_post_page', function ( $post_id, $post ) {
 }, 10, 2 );
 
 /* -----------------------------------------------------------------------------------------------------------
- * Page patterns: patterns/<slug>.php (header: Title, Description; body: blocks with {{ID:…}}/{{URL:…}} tokens).
- * Offered in "Choose a pattern" for new pages and in the inserter (Patterns → IMET). A new page type = a new file.
+ * Patterns: patterns/<slug>.php (header: Title, Description, Kind; body: blocks with {{ID:…}}/{{URL:…}} tokens).
+ *   Kind: page     a full page: offered in "Choose a pattern" for new pages, in the inserter (Patterns → IMET)
+ *                  and as "Create: <title>" on the Plugins screen. A new page type = a new file.
+ *   Kind: section  a ready-made section (CTA banner, button row…): inserter only (Patterns → IMET).
  * --------------------------------------------------------------------------------------------------------- */
-function imet_blocks_page_patterns() {
+function imet_blocks_patterns() {
 	$patterns = array();
 	foreach ( glob( IMET_BLOCKS_DIR . 'patterns/*.php' ) as $file ) {
-		$data = get_file_data( $file, array( 'title' => 'Title', 'description' => 'Description' ) );
+		$data = get_file_data( $file, array( 'title' => 'Title', 'description' => 'Description', 'kind' => 'Kind' ) );
+		$data['kind'] = 'section' === strtolower( trim( $data['kind'] ) ) ? 'section' : 'page';
 		$patterns[ basename( $file, '.php' ) ] = $data + array( 'file' => $file );
 	}
 	return $patterns;
 }
 
+/** Full-page patterns only. */
+function imet_blocks_page_patterns() {
+	return array_filter( imet_blocks_patterns(), function ( $p ) {
+		return 'page' === $p['kind'];
+	} );
+}
+
 function imet_blocks_pattern_content( $slug ) {
-	$patterns = imet_blocks_page_patterns();
+	$patterns = imet_blocks_patterns();
 	if ( empty( $patterns[ $slug ] ) ) {
 		return '';
 	}
@@ -73,17 +83,17 @@ function imet_blocks_pattern_content( $slug ) {
 
 add_action( 'init', function () {
 	register_block_pattern_category( 'imet', array( 'label' => __( 'IMET', 'imet-blocks' ) ) );
-	foreach ( imet_blocks_page_patterns() as $slug => $pattern ) {
-		register_block_pattern( "imet-blocks/$slug", array(
+	foreach ( imet_blocks_patterns() as $slug => $pattern ) {
+		register_block_pattern( "imet-blocks/$slug", array_filter( array(
 			'title'         => $pattern['title'],
 			'description'   => $pattern['description'],
 			'content'       => imet_blocks_pattern_content( $slug ),
 			'categories'    => array( 'imet' ),
 			// No 'postTypes': with block themes the page editor resolves patterns for the template it shows the page
 			// in, so a page-only pattern disappears. "Choose a pattern" still offers it on new pages only.
-			'blockTypes'    => array( 'core/post-content' ),
+			'blockTypes'    => 'page' === $pattern['kind'] ? array( 'core/post-content' ) : null,
 			'viewportWidth' => 1440,
-		) );
+		) ) );
 	}
 }, 20 );
 

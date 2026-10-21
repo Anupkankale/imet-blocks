@@ -2,6 +2,7 @@
 /**
  * Title: Online Doctorate of Business Administration (DBA)
  * Description: The complete DBA landing page, built from IMET blocks. Use with Template → IMET Landing.
+ * Kind: page
  */
 ?>
 <!-- wp:imet/hero -->
@@ -44,8 +45,8 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-lg btn-underline"} -->
-<div class="wp-block-button btn-navy btn-lg btn-underline"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-lg"} -->
+<div class="wp-block-button btn-navy btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
@@ -169,8 +170,8 @@
 <p>(Granted to senior tech professionals based on leadership depth, career trajectory, and visibility potential.)</p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"btn-white btn-eligible"} -->
-<div class="wp-block-button btn-white btn-eligible"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Am I eligible ?</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-white btn-lg"} -->
+<div class="wp-block-button btn-white btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Am I eligible ?</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
@@ -905,8 +906,8 @@
 </ul>
 <!-- /wp:list -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-xs"} -->
-<div class="wp-block-button btn-navy btn-xs"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-sm"} -->
+<div class="wp-block-button btn-navy btn-sm"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
@@ -986,8 +987,8 @@
 <h2 class="wp-block-heading">Step into your next chapter as a Tech Advisor,<br>CxO, or Boardroom Leader.</h2>
 <!-- /wp:heading -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"btn-white btn-cta"} -->
-<div class="wp-block-button btn-white btn-cta"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Start Leadership Journey Today</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-white btn-lg"} -->
+<div class="wp-block-button btn-white btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Start Leadership Journey Today</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->

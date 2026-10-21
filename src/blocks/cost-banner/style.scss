@@ -88,18 +88,11 @@
 	margin: 10px 0 14px;
 	max-width: 580px;
 }
-.imet-section .btn-eligible .wp-block-button__link {
-	padding: 20px 64px;
-	font-size: 1.75rem;
-	font-weight: 700;
-	border-radius: 6px;
-}
 @media (max-width: 1200px) {
 	.imet-section.cost-banner { grid-template-columns: 1fr 190px 1.2fr; }
 	.imet-section .cost-left { padding-left: 30px; }
 	.imet-section .cost-right { padding-left: 34px; }
-	.imet-section .btn-eligible .wp-block-button__link { padding: 16px 40px; font-size: 1.375rem; }
-}
+	}
 @media (max-width: 900px) {
 	.imet-section.cost-banner {
 		grid-template-columns: 1fr;

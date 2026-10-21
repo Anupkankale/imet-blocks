@@ -440,6 +440,37 @@ return array(
 			'file:./style-index.css'
 		)
 	),
+	'section' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'imet/section',
+		'title' => 'IMET Section (blank)',
+		'category' => 'imet',
+		'icon' => 'align-wide',
+		'description' => 'Empty section with the IMET design (fonts, buttons, utilities). Build any new section inside it; add u-bg-navy / u-bg-soft / u-bg-card for a background.',
+		'keywords' => array(
+			'imet',
+			'section',
+			'blank',
+			'container'
+		),
+		'version' => '1.0.0',
+		'textdomain' => 'imet-blocks',
+		'supports' => array(
+			'anchor' => true,
+			'html' => false
+		),
+		'imet' => array(
+			'tagName' => 'section',
+			'className' => 'section imet-blank',
+			'anchor' => ''
+		),
+		'editorScript' => 'file:./index.js',
+		'style' => array(
+			'imet-base',
+			'file:./style-index.css'
+		)
+	),
 	'specializations' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,

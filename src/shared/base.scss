@@ -1,3 +1,4 @@
+@use 'sass:meta';
 /* Shared by every IMET section block (loaded once, as a dependency of each block style).
    Figma: IMET Worldwide – online-doctorate-programs. Everything is scoped to .imet-section (the root element of
    every block), so the theme header/footer and other content are untouched. */
@@ -115,45 +116,8 @@ html:has(.imet-section) { scroll-behavior: smooth; }
 	font-size: 1.25rem;
 	margin-bottom: 18px;
 }
-/* ---------- Buttons (core/buttons + core/button; variant classes sit on .wp-block-button) ---------- */
-.imet-section .wp-block-buttons {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 32px;
-}
-.imet-section .wp-block-buttons.center { justify-content: center; margin-top: 36px; }
-.imet-section .wp-block-button__link {
-	display: inline-block;
-	font-family: var(--ui);
-	font-weight: 600;
-	border-radius: 6px;
-	border: 0;
-	cursor: pointer;
-	transition: background .2s, color .2s;
-	text-align: center;
-	line-height: 1.3;
-	letter-spacing: normal;
-	text-transform: none;
-	text-decoration: none;
-}
-.imet-section .btn-navy .wp-block-button__link { background: var(--navy); color: #fff; }
-.imet-section .btn-navy .wp-block-button__link:hover { background: var(--navy-deep); color: #fff; }
-.imet-section .btn-white .wp-block-button__link { background: #fff; color: var(--navy); }
-.imet-section .btn-white .wp-block-button__link:hover { background: var(--gold-soft); color: var(--navy); }
-.imet-section .btn-lg .wp-block-button__link { padding: 24px 36px; font-size: 1.1875rem; }
-.imet-section .btn-md .wp-block-button__link { padding: 22px 36px; font-size: 1.1875rem; }
-.imet-section .btn-sm .wp-block-button__link {
-	padding: 16px 30px;
-	font-size: 1.1875rem;
-	border-radius: 2px;
-}
-.imet-section .btn-xs .wp-block-button__link {
-	padding: 18px 20px;
-	font-size: 0.8125rem;
-	font-family: var(--head);
-	font-weight: 700;
-}
-.imet-section .btn-underline .wp-block-button__link { text-decoration: underline; text-underline-offset: 4px; }
+/* Buttons: see _buttons.scss */
+@include meta.load-css('buttons');
 .imet-section .split-head {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -234,9 +198,7 @@ section.imet-section[id] { scroll-margin-top: 100px; }
 }
 @media (max-width: 640px) {
 	.imet-section { font-size: 1rem; }
-	.imet-section .btn-lg .wp-block-button__link,
-	.imet-section .btn-md .wp-block-button__link {
-		padding: 18px 24px;
-		font-size: 1.0625rem;
-	}
 }
+
+/* Utilities last, so they win over the rules above: see _utilities.scss */
+@include meta.load-css('utilities');

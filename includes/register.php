@@ -62,8 +62,17 @@ function imet_blocks_default_content( $block_name ) {
 	return is_readable( $file ) ? imet_blocks_media_tokens( file_get_contents( $file ) ) : ''; // phpcs:ignore WordPress.WP.AlternativeFunctions
 }
 
-/** Editor: default content for newly inserted blocks (read by src/shared/section-block.js). */
+/**
+ * Editor: the "IMET button" panel (src/editor) and the default content for newly inserted blocks
+ * (read by src/shared/section-block.js).
+ */
 add_action( 'enqueue_block_editor_assets', function () {
+	$asset = IMET_BLOCKS_DIR . 'build/editor/index.asset.php';
+	if ( file_exists( $asset ) ) {
+		$asset = require $asset;
+		wp_enqueue_script( 'imet-blocks-editor', IMET_BLOCKS_URL . 'build/editor/index.js', $asset['dependencies'], $asset['version'], true );
+	}
+
 	$defaults = array();
 	foreach ( array_keys( imet_blocks_sections() ) as $name ) {
 		$defaults[ $name ] = imet_blocks_default_content( $name );
