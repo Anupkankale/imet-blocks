@@ -5,7 +5,7 @@
 	"title": "IMET Comparison Table",
 	"category": "imet",
 	"icon": "columns",
-	"description": "Split heading and a highlighted two-column comparison table.",
+	"description": "Header and a DBA vs PhD comparison table with a highlighted DBA column.",
 	"keywords": [
 		"imet",
 		"section"

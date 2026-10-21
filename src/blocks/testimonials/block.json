@@ -5,7 +5,7 @@
 	"title": "IMET Testimonials",
 	"category": "imet",
 	"icon": "format-quote",
-	"description": "Eyebrow, title and text, then testimonial cards (quote, name, role, LinkedIn link) and a View More link. Duplicate a card to add one; set each LinkedIn link to the person's profile.",
+	"description": "Header, quote cards with a LinkedIn link, and a View More link. Duplicate a card to add one; set each LinkedIn link to the person's profile.",
 	"keywords": [
 		"imet",
 		"section",

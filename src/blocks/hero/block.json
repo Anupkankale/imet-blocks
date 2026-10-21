@@ -5,7 +5,7 @@
 	"title": "IMET Hero",
 	"category": "imet",
 	"icon": "cover-image",
-	"description": "Headline, stats, CTA, enquiry form card and accreditation logos.",
+	"description": "Headline, stats, button, enquiry form card and accreditation logos (a marquee on phones).",
 	"keywords": [
 		"imet",
 		"section"

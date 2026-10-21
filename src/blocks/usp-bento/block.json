@@ -5,7 +5,7 @@
 	"title": "IMET USP Bento Grid",
 	"category": "imet",
 	"icon": "grid-view",
-	"description": "Bento grid of feature cards.",
+	"description": "Six feature cards in a two-column grid and a button.",
 	"keywords": [
 		"imet",
 		"section"

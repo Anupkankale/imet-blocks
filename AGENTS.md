@@ -1,6 +1,8 @@
 # AGENTS.md — IMET Blocks
 
 Context for AI coding agents (and developers) working in this repository. Read this before changing anything.
+Fuller documentation for people: [README](README.md), [docs/](docs/) (Editor guide, Blocks reference, Developer
+guide, Deployment) and the [CHANGELOG](CHANGELOG.md). Keep them up to date when you change behaviour.
 
 ## What this is
 

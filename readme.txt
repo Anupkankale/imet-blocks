@@ -4,6 +4,9 @@ Requires PHP: 7.4
 Stable tag: 1.7.4
 License: GPLv2 or later
 
+Full documentation: README.md and the docs/ folder (Editor guide, Blocks reference, Developer guide,
+Deployment) in the repository, https://github.com/Anupkankale/imet-blocks
+
 Reusable IMET section blocks (Hero, FAQ, Testimonials, CTA…) built from normal WordPress blocks, and page
 patterns that compose them into full pages.
 

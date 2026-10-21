@@ -5,7 +5,7 @@
 	"title": "IMET Alumni Videos",
 	"category": "imet",
 	"icon": "video-alt3",
-	"description": "Video gallery: main player and thumbnails. Click a video image \u2192 Link \u2192 paste its YouTube URL; the thumbnail comes from YouTube and it plays in place.",
+	"description": "Video gallery: main player and three thumbnails. Click a video image → Link → paste its YouTube URL; it plays in place.",
 	"keywords": [
 		"imet",
 		"section",
