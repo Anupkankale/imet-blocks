@@ -200,5 +200,28 @@ section.imet-section[id] { scroll-margin-top: 100px; }
 	.imet-section { font-size: 1rem; }
 }
 
+/* Eyebrow with a gold line under it ("Clients Testimonials", "What Our Clients Say"). Centre its parent.
+   Size and line length per section: --eyebrow-size, --eyebrow-line. */
+.imet-section :is(.eyebrow-line, .alumni-eyebrow) {
+	position: relative;
+	display: inline-block;
+	padding-bottom: 10px;
+	color: var(--gold);
+	font-size: var(--eyebrow-size, 1.3125rem); /* 21px */
+	font-weight: 600;
+	line-height: 1.3;
+}
+.imet-section :is(.eyebrow-line, .alumni-eyebrow)::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: var(--eyebrow-line, 128px);
+	height: 3px;
+	border-radius: 2px;
+	background: var(--gold);
+	transform: translateX(-50%);
+}
+
 /* Utilities last, so they win over the rules above: see _utilities.scss */
 @include meta.load-css('utilities');

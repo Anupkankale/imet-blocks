@@ -8,5 +8,5 @@
 		'wp-editor',
 		'wp-hooks'
 	),
-	'version' => 'c341d54a9a32c33d0217'
+	'version' => '911ffc463fec449f45c3'
 );

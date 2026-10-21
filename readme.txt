@@ -1,7 +1,7 @@
 === IMET Blocks ===
 Requires at least: 6.5
 Requires PHP: 7.4
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 License: GPLv2 or later
 
 Reusable IMET section blocks (Hero, FAQ, Testimonials, CTA…) built from normal WordPress blocks, and page
@@ -50,7 +50,7 @@ sidebar → "IMET button": Colour (Navy, White, Gold, Outline, Outline light) an
   M  60px tall, 18px text   (phones 54px / 16px)   ← default
   L  72px tall, 20px text   (phones 62px / 17px)
 
-Classes (if typed by hand): btn-navy btn-white btn-gold btn-outline btn-outline-light + btn-sm btn-md btn-lg.
+Classes (if typed by hand): btn-navy btn-white btn-gold btn-outline btn-outline-light btn-link + btn-sm btn-md btn-lg.
 Buttons row (core/buttons) classes: center (centred, 36px above), stack-mobile (full width on phones).
 To change every button at once, edit the variables at the top of src/shared/_buttons.scss and rebuild.
 
@@ -68,6 +68,15 @@ click it → Link → paste the YouTube URL (watch, youtu.be, shorts and live li
 class "yt-auto" then show YouTube's own thumbnail; remove "yt-auto" to use the image you chose instead.
 Clicking the main player plays it in place; clicking a thumbnail plays it in the main player.
 Add or remove thumbnails by duplicating/deleting the images in the list. Set "View More" to the channel URL.
+
+== Testimonials (IMET Testimonials block) ==
+
+Eyebrow + title + text, then cards: quote, name, role and a LinkedIn logo. Click the logo's link to set the
+person's LinkedIn profile. Duplicate a card to add one (3 per row; 2 on tablets; swipe on phones). "View More"
+is a Text link button: set its link to the full testimonials page.
+
+The gold eyebrow with a line under it is a shared style: add the class "eyebrow-line" to any paragraph.
+Buttons have a "Text link (underlined)" colour for links like "View More".
 
 == Ready-made sections ==
 

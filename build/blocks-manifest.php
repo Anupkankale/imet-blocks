@@ -540,10 +540,13 @@ return array(
 		'title' => 'IMET Testimonials',
 		'category' => 'imet',
 		'icon' => 'format-quote',
-		'description' => 'Auto-scrolling testimonial cards.',
+		'description' => 'Eyebrow, title and text, then testimonial cards (quote, name, role, LinkedIn link) and a View More link. Duplicate a card to add one; set each LinkedIn link to the person\'s profile.',
 		'keywords' => array(
 			'imet',
-			'section'
+			'section',
+			'testimonials',
+			'reviews',
+			'clients'
 		),
 		'version' => '1.0.0',
 		'textdomain' => 'imet-blocks',
