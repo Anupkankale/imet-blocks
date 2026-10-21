@@ -13,6 +13,8 @@ each( '.wp-block-imet-alumni-video .video-thumb a', ( a ) => {
 		frame.title = a.querySelector( 'img' ) ? a.querySelector( 'img' ).alt : 'Video';
 		frame.allow = 'autoplay; encrypted-media; picture-in-picture';
 		frame.allowFullscreen = true;
-		a.closest( '.video-thumb' ).appendChild( frame );
+		const thumb = a.closest( '.video-thumb' );
+		thumb.classList.add( 'is-playing' );
+		thumb.appendChild( frame );
 	} );
 } );

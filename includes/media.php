@@ -24,7 +24,7 @@ function imet_blocks_media_files() {
 		'video-thumb.webp' => 'Repositioning the Leader in Me: My Doctorate Journey to Global Visibility – podcast with Dr. Raj Srirambatla',
 		'avatar-1.webp' => '', 'avatar-2.webp' => '', 'avatar-3.webp' => '',
 		'certificate.webp' => 'Framed IMET Doctor of Business Administration certificate',
-		'alumni-left.png' => '', 'alumni-right.png' => '',
+		'alumni-video.png' => 'Video: IMET DBA graduate with a program advisor',
 	);
 }
 

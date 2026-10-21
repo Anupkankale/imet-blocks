@@ -31,26 +31,27 @@
 	border: 0;
 }
 .imet-section.alumni .wp-block-buttons.center { margin-top: 36px; }
-/* Video stage: person | video | person, feet on the video's bottom edge, as if they're watching it.
-   Columns are the images' natural widths (233 | 884 | 201), so the whole composition scales as one; the stage is
-   wider than the container (up to 1366px) so the video keeps its full 884px. */
-.imet-section .video-stage {
-	--stage: min(1366px, 100vw - 40px);
-	display: grid;
-	grid-template-columns: 233fr 884fr 201fr;
-	column-gap: 24px;
-	align-items: end;
-	width: var(--stage);
-	margin-inline: calc((100% - var(--stage)) / 2);
+/* Thumbnail with its own play button ("play" class): used when the thumbnail image has no play icon of its own,
+   e.g. a cut-out photo. The image is shown whole on the section background; the video plays in the same 16:9 box. */
+.imet-section .video-thumb.play { aspect-ratio: 16 / 9; background: transparent; }
+.imet-section .video-thumb.play img { object-fit: contain; }
+.imet-section .video-thumb.play a::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 84px;
+	height: 84px;
+	margin: -42px 0 0 -42px;
+	border-radius: 50%;
+	background: var(--navy) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 5.5v13l11-6.5z' fill='%23fff'/%3E%3C/svg%3E") 56% 50% / 36px no-repeat;
+	box-shadow: 0 0 0 10px rgba(21, 41, 78, .15);
+	transition: transform .2s, box-shadow .2s;
 }
-.imet-section .video-stage .video-thumb { width: 100%; max-width: none; margin: 0; }
-.imet-section .video-person { margin: 0; pointer-events: none; }
-.imet-section .video-person img { width: 100%; height: auto; }
-@media (max-width: 1000px) {
-	/* No room beside the video: just the video. */
-	.imet-section .video-stage { display: block; width: auto; margin-inline: 0; }
-	.imet-section .video-stage .video-thumb { max-width: 884px; margin: 0 auto; }
-	.imet-section .video-person { display: none; }
+.imet-section .video-thumb.play a:hover::after { transform: scale(1.06); box-shadow: 0 0 0 14px rgba(21, 41, 78, .18); }
+.imet-section .video-thumb.is-playing { background: #000; }
+@media (max-width: 640px) {
+	.imet-section .video-thumb.play a::after { width: 64px; height: 64px; margin: -32px 0 0 -32px; background-size: 28px; }
 }
 /* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
 @media (max-width: 640px) {

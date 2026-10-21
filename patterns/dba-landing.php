@@ -709,17 +709,9 @@
 <!-- wp:paragraph {"className":"sub"} -->
 <p class="sub">Hear real experiences and success stories from our clients through MBA podcasts. Discover how the program transformed their careers and enhanced their leadership journey. Gain valuable insights from professionals who have walked the same path.</p>
 <!-- /wp:paragraph -->
-<!-- wp:group {"className":"video-stage","layout":{"type":"default"}} -->
-<div class="wp-block-group video-stage"><!-- wp:image {"id":{{ID:alumni-left.png}},"sizeSlug":"full","linkDestination":"none","className":"video-person left"} -->
-<figure class="wp-block-image size-full video-person left"><img src="{{URL:alumni-left.png}}" alt="" class="wp-image-{{ID:alumni-left.png}}"/></figure>
+<!-- wp:image {"id":{{ID:alumni-video.png}},"sizeSlug":"full","linkDestination":"custom","className":"video-thumb play"} -->
+<figure class="wp-block-image size-full video-thumb play"><a href="https://www.youtube.com/"><img src="{{URL:alumni-video.png}}" alt="Video: IMET DBA graduate with a program advisor" class="wp-image-{{ID:alumni-video.png}}"/></a></figure>
 <!-- /wp:image -->
-<!-- wp:image {"id":{{ID:video-thumb.webp}},"sizeSlug":"full","linkDestination":"custom","className":"video-thumb"} -->
-<figure class="wp-block-image size-full video-thumb"><a href="https://www.youtube.com/"><img src="{{URL:video-thumb.webp}}" alt="Repositioning the Leader in Me: My Doctorate Journey to Global Visibility – podcast with Dr. Raj Srirambatla" class="wp-image-{{ID:video-thumb.webp}}"/></a></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:alumni-right.png}},"sizeSlug":"full","linkDestination":"none","className":"video-person right"} -->
-<figure class="wp-block-image size-full video-person right"><img src="{{URL:alumni-right.png}}" alt="" class="wp-image-{{ID:alumni-right.png}}"/></figure>
-<!-- /wp:image --></div>
-<!-- /wp:group -->
 <!-- wp:buttons {"className":"center"} -->
 <div class="wp-block-buttons center"><!-- wp:button {"className":"btn-navy btn-sm"} -->
 <div class="wp-block-button btn-navy btn-sm"><a class="wp-block-button__link wp-element-button" href="#">See More</a></div>
