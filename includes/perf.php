@@ -18,7 +18,7 @@ if ( ! function_exists( 'imet_blocks_perf_unused_styles' ) ) {
 		// Block themes build their header/footer from blocks: they need the block library and global styles.
 		$wp_core = wp_is_block_theme()
 			? array( 'wp-components', 'wp-preferences', 'wp-block-editor' )
-			: array( 'wp-block-library', 'wp-theme', 'wp-components', 'wp-preferences', 'wp-block-editor', 'global-styles', 'classic-theme-styles' );
+			: array( 'wp-block-library', 'wp-theme', 'wp-components', 'wp-preferences', 'wp-block-editor', 'global-styles', 'wp-global-styles-placeholder', 'classic-theme-styles' );
 		// Form plugins can use select2/flatpickr: only skipped when the page has no other plugin's shortcode.
 		$form_libs = imet_blocks_has_plugin_shortcodes() ? array() : array( 'jquery-select2', 'flatpickr' );
 		return array_merge( $wp_core, $form_libs, array(

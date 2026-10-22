@@ -70,6 +70,8 @@
 	color: #000;
 	font-family: var(--head);
 }
+/* Beats the theme's `table thead:first-child tr:first-child th { border-block-start }` */
+.imet-section .vs-table thead tr:first-child th { border-block-start: 0; }
 .imet-section .vs-table th:first-child { visibility: hidden; }
 .imet-section .vs-table th:nth-child(2) { color: var(--gold); }
 .imet-section .vs-table td:nth-child(1) {

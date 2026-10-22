@@ -41,6 +41,10 @@
 	line-height: 1.3;
 }
 .imet-section .achieve-stats { display: flex; gap: 24px 64px; flex-wrap: wrap; }
+/* Desktop: one row; the gap narrows below 1440px (64px → ~40px) instead of wrapping a counter to a second line. */
+@media (min-width: 1101px) {
+	.imet-section .achieve-stats { flex-wrap: nowrap; column-gap: clamp(32px, -40px + 7.2222vw, 64px); }
+}
 .imet-section .achieve-stats .stat { display: flex; flex-direction: column; }
 .imet-section .count {
 	color: #f4b740;
