@@ -1,7 +1,6 @@
 # Developer guide
 
-How the plugin is built and how to change it safely. For a condensed version aimed at AI agents, see
-[AGENTS.md](../AGENTS.md).
+How the plugin is built and how to change it safely.
 
 - [Architecture](#architecture)
 - [Local setup](#local-setup)
