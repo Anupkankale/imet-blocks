@@ -62,7 +62,6 @@ See the **[Developer guide](docs/DEVELOPER-GUIDE.md)**.
 | [Developer guide](docs/DEVELOPER-GUIDE.md) | Developers | Architecture, adding a block, CSS rules, shared JS helpers, testing |
 | [Deployment](docs/DEPLOYMENT.md) | Whoever releases | Versioning, building the zip, uploading, going live, rollback |
 | [Changelog](CHANGELOG.md) | Everyone | What changed in each version |
-| [AGENTS.md](AGENTS.md) | AI coding agents | Condensed project context and rules |
 
 ## Repository layout
 

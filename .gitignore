@@ -1,3 +1,13 @@
 node_modules/
 .DS_Store
 *.zip
+
+# AI agent context (kept local, never committed)
+AGENTS.md
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+.cursor/
+.cursorrules
+.windsurfrules
+.github/copilot-instructions.md
