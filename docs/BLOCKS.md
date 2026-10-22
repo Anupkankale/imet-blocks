@@ -32,7 +32,7 @@ normal core blocks, so its content is edited in place. A newly inserted block st
 | IMET Certificate | `imet/certificate` | section · `section cert` | – | – | Rounded photo beside a header, tick list and button. |
 | IMET FAQ | `imet/faq` | section · `section faq` | `faq` | ✓ | Accordion of Details blocks; first 5 shown, **See More** shows the rest; outputs FAQPage JSON-LD. |
 | IMET Call to Action | `imet/cta` | section · `cta-wrap` | – | – | Deep-blue rounded card with heading, text, button and a photo fading in on the right. |
-| IMET Floating Contact | `imet/float-contact` | div · `float-contact` | – | – | WhatsApp link fixed at the bottom left; circle only on phones. |
+| IMET Floating Contact | `imet/float-contact` | div · `float-contact` | – | – | WhatsApp link fixed at the bottom left; circle only on phones. Not in the DBA page (the site has its own WhatsApp button); insert it only on sites without one. |
 | IMET Section (blank) | `imet/section` | section · `section imet-blank` | – | – | Empty section with the IMET design, for building new sections. |
 
 ## Patterns
@@ -47,8 +47,7 @@ normal core blocks, so its content is edited in place. A newly inserted block st
 
 **DBA page order:** Hero → Highlights → Section Navigation → Specializations → Cost Banner → Program Overview →
 Achievements → Career Path Table → USP Bento → Recognition Logos → Comparison Table → Who Can Join →
-Image + Bullet List → Alumni Videos → CTA Banner with Avatars → Testimonials → Certificate → FAQ → Call to Action →
-Floating Contact.
+Image + Bullet List → Alumni Videos → CTA Banner with Avatars → Testimonials → Certificate → FAQ → Call to Action.
 
 ## Shared classes inside sections
 

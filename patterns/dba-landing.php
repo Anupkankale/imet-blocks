@@ -962,8 +962,3 @@
 <!-- /wp:group --></div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/cta -->
-<!-- wp:imet/float-contact -->
-<div class="wp-block-imet-float-contact imet-section float-contact"><!-- wp:paragraph {"className":"wa-link"} -->
-<p class="wa-link"><a href="https://wa.me/" target="_blank" rel="noreferrer noopener">Contact us</a></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:imet/float-contact -->

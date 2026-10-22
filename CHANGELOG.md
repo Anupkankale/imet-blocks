@@ -3,6 +3,10 @@
 All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 [Deployment → Versioning](docs/DEPLOYMENT.md#versioning)).
 
+## 1.7.6 — 2026-10-22
+- **DBA page:** the floating WhatsApp "Contact us" button is no longer part of the page pattern; the site's own
+  WhatsApp button is used. The IMET Floating Contact block is still available for sites without one.
+
 ## 1.7.5 — 2026-10-22
 - **Live site (Hello Elementor) spacing:** WordPress printed its global styles a second time in the footer, after the
   IMET CSS, adding a 24px gap above almost every heading, paragraph and group (sections 25–160px too tall). They're no
