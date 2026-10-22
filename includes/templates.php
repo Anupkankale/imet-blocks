@@ -237,6 +237,12 @@ function imet_blocks_landing_assets() {
 			wp_dequeue_style( $handle );
 		}
 	}, 999 );
+	// Classic themes: WordPress prints the global styles again at wp_footer (moved into <head> only when its own output
+	// buffer runs, which caching plugins can prevent). Printed after the IMET styles, their block-gap rules
+	// (`:root :where(.is-layout-flow) > * { margin-block-start: 24px }`) win the ties and add space everywhere.
+	if ( ! wp_is_block_theme() ) {
+		remove_action( 'wp_footer', 'wp_enqueue_global_styles', 1 );
+	}
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 	remove_action( 'wp_print_styles', 'print_emoji_styles' );
 

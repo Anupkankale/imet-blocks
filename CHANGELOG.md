@@ -3,6 +3,14 @@
 All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 [Deployment → Versioning](docs/DEPLOYMENT.md#versioning)).
 
+## 1.7.5 — 2026-10-22
+- **Live site (Hello Elementor) spacing:** WordPress printed its global styles a second time in the footer, after the
+  IMET CSS, adding a 24px gap above almost every heading, paragraph and group (sections 25–160px too tall). They're no
+  longer printed on IMET pages with classic themes.
+- **Theme-proof styles:** the sections set their own letter spacing, table text size, comparison-table header border
+  and `<sub>` line height, instead of picking up the theme's.
+- **Our Achievement:** the four counters stay on one row on desktop.
+
 ## 1.7.4 — 2026-10-22
 - **Alumni videos:** the main player reads as a video: gold play button with a soft pulse, dark gradient and a
   "Watch now" caption. One click plays it in place.

@@ -41,6 +41,7 @@ html:has(.imet-section) { scroll-behavior: smooth; }
 	color: var(--text);
 	line-height: 1.6;
 	font-size: 1.0625rem;
+	letter-spacing: -0.1px; /* the design's tracking; set here so it doesn't depend on the theme's body style */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-size-adjust: 100%;
@@ -83,7 +84,10 @@ html:has(.imet-section) { scroll-behavior: smooth; }
 :where(.imet-section) p:not(:last-child) {
 	margin-bottom: 0;
 }
-.imet-section table { margin: 0; }
+/* Classic themes' resets (Hello Elementor): tables at .9em, <sub>/<sup> with line-height 0. */
+.imet-section table { margin: 0; font-size: inherit; }
+.imet-section sub,
+.imet-section sup { line-height: inherit; }
 /* Classic themes make WordPress wrap each Group block's content in .wp-block-group__inner-container; make that
    wrapper layout-transparent so the grids/flex rows below apply to the blocks themselves. */
 .imet-section .wp-block-group__inner-container { display: contents; }
