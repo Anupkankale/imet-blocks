@@ -171,8 +171,9 @@ The final navy card with a photo. Edit the heading (bold words are the larger pa
 
 ### Floating contact (WhatsApp)
 
-The "Contact us" link fixed at the bottom left. Set its link to `https://wa.me/<your number>`, with the country code
-and no "+" or spaces (for example `https://wa.me/971501234567`). On phones it shows only the green circle.
+Not part of the DBA page: the site's header/footer already has a WhatsApp button, and two would overlap. On a site
+without one, insert **IMET Floating Contact** (+ → IMET) and set its link to `https://wa.me/<your number>`, with the
+country code and no "+" or spaces (for example `https://wa.me/971501234567`).
 
 ## The section menu bar and anchors
 
@@ -214,7 +215,7 @@ If you rename an anchor, update the matching link in the menu bar.
 
 - [ ] Form shortcode added in the hero
 - [ ] Every button and card link set (no `#` placeholders)
-- [ ] Real YouTube links on the videos; WhatsApp number set
+- [ ] Real YouTube links on the videos
 - [ ] SEO title and description set (Rank Math)
 - [ ] **Preview** checked on desktop and on a phone
 - [ ] Template is **IMET Landing** (sidebar → Template)
