@@ -15,8 +15,8 @@ the **Online Doctorate of Business Administration (DBA)** landing page, matched 
 
 - **21 section blocks** in the editor's **IMET** category. Their content is normal WordPress blocks (headings,
   paragraphs, images, buttons), so editors change everything in place.
-- **Page patterns:** the complete DBA page in one click (**Plugins → Create: Online Doctorate…**, or
-  + → Patterns → IMET), plus ready-made sections (CTA banner, CTA card, button row, heading + text).
+- **Page patterns:** the complete DBA page in one click (**Plugins → Create: DBA Category Page**, or
+  + → Patterns → IMET).
 - **One design system:** shared fonts, colours, section headers, utility classes and a button system with
   3 sizes and 7 colours, chosen from an **IMET button** panel in the editor sidebar.
 - **Interactive sections:** smooth accordions, tabs, an expandable table, continuous marquees, animated counters
@@ -34,7 +34,7 @@ the **Online Doctorate of Business Administration (DBA)** landing page, matched 
 
 1. Download the plugin zip (see [Deployment](docs/DEPLOYMENT.md)) and upload it at **Plugins → Add New → Upload
    Plugin**, then activate it. Activation imports the page images into the Media Library.
-2. **Plugins → IMET Blocks → Create: Online Doctorate of Business Administration (DBA)** creates a draft page with
+2. **Plugins → IMET Blocks → Create: DBA Category Page** creates a draft page with
    the full design.
 3. Edit the text, images and links, add your form shortcode in the hero, then publish.
 
@@ -71,7 +71,7 @@ includes/           PHP: block registration, page template, patterns, media, spe
 src/blocks/<name>/  one folder per block: block.json, style.scss, view.js, default.html, index.js
 src/shared/         shared styles (base, buttons, utilities) and JS (section-block, view helpers)
 src/editor/         editor additions (IMET button panel, content-only editing for IMET pages)
-patterns/           page and section patterns
+patterns/           page patterns
 templates/          the IMET Landing page template
 assets/             images and fonts referenced by the CSS and the patterns
 build/              compiled output (committed, so the plugin runs without Node)

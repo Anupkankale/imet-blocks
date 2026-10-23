@@ -1,7 +1,7 @@
 === IMET Blocks ===
 Requires at least: 6.5
 Requires PHP: 7.4
-Stable tag: 1.7.7
+Stable tag: 1.7.8
 License: GPLv2 or later
 
 Full documentation: README.md and the docs/ folder (Editor guide, Blocks reference, Developer guide,
@@ -22,8 +22,7 @@ src/shared/             base.scss (fonts, colours — shared by all blocks), _bu
                         _utilities.scss (helper classes), page-layout.scss (IMET Landing template only),
                         editor-canvas.scss, view.js helpers
 src/editor/             editor additions: the "IMET button" panel
-patterns/               Full pages (Kind: page, e.g. dba-landing.php) and ready-made sections (Kind: section,
-                        e.g. CTA banner, CTA card, button row) made of IMET blocks
+patterns/               Full-page patterns made of IMET blocks (e.g. dba-landing.php)
 templates/              The "IMET Landing" page template
 build/                  Compiled output — what WordPress loads. Rebuild after changing src/.
 
@@ -35,7 +34,7 @@ build/                  Compiled output — what WordPress loads. Rebuild after 
 
 == Making pages ==
 
-* New page → "Choose a pattern" → pick a page (e.g. "Online Doctorate of Business Administration (DBA)"),
+* New page → "Choose a pattern" → pick a page (e.g. "DBA Category Page"),
   or insert single blocks from the "IMET" category. On save, a page with IMET blocks and no template chosen
   gets Template → IMET Landing automatically. Plugins screen → "Create: <page>" makes a draft from a pattern.
 * Sites using the Classic Editor: IMET pages (IMET blocks in the content, or Template → IMET Landing) always
@@ -94,9 +93,8 @@ Achievements → Career table → USP bento → Embassy logos → DBA v/s PhD �
 Alumni videos → Cybersecurity banner → Testimonials → Certification → FAQ (first 5, "See More" shows the
 rest) → CTA. Sections are separated by a thin grey line.
 
-== Ready-made sections ==
+== New sections ==
 
-+ → Patterns → IMET: "Heading, text and button", "Button row", "CTA banner (navy)", "CTA card (soft)".
 To build something new, insert "IMET Section (blank)" and add blocks inside it — the fonts, buttons and
 utilities all apply.
 

@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Online Doctorate of Business Administration (DBA)
- * Description: The complete DBA landing page, built from IMET blocks. Use with Template → IMET Landing.
+ * Title: DBA Category Page
+ * Description: The complete Online Doctorate of Business Administration (DBA) category page, built from IMET blocks. Use with Template → IMET Landing.
  * Kind: page
  */
 ?>
