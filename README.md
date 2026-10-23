@@ -13,10 +13,10 @@ the **Online Doctorate of Business Administration (DBA)** landing page, matched 
 
 ## Features
 
-- **21 section blocks** in the editor's **IMET** category. Their content is normal WordPress blocks (headings,
+- **25 section blocks** in the editor's **IMET** category, some with a second look (block styles). Their content is normal WordPress blocks (headings,
   paragraphs, images, buttons), so editors change everything in place.
-- **Page patterns:** the complete DBA page in one click (**Plugins → Create: DBA Category Page**, or
-  + → Patterns → IMET).
+- **Page patterns:** a complete page in one click (**Plugins → Create: DBA Category Page** or
+  **Create: DBA Course Page**, or + → Patterns → IMET).
 - **One design system:** shared fonts, colours, section headers, utility classes and a button system with
   3 sizes and 7 colours, chosen from an **IMET button** panel in the editor sidebar.
 - **Interactive sections:** smooth accordions, tabs, an expandable table, continuous marquees, animated counters

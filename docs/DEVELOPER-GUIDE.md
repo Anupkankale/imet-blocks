@@ -131,6 +131,11 @@ Patterns are PHP files in `patterns/` with a header:
 
 ## Styling rules
 
+**Block styles** (a second look for an existing block) are declared in its `block.json` → `"styles"` and styled with
+`.imet-section.<key>.is-style-<name>`. WordPress adds the class to the block's root only when an editor (or a pattern)
+picks the style, so existing pages never change. Prefer a style over a new block when the content structure is the
+same (e.g. Who Can Join → **Boxed** for a curriculum); add a block only for a new structure.
+
 1. **Scope everything to `.imet-section`.**
    - Root: `.imet-section.faq`.
    - Inside: `.imet-section .faq-acc`.
@@ -171,7 +176,7 @@ Patterns are PHP files in `patterns/` with a header:
 | `each( selector, fn )` | all | Runs `fn` for each match once the DOM is ready |
 | `reduceMotion()` | all | `true` if the visitor prefers reduced motion |
 | `accordion( group, { openFirst } )` | Who Can Join, FAQ | One item open at a time. Wraps answers in `.acc-body` and animates their height; `.is-closing` marks an item animating shut (still `[open]`). Style answers with `details p`. |
-| `marquee( row, items, { speed } )` | Specializations, hero logos (phones) | Clones the items once (`.is-clone`, `aria-hidden`) and scrolls continuously. Only moves while CSS makes the row overflow, it's on screen, and it isn't hovered, focused or touched. |
+| `marquee( row, items, { speed } )` | Specializations, hero logos (phones) | Clones the items once (`.is-clone`, `aria-hidden`) and scrolls continuously. Only moves while the original items overflow the row (CSS decides per screen size; the clones don't count), it's on screen, and it isn't hovered, focused or touched. |
 
 **Per-block scripts:**
 - **Subnav:** scroll-spy, and in-page links that land below the bar.

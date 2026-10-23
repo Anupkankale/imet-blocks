@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "imet/about-card",
+	"title": "IMET About Card",
+	"category": "imet",
+	"icon": "id-alt",
+	"description": "Header and intro, then a gradient card: a tick list beside a titled list with a gold timeline line.",
+	"keywords": [
+		"imet",
+		"section"
+	],
+	"version": "1.0.0",
+	"textdomain": "imet-blocks",
+	"supports": {
+		"anchor": true,
+		"html": false
+	},
+	"imet": {
+		"tagName": "section",
+		"className": "section about-card",
+		"anchor": "about"
+	},
+	"editorScript": "file:./index.js",
+	"style": [
+		"imet-base",
+		"file:./style-index.css"
+	]
+}

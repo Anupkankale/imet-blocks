@@ -90,6 +90,11 @@ export function marquee( row, items, { speed = 40 } = {} ) {
 
 	const firstCopy = row.children[ items.length ];
 	const loopWidth = () => firstCopy.offsetLeft - items[ 0 ].offsetLeft;
+	// The original items alone are wider than the row (the copies don't count, or it would always "overflow")
+	const overflows = () => {
+		const lastItem = items[ items.length - 1 ];
+		return lastItem.offsetLeft + lastItem.offsetWidth - items[ 0 ].offsetLeft > row.clientWidth + 2;
+	};
 	let pos = 0;
 	let last = 0;
 	let paused = false;
@@ -99,7 +104,10 @@ export function marquee( row, items, { speed = 40 } = {} ) {
 		const dt = last ? Math.min( now - last, 100 ) : 0;
 		last = now;
 		const w = loopWidth();
-		if ( paused || ! visible || w <= 0 || row.scrollWidth <= row.clientWidth + 2 ) {
+		if ( paused || ! visible || w <= 0 || ! overflows() ) {
+			if ( ! paused && w > 0 && ! overflows() && row.scrollLeft ) {
+				row.scrollLeft = pos = 0; // fits again (e.g. after a resize): back to the start
+			}
 			return;
 		}
 		pos += ( speed * dt ) / 1000;

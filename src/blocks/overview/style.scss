@@ -10,6 +10,13 @@
 	padding-left: 16px;
 }
 .imet-section .ov-visual img { width: 100%; max-width: 566px; margin-left: auto; }
+/* Optional button row under the photo (e.g. DBA Course Page): the benefit list then spans both rows */
+.imet-section .ov-grid:has(> .wp-block-buttons) { align-items: start; }
+.imet-section .ov-grid:has(> .wp-block-buttons) > .benefit-list { grid-row: span 2; }
+.imet-section .ov-grid > .wp-block-buttons { grid-column: 2; margin-top: -8px; }
+@media (max-width: 900px) {
+	.imet-section .ov-grid > .wp-block-buttons { grid-column: auto; justify-content: center; margin-top: 0; }
+}
 .imet-section .benefit-list { display: grid; gap: 10px; }
 .imet-section .ben-item {
 	position: relative;

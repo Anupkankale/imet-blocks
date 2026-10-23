@@ -7,6 +7,7 @@ How to build and edit IMET landing pages in WordPress. No code needed.
 - [Editing basics](#editing-basics)
 - [Buttons](#buttons)
 - [Section by section](#section-by-section)
+- [DBA Course Page](#dba-course-page)
 - [The section menu bar and anchors](#the-section-menu-bar-and-anchors)
 - [Adding new sections](#adding-new-sections)
 - [Publishing checklist](#publishing-checklist)
@@ -24,15 +25,19 @@ How to build and edit IMET landing pages in WordPress. No code needed.
 
 ## Create a page
 
-**The easiest way:** go to **Plugins**, find **IMET Blocks**, and click
-**Create: DBA Category Page**. A draft page with the complete design opens in the
-editor.
+**The easiest way:** go to **Plugins**, find **IMET Blocks**, and click the page type you need. A draft page with the
+complete design opens in the editor; rename it before publishing.
+
+| Link | Page |
+|---|---|
+| **Create: DBA Category Page** | The online doctorate programs page (all DBA specializations) |
+| **Create: DBA Course Page** | One DBA specialization, e.g. DBA in Cybersecurity (see [DBA Course Page](#dba-course-page)) |
 
 **Or, from a blank page:**
 1. **Pages → Add New**, give it a title.
 2. In the right sidebar, open **Page Attributes → Template → IMET Landing** and click **Save draft**.
 3. Reload the page so it opens in the block editor.
-4. Click **+** (top left) → **Patterns** → **IMET** → choose the DBA page or a single section.
+4. Click **+** (top left) → **Patterns** → **IMET** → choose **DBA Category Page** or **DBA Course Page**.
 
 > A page that contains IMET blocks automatically gets the IMET Landing template when you save it, if no other
 > template was chosen.
@@ -180,6 +185,27 @@ The final navy card with a photo. Edit the heading (bold words are the larger pa
 Not part of the DBA page: the site's header/footer already has a WhatsApp button, and two would overlap. On a site
 without one, insert **IMET Floating Contact** (+ → IMET) and set its link to `https://wa.me/<your number>`, with the
 country code and no "+" or spaces (for example `https://wa.me/971501234567`).
+
+## DBA Course Page
+
+One page per DBA specialization. It ships with the **DBA in Cybersecurity** content; for another specialization, create
+a new page from the pattern and change the text, links and photos. Most sections are the same blocks as on the
+DBA Category Page (edited the same way, see above); these differ:
+
+| Section | Block | How to edit |
+|---|---|---|
+| Hero (navy) | IMET Hero, style **Dark** | First line = breadcrumb (set the links), second = rating: the stars are text — **bold** stars are gold, an *italic* star is dimmed. "Download Brochure" has the class `btn-icon-download`; set its link to the brochure PDF. |
+| Course Requirements | IMET Who Can Join | As Who Can Join. |
+| Other Doctorate (DBA) Concentrations | IMET Specializations, style **Five per row** | Five program cards; set each link. Don't link the page to itself. |
+| Benefits of enrolling | IMET Program Overview | As "What is a DBA?", plus a button under the photo. |
+| Learn More About the Programs | **IMET Tabs** | Each label in the top bar opens the panel in the same position below (1st label → 1st panel…). Keep the same number of labels and panels. In each list item, the **bold** part is the topic. |
+| About IMET Worldwide | **IMET About Card** | Left list: green ticks. Right: a title line, then the list on the gold line. |
+| Curriculum | IMET Who Can Join, style **Boxed** | Each term is a Details block: question = "**Term 1:** title" (bold the label), answer = the paragraph inside. All terms start closed. |
+| Admission Process | **IMET Process Timeline** | Each step is a heading + text. 3, 4 or 5 steps fit the line; duplicate or delete a step group. |
+| Research Steps | **IMET Step Cards** | Each card: the "Step n:" tag, a heading, text and a photo (Replace). Cards alternate navy / light by column. |
+| Our Alumni at Top Organizations | IMET Recognition Logos, style **Logos** | Replace or duplicate the logos; captions aren't shown in this style. |
+
+**Block styles:** select the section block → sidebar → **Styles** to switch, e.g. a light or navy hero.
 
 ## The section menu bar and anchors
 

@@ -26,6 +26,24 @@
 	.imet-section .emblem-row { grid-template-columns: repeat(2, 1fr); }
 	.imet-section .emblem img { height: 100px; }
 }
+/* Style "Logos" (block style, e.g. "Our Alumni at Top Organizations" on the DBA Course Page): company logos without
+   captions, in one centred row that wraps on smaller screens. */
+.imet-section.embassy.is-style-logos .sub { margin-bottom: 30px; }
+.imet-section.embassy.is-style-logos .emblem-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 24px 72px;
+	max-width: 1000px;
+}
+.imet-section.embassy.is-style-logos .emblem img { height: auto; max-height: 86px; max-width: 190px; }
+.imet-section.embassy.is-style-logos .emblem figcaption { display: none; }
+@media (max-width: 640px) {
+	.imet-section.embassy.is-style-logos .emblem-row { gap: 20px 36px; }
+	.imet-section.embassy.is-style-logos .emblem img { max-height: 56px; max-width: 120px; }
+}
+
 /* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
 @media (max-width: 640px) {
 	.imet-section.embassy { padding: 48px 0; }

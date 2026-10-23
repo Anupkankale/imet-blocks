@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "imet/step-cards",
+  "title": "IMET Step Cards",
+  "category": "imet",
+  "icon": "grid-view",
+  "description": "Header, then numbered step cards in two columns (navy and light, alternating), each with a gold tag, title, text and photo.",
+  "keywords": [
+    "imet",
+    "section"
+  ],
+  "version": "1.0.0",
+  "textdomain": "imet-blocks",
+  "supports": {
+    "anchor": true,
+    "html": false
+  },
+  "imet": {
+    "tagName": "section",
+    "className": "section step-cards",
+    "anchor": "research-steps"
+  },
+  "editorScript": "file:./index.js",
+  "style": [
+    "imet-base",
+    "file:./style-index.css"
+  ]
+}

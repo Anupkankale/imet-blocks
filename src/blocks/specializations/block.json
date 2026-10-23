@@ -26,5 +26,16 @@
 		"imet-base",
 		"file:./style-index.css"
 	],
-	"viewScript": "file:./view.js"
+	"viewScript": "file:./view.js",
+	"styles": [
+		{
+			"name": "default",
+			"label": "Four per view (scrolling)",
+			"isDefault": true
+		},
+		{
+			"name": "five",
+			"label": "Five per row"
+		}
+	]
 }
