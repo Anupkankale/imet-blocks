@@ -24,9 +24,9 @@
 }
 .imet-section .b-card.dark { border-color: #4a79f8; background: var(--navy-band); }
 .imet-section .b-text { position: relative; z-index: 1; flex: 1; min-width: 0; padding: 16px 18px 16px 22px; }
-.imet-section .b-card h4 { color: #000; font-size: clamp(1.375rem, 1.1rem + 0.7vw, 1.75rem); font-weight: 600; line-height: 1.2; } /* → 28px */
+.imet-section .b-card :is(h3, h4) { color: #000; font-size: clamp(1.375rem, 1.1rem + 0.7vw, 1.75rem); font-weight: 600; line-height: 1.2; } /* → 28px */
 .imet-section .b-card p { margin-top: 12px; color: #111; font-size: 1rem; line-height: 1.75; }
-.imet-section .b-card.dark h4 { color: #fff; }
+.imet-section .b-card.dark :is(h3, h4) { color: #fff; }
 .imet-section .b-card.dark p { color: #e3e7f2; }
 .imet-section .b-card .b-img { margin: 0; flex-shrink: 0; align-self: flex-end; }
 .imet-section .b-card .b-img img { display: block; }
@@ -40,7 +40,7 @@
 /* Industry-focused: domain tags faded in behind the text */
 .imet-section .b-industry { grid-area: ind; }
 .imet-section .b-industry .b-text { max-width: 290px; }
-.imet-section .b-industry h4 { white-space: nowrap; }
+.imet-section .b-industry :is(h3, h4) { white-space: nowrap; }
 .imet-section .b-tags { position: absolute; inset: 0 0 0 auto; width: 74%; margin: 0; opacity: .35; }
 .imet-section .b-tags img { width: 100%; height: 100%; object-fit: cover; object-position: left center; }
 
@@ -50,27 +50,27 @@
 .imet-section .b-avatars { margin: 0; }
 .imet-section .b-avatars img { width: 158px; }
 .imet-section .b-alumni .big { margin: 0; color: var(--blue); font-size: 3.5rem; font-weight: 600; line-height: 1; }
-.imet-section .b-alumni h4 { margin-top: 4px; font-weight: 500; }
+.imet-section .b-alumni :is(h3, h4) { margin-top: 4px; font-weight: 500; }
 .imet-section .b-alumni p { margin-top: 6px; line-height: 1.55; }
 
 /* Global accreditation: world map faded in behind the text, at the right */
 .imet-section .b-global { grid-area: glob; }
 .imet-section .b-global .b-text { max-width: 330px; }
-.imet-section .b-global h4 { white-space: nowrap; }
+.imet-section .b-global :is(h3, h4) { white-space: nowrap; }
 .imet-section .b-map { position: absolute; right: 10px; top: 50%; width: 62%; margin: 0; opacity: .3; transform: translateY(-50%); pointer-events: none; }
 .imet-section .b-map img { width: 100%; }
 
 /* ROI: rising chart (with avatar + "Leadership" tag) at the bottom right */
 .imet-section .b-roi { grid-area: roi; }
 .imet-section .b-roi .b-text { max-width: 270px; padding-right: 0; }
-.imet-section .b-roi h4 { max-width: 220px; }
+.imet-section .b-roi :is(h3, h4) { max-width: 220px; }
 .imet-section .b-chart { position: absolute; right: 0; bottom: 0; width: 54%; margin: 0; pointer-events: none; }
 .imet-section .b-chart img { width: 100%; }
 
 /* Mentorship: cut-out photo at the bottom right */
 .imet-section .b-mentor { grid-area: ment; }
 .imet-section .b-mentor .b-text { max-width: 330px; }
-.imet-section .b-mentor h4 { white-space: nowrap; }
+.imet-section .b-mentor :is(h3, h4) { white-space: nowrap; }
 .imet-section .b-mentor .b-img { position: absolute; right: 8px; bottom: 0; width: 132px; }
 .imet-section .b-mentor .b-img img { width: 100%; }
 
@@ -81,7 +81,7 @@
 }
 @media (max-width: 700px) {
 	.imet-section .bento { grid-template-columns: 1fr; grid-template-areas: "flex" "ind" "alum" "glob" "roi" "ment"; }
-	.imet-section :is(.b-industry, .b-mentor, .b-global) h4 { white-space: normal; }
+	.imet-section :is(.b-industry, .b-mentor, .b-global) :is(h3, h4) { white-space: normal; }
 }
 /* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
 @media (max-width: 640px) {

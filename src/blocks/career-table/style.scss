@@ -20,7 +20,7 @@
 	border-left: 1px solid #e3a531;
 }
 .imet-section .ct-col:first-child { border-left: 0; }
-.imet-section .ct-col h4 {
+.imet-section .ct-col :is(h3, h4) {
 	display: grid;
 	place-items: center;
 	min-height: 102px;
@@ -66,7 +66,7 @@
 	.imet-section .ct-col:nth-child(-n+2) { border-top: 0; }
 	:where(body:not(.editor-styles-wrapper)) .imet-section .career-table:not(.is-open) { grid-template-rows: none; }
 	:where(body:not(.editor-styles-wrapper)) .imet-section .career-table:not(.is-open) .ct-col { grid-row: auto; }
-	.imet-section .ct-col h4 { min-height: 0; padding: 16px; }
+	.imet-section .ct-col :is(h3, h4) { min-height: 0; padding: 16px; }
 	.imet-section .ct-col p:first-of-type { padding-bottom: 24px; }
 	.imet-section .career-table.is-open .ct-col p:last-of-type { padding-bottom: 24px; }
 	.imet-section .ct-more { margin-top: 16px; }

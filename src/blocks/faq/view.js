@@ -13,9 +13,22 @@ each( '.wp-block-imet-faq', ( faq ) => {
 		more.classList.add( 'is-hidden' );
 		return;
 	}
-	more.querySelector( 'a' )?.addEventListener( 'click', ( e ) => {
+	const link = more.querySelector( 'a' );
+	if ( ! link ) {
+		return;
+	}
+	if ( ! group.id ) {
+		group.id = 'imet-faq-list';
+	}
+	link.setAttribute( 'role', 'button' );
+	link.setAttribute( 'aria-controls', group.id );
+	link.setAttribute( 'aria-expanded', 'false' );
+	link.addEventListener( 'click', ( e ) => {
 		e.preventDefault();
 		group.classList.add( 'is-expanded' );
+		link.setAttribute( 'aria-expanded', 'true' );
 		more.classList.add( 'is-hidden' );
+		// The button disappears: keep keyboard focus in the list, on the first question it revealed.
+		group.querySelectorAll( 'details' )[ 5 ]?.querySelector( 'summary' )?.focus();
 	} );
 } );

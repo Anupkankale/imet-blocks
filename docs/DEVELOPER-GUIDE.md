@@ -191,7 +191,7 @@ Scripts are classic scripts (`viewScript`), loaded only where the block is used.
 | Block registration | `register.php` | Uses `wp_register_block_types_from_metadata_collection` (WP 6.8+) with fallbacks for 6.5–6.7. |
 | Shared style handle `imet-base` | `register.php` | Listed in every block's `style` array, so it loads once. |
 | Default content to the editor | `register.php` | `window.imetBlocks.defaults`, added before `wp-blocks`. |
-| IMET Landing template | `templates.php`, `templates/page-landing.php` | Renders the content **before** `wp_head()` so block styles print in `<head>` (no layout shift). Also registered as a block template, so block themes show its name. |
+| IMET Landing template | `templates.php`, `templates/page-landing.php` | Renders the content **before** `wp_head()` so block styles print in `<head>` (no layout shift). Wraps it in `<main id="content" class="imet-page">` (main landmark, target of the theme's skip link). Also registered as a block template, so block themes show its name. |
 | Auto template | `templates.php` | On save, a page with `<!-- wp:imet/` and no template gets IMET Landing. |
 | Block editor on IMET pages | `templates.php` | `use_block_editor_for_post` at max priority, IMET pages only. |
 | Content-only editing | `src/editor/content-only.js` | IMET Landing pages open in post-only rendering mode. |

@@ -3,6 +3,15 @@
 All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 [Deployment → Versioning](docs/DEPLOYMENT.md#versioning)).
 
+## 1.7.7 — 2026-10-23
+- **SEO / accessibility:**
+  - The IMET Landing template wraps the page content in `<main id="content">`, so the page has a main landmark and
+    the theme's "Skip to content" link works.
+  - Card titles in What is a DBA?, the Our USP's table and the USP cards are H3 (were H4), and the hero form title
+    "Talk to an Advisor" is H2 (was H3), so headings go H1 → H2 → H3 without skipping a level. They look the same; pages built with H4 keep their styling.
+  - The four USP card photos have descriptive alt text.
+  - The FAQ's "See More" is announced as a button (role, expanded state); focus moves to the first revealed question.
+
 ## 1.7.6 — 2026-10-22
 - **DBA page:** the floating WhatsApp "Contact us" button is no longer part of the page pattern; the site's own
   WhatsApp button is used. The IMET Floating Contact block is still available for sites without one.
