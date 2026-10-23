@@ -15,7 +15,7 @@ the **Online Doctorate of Business Administration (DBA)** landing page, matched 
 
 - **21 section blocks** in the editor's **IMET** category. Their content is normal WordPress blocks (headings,
   paragraphs, images, buttons), so editors change everything in place.
-- **Page patterns:** the complete DBA page in one click (**Plugins → Create: Online Doctorate…**, or
+- **Page patterns:** the complete DBA page in one click (**Plugins → Create: DBA Category Page**, or
   + → Patterns → IMET).
 - **One design system:** shared fonts, colours, section headers, utility classes and a button system with
   3 sizes and 7 colours, chosen from an **IMET button** panel in the editor sidebar.
@@ -34,7 +34,7 @@ the **Online Doctorate of Business Administration (DBA)** landing page, matched 
 
 1. Download the plugin zip (see [Deployment](docs/DEPLOYMENT.md)) and upload it at **Plugins → Add New → Upload
    Plugin**, then activate it. Activation imports the page images into the Media Library.
-2. **Plugins → IMET Blocks → Create: Online Doctorate of Business Administration (DBA)** creates a draft page with
+2. **Plugins → IMET Blocks → Create: DBA Category Page** creates a draft page with
    the full design.
 3. Edit the text, images and links, add your form shortcode in the hero, then publish.
 

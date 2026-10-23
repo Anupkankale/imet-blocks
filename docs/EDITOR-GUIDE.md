@@ -25,7 +25,7 @@ How to build and edit IMET landing pages in WordPress. No code needed.
 ## Create a page
 
 **The easiest way:** go to **Plugins**, find **IMET Blocks**, and click
-**Create: Online Doctorate of Business Administration (DBA)**. A draft page with the complete design opens in the
+**Create: DBA Category Page**. A draft page with the complete design opens in the
 editor.
 
 **Or, from a blank page:**

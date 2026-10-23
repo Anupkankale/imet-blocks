@@ -39,7 +39,7 @@ normal core blocks, so its content is edited in place. A newly inserted block st
 
 | Pattern | Kind | Where |
 |---|---|---|
-| Online Doctorate of Business Administration (DBA) | Full page | "Choose a pattern" on new pages, + → Patterns → IMET, **Plugins → Create: …** |
+| DBA Category Page | Full page | "Choose a pattern" on new pages, + → Patterns → IMET, **Plugins → Create: …** |
 
 **DBA page order:** Hero → Highlights → Section Navigation → Specializations → Cost Banner → Program Overview →
 Achievements → Career Path Table → USP Bento → Recognition Logos → Comparison Table → Who Can Join →

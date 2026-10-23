@@ -34,7 +34,7 @@ build/                  Compiled output — what WordPress loads. Rebuild after 
 
 == Making pages ==
 
-* New page → "Choose a pattern" → pick a page (e.g. "Online Doctorate of Business Administration (DBA)"),
+* New page → "Choose a pattern" → pick a page (e.g. "DBA Category Page"),
   or insert single blocks from the "IMET" category. On save, a page with IMET blocks and no template chosen
   gets Template → IMET Landing automatically. Plugins screen → "Create: <page>" makes a draft from a pattern.
 * Sites using the Classic Editor: IMET pages (IMET blocks in the content, or Template → IMET Landing) always

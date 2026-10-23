@@ -5,7 +5,8 @@ All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 
 ## 1.7.8 — 2026-10-23
 - **Patterns:** removed the unused section patterns (Heading, text and button; Button row; CTA banner (navy);
-  CTA card (soft)). Patterns → IMET now lists only the DBA page. The IMET Section (blank) block, the button system and
+  CTA card (soft)). Patterns → IMET now lists only the DBA page, renamed **DBA Category Page** (also on the Plugins
+  screen: **Create: DBA Category Page**; the pattern slug `imet-blocks/dba-landing` is unchanged). The IMET Section (blank) block, the button system and
   the helper classes are unchanged; `Kind: section` patterns are still supported for future ones.
 
 ## 1.7.7 — 2026-10-23
