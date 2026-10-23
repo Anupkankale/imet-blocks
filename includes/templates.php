@@ -68,7 +68,7 @@ add_action( 'save_post_page', function ( $post_id, $post ) {
  * Patterns: patterns/<slug>.php (header: Title, Description, Kind; body: blocks with {{ID:…}}/{{URL:…}} tokens).
  *   Kind: page     a full page: offered in "Choose a pattern" for new pages, in the inserter (Patterns → IMET)
  *                  and as "Create: <title>" on the Plugins screen. A new page type = a new file.
- *   Kind: section  a ready-made section (CTA banner, button row…): inserter only (Patterns → IMET).
+ *   Kind: section  a ready-made section: inserter only (Patterns → IMET).
  * --------------------------------------------------------------------------------------------------------- */
 function imet_blocks_patterns() {
 	$patterns = array();
