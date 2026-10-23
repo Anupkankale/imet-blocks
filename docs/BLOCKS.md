@@ -50,6 +50,11 @@ that don't choose it are unchanged.
 | IMET Who Can Join | **Boxed** | Grey rounded items with a navy +/−, no icons, all closed at first, rounded photo (e.g. a curriculum). |
 | IMET Specializations | **Five per row** | Five cards fill the container on desktop, so they stay still; they scroll on smaller screens. |
 | IMET Recognition Logos | **Logos** | Company logos without captions in one centred row. |
+| IMET Highlights | **Wide** | One-line 34px title over a wider text column, compact 18px list, 386px button, 478px image (from 1281px wide; default layout below). |
+| IMET Program Overview | **Photo** | Larger cards (20px titles, 17px text, no gold highlight on the open card), 633px photo with a button under it (from 1241px). |
+| IMET Testimonials | **Compact** | Intro closer to the title, 210px cards, "View More" closer. |
+| IMET FAQ | **Compact** | Questions right under the title, 14.5px answers on taller lines, a larger "See More". |
+| IMET Call to Action | **Compact** | 38px title, two-line intro, 66px button with 24px text, 32px corners. |
 
 Also available: the button class `btn-icon-download` (download icon after the text), and an optional button row after
 the photo in **IMET Program Overview**.
@@ -65,10 +70,13 @@ the photo in **IMET Program Overview**.
 Achievements → Career Path Table → USP Bento → Recognition Logos → Comparison Table → Who Can Join →
 Image + Bullet List → Alumni Videos → CTA Banner with Avatars → Testimonials → Certificate → FAQ → Call to Action.
 
-**DBA Course Page order:** Hero (Dark) → Section Navigation → Highlights → Cost Banner → Who Can Join (requirements) →
-Specializations (Five per row) → Program Overview (benefits, with a button) → Tabs → CTA Banner with Avatars →
-Testimonials → About Card → Who Can Join (Boxed, curriculum) → Process Timeline → Step Cards → Recognition Logos (Logos,
-alumni companies) → FAQ → Call to Action.
+**DBA Course Page order:** Hero (Dark) → Section Navigation → Highlights (Wide) → Cost Banner → Who Can Join (requirements) →
+Specializations (Five per row) → Program Overview (Photo, benefits, with a button) → Tabs → CTA Banner with Avatars →
+Testimonials (Compact) → About Card → Who Can Join (Boxed, curriculum) → Process Timeline → Step Cards → Recognition Logos (Logos,
+alumni companies) → FAQ (Compact) → Call to Action (Compact).
+
+**Course page title size:** on a page whose hero uses the **Dark** style, section titles are 38px (the course design)
+instead of 35px; Testimonials and FAQ keep the standard size, and Specializations **Five per row** uses 48px.
 
 ## Shared classes inside sections
 

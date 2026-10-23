@@ -101,9 +101,13 @@ html:has(.imet-section) { scroll-behavior: smooth; }
 .imet-section.section { padding: 70px 0; }
 /* Thin grey line between sections (Figma); not on the gradient band */
 .imet-section.section:not(.specs) { border-top: 1px solid #e7e5e5; }
+/* Course pages (their hero uses the "Dark" style) follow the course Figma: 38px section titles. Testimonials and FAQ
+   keep the standard size there (as in that design); a block style can set its own (e.g. Specializations "Five per row"). */
+.imet-page:has(> .wp-block-imet-hero.is-style-dark) { --imet-title-size: clamp(1.625rem, 1.2rem + 1.3056vw, 2.375rem); } /* → 38px */
+.imet-page:has(> .wp-block-imet-hero.is-style-dark) :is(.imet-section.testimonials, .imet-section.faq) { --imet-title-size: initial; }
 /* Section header (Figma): eyebrow-line (22px, gold line) → title (35px) → sub (18px). Centred unless .left. */
 .imet-section .title {
-	font-size: clamp(1.625rem, 1.2rem + 1.25vw, 2.1875rem); /* 26px → 35px */
+	font-size: var(--imet-title-size, clamp(1.625rem, 1.2rem + 1.25vw, 2.1875rem)); /* 26px → 35px */
 	font-weight: 600;
 	line-height: 1.3;
 	color: #000;

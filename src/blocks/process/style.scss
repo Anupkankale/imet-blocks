@@ -1,13 +1,14 @@
 /* IMET Process Timeline (imet/process). Root element: .imet-section.process
    Figma (DBA Course Page, "Admission Process"): peach band; four steps on a navy line: title, dot, text. */
 .imet-section.process { padding: 30px 0 46px; background: #fef2df; }
+.imet-section.process .eyebrow-line { margin-bottom: 1px; }
 .imet-section .process-steps {
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(var(--steps, 4), minmax(0, 1fr));
 	gap: 0 24px;
 	/* 1320px wide, centred on the 1200px container (as in the design) */
-	margin: 52px calc(50% - min(660px, 50vw - 20px)) 0;
+	margin: 50px calc(50% - min(660px, 50vw - 20px)) 0;
 }
 /* The line runs from the first dot to the last one (centres of the first and last columns) */
 .imet-section .process-steps::before {

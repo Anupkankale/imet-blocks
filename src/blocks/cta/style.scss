@@ -29,6 +29,16 @@
 	-webkit-mask-image: linear-gradient(90deg, transparent 0, #000 22%);
 	mask-image: linear-gradient(90deg, transparent 0, #000 22%);
 }
+/* Style "Compact" (block style, e.g. the DBA Course Page): 38px title, 66px button with 24px text, 32px corners
+   (Figma 1440 frame). */
+.imet-section.cta-wrap.is-style-compact .cta { border-radius: 32px; }
+.imet-section.cta-wrap.is-style-compact .cta-text { max-width: 700px; }
+.imet-section.cta-wrap.is-style-compact .cta-sub { font-size: 0.84375rem; } /* 13.5px: two lines */
+.imet-section.cta-wrap.is-style-compact .cta h2 { font-size: clamp(1.625rem, 0.9821rem + 1.3393vw, 2.375rem); line-height: 1.2; } /* → 38px */
+.imet-section.cta-wrap.is-style-compact .cta .wp-block-button__link { min-width: 378px; min-height: 66px; font-size: 1.5rem; }
+@media (max-width: 640px) {
+	.imet-section.cta-wrap.is-style-compact .cta .wp-block-button__link { min-width: 0; font-size: 1.125rem; }
+}
 @media (max-width: 900px) {
 	.imet-section .cta-photo { position: relative; width: 100%; height: 240px; }
 	.imet-section .cta-photo img { -webkit-mask-image: linear-gradient(180deg, transparent, #000 30%); mask-image: linear-gradient(180deg, transparent, #000 30%); }

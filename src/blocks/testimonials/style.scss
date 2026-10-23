@@ -143,6 +143,12 @@
 	font-size: 1.25rem;
 	letter-spacing: 2px;
 }
+/* Style "Compact" (block style, e.g. the DBA Course Page): intro closer to the title, 210px cards, "View More" closer
+   (Figma 1440 frame). */
+.imet-section.testimonials.is-style-compact .testi-head .title { margin-bottom: -1px; }
+.imet-section.testimonials.is-style-compact .testi-card { min-height: 210px; }
+.imet-section.testimonials.is-style-compact .testi-more { margin-top: 6px; }
+
 /* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
 @media (max-width: 640px) {
 	.imet-section.testimonials { padding: 48px 0; }

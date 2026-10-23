@@ -110,3 +110,8 @@
 	.imet-section .cost-mid { width: 220px; height: auto; margin: 0 auto; padding-top: 12px; }
 	.imet-section .cost-right p { margin-inline: auto; }
 }
+
+/* After the "Wide" Highlights (DBA Course Page): spacing from the Figma */
+@media (min-width: 641px) {
+	.imet-section.highlights.is-style-wide + .imet-section.cost-banner { margin: 32px auto 38px; }
+}

@@ -237,6 +237,17 @@ return array(
 		'style' => array(
 			'imet-base',
 			'file:./style-index.css'
+		),
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Default',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'compact',
+				'label' => 'Compact'
+			)
 		)
 	),
 	'cyber-banner' => array(
@@ -365,7 +376,18 @@ return array(
 			'imet-base',
 			'file:./style-index.css'
 		),
-		'viewScript' => 'file:./view.js'
+		'viewScript' => 'file:./view.js',
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Default',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'compact',
+				'label' => 'Compact'
+			)
+		)
 	),
 	'float-contact' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -464,6 +486,17 @@ return array(
 		'style' => array(
 			'imet-base',
 			'file:./style-index.css'
+		),
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Default',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'wide',
+				'label' => 'Wide'
+			)
 		)
 	),
 	'overview' => array(
@@ -494,7 +527,18 @@ return array(
 			'imet-base',
 			'file:./style-index.css'
 		),
-		'viewScript' => 'file:./view.js'
+		'viewScript' => 'file:./view.js',
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Default',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'photo',
+				'label' => 'Photo'
+			)
+		)
 	),
 	'process' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -718,7 +762,18 @@ return array(
 			'imet-base',
 			'file:./style-index.css'
 		),
-		'viewScript' => 'file:./view.js'
+		'viewScript' => 'file:./view.js',
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Default',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'compact',
+				'label' => 'Compact'
+			)
+		)
 	),
 	'usp-bento' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
