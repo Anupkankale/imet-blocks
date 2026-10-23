@@ -1,0 +1,99 @@
+/* IMET Tabs (imet/tabs). Root element: .imet-section.tabs
+   Figma (DBA Course Page, "Learn More About the Programs"): a white pill bar of labels (active = navy pill), then a
+   grey rounded panel; panels hold a two-column list with green ticks. */
+.imet-section.tabs { padding: 26px 0 30px; }
+.imet-section.tabs .sub { max-width: 920px; margin-bottom: 4px; }
+/* Followed by the CTA banner (DBA Course Page): the banner's own top margin is the gap */
+.imet-section.tabs:has(+ .imet-section.cyber) { padding-bottom: 0; }
+
+/* Label bar */
+.imet-section .tab-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px 16px;
+	width: min(1000px, 100%);
+	min-height: 85px;
+	margin: 0 auto;
+	padding: 4px 30px;
+	border-radius: 43px;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .14);
+	position: relative;
+	z-index: 1;
+}
+.imet-section .tab-label {
+	flex: 0 1 auto;
+	max-width: 290px;
+	padding: 11px 30px;
+	border-radius: 25px;
+	color: var(--navy);
+	font-family: var(--ui);
+	font-size: 1.125rem;
+	font-weight: 600;
+	line-height: 1.45;
+	cursor: pointer;
+	transition: background-color .25s, color .25s;
+	user-select: none;
+}
+.imet-section .tab-label:hover { color: var(--gold); }
+.imet-section .tab-label.is-active { background: linear-gradient(90deg, #15294e 0%, #253f86 100%); color: #fff; }
+.imet-section .tab-label:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.imet-section .tab-label:focus:not(:focus-visible) { outline: none; }
+
+/* Panels */
+.imet-section .tab-panels { width: min(955px, 100%); margin: 12px auto 0; }
+.imet-section .tab-panel {
+	padding: 40px 34px 10px 54px;
+	border-radius: 22px;
+	background: #f3f3f3;
+}
+.imet-section .tab-panel[hidden] { display: none; }
+/* Before the script runs (front end only), show just the first panel */
+:where(body:not(.editor-styles-wrapper)) .imet-section .tab-panels:not(.is-ready) > .tab-panel:not(:first-child) { display: none; }
+/* In the editor every panel shows, one under the other */
+.imet-section .tab-panel + .tab-panel { margin-top: 12px; }
+:where(body:not(.editor-styles-wrapper)) .imet-section .tab-panels.is-ready > .tab-panel { margin-top: 0; }
+
+/* Two-column list with green ticks: <strong>Topic</strong> – description */
+.imet-section .tab-panel ul {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 25px 20px;
+}
+.imet-section .tab-panel li {
+	position: relative;
+	padding-left: 30px;
+	color: #111;
+	font-size: 1rem;
+	line-height: 1.56;
+}
+.imet-section .tab-panel li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 4px;
+	width: 17px;
+	height: 17px;
+	background: url("../../../assets/images/tick-green.svg") center / contain no-repeat;
+}
+.imet-section .tab-panel li strong { color: #000; font-weight: 600; }
+
+@media (max-width: 900px) {
+	/* Labels scroll sideways in one row */
+	.imet-section .tab-nav {
+		justify-content: flex-start;
+		overflow-x: auto;
+		scrollbar-width: none;
+		border-radius: 30px;
+		min-height: 0;
+		padding: 8px;
+	}
+	.imet-section .tab-nav::-webkit-scrollbar { display: none; }
+	.imet-section .tab-label { flex: 0 0 auto; max-width: none; padding: 10px 20px; white-space: nowrap; font-size: 1rem; }
+	.imet-section .tab-panel ul { grid-template-columns: 1fr; gap: 18px; }
+}
+@media (max-width: 640px) {
+	.imet-section.tabs { padding: 48px 0; }
+	.imet-section .tab-panel { padding: 24px 18px; border-radius: 16px; }
+}

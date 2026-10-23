@@ -359,3 +359,49 @@
 	.imet-section .ac-logo:first-child { border-left: 0; }
 	.imet-section .ac-logo img { max-height: 64px; }
 }
+
+/* ---------- Style "Dark" (block style, e.g. DBA Course Page): navy background, white text, optional breadcrumb
+   and rating lines above the title, no accreditation card. ---------- */
+.imet-section.hero.is-style-dark {
+	padding: 40px 0 92px;
+	background: #14234b;
+}
+.imet-section.hero.is-style-dark::after { content: none; }
+.imet-section.hero.is-style-dark :is(h1, .hero-lead, .h-num, .h-label) { color: #fff; }
+.imet-section.hero.is-style-dark .hero-lead { margin-bottom: 36px; }
+.imet-section.hero.is-style-dark .h-form { margin-top: 40px; border-color: #fff; }
+/* Breadcrumb: Home > DBA > DBA in Cybersecurity */
+.imet-section .h-crumbs {
+	margin-bottom: 14px;
+	color: #999fb0;
+	font-family: var(--ui);
+	font-size: 1.125rem;
+	line-height: 1.4;
+}
+.imet-section .h-crumbs a { color: inherit; }
+.imet-section .h-crumbs a:is(:hover, :focus-visible) { color: #fff; text-decoration: underline; }
+/* Rating: the stars are text (★), coloured gold with the last one dimmed */
+.imet-section .h-rating {
+	margin-bottom: 12px;
+	color: #fff;
+	font-family: var(--ui);
+	font-size: 1.125rem;
+	line-height: 1.4;
+}
+.imet-section .h-rating strong {
+	margin-right: 8px;
+	color: #d69521;
+	font-size: 1.75rem;
+	font-weight: 400;
+	letter-spacing: 2px;
+	vertical-align: -3px;
+}
+.imet-section .h-rating em { color: rgba(214, 149, 33, .4); font-style: normal; }
+@media (max-width: 1100px) {
+	.imet-section.hero.is-style-dark .h-form { margin-top: 0; }
+}
+@media (max-width: 640px) {
+	.imet-section.hero.is-style-dark { padding: 24px 0 48px; }
+	.imet-section :is(.h-crumbs, .h-rating) { font-size: 1rem; }
+	.imet-section .h-rating strong { font-size: 1.375rem; }
+}

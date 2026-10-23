@@ -25,5 +25,16 @@
 	"style": [
 		"imet-base",
 		"file:./style-index.css"
+	],
+	"styles": [
+		{
+			"name": "default",
+			"label": "Emblems with captions",
+			"isDefault": true
+		},
+		{
+			"name": "logos",
+			"label": "Logos"
+		}
 	]
 }

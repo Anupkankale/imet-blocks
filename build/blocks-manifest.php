@@ -1,6 +1,35 @@
 <?php
 // This file is generated. Do not modify it manually.
 return array(
+	'about-card' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'imet/about-card',
+		'title' => 'IMET About Card',
+		'category' => 'imet',
+		'icon' => 'id-alt',
+		'description' => 'Header and intro, then a gradient card: a tick list beside a titled list with a gold timeline line.',
+		'keywords' => array(
+			'imet',
+			'section'
+		),
+		'version' => '1.0.0',
+		'textdomain' => 'imet-blocks',
+		'supports' => array(
+			'anchor' => true,
+			'html' => false
+		),
+		'imet' => array(
+			'tagName' => 'section',
+			'className' => 'section about-card',
+			'anchor' => 'about'
+		),
+		'editorScript' => 'file:./index.js',
+		'style' => array(
+			'imet-base',
+			'file:./style-index.css'
+		)
+	),
 	'achievements' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
@@ -295,6 +324,17 @@ return array(
 		'style' => array(
 			'imet-base',
 			'file:./style-index.css'
+		),
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Emblems with captions',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'logos',
+				'label' => 'Logos'
+			)
 		)
 	),
 	'faq' => array(
@@ -384,7 +424,18 @@ return array(
 			'imet-base',
 			'file:./style-index.css'
 		),
-		'viewScript' => 'file:./view.js'
+		'viewScript' => 'file:./view.js',
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Light',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'dark',
+				'label' => 'Dark'
+			)
+		)
 	),
 	'highlights' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -445,6 +496,35 @@ return array(
 		),
 		'viewScript' => 'file:./view.js'
 	),
+	'process' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'imet/process',
+		'title' => 'IMET Process Timeline',
+		'category' => 'imet',
+		'icon' => 'editor-ol',
+		'description' => 'Header, then steps on a horizontal timeline (title, dot, text) and a button. Vertical on phones.',
+		'keywords' => array(
+			'imet',
+			'section'
+		),
+		'version' => '1.0.0',
+		'textdomain' => 'imet-blocks',
+		'supports' => array(
+			'anchor' => true,
+			'html' => false
+		),
+		'imet' => array(
+			'tagName' => 'section',
+			'className' => 'section process',
+			'anchor' => 'admission'
+		),
+		'editorScript' => 'file:./index.js',
+		'style' => array(
+			'imet-base',
+			'file:./style-index.css'
+		)
+	),
 	'section' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
@@ -504,7 +584,47 @@ return array(
 			'imet-base',
 			'file:./style-index.css'
 		),
-		'viewScript' => 'file:./view.js'
+		'viewScript' => 'file:./view.js',
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Four per view (scrolling)',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'five',
+				'label' => 'Five per row'
+			)
+		)
+	),
+	'step-cards' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'imet/step-cards',
+		'title' => 'IMET Step Cards',
+		'category' => 'imet',
+		'icon' => 'grid-view',
+		'description' => 'Header, then numbered step cards in two columns (navy and light, alternating), each with a gold tag, title, text and photo.',
+		'keywords' => array(
+			'imet',
+			'section'
+		),
+		'version' => '1.0.0',
+		'textdomain' => 'imet-blocks',
+		'supports' => array(
+			'anchor' => true,
+			'html' => false
+		),
+		'imet' => array(
+			'tagName' => 'section',
+			'className' => 'section step-cards',
+			'anchor' => 'research-steps'
+		),
+		'editorScript' => 'file:./index.js',
+		'style' => array(
+			'imet-base',
+			'file:./style-index.css'
+		)
 	),
 	'subnav' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -528,6 +648,37 @@ return array(
 			'tagName' => 'nav',
 			'className' => 'subnav',
 			'anchor' => 'subnav'
+		),
+		'editorScript' => 'file:./index.js',
+		'style' => array(
+			'imet-base',
+			'file:./style-index.css'
+		),
+		'viewScript' => 'file:./view.js'
+	),
+	'tabs' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'imet/tabs',
+		'title' => 'IMET Tabs',
+		'category' => 'imet',
+		'icon' => 'index-card',
+		'description' => 'Header, a row of tab labels and one panel per label (e.g. Skills / Who should do / Careers / Tools). The first tab is open.',
+		'keywords' => array(
+			'imet',
+			'section',
+			'tabs'
+		),
+		'version' => '1.0.0',
+		'textdomain' => 'imet-blocks',
+		'supports' => array(
+			'anchor' => true,
+			'html' => false
+		),
+		'imet' => array(
+			'tagName' => 'section',
+			'className' => 'section tabs',
+			'anchor' => 'learn-more'
 		),
 		'editorScript' => 'file:./index.js',
 		'style' => array(
@@ -626,6 +777,17 @@ return array(
 			'imet-base',
 			'file:./style-index.css'
 		),
-		'viewScript' => 'file:./view.js'
+		'viewScript' => 'file:./view.js',
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Lines',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'boxed',
+				'label' => 'Boxed'
+			)
+		)
 	)
 );

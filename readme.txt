@@ -1,7 +1,7 @@
 === IMET Blocks ===
 Requires at least: 6.5
 Requires PHP: 7.4
-Stable tag: 1.7.8
+Stable tag: 1.8.0
 License: GPLv2 or later
 
 Full documentation: README.md and the docs/ folder (Editor guide, Blocks reference, Developer guide,
@@ -22,7 +22,7 @@ src/shared/             base.scss (fonts, colours — shared by all blocks), _bu
                         _utilities.scss (helper classes), page-layout.scss (IMET Landing template only),
                         editor-canvas.scss, view.js helpers
 src/editor/             editor additions: the "IMET button" panel
-patterns/               Full-page patterns made of IMET blocks (e.g. dba-landing.php)
+patterns/               Full-page patterns made of IMET blocks (dba-landing.php, dba-course-page.php)
 templates/              The "IMET Landing" page template
 build/                  Compiled output — what WordPress loads. Rebuild after changing src/.
 

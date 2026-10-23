@@ -33,17 +33,42 @@ normal core blocks, so its content is edited in place. A newly inserted block st
 | IMET FAQ | `imet/faq` | section · `section faq` | `faq` | ✓ | Accordion of Details blocks; first 5 shown, **See More** shows the rest; outputs FAQPage JSON-LD. |
 | IMET Call to Action | `imet/cta` | section · `cta-wrap` | – | – | Deep-blue rounded card with heading, text, button and a photo fading in on the right. |
 | IMET Floating Contact | `imet/float-contact` | div · `float-contact` | – | – | WhatsApp link fixed at the bottom left; circle only on phones. Not in the DBA page (the site has its own WhatsApp button); insert it only on sites without one. |
+| IMET Tabs | `imet/tabs` | section · `section tabs` | `learn-more` | ✓ | Header, a pill bar of tab labels (`.tab-label` paragraphs in `.tab-nav`) and one panel per label (`.tab-panel` groups, matched by position) holding a two-column green-tick list. First tab open; click or ←/→/Home/End; ARIA tabs. The editor shows every panel. |
+| IMET About Card | `imet/about-card` | section · `section about-card` | `about` | – | Header and intro, then a peach-to-lavender card: green-tick list (`.about-ticks`) beside a title and a list on a gold timeline line (`.about-key`). |
+| IMET Process Timeline | `imet/process` | section · `section process` | `admission` | – | Peach band: steps (`.p-step` = H3 + text) on a horizontal navy line with dots, then a button. 3, 4 or 5 steps; vertical on phones. |
+| IMET Step Cards | `imet/step-cards` | section · `section step-cards` | `research-steps` | – | Header, then step cards in two columns (left navy, right light) with a gold "Step n:" tag, H3, text and a photo; one column on tablets, photo on top on phones. |
 | IMET Section (blank) | `imet/section` | section · `section imet-blank` | – | – | Empty section with the IMET design, for building new sections. |
+
+## Block styles
+
+Some blocks have a second look, chosen in the sidebar (**Styles**). It adds an `is-style-*` class to the block; pages
+that don't choose it are unchanged.
+
+| Block | Style | Look |
+|---|---|---|
+| IMET Hero | **Dark** | Navy background, white text, optional breadcrumb (`.h-crumbs`) and rating (`.h-rating`) lines above the title, no accreditation card. |
+| IMET Who Can Join | **Boxed** | Grey rounded items with a navy +/−, no icons, all closed at first, rounded photo (e.g. a curriculum). |
+| IMET Specializations | **Five per row** | Five cards fill the container on desktop, so they stay still; they scroll on smaller screens. |
+| IMET Recognition Logos | **Logos** | Company logos without captions in one centred row. |
+
+Also available: the button class `btn-icon-download` (download icon after the text), and an optional button row after
+the photo in **IMET Program Overview**.
 
 ## Patterns
 
 | Pattern | Kind | Where |
 |---|---|---|
 | DBA Category Page | Full page | "Choose a pattern" on new pages, + → Patterns → IMET, **Plugins → Create: …** |
+| DBA Course Page | Full page | "Choose a pattern" on new pages, + → Patterns → IMET, **Plugins → Create: DBA Course Page** |
 
-**DBA page order:** Hero → Highlights → Section Navigation → Specializations → Cost Banner → Program Overview →
+**DBA Category Page order:** Hero → Highlights → Section Navigation → Specializations → Cost Banner → Program Overview →
 Achievements → Career Path Table → USP Bento → Recognition Logos → Comparison Table → Who Can Join →
 Image + Bullet List → Alumni Videos → CTA Banner with Avatars → Testimonials → Certificate → FAQ → Call to Action.
+
+**DBA Course Page order:** Hero (Dark) → Section Navigation → Highlights → Cost Banner → Who Can Join (requirements) →
+Specializations (Five per row) → Program Overview (benefits, with a button) → Tabs → CTA Banner with Avatars →
+Testimonials → About Card → Who Can Join (Boxed, curriculum) → Process Timeline → Step Cards → Recognition Logos (Logos,
+alumni companies) → FAQ → Call to Action.
 
 ## Shared classes inside sections
 

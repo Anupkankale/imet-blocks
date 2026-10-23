@@ -30,6 +30,16 @@ function imet_blocks_media_files() {
 		'cert-graduate.jpg' => 'IMET DBA graduate holding his certificate',
 		'cta-graduates.jpg' => 'IMET DBA graduates at convocation',
 		'alumni-convocation.jpg' => 'IMET convocation day: a DBA graduate with a programme advisor',
+		// DBA Course Page (Cybersecurity)
+		'course-highlights.webp' => 'Cybersecurity shield over a digital hand: Cyber Risk Director, 85% of global organizations report increased cyber risk',
+		'course-requirements.webp' => 'AI head with a padlock: AI ethics & security, cyber resilience, C-suite reporting 50% direct to board',
+		'course-benefits.webp' => 'Cybersecurity leader: 3.5M+ job openings worldwide, +85% immediate ROI, career path from IT professional to CISO',
+		'course-curriculum.webp' => 'IMET DBA graduate holding his certificate of achievement',
+		'course-step-1.webp' => 'Researcher drafting a thesis title on paper', 'course-step-2.webp' => 'Typewriter with a page that reads Research',
+		'course-step-3.webp' => 'Doctoral candidate writing on a laptop', 'course-step-4.webp' => 'Tablet showing a global cybersecurity map',
+		'course-step-5.webp' => 'Thesis draft open on a laptop', 'course-step-6.webp' => 'DBA graduate receiving his doctorate certificate',
+		'alumni-fab.webp' => 'First Abu Dhabi Bank', 'alumni-katara.webp' => 'Katara', 'alumni-cure.webp' => 'Cure Medical Centers',
+		'alumni-western.webp' => 'Western International Group', 'alumni-globalcare.webp' => 'Global Care Hospital',
 	);
 }
 

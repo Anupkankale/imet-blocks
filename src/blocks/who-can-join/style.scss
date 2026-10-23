@@ -76,3 +76,52 @@
 @media (max-width: 640px) {
 	.imet-section.join { padding: 48px 0; }
 }
+
+/* ---------- Style "Boxed" (block style, e.g. the Curriculum on the DBA Course Page): each item is a grey rounded
+   box with a navy +/−, no icons; photo with rounded corners. ---------- */
+.imet-section.join.is-style-boxed { padding-bottom: 24px; }
+.imet-section.join.is-style-boxed .join-grid {
+	grid-template-columns: minmax(0, 564px) minmax(0, 422px);
+	gap: 37px;
+	margin-right: 0;
+	padding-left: 74px;
+}
+.imet-section.join.is-style-boxed .join-acc { display: flex; flex-direction: column; gap: 19px; padding-top: 6px; }
+.imet-section.join.is-style-boxed .join-acc details { border: 0; border-radius: 10px; background: #f4f4f4; }
+.imet-section.join.is-style-boxed .join-acc summary {
+	position: relative;
+	display: block;
+	min-height: 78px;
+	padding: 26px 56px 26px 24px;
+	font: 400 1.03125rem/1.5 var(--head); /* 16.5px */
+	color: #000;
+}
+.imet-section.join.is-style-boxed .join-acc summary strong { font-weight: 700; }
+.imet-section.join.is-style-boxed .join-acc summary::before { content: none; }
+.imet-section.join.is-style-boxed .join-acc summary::after {
+	position: absolute;
+	right: 22px;
+	top: 26px;
+	width: 26px;
+	height: 26px;
+	background: rgba(255, 255, 255, .55) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cpath d='M7 13h12M13 7v12' stroke='%23021941' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E") center / 26px no-repeat;
+}
+.imet-section.join.is-style-boxed .join-acc details[open]:not(.is-closing) summary { color: #000; font-weight: 400; }
+.imet-section.join.is-style-boxed .join-acc details[open]:not(.is-closing) summary::after {
+	background-color: var(--navy);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cpath d='M7 13h12' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+.imet-section.join.is-style-boxed .join-acc details p { padding: 0 24px 20px; font-size: 0.9375rem; }
+.imet-section.join.is-style-boxed .join-photo { margin-top: 0; }
+.imet-section.join.is-style-boxed .join-photo img { border-radius: 24px; }
+@media (max-width: 1200px) {
+	.imet-section.join.is-style-boxed .join-grid { padding-left: 0; justify-content: center; }
+}
+@media (max-width: 900px) {
+	.imet-section.join.is-style-boxed .join-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+	.imet-section.join.is-style-boxed .join-acc summary { min-height: 64px; padding: 20px 56px 20px 16px; font-size: 1rem; }
+	.imet-section.join.is-style-boxed .join-acc summary::after { right: 16px; top: 19px; }
+	.imet-section.join.is-style-boxed .join-acc details p { padding: 0 16px 16px; }
+}

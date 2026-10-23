@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "imet/tabs",
+	"title": "IMET Tabs",
+	"category": "imet",
+	"icon": "index-card",
+	"description": "Header, a row of tab labels and one panel per label (e.g. Skills / Who should do / Careers / Tools). The first tab is open.",
+	"keywords": [
+		"imet",
+		"section",
+		"tabs"
+	],
+	"version": "1.0.0",
+	"textdomain": "imet-blocks",
+	"supports": {
+		"anchor": true,
+		"html": false
+	},
+	"imet": {
+		"tagName": "section",
+		"className": "section tabs",
+		"anchor": "learn-more"
+	},
+	"editorScript": "file:./index.js",
+	"style": [
+		"imet-base",
+		"file:./style-index.css"
+	],
+	"viewScript": "file:./view.js"
+}

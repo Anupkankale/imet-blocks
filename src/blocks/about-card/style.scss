@@ -1,0 +1,58 @@
+/* IMET About Card (imet/about-card). Root element: .imet-section.about-card
+   Figma (DBA Course Page, "About IMET Worldwide"): intro text, then a peach-to-lavender card with a green-tick list on
+   the left and "Our key highlights are:" + a list on a gold timeline line on the right. */
+.imet-section.about-card { padding: 26px 0 31px; }
+.imet-section.about-card .sub { max-width: 1035px; margin-bottom: 14px; color: var(--text-navy); }
+.imet-section .about-box {
+	display: grid;
+	grid-template-columns: minmax(0, 583px) minmax(0, 1fr);
+	width: min(1167px, 100%);
+	margin: 0 auto;
+	padding: 34px 30px 36px 22px;
+	border-radius: 12px;
+	background: linear-gradient(90deg, #ffeed3 0%, #f9f2e8 50%, #f3f6fe 100%);
+}
+.imet-section .about-box li { color: #111; font-size: 1.125rem; line-height: 1.55; }
+/* Left: green ticks */
+.imet-section .about-ticks li { position: relative; padding: 4px 0 0 31px; }
+.imet-section .about-ticks li + li { margin-top: 16px; }
+.imet-section .about-ticks li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 6px;
+	width: 20px;
+	height: 20px;
+	background: url("../../../assets/images/tick-green.svg") center / contain no-repeat;
+}
+/* Right: title + list on a gold line with gold dots */
+.imet-section .about-key-title { margin-bottom: 9px; color: #000; font-size: 1.125rem; font-weight: 600; }
+.imet-section .about-key ul { position: relative; padding-left: 15px; }
+.imet-section .about-key ul::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 11px;
+	bottom: 14px;
+	width: 2px;
+	background: var(--gold);
+}
+.imet-section .about-key li { position: relative; }
+.imet-section .about-key li::before {
+	content: "";
+	position: absolute;
+	left: -18px;
+	top: 11px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: var(--gold);
+}
+@media (max-width: 900px) {
+	.imet-section .about-box { grid-template-columns: 1fr; gap: 28px; padding: 28px 22px; }
+}
+@media (max-width: 640px) {
+	.imet-section.about-card { padding: 48px 0; }
+	.imet-section .about-box li { font-size: 1rem; }
+	.imet-section .about-box { text-align: left; }
+}

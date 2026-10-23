@@ -150,3 +150,16 @@
 	.imet-section .wp-block-buttons.stack-mobile > .wp-block-button,
 	.imet-section .wp-block-buttons.stack-mobile .wp-block-button__link { width: 100%; }
 }
+
+/* Download icon after the text (Additional CSS class "btn-icon-download", e.g. "Download Brochure").
+   A mask, so it takes the button's text colour; ::before because ::after is the glass flash. */
+.imet-section .btn-icon-download .wp-block-button__link::before {
+	content: "";
+	order: 2;
+	width: 20px;
+	height: 20px;
+	flex-shrink: 0;
+	background: currentColor;
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 4v11m-5-5 5 5 5-5M5 20h14'/%3E%3C/svg%3E") center / contain no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 4v11m-5-5 5 5 5-5M5 20h14'/%3E%3C/svg%3E") center / contain no-repeat;
+}

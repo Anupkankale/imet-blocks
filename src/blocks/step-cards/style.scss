@@ -1,0 +1,53 @@
+/* IMET Step Cards (imet/step-cards). Root element: .imet-section.step-cards
+   Figma (DBA Course Page, "DBA Cybersecurity Research Steps"): two columns of cards (left navy, right light gradient),
+   each with a gold "Step n:" tag over the top edge, a title, text and a photo on the right. */
+.imet-section.step-cards { padding: 10px 0 27px; }
+.imet-section.step-cards .sub { max-width: 1040px; margin-bottom: 26px; color: var(--text-navy); }
+.imet-section .step-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 27px 18px;
+	width: min(1221px, 100% - 40px);
+	margin-inline: auto;
+}
+.imet-section .step-card {
+	position: relative;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 247px;
+	min-height: 188px;
+	box-sizing: border-box;
+	border: 2px solid #f4dbaf;
+	border-radius: 14px;
+	background: linear-gradient(90deg, #eaeaf8 0%, #f8efe7 100%);
+	color: #1a1a1a;
+}
+.imet-section .step-card:nth-child(odd) { border-color: #4576fc; background: #182d51; color: #fff; }
+.imet-section .sc-text { padding: 30px 4px 14px 20px; }
+.imet-section .sc-tag {
+	position: absolute;
+	top: -11px;
+	left: 20px;
+	padding: 1px 10px;
+	border-radius: 4px;
+	background: #ffc65e;
+	color: #1a1a1a;
+	font-size: 1.125rem;
+	font-weight: 600;
+	line-height: 1.5;
+}
+.imet-section .step-card h3 { margin-bottom: 8px; color: inherit; font-size: 1.1875rem; font-weight: 600; line-height: 1.3; } /* 19px */
+.imet-section .step-card p:not(.sc-tag) { color: inherit; font-size: 0.90625rem; line-height: 1.38; } /* 14.5px */
+.imet-section .sc-photo { margin: 0; overflow: hidden; border-radius: 0 12px 12px 0; }
+.imet-section .sc-photo img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 1000px) {
+	.imet-section .step-grid { grid-template-columns: 1fr; max-width: 640px; }
+}
+@media (max-width: 560px) {
+	.imet-section .step-card { grid-template-columns: 1fr; }
+	.imet-section .sc-photo { order: -1; height: 180px; border-radius: 12px 12px 0 0; }
+	.imet-section .sc-text { padding: 20px 16px 18px; }
+	.imet-section .sc-tag { top: -11px; left: 16px; }
+}
+@media (max-width: 640px) {
+	.imet-section.step-cards { padding: 48px 0; }
+}

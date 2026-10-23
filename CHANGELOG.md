@@ -3,6 +3,17 @@
 All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 [Deployment → Versioning](docs/DEPLOYMENT.md#versioning)).
 
+## 1.8.0 — 2026-10-23
+- **New pattern: DBA Course Page** (one DBA specialization, shipped with DBA in Cybersecurity content), from the
+  "Cyber security page – Course Page Structure" design. Built mostly from existing blocks; also on the Plugins screen as
+  **Create: DBA Course Page**.
+- **New blocks:** IMET Tabs (pill tab bar + panels, ARIA tabs), IMET About Card, IMET Process Timeline, IMET Step Cards.
+- **Block styles** on existing blocks (existing pages unchanged): Hero **Dark** (navy, breadcrumb, rating),
+  Who Can Join **Boxed** (curriculum: grey boxes, all closed), Specializations **Five per row**, Recognition Logos
+  **Logos**. Button class `btn-icon-download`; optional button under the photo in Program Overview.
+- **Marquee fix:** a row only scrolls when its own items overflow (the copies made for the loop no longer count).
+- 15 new images (course photos, research steps, alumni company logos), imported into the Media Library on update.
+
 ## 1.7.8 — 2026-10-23
 - **Patterns:** removed the unused section patterns (Heading, text and button; Button row; CTA banner (navy);
   CTA card (soft)). Patterns → IMET now lists only the DBA page, renamed **DBA Category Page** (also on the Plugins
