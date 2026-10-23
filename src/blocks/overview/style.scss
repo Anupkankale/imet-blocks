@@ -36,7 +36,7 @@
 .imet-section .ben-item:nth-child(6n+4)::before { background-image: url("../../../assets/images/ben-4.png"); }
 .imet-section .ben-item:nth-child(6n+5)::before { background-image: url("../../../assets/images/ben-5.png"); }
 .imet-section .ben-item:nth-child(6n+6)::before { background-image: url("../../../assets/images/ben-6.png"); }
-.imet-section .ben-item h4 {
+.imet-section .ben-item :is(h3, h4) {
 	font-size: 1.125rem; /* 18px */
 	font-weight: 600;
 	line-height: 1.3;

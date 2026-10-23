@@ -35,9 +35,9 @@ if ( $imet_block_theme ) {
 	get_header();
 }
 ?>
-<div class="imet-page">
+<main id="content" class="imet-page">
 	<?php echo $imet_content; // phpcs:ignore WordPress.Security.EscapeOutput -- block content. ?>
-</div>
+</main>
 <?php
 if ( $imet_block_theme ) {
 	echo $imet_footer; // phpcs:ignore WordPress.Security.EscapeOutput -- block output.

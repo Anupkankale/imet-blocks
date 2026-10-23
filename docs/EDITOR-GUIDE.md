@@ -49,6 +49,12 @@ editor.
 | Move a section | Open **List View** (top toolbar, ☰ icon) and drag the section up or down. |
 | Add a section | Click **+** → search "IMET" or open the **IMET** category. |
 
+**Headings and SEO:** the page has one H1 (the hero title). Section titles are H2 and card titles H3; keep that
+order when adding content, and give every section its own title (don't repeat the H1 text).
+
+**Image alt text:** select an image → sidebar → **Alternative text**. Describe what the photo shows; leave it empty
+only for decorative images (for example the small round avatars).
+
 **Gold words in headings:** text you make **bold** inside a section title turns gold (for example "DBA v/s Phd").
 
 **Don't change** the **Additional CSS class** of a section or its inner groups unless this guide tells you to.
@@ -216,7 +222,9 @@ If you rename an anchor, update the matching link in the menu bar.
 - [ ] Form shortcode added in the hero
 - [ ] Every button and card link set (no `#` placeholders)
 - [ ] Real YouTube links on the videos
-- [ ] SEO title and description set (Rank Math)
+- [ ] SEO title and description set (Rank Math), and a social share image
+- [ ] Every section title is unique, and photos have alt text
+- [ ] Course / breadcrumb structured data in place if the page replaces one that had it
 - [ ] **Preview** checked on desktop and on a phone
 - [ ] Template is **IMET Landing** (sidebar → Template)
 - [ ] After publishing: purge the cache (NitroPack) and check the page logged out
