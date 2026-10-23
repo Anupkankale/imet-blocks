@@ -86,3 +86,30 @@
 @media (max-width: 640px) {
 	.imet-section.overview { padding: 48px 0; }
 }
+
+/* ---------- Style "Photo" (block style, e.g. "Benefits" on the DBA Course Page): larger cards and text, a 633px photo
+   with a button under it, and an open card without the gold highlight (Figma 1440 frame). ---------- */
+.imet-section.overview.is-style-photo { padding: 18px 0 28px; }
+.imet-section.overview.is-style-photo .title { margin-top: 9px; }
+.imet-section.overview.is-style-photo .sec-head { margin-bottom: 69px; }
+.imet-section.overview.is-style-photo .benefit-list { gap: 13px; }
+.imet-section.overview.is-style-photo .ben-item { min-height: 74px; padding: 12px 14px 12px 83px; }
+.imet-section.overview.is-style-photo .ben-item::before { left: 6px; top: 6px; width: 60px; height: 60px; }
+.imet-section.overview.is-style-photo .ben-item :is(h3, h4) { font-size: 1.25rem; } /* 20px */
+.imet-section.overview.is-style-photo .ben-item p { margin-top: 4px; font-size: 1.0625rem; line-height: 1.41; color: #000; } /* 17px */
+.imet-section.overview.is-style-photo .ben-item.is-open { border-color: var(--line); background: #fff; }
+.imet-section.overview.is-style-photo .ov-grid > .wp-block-buttons .wp-block-button__link { min-width: 386px; }
+@media (min-width: 1241px) { /* needs the full 1200px container */
+	.imet-section.overview.is-style-photo .ov-grid {
+		grid-template-columns: 442px 633px;
+		grid-template-rows: auto 1fr; /* the photo row is only as tall as the photo; the list spans both */
+		gap: 0 17px;
+		padding-left: 71px;
+	}
+	.imet-section.overview.is-style-photo .ov-visual { margin-top: 5px; }
+	.imet-section.overview.is-style-photo .ov-visual img { max-width: none; width: 633px; }
+	.imet-section.overview.is-style-photo .ov-grid > .wp-block-buttons { margin: 39px 0 0 36px; }
+}
+@media (max-width: 640px) {
+	.imet-section.overview.is-style-photo .ov-grid > .wp-block-buttons .wp-block-button__link { min-width: 0; }
+}

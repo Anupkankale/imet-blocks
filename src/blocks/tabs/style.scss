@@ -1,8 +1,8 @@
 /* IMET Tabs (imet/tabs). Root element: .imet-section.tabs
    Figma (DBA Course Page, "Learn More About the Programs"): a white pill bar of labels (active = navy pill), then a
    grey rounded panel; panels hold a two-column list with green ticks. */
-.imet-section.tabs { padding: 26px 0 30px; }
-.imet-section.tabs .sub { max-width: 920px; margin-bottom: 4px; }
+.imet-section.tabs { padding: 37px 0 30px; }
+.imet-section.tabs .sub { max-width: 920px; margin-bottom: -7px; } /* the label bar starts right under the intro (Figma) */
 /* Followed by the CTA banner (DBA Course Page): the banner's own top margin is the gap */
 .imet-section.tabs:has(+ .imet-section.cyber) { padding-bottom: 0; }
 
@@ -44,7 +44,7 @@
 /* Panels */
 .imet-section .tab-panels { width: min(955px, 100%); margin: 12px auto 0; }
 .imet-section .tab-panel {
-	padding: 40px 34px 10px 54px;
+	padding: 30px 38px 20px 62px;
 	border-radius: 22px;
 	background: #f3f3f3;
 }

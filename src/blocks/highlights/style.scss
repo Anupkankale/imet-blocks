@@ -54,3 +54,29 @@
 	.imet-section .hl-list { margin-inline: auto; }
 	.imet-section .hl-text .wp-block-buttons { justify-content: center; }
 }
+
+/* ---------- Style "Wide" (block style, e.g. the DBA Course Page): one-line title over a wider text column, compact
+   18px list, 386px button, 478px image reaching 18px past the container (Figma 1440 frame). The wide layout needs
+   the full 1200px container plus its overhang, so it starts at 1281px; narrower screens use the default layout. ---------- */
+@media (min-width: 1281px) {
+	.imet-section.highlights.is-style-wide { padding: 12px 0 0; }
+	.imet-section.highlights.is-style-wide .hl-grid {
+		grid-template-columns: minmax(0, 1fr) 478px;
+		gap: 0;
+		margin-left: calc(50% - 600px - 8px);
+		margin-right: calc(50% - 600px - 18px);
+		width: auto;
+		padding: 0;
+	}
+	.imet-section.highlights.is-style-wide .hl-text { position: relative; z-index: 1; }
+	.imet-section.highlights.is-style-wide .title { white-space: nowrap; font-size: 2.125rem; } /* 34px */
+	.imet-section.highlights.is-style-wide .hl-visual { padding-top: 17px; }
+	.imet-section.highlights.is-style-wide .hl-visual img { max-width: 478px; }
+}
+.imet-section.highlights.is-style-wide .hl-list { gap: 6px; margin: 37px 0 9px; max-width: 735px; }
+.imet-section.highlights.is-style-wide .hl-list li { padding-left: 48px; font-size: 1.125rem; line-height: 1.39; }
+.imet-section.highlights.is-style-wide .hl-list li::before { left: 3px; top: -3px; width: 28px; height: 28px; }
+.imet-section.highlights.is-style-wide .wp-block-button__link { min-width: 386px; }
+@media (max-width: 640px) {
+	.imet-section.highlights.is-style-wide .wp-block-button__link { min-width: 0; }
+}

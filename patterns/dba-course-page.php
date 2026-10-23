@@ -70,8 +70,8 @@
 </div>
 <!-- /wp:group --></nav>
 <!-- /wp:imet/subnav -->
-<!-- wp:imet/highlights {"anchor":"overview"} -->
-<section id="overview" class="wp-block-imet-highlights imet-section highlights"><!-- wp:group {"className":"imet-container hl-grid","layout":{"type":"default"}} -->
+<!-- wp:imet/highlights {"anchor":"overview","className":"is-style-wide"} -->
+<section id="overview" class="wp-block-imet-highlights imet-section highlights is-style-wide"><!-- wp:group {"className":"imet-container hl-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container hl-grid"><!-- wp:group {"className":"hl-text","layout":{"type":"default"}} -->
 <div class="wp-block-group hl-text"><!-- wp:paragraph {"className":"eyebrow-line left"} -->
 <p class="eyebrow-line left">Overview</p>
@@ -225,8 +225,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/specializations -->
-<!-- wp:imet/overview {"anchor":"benefits"} -->
-<section id="benefits" class="wp-block-imet-overview imet-section section overview"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<!-- wp:imet/overview {"anchor":"benefits","className":"is-style-photo"} -->
+<section id="benefits" class="wp-block-imet-overview imet-section section overview is-style-photo"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
 <div class="wp-block-group sec-head"><!-- wp:paragraph {"className":"eyebrow-line ov-eyebrow"} -->
 <p class="eyebrow-line ov-eyebrow">Benefits of DBA in cybersecurity</p>
@@ -242,7 +242,7 @@
 <h3 class="wp-block-heading">Boardroom-Level Expertise</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Gain the strategic knowledge to guide boards and executives on cybersecurity.</p>
+<p>Acquire the strategic knowledge to provide direction on cybersecurity to the external executives.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -316,7 +316,7 @@
 <h2 class="wp-block-heading title">Learn More About the Programs</h2>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"className":"sub"} -->
-<p class="sub">Everything about the online DBA in Cybersecurity in one place: the skills you build, who it is for, where it leads, and the tools you work with.</p>
+<p class="sub">Everything you need to know about the online DBA in Cybersecurity in one place: the skills you will build, who the program is designed for, the senior careers it leads to, and the frameworks and tools you will work with.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"tab-nav","layout":{"type":"default"}} -->
@@ -458,8 +458,8 @@
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/cyber-banner -->
-<!-- wp:imet/testimonials -->
-<section class="wp-block-imet-testimonials imet-section section testimonials"><!-- wp:group {"className":"imet-container testi-head","layout":{"type":"default"}} -->
+<!-- wp:imet/testimonials {"className":"is-style-compact"} -->
+<section class="wp-block-imet-testimonials imet-section section testimonials is-style-compact"><!-- wp:group {"className":"imet-container testi-head","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container testi-head"><!-- wp:paragraph {"className":"eyebrow-line"} -->
 <p class="eyebrow-line">Clients Testimonials</p>
 <!-- /wp:paragraph -->
@@ -817,8 +817,8 @@
 <!-- /wp:group --></div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/embassy -->
-<!-- wp:imet/faq {"anchor":"faq"} -->
-<section id="faq" class="wp-block-imet-faq imet-section section faq"><!-- wp:group {"className":"imet-container narrow","layout":{"type":"default"}} -->
+<!-- wp:imet/faq {"anchor":"faq","className":"is-style-compact"} -->
+<section id="faq" class="wp-block-imet-faq imet-section section faq is-style-compact"><!-- wp:group {"className":"imet-container narrow","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container narrow"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
 <div class="wp-block-group sec-head"><!-- wp:paragraph {"className":"eyebrow-line faq-eyebrow"} -->
 <p class="eyebrow-line faq-eyebrow">Doctorate (DBA) Frequently Asked Questions (FAQs)</p>
@@ -830,7 +830,7 @@
 <!-- wp:group {"className":"faq-acc","layout":{"type":"default"}} -->
 <div class="wp-block-group faq-acc"><!-- wp:details -->
 <details class="wp-block-details"><summary>What is an online Doctorate (DBA) in Cybersecurity?</summary><!-- wp:paragraph -->
-<p>It is a professional doctorate for senior technology leaders that combines cybersecurity strategy, governance, and applied research, delivered 100% online.</p>
+<p>The online Doctor of Business Administration (DBA) in Cybersecurity at IMET Worldwide delivers terminal-level education for senior IT professionals who want to reach leadership roles in business, consulting, or academia. Students gain leadership skills and research abilities through flexible online learning and research-based studies.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 <!-- wp:details -->
@@ -876,8 +876,8 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/faq -->
-<!-- wp:imet/cta -->
-<section class="wp-block-imet-cta imet-section cta-wrap"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<!-- wp:imet/cta {"className":"is-style-compact"} -->
+<section class="wp-block-imet-cta imet-section cta-wrap is-style-compact"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container"><!-- wp:group {"className":"cta","layout":{"type":"default"}} -->
 <div class="wp-block-group cta"><!-- wp:group {"className":"cta-text","layout":{"type":"default"}} -->
 <div class="wp-block-group cta-text"><!-- wp:heading -->

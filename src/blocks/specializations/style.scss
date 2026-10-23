@@ -72,12 +72,15 @@
 /* Style "Five per row" (block style, e.g. "Other Doctorate (DBA) Concentrations" on the DBA Course Page): five cards fit
    the container, so the marquee doesn't start (it only runs when the row overflows). Smaller screens as above. */
 @media (min-width: 1101px) {
-	.imet-section.specs.is-style-five .spec-grid { --per-view: 5; }
+	.imet-section.specs.is-style-five .spec-grid { --per-view: 5; width: min(1184px, 100% - 40px); }
 	.imet-section.specs.is-style-five .spec-card.is-clone { display: none; } /* all five fit: nothing to loop */
 }
 @media (min-width: 641px) {
-	.imet-section.specs.is-style-five { padding-bottom: 60px; }
+	.imet-section.specs.is-style-five { padding-bottom: 55px; }
 }
+.imet-section.specs.is-style-five { --imet-title-size: clamp(1.625rem, 1.2rem + 2vw, 3rem); } /* → 48px (Figma) */
+.imet-section.specs.is-style-five .title { line-height: 1.1; margin-bottom: -5px; }
+.imet-section.specs.is-style-five .spec-card a { align-items: flex-start; padding-top: 14px; } /* text top-left, as in the Figma */
 
 /* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
 @media (max-width: 640px) {

@@ -3,6 +3,15 @@
 All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 [Deployment → Versioning](docs/DEPLOYMENT.md#versioning)).
 
+## 1.8.1 — 2026-10-23
+- **DBA Course Page, pixel match to the Figma (1440):** every section from the menu bar down is now within ±3px of the
+  design (was up to +174px). New block styles, so the DBA Category Page is unchanged: Highlights **Wide**, Program
+  Overview **Photo**, Testimonials **Compact**, FAQ **Compact**, Call to Action **Compact**. Section titles on course pages
+  are 38px (Concentrations 48px); hero, tabs, curriculum, admission, research steps and concentrations spacing tuned.
+- **Step Cards:** the photo no longer sets the card height (cards are 188px as designed).
+- **Program Overview:** with a button under the photo, the photo row is only as tall as the photo.
+- No sideways scrolling at any width (wide layouts start where they fit).
+
 ## 1.8.0 — 2026-10-23
 - **New pattern: DBA Course Page** (one DBA specialization, shipped with DBA in Cybersecurity content), from the
   "Cyber security page – Course Page Structure" design. Built mostly from existing blocks; also on the Plugins screen as

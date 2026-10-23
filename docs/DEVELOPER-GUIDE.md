@@ -136,6 +136,11 @@ Patterns are PHP files in `patterns/` with a header:
 picks the style, so existing pages never change. Prefer a style over a new block when the content structure is the
 same (e.g. Who Can Join → **Boxed** for a curriculum); add a block only for a new structure.
 
+**Section title size** comes from `--imet-title-size` (fallback: the standard 26px → 35px clamp). Course pages set it
+to 38px with `.imet-page:has(> .wp-block-imet-hero.is-style-dark)` in `base.scss`; a block style can set its own
+(Specializations **Five per row**: 48px). Fixed-width desktop layouts in block styles start at a breakpoint where the
+1200px container plus any overhang fits (e.g. Highlights **Wide** from 1281px), so no screen width scrolls sideways.
+
 1. **Scope everything to `.imet-section`.**
    - Root: `.imet-section.faq`.
    - Inside: `.imet-section .faq-acc`.

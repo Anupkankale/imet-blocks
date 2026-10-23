@@ -368,11 +368,13 @@
 }
 .imet-section.hero.is-style-dark::after { content: none; }
 .imet-section.hero.is-style-dark :is(h1, .hero-lead, .h-num, .h-label) { color: #fff; }
-.imet-section.hero.is-style-dark .hero-lead { margin-bottom: 36px; }
+.imet-section.hero.is-style-dark h1 { font-size: clamp(1.75rem, 1.2649rem + 1.0863vw, 2.34375rem); } /* → 37.5px */
+.imet-section.hero.is-style-dark .hero-lead { margin: 22px 0 36px; font-size: clamp(1rem, 0.8661rem + 0.372vw, 1.21875rem); line-height: 1.45; } /* → 19.5px */
+.imet-section.hero.is-style-dark .wp-block-button__link { min-width: 320px; }
 .imet-section.hero.is-style-dark .h-form { margin-top: 40px; border-color: #fff; }
 /* Breadcrumb: Home > DBA > DBA in Cybersecurity */
 .imet-section .h-crumbs {
-	margin-bottom: 14px;
+	margin-bottom: 9px;
 	color: #999fb0;
 	font-family: var(--ui);
 	font-size: 1.125rem;
@@ -402,6 +404,7 @@
 }
 @media (max-width: 640px) {
 	.imet-section.hero.is-style-dark { padding: 24px 0 48px; }
+	.imet-section.hero.is-style-dark .wp-block-button__link { min-width: 0; }
 	.imet-section :is(.h-crumbs, .h-rating) { font-size: 1rem; }
 	.imet-section .h-rating strong { font-size: 1.375rem; }
 }

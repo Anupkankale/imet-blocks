@@ -6,5 +6,5 @@
 		'wp-data',
 		'wp-element'
 	),
-	'version' => '6b3e8c3e9ee8c08e4971'
+	'version' => '54dc42b31c625c96f96b'
 );
