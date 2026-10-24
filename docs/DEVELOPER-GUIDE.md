@@ -243,6 +243,8 @@ Scripts are classic scripts (`viewScript`), loaded only where the block is used.
 
 `test:e2e` uses `http://imetworld.local/imet-preview/`. `tests/e2e/spacing.spec.js` checks spacing and sizes: button heights per size class (48/60/72px, 44/54/62px on phones), centred containers within 1200px, no overlapping sections, the title and eyebrow type scale, and each section's padding against `tests/e2e/spacing.golden.json`. After a deliberate spacing change, refresh the snapshot with `UPDATE_GOLDEN=1 npm run test:e2e -- spacing --workers=1` and commit it.
 
+`tests/e2e/performance.spec.js` measures Core Web Vitals in Chromium: LCP ≤ 2.5s (and the LCP image isn't lazy), CLS ≤ 0.1 while scrolling the whole page, blocking time ≤ 200ms, interaction delay ≤ 200ms, plus budgets for page weight (1500KB), JavaScript (150KB), requests (90) and stylesheets (3). It also checks for no render-blocking head scripts, no Google Fonts requests, `font-display` on web fonts, image `width`/`height`, lazy-loading only below the fold, and that analytics wait for the first interaction (skipped when the site has no analytics tags). Budgets can be overridden with env vars (`BUDGET_LCP_MS`, `BUDGET_CLS`, `BUDGET_TBT_MS`, `BUDGET_INP_MS`, `BUDGET_TOTAL_KB`, `BUDGET_JS_KB`, `BUDGET_REQUESTS`, `BUDGET_STYLESHEETS`). A local site has no CDN or cache, so run it against staging (`BASE_URL=...`) for realistic timings. Known issue, tracked as an expected failure: the page prints two viewport meta tags (template + `wp_head()`).
+
 Override with `BASE_URL=... PREVIEW_PATH=... npm run test:e2e`.
 The static test for placeholder `href="#"` links is marked `todo`: it reports the dead buttons without failing the run.
 Remove `todo` once they are fixed.
