@@ -9,7 +9,11 @@
     "start": "wp-scripts start --blocks-manifest",
     "lint:js": "wp-scripts lint-js src",
     "lint:css": "wp-scripts lint-style \"src/**/*.scss\"",
-    "plugin-zip": "wp-scripts plugin-zip"
+    "plugin-zip": "wp-scripts plugin-zip",
+    "test": "npm run test:static && npm run test:unit",
+    "test:static": "node --test \"tests/static/*.check.js\"",
+    "test:unit": "wp-scripts test-unit-js --testMatch \"**/tests/unit/**/*.test.js\"",
+    "test:e2e": "playwright test"
   },
   "devDependencies": {
     "@wordpress/scripts": "^30.0.0"

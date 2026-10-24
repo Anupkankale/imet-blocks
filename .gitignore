@@ -11,3 +11,7 @@ CLAUDE.local.md
 .cursorrules
 .windsurfrules
 .github/copilot-instructions.md
+
+# test output
+test-results/
+playwright-report/

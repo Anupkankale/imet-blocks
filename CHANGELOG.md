@@ -3,6 +3,10 @@
 All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 [Deployment → Versioning](docs/DEPLOYMENT.md#versioning)).
 
+## Unreleased
+- **Automated tests:** `npm test` (static checks + Jest unit tests for `view.js`) and `npm run test:e2e` (Playwright
+  on the preview page at 1440px and 390px). No change to the plugin itself.
+
 ## 1.8.1 — 2026-10-23
 - **DBA Course Page, pixel match to the Figma (1440):** every section from the menu bar down is now within ±3px of the
   design (was up to +174px). New block styles, so the DBA Category Page is unchanged: Highlights **Wide**, Program
