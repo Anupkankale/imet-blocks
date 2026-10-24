@@ -238,9 +238,12 @@ Scripts are classic scripts (`viewScript`), loaded only where the block is used.
 | `npm run test:static` | Block metadata and files, `build/` in step with `src/`, the version in all four places, image tokens, in-page links, `php -l` on every PHP file | Node (PHP optional) |
 | `npm run test:unit` | `src/shared/view.js` (Jest + jsdom): `each`, `reduceMotion`, `accordion` | Node |
 | `npm run test:e2e` | The DBA preview page in Chromium at 1440px and 390px: one `h1`, no script errors, no sideways scroll, sub-nav targets, FAQ See More and one-open-at-a-time, alt text | the local site; `npx playwright install chromium` once |
+| `npm run test:php` | PHPUnit on `includes/`: `perf.php` (Google Fonts removal, delayed analytics, loader), `faq-schema.php`, `media.php` tokens, `video.php`. WordPress functions are stubbed in `tests/php/bootstrap.php`, so no site or database is needed | PHP 8.2+, `composer install` once |
 | `npm test` | static + unit | Node |
 
-`test:e2e` uses `http://imetworld.local/imet-preview/`. Override with `BASE_URL=... PREVIEW_PATH=... npm run test:e2e`.
+`test:e2e` uses `http://imetworld.local/imet-preview/`. `tests/e2e/spacing.spec.js` checks spacing and sizes: button heights per size class (48/60/72px, 44/54/62px on phones), centred containers within 1200px, no overlapping sections, the title and eyebrow type scale, and each section's padding against `tests/e2e/spacing.golden.json`. After a deliberate spacing change, refresh the snapshot with `UPDATE_GOLDEN=1 npm run test:e2e -- spacing --workers=1` and commit it.
+
+Override with `BASE_URL=... PREVIEW_PATH=... npm run test:e2e`.
 The static test for placeholder `href="#"` links is marked `todo`: it reports the dead buttons without failing the run.
 Remove `todo` once they are fixed.
 
