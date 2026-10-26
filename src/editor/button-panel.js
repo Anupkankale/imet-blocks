@@ -6,12 +6,15 @@
 import { addFilter } from '@wordpress/hooks';
 import { createHigherOrderComponent } from '@wordpress/compose';
 import { InspectorControls } from '@wordpress/block-editor';
+/* ToggleGroupControl is still experimental on WordPress 6.5 (the plugin's minimum), so it can only be imported under its __experimental name. */
+/* eslint-disable @wordpress/no-unsafe-wp-apis */
 import {
 	PanelBody,
 	SelectControl,
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
 } from '@wordpress/components';
+/* eslint-enable @wordpress/no-unsafe-wp-apis */
 
 const COLOURS = [
 	{ value: 'btn-navy', label: 'Navy (primary)' },

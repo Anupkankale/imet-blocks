@@ -1,0 +1,4 @@
+# Compiled output is committed so the plugin works without Node on the server; keep it out of diffs and language stats.
+build/** linguist-generated=true -diff
+package-lock.json -diff
+composer.lock -diff

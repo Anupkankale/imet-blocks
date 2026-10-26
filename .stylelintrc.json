@@ -1,0 +1,16 @@
+{
+	"extends": "@wordpress/stylelint-config/scss",
+	"ignoreFiles": [ "build/**", "vendor/**", "node_modules/**" ],
+	"rules": {
+		"rule-empty-line-before": null,
+		"comment-empty-line-before": null,
+		"at-rule-empty-line-before": null,
+		"function-url-quotes": null,
+		"selector-class-pattern": null,
+		"font-family-name-quotes": null,
+		"value-keyword-case": null,
+		"length-zero-no-unit": null,
+		"no-descending-specificity": [ true, { "severity": "warning" } ],
+		"no-duplicate-selectors": [ true, { "severity": "warning" } ]
+	}
+}
