@@ -3,6 +3,10 @@
 All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 [Deployment → Versioning](docs/DEPLOYMENT.md#versioning)).
 
+## Unreleased
+- **Automated tests:** `npm test` (static checks + Jest unit tests for `view.js`) and `npm run test:e2e` (Playwright
+  on the preview page at 1440px and 390px). No change to the plugin itself.
+
 ## 1.9.0 — 2026-10-26
 - **New page pattern: Home Page** (`patterns/home-page.php`): the content and section order of imetworldwide.com, matched to the
   live page's spacing and layout at 1440px and 390px (every section within about 30px of the live height; the live header

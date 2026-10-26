@@ -231,7 +231,22 @@ Scripts are classic scripts (`viewScript`), loaded only where the block is used.
 
 ## Testing a change
 
-There's no automated test suite. Check each change by hand:
+### Automated tests
+
+| Command | What it checks | Needs |
+|---|---|---|
+| `npm run test:static` | Block metadata and files, `build/` in step with `src/`, the version in all four places, image tokens, in-page links, `php -l` on every PHP file | Node (PHP optional) |
+| `npm run test:unit` | `src/shared/view.js` (Jest + jsdom): `each`, `reduceMotion`, `accordion` | Node |
+| `npm run test:e2e` | The DBA preview page in Chromium at 1440px and 390px: one `h1`, no script errors, no sideways scroll, sub-nav targets, FAQ See More and one-open-at-a-time, alt text | the local site; `npx playwright install chromium` once |
+| `npm test` | static + unit | Node |
+
+`test:e2e` uses `http://imetworld.local/imet-preview/`. Override with `BASE_URL=... PREVIEW_PATH=... npm run test:e2e`.
+The static test for placeholder `href="#"` links is marked `todo`: it reports the dead buttons without failing the run.
+Remove `todo` once they are fixed.
+
+### By hand
+
+The tests don't replace looking at the page. Check each change by hand:
 
 1. **Build:** `npm run build` with no errors.
 2. **Editor:** open a page with the block, and check for no "invalid content" warnings and no console errors.
