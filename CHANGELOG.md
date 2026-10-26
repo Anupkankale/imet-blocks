@@ -3,6 +3,17 @@
 All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 [Deployment → Versioning](docs/DEPLOYMENT.md#versioning)).
 
+## 1.9.0 — 2026-10-26
+- **New page pattern: Home Page** (`patterns/home-page.php`): the content and section order of imetworldwide.com, built only from
+  existing blocks: Hero with enquiry form, alumni photo row, Highlights, Cost Banner, accreditation logos, Programs tabs
+  (Doctorate / MBA / Diploma), embassy emblems, Top Featured Programs, Why Choose IMET (Step Cards), Alumni Videos, alumni
+  employer logos, Convocation, Case Studies, journals banner, Success Stories, Affiliated Information Centers map, Client
+  Testimonials, FAQ (25 questions) and the closing Call to Action. Use **Create: Home Page** under Plugins, or the pattern
+  inserter.
+- 48 new images in `assets/images/` (home-*), imported to the Media Library with alt text.
+- Sections that need a layout the blocks don't have (the live page's centred hero over a photo row, a 7-across emblem row,
+  the 3-up "Why Choose" carousel) use the nearest block, so they look close to the live page but not identical.
+
 ## 1.8.1 — 2026-10-23
 - **DBA Course Page, pixel match to the Figma (1440):** every section from the menu bar down is now within ±3px of the
   design (was up to +174px). New block styles, so the DBA Category Page is unchanged: Highlights **Wide**, Program
