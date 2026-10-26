@@ -1,0 +1,150 @@
+{
+	"desktop": {
+		"top": [
+			80,
+			0
+		],
+		"overview": [
+			44,
+			40
+		],
+		"specializations": [
+			26,
+			66
+		],
+		"cost-banner": [
+			0,
+			0
+		],
+		"programs": [
+			34,
+			72
+		],
+		"presence": [
+			0,
+			0
+		],
+		"career": [
+			14,
+			24
+		],
+		"usp": [
+			34,
+			37
+		],
+		"embassy": [
+			26,
+			31
+		],
+		"dba-vs-phd": [
+			28,
+			56
+		],
+		"who-can-join": [
+			26,
+			36
+		],
+		"analytics": [
+			32,
+			46
+		],
+		"alumni": [
+			30,
+			0
+		],
+		"cyber": [
+			44,
+			40
+		],
+		"testimonials": [
+			33,
+			22
+		],
+		"cert": [
+			38,
+			38
+		],
+		"faq": [
+			36,
+			16
+		],
+		"cta-wrap": [
+			21,
+			32
+		]
+	},
+	"mobile": {
+		"top": [
+			24,
+			0
+		],
+		"overview": [
+			44,
+			40
+		],
+		"specializations": [
+			48,
+			48
+		],
+		"cost-banner": [
+			0,
+			0
+		],
+		"programs": [
+			48,
+			48
+		],
+		"presence": [
+			0,
+			0
+		],
+		"career": [
+			48,
+			48
+		],
+		"usp": [
+			48,
+			48
+		],
+		"embassy": [
+			48,
+			48
+		],
+		"dba-vs-phd": [
+			48,
+			48
+		],
+		"who-can-join": [
+			48,
+			48
+		],
+		"analytics": [
+			48,
+			48
+		],
+		"alumni": [
+			48,
+			48
+		],
+		"cyber": [
+			36,
+			36
+		],
+		"testimonials": [
+			48,
+			48
+		],
+		"cert": [
+			48,
+			48
+		],
+		"faq": [
+			48,
+			48
+		],
+		"cta-wrap": [
+			21,
+			32
+		]
+	}
+}

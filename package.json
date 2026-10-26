@@ -14,6 +14,7 @@
     "test:static": "node --test \"tests/static/*.check.js\"",
     "test:unit": "wp-scripts test-unit-js --testMatch \"**/tests/unit/**/*.test.js\"",
     "test:e2e": "playwright test",
+    "test:php": "vendor/bin/phpunit",
     "lint": "npm run lint:js && npm run lint:css"
   },
   "devDependencies": {

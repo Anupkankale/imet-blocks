@@ -15,3 +15,5 @@ CLAUDE.local.md
 # test output
 test-results/
 playwright-report/
+vendor/
+.phpunit.cache/

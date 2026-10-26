@@ -9,7 +9,8 @@ All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
   issue templates, `CODEOWNERS`, Dependabot, `.editorconfig`, `.nvmrc`, `.gitattributes` and `.mailmap` (one name for the
   older git identities). The Developer guide now lists what the plugin overrides on the site and where each override stops.
 - **Automated tests:** `npm test` (static checks + Jest unit tests for `view.js`) and `npm run test:e2e` (Playwright
-  on the preview page at 1440px and 390px). No change to the plugin itself.
+  on the preview page at 1440px and 390px), spacing/size consistency tests with a saved spacing snapshot, PHPUnit
+  tests (`npm run test:php`), and Core Web Vitals / performance-budget tests. No change to the plugin itself.
 
 ## 1.9.0 — 2026-10-26
 - **New page pattern: Home Page** (`patterns/home-page.php`): the content and section order of imetworldwide.com, matched to the
