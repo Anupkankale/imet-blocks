@@ -198,3 +198,20 @@ if ( ! function_exists( 'imet_blocks_perf_combine_css' ) ) {
 		return $out . substr( $head, $pos );
 	}
 }
+
+/**
+ * Loading hints for images the Home page puts at both ends of the page. The graduate cards in the hero are visible as soon
+ * as the page loads, so they must not be lazy-loaded; the images of the sections below (logos, emblems, tab and card photos, banners, testimonials, map) are always further down, so they are.
+ * (WordPress adds its own loading attribute later, and only to images that have none yet.)
+ */
+add_filter( 'render_block_core/image', function ( $html, $block ) {
+	$class = isset( $block['attrs']['className'] ) ? $block['attrs']['className'] : '';
+	if ( preg_match( '/(^|\s)h-grad(\s|$)/', $class ) ) {
+		$loading = 'eager';
+	} elseif ( preg_match( '/(^|\s)(emblem|tab-photo|sc-photo|cta-bulb|cta-photo|cert-p|cert-wide|testi-photo|testi-avatar|centres-map|video-tile)(\s|$)/', $class ) ) {
+		$loading = 'lazy';
+	} else {
+		return $html;
+	}
+	return preg_replace( '#<img\b(?![^>]*\bloading=)#', '<img loading="' . $loading . '"', $html );
+}, 20, 2 );

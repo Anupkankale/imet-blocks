@@ -32,12 +32,13 @@ complete design opens in the editor; rename it before publishing.
 |---|---|
 | **Create: DBA Category Page** | The online doctorate programs page (all DBA specializations) |
 | **Create: DBA Course Page** | One DBA specialization, e.g. DBA in Cybersecurity (see [DBA Course Page](#dba-course-page)) |
+| **Create: Home Page** | The IMET Worldwide home page: best online doctorate (DBA) and master's (MBA) programs |
 
 **Or, from a blank page:**
 1. **Pages → Add New**, give it a title.
 2. In the right sidebar, open **Page Attributes → Template → IMET Landing** and click **Save draft**.
 3. Reload the page so it opens in the block editor.
-4. Click **+** (top left) → **Patterns** → **IMET** → choose **DBA Category Page** or **DBA Course Page**.
+4. Click **+** (top left) → **Patterns** → **IMET** → choose **DBA Category Page**, **DBA Course Page** or **Home Page**.
 
 > A page that contains IMET blocks automatically gets the IMET Landing template when you save it, if no other
 > template was chosen.

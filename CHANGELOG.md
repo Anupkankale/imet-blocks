@@ -7,6 +7,22 @@ All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 - **Automated tests:** `npm test` (static checks + Jest unit tests for `view.js`) and `npm run test:e2e` (Playwright
   on the preview page at 1440px and 390px). No change to the plugin itself.
 
+## 1.9.0 — 2026-10-26
+- **New page pattern: Home Page** (`patterns/home-page.php`): the content and section order of imetworldwide.com, matched to the
+  live page's spacing and layout at 1440px and 390px (every section within about 30px of the live height; the live header
+  overlay and the enquiry form are not counted). Use **Create: Home Page** under Plugins, or the pattern inserter.
+- **New block styles "Home"** (other pages are unchanged): Hero, Highlights, Cost Banner, Recognition Logos, Tabs,
+  Specializations, Step Cards, Alumni Videos, Certificate, Call to Action, Testimonials, FAQ and the blank Section. See the
+  styles table in [docs/BLOCKS.md](docs/BLOCKS.md). Pages whose hero uses the Home style also get 28px titles (25px on phones)
+  and 18px gold eyebrows without the underline.
+- Front end: graduate cards, employer logos and client testimonials glide sideways; "Why choose" and success stories have
+  arrow buttons; the three alumni videos play in place; the FAQ shows every question.
+- 64 new images in `assets/images/` (home-*), imported to the Media Library with alt text.
+- Speed: the hero graduate cards load straight away; the images further down (logos, emblems, card and tab photos, banners, testimonials,
+  map, video thumbnails) are lazy-loaded; YouTube thumbnails now carry their width and height.
+- Not identical to the live page: buttons keep the plugin's button sizes (48 / 60 / 72px) instead of the live page's 40px
+  buttons; the MBA and Diploma tab panels list titles only; the live page's header, footer, popup and chat button stay in Elementor.
+
 ## 1.8.1 — 2026-10-23
 - **DBA Course Page, pixel match to the Figma (1440):** every section from the menu bar down is now within ±3px of the
   design (was up to +174px). New block styles, so the DBA Category Page is unchanged: Highlights **Wide**, Program

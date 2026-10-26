@@ -105,6 +105,11 @@ html:has(.imet-section) { scroll-behavior: smooth; }
    keep the standard size there (as in that design); a block style can set its own (e.g. Specializations "Five per row"). */
 .imet-page:has(> .wp-block-imet-hero.is-style-dark) { --imet-title-size: clamp(1.625rem, 1.2rem + 1.3056vw, 2.375rem); } /* → 38px */
 .imet-page:has(> .wp-block-imet-hero.is-style-dark) :is(.imet-section.testimonials, .imet-section.faq) { --imet-title-size: initial; }
+/* Home page (its hero uses the "Home" style): 28px section titles, 18px gold eyebrows without the line, as on imetworldwide.com. */
+.imet-page:has(> .wp-block-imet-hero.is-style-home) { --imet-title-size: 1.75rem; } /* 28px */
+.imet-page:has(> .wp-block-imet-hero.is-style-home) .imet-section { --eyebrow-size: 1.125rem; --eyebrow-line: 0px; }
+.imet-page:has(> .wp-block-imet-hero.is-style-home) .imet-section .eyebrow-line { font-weight: 600; line-height: 1.2; }
+.imet-page:has(> .wp-block-imet-hero.is-style-home) .imet-section .title { font-weight: 600; line-height: 1.43; }
 /* Section header (Figma): eyebrow-line (22px, gold line) → title (35px) → sub (18px). Centred unless .left. */
 .imet-section .title {
 	font-size: var(--imet-title-size, clamp(1.625rem, 1.2rem + 1.25vw, 2.1875rem)); /* 26px → 35px */
@@ -253,5 +258,23 @@ section.imet-section[id] { scroll-margin-top: 100px; }
 	.imet-section .eyebrow-line.left::after { left: 50%; transform: translateX(-50%); }
 }
 
+/* Previous / next arrows under a row that scrolls sideways (the Home page rows; buttons are added by view.js) */
+.imet-section .sc-nav { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
+.imet-section .sc-nav button {
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: #14234b url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 12h15m-6-7 7 7-7 7' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 16px no-repeat;
+	cursor: pointer;
+}
+.imet-section .sc-nav button:first-child { transform: scaleX(-1); }
+
 /* Utilities last, so they win over the rules above: see _utilities.scss */
 @include meta.load-css('utilities');
+/* Home page on phones: 25px titles, as on imetworldwide.com */
+@media (max-width: 640px) {
+	.imet-page:has(> .wp-block-imet-hero.is-style-home) { --imet-title-size: 1.5625rem; }
+	.imet-page:has(> .wp-block-imet-hero.is-style-home) .imet-section .title { line-height: 1.4; }
+}

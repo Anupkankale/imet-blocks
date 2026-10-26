@@ -149,7 +149,120 @@
 .imet-section.testimonials.is-style-compact .testi-card { min-height: 210px; }
 .imet-section.testimonials.is-style-compact .testi-more { margin-top: 6px; }
 
+/* ---------- Style "Home" (block style, the Home page), two uses (Home page, 1440 frame):
+   .is-stories, the success stories row (navy quote cards alternating with portrait photos, arrows below) and
+   .is-clients, the client testimonials row (photo + quote cards that glide sideways). ---------- */
+.imet-section.testimonials.is-style-home { padding: 30px 0; }
+.imet-section.testimonials.is-style-home .testi-head .title { margin-bottom: 20px; }
+.imet-section.testimonials.is-style-home .testi-head .sub { max-width: 1040px; margin-bottom: 0; font-size: 1rem; line-height: 1.625; }
+.imet-section.testimonials.is-style-home .testi-grid {
+	display: flex;
+	width: min(1260px, 100% - 40px);
+	margin: 0 auto;
+	gap: 10px;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
+}
+.imet-section.testimonials.is-style-home .testi-grid::-webkit-scrollbar { display: none; }
+.imet-section.testimonials.is-style-home .testi-card::before { content: none; }
+.imet-section.testimonials.is-style-home .testi-linkedin a { width: 66px; height: 20px; }
+/* Success stories */
+.imet-section.testimonials.is-style-home.is-stories { padding-bottom: 50px; }
+.imet-section.testimonials.is-style-home.is-stories .testi-grid { margin-top: 54px; }
+.imet-section.testimonials.is-style-home.is-stories .testi-card {
+	flex: 0 0 244px;
+	display: block;
+	min-height: 446px;
+	padding: 20px 30px;
+	border-radius: 20px;
+	background: #14234b;
+	color: #fff;
+	text-align: center;
+	scroll-snap-align: start;
+}
+.imet-section.testimonials.is-style-home.is-stories .testi-quote { color: #fff; font-size: 1rem; line-height: 1.45; }
+.imet-section.testimonials.is-style-home.is-stories .testi-name { margin-top: 38px; color: #fff; font-size: 1rem; font-weight: 500; line-height: 1.2; }
+.imet-section.testimonials.is-style-home.is-stories .testi-foot { display: block; margin-top: 23px; padding: 0; }
+.imet-section.testimonials.is-style-home.is-stories .testi-linkedin { margin: 0 auto; }
+.imet-section.testimonials.is-style-home.is-stories .testi-linkedin a {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	width: auto;
+	height: 34px;
+	overflow: visible;
+	background: none;
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: 1;
+}
+.imet-section.testimonials.is-style-home.is-stories .testi-linkedin a::before {
+	content: "in";
+	display: inline-grid;
+	place-items: center;
+	width: 26px;
+	height: 26px;
+	border-radius: 4px;
+	background: #fff;
+	color: #14234b;
+	font-size: 1rem;
+	font-weight: 800;
+	line-height: 1;
+}
+.imet-section.testimonials.is-style-home.is-stories .testi-more { width: auto; margin: 28px 0 0; padding: 0; text-align: right; font-size: .75rem; font-weight: 500; }
+.imet-section.testimonials.is-style-home.is-stories .testi-more a { color: #fff; text-decoration: underline; }
+.imet-section.testimonials.is-style-home.is-stories .testi-more a::after { content: " \2192"; }
+.imet-section.testimonials.is-style-home.is-stories .testi-photo { flex: 0 0 244px; margin: 0; overflow: hidden; border-radius: 20px; scroll-snap-align: start; }
+.imet-section.testimonials.is-style-home.is-stories .testi-photo img { width: 100%; height: 446px; object-fit: cover; }
+.imet-section .sc-nav.is-testi { margin-top: 20px; }
+/* Client testimonials */
+.imet-section.testimonials.is-style-home.is-clients { padding-top: 30px; }
+.imet-section.testimonials.is-style-home.is-clients .testi-grid { width: 100%; padding: 20px 20px 0; }
+.imet-section.testimonials.is-style-home.is-clients .testi-card {
+	flex: 0 0 425px;
+	display: grid;
+	grid-template-columns: 91px minmax(0, 1fr);
+	grid-template-rows: auto 1fr;
+	column-gap: 20px;
+	min-height: 383px;
+	padding: 10px 20px 20px;
+	border-radius: 10px;
+	background: linear-gradient(152deg, #eaebff 0%, #fef2df 100%);
+}
+.imet-section.testimonials.is-style-home.is-clients .testi-avatar { grid-column: 1; margin: 0; }
+.imet-section.testimonials.is-style-home.is-clients .testi-avatar img { width: 91px; height: 87px; object-fit: cover; }
+.imet-section.testimonials.is-style-home.is-clients .testi-quote { grid-column: 2; min-height: 196px; font-size: 1rem; line-height: 1.5; }
+.imet-section.testimonials.is-style-home.is-clients .testi-foot {
+	grid-column: 1 / -1;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-top: 30px;
+	padding-top: 11px;
+	border-top: 1px solid #c8cde8;
+}
+.imet-section.testimonials.is-style-home.is-clients .testi-name { font-size: 1.125rem; line-height: 1.22; }
+.imet-section.testimonials.is-style-home.is-clients .testi-name strong { font-weight: 600; }
+.imet-section.testimonials.is-style-home.is-clients .testi-role { margin-top: 5px; color: #000; font-size: .875rem; line-height: 1.3; }
+.imet-section.testimonials.is-style-home.is-clients .testi-more { margin: 20px 0 0; padding: 0; justify-content: center; }
+@media (max-width: 640px) {
+	.imet-section.testimonials.is-style-home.is-clients .testi-card { flex-basis: 86%; grid-template-columns: 70px minmax(0, 1fr); column-gap: 14px; }
+	.imet-section.testimonials.is-style-home.is-clients .testi-avatar img { width: 70px; height: 70px; }
+	.imet-section.testimonials.is-style-home.is-stories .testi-card, .imet-section.testimonials.is-style-home.is-stories .testi-photo { flex-basis: 72%; }
+}
+
 /* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
 @media (max-width: 640px) {
 	.imet-section.testimonials { padding: 48px 0; }
+	.imet-section.testimonials.is-style-home { padding: 32px 0; }
+}
+@media (max-width: 640px) {
+	.imet-section.testimonials.is-style-home.is-stories .testi-grid { margin-top: 34px; }
+	.imet-section.testimonials.is-style-home.is-stories .testi-card { flex-basis: calc(100% - 40px); min-height: 270px; }
+	.imet-section.testimonials.is-style-home.is-stories .testi-photo { flex-basis: calc(100% - 40px); }
+	.imet-section.testimonials.is-style-home.is-stories .testi-photo img { height: 270px; }
+	.imet-section.testimonials.is-style-home.is-stories .testi-name { margin-top: 20px; font-size: 1.25rem; }
+	.imet-section.testimonials.is-style-home.is-stories .testi-linkedin { display: none; }
+	.imet-section.testimonials.is-style-home.is-stories .testi-more { margin-top: 40px; }
 }
