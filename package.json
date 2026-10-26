@@ -18,7 +18,7 @@
     "lint": "npm run lint:js && npm run lint:css"
   },
   "devDependencies": {
-    "@wordpress/scripts": "^30.0.0"
+    "@wordpress/scripts": "^37.0.0"
   },
   "files": [
     "imet-blocks.php",
