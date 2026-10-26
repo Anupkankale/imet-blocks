@@ -1,5 +1,5 @@
 /* Testimonial slider: auto-advances every 4s; pauses on hover, touch and focus; swipe/scroll by hand. */
-import { each, reduceMotion } from '../../shared/view';
+import { each, marquee, reduceMotion } from '../../shared/view';
 
 each( '.wp-block-imet-testimonials .slider-track', ( track ) => {
 	if ( ! track.querySelector( '.t-card' ) ) {
@@ -28,4 +28,23 @@ each( '.wp-block-imet-testimonials .slider-track', ( track ) => {
 	track.addEventListener( 'touchend', resume );
 	track.addEventListener( 'focusin', pause );
 	track.addEventListener( 'focusout', resume );
+} );
+
+/* Home page: the client testimonials glide sideways; the success stories get arrows under the row. */
+each( '.wp-block-imet-testimonials.is-clients .testi-grid', ( grid ) => marquee( grid, [ ...grid.querySelectorAll( '.testi-card' ) ], { speed: 30 } ) );
+each( '.wp-block-imet-testimonials.is-stories .testi-grid', ( grid ) => {
+	const card = grid.querySelector( '.testi-card' );
+	if ( ! card ) {
+		return;
+	}
+	const nav = document.createElement( 'div' );
+	nav.className = 'sc-nav is-testi';
+	[ [ 'Previous', -1 ], [ 'Next', 1 ] ].forEach( ( [ label, dir ] ) => {
+		const b = document.createElement( 'button' );
+		b.type = 'button';
+		b.setAttribute( 'aria-label', label );
+		b.addEventListener( 'click', () => grid.scrollBy( { left: dir * ( card.offsetWidth + 10 ), behavior: 'smooth' } ) );
+		nav.appendChild( b );
+	} );
+	grid.after( nav );
 } );

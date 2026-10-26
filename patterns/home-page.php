@@ -5,63 +5,49 @@
  * Kind: page
  */
 ?>
-<!-- wp:imet/hero {"anchor":"top"} -->
-<section id="top" class="wp-block-imet-hero imet-section hero"><!-- wp:group {"className":"imet-container hero-grid","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container hero-grid"><!-- wp:group {"className":"hero-text","layout":{"type":"default"}} -->
-<div class="wp-block-group hero-text"><!-- wp:heading {"level":1} -->
+<!-- wp:imet/hero {"anchor":"top","className":"is-style-home"} -->
+<section id="top" class="wp-block-imet-hero imet-section hero is-style-home"><!-- wp:group {"className":"imet-container hero-home","layout":{"type":"default"}} -->
+<div class="wp-block-group imet-container hero-home"><!-- wp:paragraph {"className":"h-pill"} -->
+<p class="h-pill">Your No.1 Platform for Leadership Growth</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading">Best Online Doctorate (DBA) &amp; Master's (MBA) Programs</h1>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"className":"hero-lead"} -->
 <p class="hero-lead"><strong>Online Doctorate (DBA) &amp; Master’s  Programs</strong> for executives and IT leaders – Pursue a globally recognized online doctorate of business administration (DBA) program or MBA program, tailored for senior IT leaders and CXOs ready to turn their industry experience into thought leadership, boardroom influence, and digital visibility.</p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-lg"} -->
-<div class="wp-block-button btn-navy btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-sm"} -->
+<div class="wp-block-button btn-navy btn-sm"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"className":"h-form","anchor":"advisor-form","layout":{"type":"default"}} -->
-<div id="advisor-form" class="wp-block-group h-form"><!-- wp:heading -->
-<h2 class="wp-block-heading">Book a Free 1:1 Mentoring Session Now!</h2>
-<!-- /wp:heading -->
-<!-- wp:shortcode -->
-[imet_advisor_form]
-<!-- /wp:shortcode -->
-</div>
-<!-- /wp:group -->
+<!-- wp:group {"className":"h-grads","layout":{"type":"default"}} -->
+<div class="wp-block-group h-grads"><!-- wp:image {"id":{{ID:home-grad-1.webp}},"sizeSlug":"full","linkDestination":"none","className":"h-grad"} -->
+<figure class="wp-block-image size-full h-grad"><img src="{{URL:home-grad-1.webp}}" alt="Dr. Suresh A Shan, Chairman CSI" class="wp-image-{{ID:home-grad-1.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":{{ID:home-grad-2.webp}},"sizeSlug":"full","linkDestination":"none","className":"h-grad"} -->
+<figure class="wp-block-image size-full h-grad"><img src="{{URL:home-grad-2.webp}}" alt="Dr. Adebola Paveun, Medical Aesthetician" class="wp-image-{{ID:home-grad-2.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":{{ID:home-grad-3.webp}},"sizeSlug":"full","linkDestination":"none","className":"h-grad"} -->
+<figure class="wp-block-image size-full h-grad"><img src="{{URL:home-grad-3.webp}}" alt="Dr. Caroline Koech, Executive Director" class="wp-image-{{ID:home-grad-3.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":{{ID:home-grad-4.webp}},"sizeSlug":"full","linkDestination":"none","className":"h-grad"} -->
+<figure class="wp-block-image size-full h-grad"><img src="{{URL:home-grad-4.webp}}" alt="Dr. Thamer Al Qadi, CTO" class="wp-image-{{ID:home-grad-4.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":{{ID:home-grad-5.webp}},"sizeSlug":"full","linkDestination":"none","className":"h-grad"} -->
+<figure class="wp-block-image size-full h-grad"><img src="{{URL:home-grad-5.webp}}" alt="Dr. Olaniyi Olaniyan, Director CyberSecurity" class="wp-image-{{ID:home-grad-5.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":{{ID:home-grad-6.webp}},"sizeSlug":"full","linkDestination":"none","className":"h-grad"} -->
+<figure class="wp-block-image size-full h-grad"><img src="{{URL:home-grad-6.webp}}" alt="Dr. Rufino Jr, VP CyberSecurity" class="wp-image-{{ID:home-grad-6.webp}}"/></figure>
+<!-- /wp:image -->
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/hero -->
-<!-- wp:imet/embassy -->
-<section class="wp-block-imet-embassy imet-section section embassy"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container"><!-- wp:group {"className":"emblem-row","layout":{"type":"default"}} -->
-<div class="wp-block-group emblem-row"><!-- wp:image {"id":{{ID:home-grad-1.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
-<figure class="wp-block-image size-full emblem"><img src="{{URL:home-grad-1.webp}}" alt="Dr. Suresh A Shan, Chairman CSI" class="wp-image-{{ID:home-grad-1.webp}}"/></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:home-grad-2.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
-<figure class="wp-block-image size-full emblem"><img src="{{URL:home-grad-2.webp}}" alt="Dr. Adebola Paveun, Medical Aesthetician" class="wp-image-{{ID:home-grad-2.webp}}"/></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:home-grad-3.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
-<figure class="wp-block-image size-full emblem"><img src="{{URL:home-grad-3.webp}}" alt="Dr. Caroline Koech, Executive Director" class="wp-image-{{ID:home-grad-3.webp}}"/></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:home-grad-4.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
-<figure class="wp-block-image size-full emblem"><img src="{{URL:home-grad-4.webp}}" alt="Dr. Thamer Al Qadi, CTO" class="wp-image-{{ID:home-grad-4.webp}}"/></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:home-grad-5.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
-<figure class="wp-block-image size-full emblem"><img src="{{URL:home-grad-5.webp}}" alt="Dr. Olaniyi Olaniyan, Director CyberSecurity" class="wp-image-{{ID:home-grad-5.webp}}"/></figure>
-<!-- /wp:image -->
-<!-- wp:image {"id":{{ID:home-grad-6.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
-<figure class="wp-block-image size-full emblem"><img src="{{URL:home-grad-6.webp}}" alt="Dr. Rufino Jr, VP CyberSecurity" class="wp-image-{{ID:home-grad-6.webp}}"/></figure>
-<!-- /wp:image -->
-</div>
-<!-- /wp:group -->
-</div>
-<!-- /wp:group --></section>
-<!-- /wp:imet/embassy -->
-<!-- wp:imet/highlights {"anchor":"overview"} -->
-<section id="overview" class="wp-block-imet-highlights imet-section highlights"><!-- wp:group {"className":"imet-container hl-grid","layout":{"type":"default"}} -->
+<!-- wp:imet/highlights {"anchor":"overview","className":"is-style-home"} -->
+<section id="overview" class="wp-block-imet-highlights imet-section highlights is-style-home"><!-- wp:group {"className":"imet-container hl-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container hl-grid"><!-- wp:group {"className":"hl-text","layout":{"type":"default"}} -->
 <div class="wp-block-group hl-text"><!-- wp:paragraph {"className":"eyebrow-line left"} -->
 <p class="eyebrow-line left">Why Choose IMET Worldwide for Online Doctorate (DBA) Program?</p>
@@ -71,41 +57,47 @@
 <!-- /wp:heading -->
 <!-- wp:list {"className":"hl-list"} -->
 <ul class="wp-block-list hl-list"><!-- wp:list-item -->
-<li><strong>45% Scholarship Available</strong></li>
+<li>45% Scholarship Available</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Internationally Recognized</strong></li>
+<li>Internationally Recognized</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Cybersecurity | AI | Digital Transformation</strong></li>
+<li>Cybersecurity | AI | Digital Transformation</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>100% Online</strong></li>
+<li><strong>100%</strong> Online</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>12-24 Months Course Duration</strong></li>
+<li>12-24 Months Course Duration</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>1-on-1 Mentoring Session</strong></li>
+<li><strong>1-on-1</strong> Mentoring Session</li>
 <!-- /wp:list-item -->
 </ul>
 <!-- /wp:list -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-lg"} -->
-<div class="wp-block-button btn-navy btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Career Advisor</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-sm"} -->
+<div class="wp-block-button btn-navy btn-sm"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Career Advisor</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
 </div>
 <!-- /wp:group -->
-<!-- wp:image {"id":{{ID:highlights.webp}},"sizeSlug":"full","linkDestination":"none","className":"hl-visual"} -->
-<figure class="wp-block-image size-full hl-visual"><img src="{{URL:highlights.webp}}" alt="DBA graduates: promoted to CxO, 15+ top global specializations, skill growth" class="wp-image-{{ID:highlights.webp}}"/></figure>
-<!-- /wp:image -->
+<!-- wp:group {"className":"hl-form","anchor":"advisor-form","layout":{"type":"default"}} -->
+<div id="advisor-form" class="wp-block-group hl-form"><!-- wp:heading -->
+<h2 class="wp-block-heading">Book a Free<br>1:1 Mentoring Session Now!</h2>
+<!-- /wp:heading -->
+<!-- wp:shortcode -->
+[imet_advisor_form]
+<!-- /wp:shortcode -->
+</div>
+<!-- /wp:group -->
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/highlights -->
-<!-- wp:imet/cost-banner -->
-<section class="wp-block-imet-cost-banner imet-section cost-banner"><!-- wp:group {"className":"cost-left","layout":{"type":"default"}} -->
+<!-- wp:imet/cost-banner {"className":"is-style-home"} -->
+<section class="wp-block-imet-cost-banner imet-section cost-banner is-style-home"><!-- wp:group {"className":"cost-left","layout":{"type":"default"}} -->
 <div class="wp-block-group cost-left"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Doctorate (DBA)<br>Program Cost</h3>
 <!-- /wp:heading -->
@@ -142,8 +134,8 @@
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/cost-banner -->
-<!-- wp:imet/embassy -->
-<section class="wp-block-imet-embassy imet-section section embassy"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<!-- wp:imet/embassy {"className":"is-style-home is-accred"} -->
+<section class="wp-block-imet-embassy imet-section section embassy is-style-home is-accred"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
 <div class="wp-block-group sec-head"><!-- wp:heading {"className":"title"} -->
 <h2 class="wp-block-heading title">Accredited Doctoral Programs with Global Recognition</h2>
@@ -168,17 +160,17 @@
 <!-- /wp:image -->
 </div>
 <!-- /wp:group -->
-<!-- wp:buttons {"className":"center"} -->
-<div class="wp-block-buttons center"><!-- wp:button {"className":"btn-navy btn-md"} -->
-<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="https://imetworldwide.com/accreditation-and-recognition/">Verify Accreditations &amp; Global Standing</a></div>
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-sm"} -->
+<div class="wp-block-button btn-navy btn-sm"><a class="wp-block-button__link wp-element-button" href="https://imetworldwide.com/accreditation-and-recognition/">Verify Accreditations &amp; Global Standing</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/embassy -->
-<!-- wp:imet/tabs -->
-<section class="wp-block-imet-tabs imet-section section tabs"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<!-- wp:imet/tabs {"anchor":"learn-more","className":"is-style-home"} -->
+<section id="learn-more" class="wp-block-imet-tabs imet-section section tabs is-style-home"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
 <div class="wp-block-group sec-head"><!-- wp:paragraph {"className":"eyebrow-line"} -->
 <p class="eyebrow-line">Our Programs</p>
@@ -202,30 +194,30 @@
 <!-- /wp:group -->
 <!-- wp:group {"className":"tab-panels","layout":{"type":"default"}} -->
 <div class="wp-block-group tab-panels"><!-- wp:group {"className":"tab-panel","layout":{"type":"default"}} -->
-<div class="wp-block-group tab-panel"><!-- wp:image {"id":{{ID:home-tab-doctorate.webp}},"width":"340px","sizeSlug":"full","linkDestination":"none","className":"tab-photo"} -->
-<figure class="wp-block-image size-full tab-photo"><img src="{{URL:home-tab-doctorate.webp}}" alt="Online DBA graduate with research visibility on IEEE, Scopus and Google Scholar" class="wp-image-{{ID:home-tab-doctorate.webp}}" style="width:340px"/></figure>
+<div class="wp-block-group tab-panel"><!-- wp:image {"id":{{ID:home-tab-doctorate.webp}},"sizeSlug":"full","linkDestination":"none","className":"tab-photo"} -->
+<figure class="wp-block-image size-full tab-photo"><img src="{{URL:home-tab-doctorate.webp}}" alt="Online DBA graduate with research visibility on IEEE, Scopus and Google Scholar" class="wp-image-{{ID:home-tab-doctorate.webp}}"/></figure>
 <!-- /wp:image -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong><a href="https://imetworldwide.com/online-doctorate-digital-transformation-program/">DBA in Digital Transformation</a></strong> – Equip yourself to lead large-scale change initiatives that integrate emerging technologies, process automation, and innovation strategies.</li>
+<li><strong><a href="https://imetworldwide.com/online-doctorate-digital-transformation-program/">DBA in Digital Transformation</a></strong>Equip yourself to lead large-scale change initiatives that integrate emerging technologies, process automation, and innovation strategies.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong><a href="https://imetworldwide.com/online-doctorate-cybersecurity-certificate-program/">DBA in Cybersecurity</a></strong> – Gain strategic mastery over enterprise security frameworks, governance models, and threat intelligence.</li>
+<li><strong><a href="https://imetworldwide.com/online-doctorate-cybersecurity-certificate-program/">DBA in Cybersecurity</a></strong>Gain strategic mastery over enterprise security frameworks, governance models, and threat intelligence.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong><a href="https://imetworldwide.com/online-doctorate-dba-artificial-intelligence-ml/">DBA in AI/ML</a></strong> – Drive AI-driven innovation by combining business leadership with deep AI/ML application knowledge.</li>
+<li><strong><a href="https://imetworldwide.com/online-doctorate-dba-artificial-intelligence-ml/">DBA in AI/ML</a></strong>Drive AI-driven innovation by combining business leadership with deep AI/ML application knowledge.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong><a href="https://imetworldwide.com/online-doctorate-dba-project-management/">DBA in Project Management</a></strong> – Advance beyond operational project delivery to strategic oversight of complex, global initiatives.</li>
+<li><strong><a href="https://imetworldwide.com/online-doctorate-dba-project-management/">DBA in Project Management</a></strong>Advance beyond operational project delivery to strategic oversight of complex, global initiatives.</li>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong><a href="https://imetworldwide.com/online-doctorate-it-governance-risk-compliance/">DBA in IT Governance</a></strong> – A DBA in IT Governance develops expertise in managing IT risks, compliance, and strategic technology leadership effectively.</li>
+<li><strong><a href="https://imetworldwide.com/online-doctorate-it-governance-risk-compliance/">DBA in IT Governance</a></strong>A DBA in IT Governance develops expertise in managing IT risks, compliance, and strategic technology leadership effectively.</li>
 <!-- /wp:list-item -->
 </ul>
 <!-- /wp:list -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-md"} -->
-<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="https://imetworldwide.com/online-doctorate-business-administration-dba-programs/">Start Your DBA Journey</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-white btn-sm"} -->
+<div class="wp-block-button btn-white btn-sm"><a class="wp-block-button__link wp-element-button" href="https://imetworldwide.com/online-doctorate-business-administration-dba-programs/">Start Your DBA Journey</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
@@ -248,8 +240,8 @@
 </ul>
 <!-- /wp:list -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-md"} -->
-<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="https://imetworldwide.com/online-masters-mba-cybersecurity-program/">Learn More</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-white btn-sm"} -->
+<div class="wp-block-button btn-white btn-sm"><a class="wp-block-button__link wp-element-button" href="https://imetworldwide.com/online-masters-mba-cybersecurity-program/">Learn More</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
@@ -269,8 +261,8 @@
 </ul>
 <!-- /wp:list -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-md"} -->
-<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="https://imetworldwide.com/how-online-diploma-programs-can-boost-your-career-without-quitting-your-job/">Learn More</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-white btn-sm"} -->
+<div class="wp-block-button btn-white btn-sm"><a class="wp-block-button__link wp-element-button" href="https://imetworldwide.com/how-online-diploma-programs-can-boost-your-career-without-quitting-your-job/">Learn More</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
@@ -281,8 +273,8 @@
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/tabs -->
-<!-- wp:imet/embassy -->
-<section class="wp-block-imet-embassy imet-section section embassy"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<!-- wp:imet/embassy {"className":"is-style-home"} -->
+<section class="wp-block-imet-embassy imet-section section embassy is-style-home"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
 <div class="wp-block-group sec-head"><!-- wp:paragraph {"className":"eyebrow-line"} -->
 <p class="eyebrow-line">Recognized Worldwide</p>
@@ -319,53 +311,56 @@
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/embassy -->
-<!-- wp:imet/specializations {"anchor":"programs","className":"is-style-five"} -->
-<section id="programs" class="wp-block-imet-specializations imet-section section specs is-style-five"><!-- wp:group {"className":"imet-container sec-head","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container sec-head"><!-- wp:heading {"className":"title","style":{"typography":{"fontSize":"2.1875rem"}}} -->
-<h2 class="wp-block-heading title has-custom-font-size" style="font-size:2.1875rem">Top Featured Doctorate (DBA) &amp; Master's (MBA) Programs</h2>
+<!-- wp:imet/specializations {"anchor":"programs","className":"is-style-home"} -->
+<section id="programs" class="wp-block-imet-specializations imet-section section specs is-style-home"><!-- wp:group {"className":"imet-container sec-head","layout":{"type":"default"}} -->
+<div class="wp-block-group imet-container sec-head"><!-- wp:heading {"className":"title"} -->
+<h2 class="wp-block-heading title">Top Featured Doctorate (DBA) &amp; Master's (MBA) Programs</h2>
 <!-- /wp:heading -->
 <!-- wp:group {"className":"spec-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group spec-grid"><!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="https://imetworldwide.com/online-doctorate-cybersecurity-certificate-program/"><span><strong>Doctorate in CyberSecurity</strong><br>Develop board-level authority in cyber risk, governance, and enterprise security strategy.</span></a></p>
+<p class="spec-card"><a href="https://imetworldwide.com/online-doctorate-cybersecurity-certificate-program/"><span class="sp-title">Doctorate in CyberSecurity</span><span class="sp-desc">Develop board-level authority in cyber risk, governance, and enterprise security strategy.</span></a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="https://imetworldwide.com/online-masters-mba-cybersecurity/"><span><strong>MBA in Cybersecurity</strong><br>Build managerial and business-driven cybersecurity leadership for modern enterprises.</span></a></p>
+<p class="spec-card"><a href="https://imetworldwide.com/online-masters-mba-cybersecurity/"><span class="sp-title">MBA in Cybersecurity</span><span class="sp-desc">Build managerial and business-driven cybersecurity leadership for modern enterprises.</span></a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="https://imetworldwide.com/online-doctorate-digital-transformation-program/"><span><strong>Doctorate in Digital Transformation</strong><br>Lead large-scale digital change by aligning technology, strategy, and organizational impact.</span></a></p>
+<p class="spec-card"><a href="https://imetworldwide.com/online-doctorate-digital-transformation-program/"><span class="sp-title">Doctorate in Digital Transformation</span><span class="sp-desc">Lead large-scale digital change by aligning technology, strategy, and organizational impact.</span></a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="https://imetworldwide.com/online-masters-mba-project-management-program/"><span><strong>MBA in Project Management</strong><br>Master structured delivery, stakeholder control, and execution of complex business initiatives.</span></a></p>
+<p class="spec-card"><a href="https://imetworldwide.com/online-masters-mba-project-management-program/"><span class="sp-title">MBA in Project Management</span><span class="sp-desc">Master structured delivery, stakeholder control, and execution of complex business initiatives.</span></a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"spec-card"} -->
-<p class="spec-card"><a href="https://imetworldwide.com/online-doctorate-dba-artificial-intelligence-ml/"><span><strong>Doctorate in AI/ML</strong><br>Establish thought leadership in AI strategy, advanced analytics, and intelligent enterprise systems.</span></a></p>
+<p class="spec-card"><a href="https://imetworldwide.com/online-doctorate-dba-artificial-intelligence-ml/"><span class="sp-title">Doctorate in AI/ML</span><span class="sp-desc">Establish thought leadership in AI strategy, advanced analytics, and intelligent enterprise systems.</span></a></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-<!-- wp:buttons {"className":"center"} -->
-<div class="wp-block-buttons center"><!-- wp:button {"className":"btn-navy btn-md"} -->
-<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to Advisor</a></div>
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-sm"} -->
+<div class="wp-block-button btn-navy btn-sm"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to Advisor</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/specializations -->
-<!-- wp:imet/step-cards {"anchor":"why-imet"} -->
-<section id="why-imet" class="wp-block-imet-step-cards imet-section section step-cards"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
-<div class="wp-block-group sec-head"><!-- wp:paragraph {"className":"eyebrow-line"} -->
-<p class="eyebrow-line">Our Programs</p>
+<!-- wp:imet/step-cards {"anchor":"why-imet","className":"is-style-home"} -->
+<section id="why-imet" class="wp-block-imet-step-cards imet-section section step-cards is-style-home"><!-- wp:group {"className":"sc-head","layout":{"type":"default"}} -->
+<div class="wp-block-group sc-head"><!-- wp:group {"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"eyebrow-line left"} -->
+<p class="eyebrow-line left">Our Programs</p>
 <!-- /wp:paragraph -->
-<!-- wp:heading {"className":"title"} -->
-<h2 class="wp-block-heading title">Why Choose IMET Worldwide for Your Online Doctorate(DBA) or Master's(MBA) Program?</h2>
+<!-- wp:heading {"className":"title left"} -->
+<h2 class="wp-block-heading title left">Why Choose IMET Worldwide for Your Online Doctorate(DBA) or Master's(MBA) Program?</h2>
 <!-- /wp:heading -->
+</div>
+<!-- /wp:group -->
 <!-- wp:paragraph {"className":"sub"} -->
 <p class="sub">At IMET Worldwide, we don’t award degrees, we shape industry authorities. Our programs are built for senior leaders, entrepreneurs, C-Suite executives, and domain experts who want to convert their experience into thought leadership, boardroom influence, and lasting digital visibility.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"className":"step-grid","layout":{"type":"default"}} -->
+<!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<div class="wp-block-group imet-container"><!-- wp:group {"className":"step-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group step-grid"><!-- wp:group {"className":"step-card","layout":{"type":"default"}} -->
 <div class="wp-block-group step-card"><!-- wp:group {"className":"sc-text","layout":{"type":"default"}} -->
 <div class="wp-block-group sc-text"><!-- wp:heading {"level":3} -->
@@ -431,40 +426,37 @@
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/step-cards -->
-<!-- wp:imet/alumni-video -->
-<section class="wp-block-imet-alumni-video imet-section section alumni"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<!-- wp:imet/alumni-video {"className":"is-style-home"} -->
+<section class="wp-block-imet-alumni-video imet-section section alumni is-style-home"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
 <div class="wp-block-group sec-head"><!-- wp:heading {"className":"title"} -->
 <h2 class="wp-block-heading title">Alumni Speak: Real Journeys of Global Leadership</h2>
 <!-- /wp:heading -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"className":"video-gallery","layout":{"type":"default"}} -->
-<div class="wp-block-group video-gallery"><!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-main yt-auto"} -->
-<figure class="wp-block-image size-full video-main yt-auto"><a href="https://www.youtube.com/watch?v=Iz36TrS8Aas"><img src="{{URL:alumni-convocation.jpg}}" alt="My Doctorate Journey to Global Visibility – with Dr. Raj Srirambatla" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">My Doctorate Journey to Global Visibility – with Dr. Raj Srirambatla</figcaption></figure>
+<!-- wp:group {"className":"video-trio","layout":{"type":"default"}} -->
+<div class="wp-block-group video-trio"><!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-tile yt-auto"} -->
+<figure class="wp-block-image size-full video-tile yt-auto"><a href="https://www.youtube.com/watch?v=Iz36TrS8Aas"><img src="{{URL:alumni-convocation.jpg}}" alt="My Doctorate Journey to Global Visibility – with Dr. Raj Srirambatla" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">My Doctorate Journey to Global Visibility – with Dr. Raj Srirambatla</figcaption></figure>
 <!-- /wp:image -->
-<!-- wp:group {"className":"video-list","layout":{"type":"default"}} -->
-<div class="wp-block-group video-list"><!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
-<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/watch?v=si5_oKHCI6g"><img src="{{URL:alumni-convocation.jpg}}" alt="How the Doctorate Journey Transformed my Self branding - with Dr. Moutasim Billah" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">How the Doctorate Journey Transformed my Self branding - with Dr. Moutasim Billah</figcaption></figure>
+<!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-tile yt-auto"} -->
+<figure class="wp-block-image size-full video-tile yt-auto"><a href="https://www.youtube.com/watch?v=si5_oKHCI6g"><img src="{{URL:alumni-convocation.jpg}}" alt="How the Doctorate Journey Transformed my Self branding - with Dr. Moutasim Billah" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">How the Doctorate Journey Transformed my Self branding - with Dr. Moutasim Billah</figcaption></figure>
 <!-- /wp:image -->
-<!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-item yt-auto"} -->
-<figure class="wp-block-image size-full video-item yt-auto"><a href="https://www.youtube.com/watch?v=LPXJiGiubQI"><img src="{{URL:alumni-convocation.jpg}}" alt="Doctorate as My Launchpad with Dr. Irfan Baig" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">Doctorate as My Launchpad with Dr. Irfan Baig</figcaption></figure>
+<!-- wp:image {"id":{{ID:alumni-convocation.jpg}},"sizeSlug":"full","linkDestination":"custom","className":"video-tile yt-auto"} -->
+<figure class="wp-block-image size-full video-tile yt-auto"><a href="https://www.youtube.com/watch?v=LPXJiGiubQI"><img src="{{URL:alumni-convocation.jpg}}" alt="Doctorate as My Launchpad with Dr. Irfan Baig" class="wp-image-{{ID:alumni-convocation.jpg}}"/></a><figcaption class="wp-element-caption">Doctorate as My Launchpad with Dr. Irfan Baig</figcaption></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:group -->
 <!-- wp:buttons {"className":"video-more"} -->
-<div class="wp-block-buttons video-more"><!-- wp:button {"className":"btn-navy btn-md"} -->
-<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="https://imetworldwide.com/alumni-speak/" target="_blank" rel="noreferrer noopener">View More</a></div>
+<div class="wp-block-buttons video-more"><!-- wp:button {"className":"btn-navy btn-sm"} -->
+<div class="wp-block-button btn-navy btn-sm"><a class="wp-block-button__link wp-element-button" href="https://imetworldwide.com/alumni-speak/" target="_blank" rel="noreferrer noopener">View More</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
 </div>
-<!-- /wp:group -->
-</div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/alumni-video -->
-<!-- wp:imet/embassy {"className":"is-style-logos"} -->
-<section class="wp-block-imet-embassy imet-section section embassy is-style-logos"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<!-- wp:imet/embassy {"className":"is-style-home is-employers"} -->
+<section class="wp-block-imet-embassy imet-section section embassy is-style-home is-employers"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
 <div class="wp-block-group sec-head"><!-- wp:heading {"className":"title"} -->
 <h2 class="wp-block-heading title">Our DBA Alumni Lead at Global Powerhouses</h2>
@@ -511,7 +503,10 @@
 <!-- wp:image {"id":{{ID:home-logo-12.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
 <figure class="wp-block-image size-full emblem"><img src="{{URL:home-logo-12.webp}}" alt="Dexian logo" class="wp-image-{{ID:home-logo-12.webp}}"/></figure>
 <!-- /wp:image -->
-<!-- wp:image {"id":{{ID:home-logo-13.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"className":"emblem-row","layout":{"type":"default"}} -->
+<div class="wp-block-group emblem-row"><!-- wp:image {"id":{{ID:home-logo-13.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
 <figure class="wp-block-image size-full emblem"><img src="{{URL:home-logo-13.webp}}" alt="HP logo" class="wp-image-{{ID:home-logo-13.webp}}"/></figure>
 <!-- /wp:image -->
 <!-- wp:image {"id":{{ID:home-logo-14.webp}},"sizeSlug":"full","linkDestination":"none","className":"emblem"} -->
@@ -549,12 +544,9 @@
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/embassy -->
-<!-- wp:imet/certificate -->
-<section class="wp-block-imet-certificate imet-section section cert"><!-- wp:group {"className":"imet-container cert-wrap","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container cert-wrap"><!-- wp:image {"id":{{ID:home-convocation.webp}},"sizeSlug":"full","linkDestination":"none","className":"cert-photo"} -->
-<figure class="wp-block-image size-full cert-photo"><img src="{{URL:home-convocation.webp}}" alt="Doctorate Convocation Ceremony of IMET Worldwide" class="wp-image-{{ID:home-convocation.webp}}"/></figure>
-<!-- /wp:image -->
-<!-- wp:group {"className":"cert-card","layout":{"type":"default"}} -->
+<!-- wp:imet/certificate {"className":"is-style-home"} -->
+<section class="wp-block-imet-certificate imet-section section cert is-style-home"><!-- wp:group {"className":"imet-container cert-wrap","layout":{"type":"default"}} -->
+<div class="wp-block-group imet-container cert-wrap"><!-- wp:group {"className":"cert-card","layout":{"type":"default"}} -->
 <div class="wp-block-group cert-card"><!-- wp:heading {"className":"title left"} -->
 <h2 class="wp-block-heading title left">Doctorate Convocation Ceremony of IMET Worldwide Celebrating Excellence in Professional Development</h2>
 <!-- /wp:heading -->
@@ -562,18 +554,33 @@
 <p class="cert-sub">Discover real journeys of transformation from professionals who turned experience into influence. Explore how our Alumni built personal brands, earned global recognition, and unlocked leadership opportunities through research, visibility, and the “Dr.” title.</p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-md"} -->
-<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="https://imetworldwide.com/convocation-ceremony/">View More</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-navy btn-sm"} -->
+<div class="wp-block-button btn-navy btn-sm"><a class="wp-block-button__link wp-element-button" href="https://imetworldwide.com/convocation-ceremony/">View More</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
 </div>
 <!-- /wp:group -->
+<!-- wp:group {"className":"cert-photos","layout":{"type":"default"}} -->
+<div class="wp-block-group cert-photos"><!-- wp:image {"id":{{ID:home-conv-1.webp}},"sizeSlug":"full","linkDestination":"none","className":"cert-p"} -->
+<figure class="wp-block-image size-full cert-p"><img src="{{URL:home-conv-1.webp}}" alt="Doctorate Convocation Ceremony of IMET Worldwide" class="wp-image-{{ID:home-conv-1.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":{{ID:home-conv-2.webp}},"sizeSlug":"full","linkDestination":"none","className":"cert-p"} -->
+<figure class="wp-block-image size-full cert-p"><img src="{{URL:home-conv-2.webp}}" alt="Doctorate Convocation Ceremony of IMET Worldwide" class="wp-image-{{ID:home-conv-2.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":{{ID:home-conv-3.webp}},"sizeSlug":"full","linkDestination":"none","className":"cert-p"} -->
+<figure class="wp-block-image size-full cert-p"><img src="{{URL:home-conv-3.webp}}" alt="Doctorate Convocation Ceremony of IMET Worldwide" class="wp-image-{{ID:home-conv-3.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:image {"id":{{ID:home-convocation.webp}},"sizeSlug":"full","linkDestination":"none","className":"cert-wide"} -->
+<figure class="wp-block-image size-full cert-wide"><img src="{{URL:home-convocation.webp}}" alt="Doctorate Convocation Ceremony of IMET Worldwide" class="wp-image-{{ID:home-convocation.webp}}"/></figure>
+<!-- /wp:image -->
+</div>
+<!-- /wp:group -->
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/certificate -->
-<!-- wp:imet/step-cards {"anchor":"case-studies"} -->
-<section id="case-studies" class="wp-block-imet-step-cards imet-section section step-cards"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<!-- wp:imet/step-cards {"anchor":"case-studies","className":"is-style-home is-cases"} -->
+<section id="case-studies" class="wp-block-imet-step-cards imet-section section step-cards is-style-home is-cases"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
 <div class="wp-block-group sec-head"><!-- wp:heading {"className":"title"} -->
 <h2 class="wp-block-heading title">Case Studies of Doctorate Alumni</h2>
@@ -588,6 +595,9 @@
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
 <p>Achieving New Heights with the Power of a Doctorate.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"sc-more"} -->
+<p class="sc-more"><a href="https://imetworldwide.com/success-stories/">Read More</a></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -604,6 +614,9 @@
 <!-- wp:paragraph -->
 <p>Fueled by a Doctorate, Achieving What Once Seemed Impossible.</p>
 <!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"sc-more"} -->
+<p class="sc-more"><a href="https://imetworldwide.com/success-stories/">Read More</a></p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 <!-- wp:image {"id":{{ID:home-case-2.webp}},"sizeSlug":"full","linkDestination":"none","className":"sc-photo"} -->
@@ -619,6 +632,9 @@
 <!-- wp:paragraph -->
 <p>Achieving New Heights with the Power of a Doctorate.</p>
 <!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"sc-more"} -->
+<p class="sc-more"><a href="https://imetworldwide.com/success-stories/">Read More</a></p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 <!-- wp:image {"id":{{ID:home-case-3.webp}},"sizeSlug":"full","linkDestination":"none","className":"sc-photo"} -->
@@ -632,7 +648,10 @@
 <h3 class="wp-block-heading">Dr. Sona Saha Das</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Achieving New Heights with the Power of a Doctorate. <a href="https://imetworldwide.com/wp-content/uploads/2025/10/Case-Study-Dr.-Sona-Saha-Das-2.pdf">Read More</a></p>
+<p>Achieving New Heights with the Power of a Doctorate.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"sc-more"} -->
+<p class="sc-more"><a href="https://imetworldwide.com/wp-content/uploads/2025/10/Case-Study-Dr.-Sona-Saha-Das-2.pdf">Read More</a></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -646,10 +665,13 @@
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/step-cards -->
-<!-- wp:imet/cta -->
-<section class="wp-block-imet-cta imet-section cta-wrap"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<!-- wp:imet/cta {"className":"is-style-home is-publish"} -->
+<section class="wp-block-imet-cta imet-section cta-wrap is-style-home is-publish"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container"><!-- wp:group {"className":"cta","layout":{"type":"default"}} -->
-<div class="wp-block-group cta"><!-- wp:group {"className":"cta-text","layout":{"type":"default"}} -->
+<div class="wp-block-group cta"><!-- wp:image {"id":{{ID:home-bulb.webp}},"sizeSlug":"full","linkDestination":"none","className":"cta-bulb"} -->
+<figure class="wp-block-image size-full cta-bulb"><img src="{{URL:home-bulb.webp}}" alt="Light bulb" class="wp-image-{{ID:home-bulb.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:group {"className":"cta-text","layout":{"type":"default"}} -->
 <div class="wp-block-group cta-text"><!-- wp:heading -->
 <h2 class="wp-block-heading">Publish your research paper in International Journals.</h2>
 <!-- /wp:heading -->
@@ -666,8 +688,8 @@
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/cta -->
-<!-- wp:imet/testimonials -->
-<section class="wp-block-imet-testimonials imet-section section testimonials"><!-- wp:group {"className":"imet-container testi-head","layout":{"type":"default"}} -->
+<!-- wp:imet/testimonials {"className":"is-style-home is-stories"} -->
+<section class="wp-block-imet-testimonials imet-section section testimonials is-style-home is-stories"><!-- wp:group {"className":"imet-container testi-head","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container testi-head"><!-- wp:heading {"className":"title"} -->
 <h2 class="wp-block-heading title">Our Online Doctorate (DBA) Program Success Stories</h2>
 <!-- /wp:heading -->
@@ -680,79 +702,109 @@
 <div class="wp-block-group imet-container"><!-- wp:group {"className":"testi-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group testi-grid"><!-- wp:group {"className":"testi-card","layout":{"type":"default"}} -->
 <div class="wp-block-group testi-card"><!-- wp:paragraph {"className":"testi-quote"} -->
-<p class="testi-quote">My Doctorate journey at IMET Worldwide was transformational, shaping me into a tech leader whose voice and influence create lasting value.<br><strong>Dr. Shijin Prasad</strong></p>
+<p class="testi-quote">My Doctorate journey at IMET Worldwide was transformational, shaping me into a tech leader whose voice and influence create lasting value.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-name"} -->
+<p class="testi-name">Dr. Shijin Prasad</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
 <div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://www.linkedin.com/in/shijinprasad/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-more"} -->
+<p class="testi-more"><a href="https://imetworldwide.com/success-stories/">Read More</a></p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
+<!-- wp:image {"id":{{ID:home-story-1.webp}},"sizeSlug":"full","linkDestination":"none","className":"testi-photo"} -->
+<figure class="wp-block-image size-full testi-photo"><img src="{{URL:home-story-1.webp}}" alt="Dr. Shijin Prasad" class="wp-image-{{ID:home-story-1.webp}}"/></figure>
+<!-- /wp:image -->
 <!-- wp:group {"className":"testi-card","layout":{"type":"default"}} -->
 <div class="wp-block-group testi-card"><!-- wp:paragraph {"className":"testi-quote"} -->
-<p class="testi-quote">The Doctorate at IMET Worldwide empowered me to lead with clarity, speak with impact, and influence with purpose.<br><strong>Dr. Shibin Chulliparambil</strong></p>
+<p class="testi-quote">The Doctorate at IMET Worldwide empowered me to lead with clarity, speak with impact, and influence with purpose.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-name"} -->
+<p class="testi-name">Dr. Shibin Chulliparambil</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
 <div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://imetworldwide.com/success-stories/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-more"} -->
+<p class="testi-more"><a href="https://imetworldwide.com/success-stories/">Read More</a></p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
+<!-- wp:image {"id":{{ID:home-story-2.webp}},"sizeSlug":"full","linkDestination":"none","className":"testi-photo"} -->
+<figure class="wp-block-image size-full testi-photo"><img src="{{URL:home-story-2.webp}}" alt="Dr. Shibin Chulliparambil" class="wp-image-{{ID:home-story-2.webp}}"/></figure>
+<!-- /wp:image -->
 <!-- wp:group {"className":"testi-card","layout":{"type":"default"}} -->
 <div class="wp-block-group testi-card"><!-- wp:paragraph {"className":"testi-quote"} -->
-<p class="testi-quote">Doctorate journey with IMET Worldwide was a catalyst for my leadership growth, transforming me into a stronger leader, speaker, and influencer.<br><strong>Dr. Abhishek Mathur</strong></p>
+<p class="testi-quote">Doctorate journey with IMET Worldwide was a catalyst for my leadership growth, transforming me into a stronger leader, speaker, and influencer.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-name"} -->
+<p class="testi-name">Dr. Abhishek Mathur</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
 <div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://imetworldwide.com/success-stories/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-more"} -->
+<p class="testi-more"><a href="https://imetworldwide.com/success-stories/">Read More</a></p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
+<!-- wp:image {"id":{{ID:home-story-3.webp}},"sizeSlug":"full","linkDestination":"none","className":"testi-photo"} -->
+<figure class="wp-block-image size-full testi-photo"><img src="{{URL:home-story-3.webp}}" alt="Dr. Abhishek Mathur" class="wp-image-{{ID:home-story-3.webp}}"/></figure>
+<!-- /wp:image -->
 <!-- wp:group {"className":"testi-card","layout":{"type":"default"}} -->
 <div class="wp-block-group testi-card"><!-- wp:paragraph {"className":"testi-quote"} -->
-<p class="testi-quote">Through my Doctorate at IMET Worldwide, I discovered the power to transform knowledge into leadership, voice into impact, and vision into influence.<br><strong>Dr. Prabhkar Ramakrishnan</strong></p>
+<p class="testi-quote">Through my Doctorate at IMET Worldwide, I discovered the power to transform knowledge into leadership, voice into impact, and vision into influence.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-name"} -->
+<p class="testi-name">Dr. Prabhkar Ramakrishnan</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
 <div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://www.linkedin.com/in/dr-prabhakar-ramakrishnan-64003129/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-more"} -->
+<p class="testi-more"><a href="https://imetworldwide.com/success-stories/">Read More</a></p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
+<!-- wp:image {"id":{{ID:home-story-4.webp}},"sizeSlug":"full","linkDestination":"none","className":"testi-photo"} -->
+<figure class="wp-block-image size-full testi-photo"><img src="{{URL:home-story-4.webp}}" alt="Dr. Prabhkar Ramakrishnan" class="wp-image-{{ID:home-story-4.webp}}"/></figure>
+<!-- /wp:image -->
 </div>
 <!-- /wp:group -->
-<!-- wp:buttons {"className":"testi-more"} -->
-<div class="wp-block-buttons testi-more"><!-- wp:button {"className":"btn-link btn-lg"} -->
-<div class="wp-block-button btn-link btn-lg"><a class="wp-block-button__link wp-element-button" href="https://imetworldwide.com/success-stories/">View More</a></div>
-<!-- /wp:button -->
-</div>
-<!-- /wp:buttons -->
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/testimonials -->
-<!-- wp:imet/section {"anchor":"centers"} -->
-<section id="centers" class="wp-block-imet-section imet-section section imet-blank"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<!-- wp:imet/section {"anchor":"centers","className":"is-style-home"} -->
+<section id="centers" class="wp-block-imet-section imet-section section imet-blank is-style-home"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container"><!-- wp:heading {"className":"title"} -->
 <h2 class="wp-block-heading title">Affiliated Information Centers</h2>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"className":"sub"} -->
 <p class="sub">We are globally accessible, with affiliations and accreditations across multiple regions.</p>
 <!-- /wp:paragraph -->
-<!-- wp:image {"id":{{ID:home-map.webp}},"sizeSlug":"full","linkDestination":"none","className":"u-wide"} -->
-<figure class="wp-block-image size-full u-wide"><img src="{{URL:home-map.webp}}" alt="Map of IMET Worldwide affiliated information centers across the USA, Europe, Dubai (UAE) and Singapore" class="wp-image-{{ID:home-map.webp}}"/></figure>
+<!-- wp:image {"id":{{ID:home-map.webp}},"sizeSlug":"full","linkDestination":"none","className":"centres-map"} -->
+<figure class="wp-block-image size-full centres-map"><img src="{{URL:home-map.webp}}" alt="Map of IMET Worldwide affiliated information centers across the USA, Europe, Dubai (UAE) and Singapore" class="wp-image-{{ID:home-map.webp}}"/></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/section -->
-<!-- wp:imet/testimonials -->
-<section class="wp-block-imet-testimonials imet-section section testimonials"><!-- wp:group {"className":"imet-container testi-head","layout":{"type":"default"}} -->
+<!-- wp:imet/testimonials {"className":"is-style-home is-clients"} -->
+<section class="wp-block-imet-testimonials imet-section section testimonials is-style-home is-clients"><!-- wp:group {"className":"imet-container testi-head","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container testi-head"><!-- wp:heading {"className":"title"} -->
 <h2 class="wp-block-heading title">Client Testimonials</h2>
 <!-- /wp:heading -->
@@ -761,14 +813,25 @@
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container"><!-- wp:group {"className":"testi-grid","layout":{"type":"default"}} -->
+<!-- wp:group {"className":"testi-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group testi-grid"><!-- wp:group {"className":"testi-card","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-card"><!-- wp:paragraph {"className":"testi-quote"} -->
-<p class="testi-quote">The DBA journey with IMET Worldwide gave me deeper strategic insights to complement my Salesforce and cloud expertise. It empowered me to drive digital innovation with stronger academic and practical grounding.<br><strong>Dr. Davinder Pal S. – Salesforce Application Architect | AWS Certified | Digital Transformation Specialist</strong></p>
+<div class="wp-block-group testi-card"><!-- wp:image {"id":{{ID:home-client-1.webp}},"sizeSlug":"full","linkDestination":"none","className":"testi-avatar"} -->
+<figure class="wp-block-image size-full testi-avatar"><img src="{{URL:home-client-1.webp}}" alt="Dr. Davinder Pal S." class="wp-image-{{ID:home-client-1.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph {"className":"testi-quote"} -->
+<p class="testi-quote">“The DBA journey with IMET Worldwide gave me deeper strategic insights to complement my Salesforce and cloud expertise. It empowered me to drive digital innovation with stronger academic and practical grounding.”</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
+<div class="wp-block-group testi-foot"><!-- wp:group {"className":"testi-who","layout":{"type":"default"}} -->
+<div class="wp-block-group testi-who"><!-- wp:paragraph {"className":"testi-name"} -->
+<p class="testi-name"><strong>Dr. Davinder Pal S.</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-role"} -->
+<p class="testi-role">Salesforce Application Architect | AWS Certified | Digital Transformation Specialist</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://www.linkedin.com/in/davindersingh-sfdc/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph -->
 </div>
@@ -776,11 +839,23 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"testi-card","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-card"><!-- wp:paragraph {"className":"testi-quote"} -->
-<p class="testi-quote">The DBA program at IMET Worldwide enhanced my ability to align technology with business goals. It provided the right blend of academic rigor and practical application for CTO-level leadership.<br><strong>Dinesh Singh – Chief Technology Officer</strong></p>
+<div class="wp-block-group testi-card"><!-- wp:image {"id":{{ID:home-client-2.webp}},"sizeSlug":"full","linkDestination":"none","className":"testi-avatar"} -->
+<figure class="wp-block-image size-full testi-avatar"><img src="{{URL:home-client-2.webp}}" alt="Dinesh Singh" class="wp-image-{{ID:home-client-2.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph {"className":"testi-quote"} -->
+<p class="testi-quote">“The DBA program at IMET Worldwide enhanced my ability to align technology with business goals. It provided the right blend of academic rigor and practical application for CTO-level leadership.”</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
+<div class="wp-block-group testi-foot"><!-- wp:group {"className":"testi-who","layout":{"type":"default"}} -->
+<div class="wp-block-group testi-who"><!-- wp:paragraph {"className":"testi-name"} -->
+<p class="testi-name"><strong>Dinesh Singh</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-role"} -->
+<p class="testi-role">Chief Technology Officer</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://www.linkedin.com/in/dinesh-singh-a9a68912/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph -->
 </div>
@@ -788,11 +863,23 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"testi-card","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-card"><!-- wp:paragraph {"className":"testi-quote"} -->
-<p class="testi-quote">The DBA journey at IMET Worldwide enriched my strategic approach to IT operations and management. The mentorship and research exposure helped me align business goals with technology leadership more effectively.<br><strong>Meheriar Patel – Group CIO | CDO | CTO | Mentor &amp; Advisor</strong></p>
+<div class="wp-block-group testi-card"><!-- wp:image {"id":{{ID:home-client-3.webp}},"sizeSlug":"full","linkDestination":"none","className":"testi-avatar"} -->
+<figure class="wp-block-image size-full testi-avatar"><img src="{{URL:home-client-3.webp}}" alt="Meheriar Patel" class="wp-image-{{ID:home-client-3.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph {"className":"testi-quote"} -->
+<p class="testi-quote">“The DBA journey at IMET Worldwide enriched my strategic approach to IT operations and management. The mentorship and research exposure helped me align business goals with technology leadership more effectively.”</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
+<div class="wp-block-group testi-foot"><!-- wp:group {"className":"testi-who","layout":{"type":"default"}} -->
+<div class="wp-block-group testi-who"><!-- wp:paragraph {"className":"testi-name"} -->
+<p class="testi-name"><strong>Meheriar Patel</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-role"} -->
+<p class="testi-role">Group CIO | CDO | CTO | Mentor &amp; Advisor</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://www.linkedin.com/in/meheriar/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph -->
 </div>
@@ -800,11 +887,23 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"testi-card","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-card"><!-- wp:paragraph {"className":"testi-quote"} -->
-<p class="testi-quote">The DBA program at IMET Worldwide helped me refine my leadership vision in digital technology. It strengthened my ability to innovate and mentor global organizations with confidence.<br><strong>Dr. Amey Naik – Partner, Saga Technologies</strong></p>
+<div class="wp-block-group testi-card"><!-- wp:image {"id":{{ID:home-client-4.webp}},"sizeSlug":"full","linkDestination":"none","className":"testi-avatar"} -->
+<figure class="wp-block-image size-full testi-avatar"><img src="{{URL:home-client-4.webp}}" alt="Dr. Amey Naik" class="wp-image-{{ID:home-client-4.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph {"className":"testi-quote"} -->
+<p class="testi-quote">“The DBA program at IMET Worldwide helped me refine my leadership vision in digital technology. It strengthened my ability to innovate and mentor global organizations with confidence.”</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
+<div class="wp-block-group testi-foot"><!-- wp:group {"className":"testi-who","layout":{"type":"default"}} -->
+<div class="wp-block-group testi-who"><!-- wp:paragraph {"className":"testi-name"} -->
+<p class="testi-name"><strong>Dr. Amey Naik</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-role"} -->
+<p class="testi-role">Partner, Saga Technologies</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://www.linkedin.com/in/dr-amey-naik-b290a882/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph -->
 </div>
@@ -812,11 +911,23 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"testi-card","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-card"><!-- wp:paragraph {"className":"testi-quote"} -->
-<p class="testi-quote">The DBA journey with IMET Worldwide was enriching and practical. It gave me clarity on how to merge research with real-world business practices while driving technology solutions.<br><strong>Dr. Vikrant Nivate – Global Service Delivery Manager | DBA | PRINCE2® | Safran Group</strong></p>
+<div class="wp-block-group testi-card"><!-- wp:image {"id":{{ID:home-client-5.webp}},"sizeSlug":"full","linkDestination":"none","className":"testi-avatar"} -->
+<figure class="wp-block-image size-full testi-avatar"><img src="{{URL:home-client-5.webp}}" alt="Dr. Vikrant Nivate" class="wp-image-{{ID:home-client-5.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph {"className":"testi-quote"} -->
+<p class="testi-quote">“The DBA journey with IMET Worldwide was enriching and practical. It gave me clarity on how to merge research with real-world business practices while driving technology solutions.”</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
+<div class="wp-block-group testi-foot"><!-- wp:group {"className":"testi-who","layout":{"type":"default"}} -->
+<div class="wp-block-group testi-who"><!-- wp:paragraph {"className":"testi-name"} -->
+<p class="testi-name"><strong>Dr. Vikrant Nivate</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-role"} -->
+<p class="testi-role">Global Service Delivery Manager | DBA | PRINCE2® | Safran Group</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://www.linkedin.com/in/vikrant-nivate-105881ba/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph -->
 </div>
@@ -824,11 +935,23 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"testi-card","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-card"><!-- wp:paragraph {"className":"testi-quote"} -->
-<p class="testi-quote">The DBA at IMET Worldwide added depth to my service delivery and IT leadership journey. It equipped me with research-driven insights to lead secure, efficient, and future-ready operations.<br><strong>Dr. Jey Radha – Project/Practice Director – Digital Transformation &amp; IT Security</strong></p>
+<div class="wp-block-group testi-card"><!-- wp:image {"id":{{ID:home-client-6.webp}},"sizeSlug":"full","linkDestination":"none","className":"testi-avatar"} -->
+<figure class="wp-block-image size-full testi-avatar"><img src="{{URL:home-client-6.webp}}" alt="Dr. Jey Radha" class="wp-image-{{ID:home-client-6.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph {"className":"testi-quote"} -->
+<p class="testi-quote">“The DBA at IMET Worldwide added depth to my service delivery and IT leadership journey. It equipped me with research-driven insights to lead secure, efficient, and future-ready operations.”</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
+<div class="wp-block-group testi-foot"><!-- wp:group {"className":"testi-who","layout":{"type":"default"}} -->
+<div class="wp-block-group testi-who"><!-- wp:paragraph {"className":"testi-name"} -->
+<p class="testi-name"><strong>Dr. Jey Radha</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-role"} -->
+<p class="testi-role">Project/Practice Director – Digital Transformation &amp; IT Security</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://www.linkedin.com/in/radhaj/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph -->
 </div>
@@ -836,11 +959,23 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"testi-card","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-card"><!-- wp:paragraph {"className":"testi-quote"} -->
-<p class="testi-quote">The DBA journey with IMET Worldwide has been transformative. Coming from a healthcare background, this program gave me not only academic depth but also the strategic mindset to implement real-world solutions in my organisation.<br><strong>Dr. Shijin Prasad R. S. – Doctorate (DBA) – Healthcare (AI &amp; RPA Focus)</strong></p>
+<div class="wp-block-group testi-card"><!-- wp:image {"id":{{ID:home-client-7.webp}},"sizeSlug":"full","linkDestination":"none","className":"testi-avatar"} -->
+<figure class="wp-block-image size-full testi-avatar"><img src="{{URL:home-client-7.webp}}" alt="Dr. Shijin Prasad R. S." class="wp-image-{{ID:home-client-7.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph {"className":"testi-quote"} -->
+<p class="testi-quote">“The DBA journey with IMET Worldwide has been transformative. Coming from a healthcare background, this program gave me not only academic depth but also the strategic mindset to implement real-world solutions in my organisation.”</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
+<div class="wp-block-group testi-foot"><!-- wp:group {"className":"testi-who","layout":{"type":"default"}} -->
+<div class="wp-block-group testi-who"><!-- wp:paragraph {"className":"testi-name"} -->
+<p class="testi-name"><strong>Dr. Shijin Prasad R. S.</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-role"} -->
+<p class="testi-role">Doctorate (DBA) – Healthcare (AI &amp; RPA Focus)</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://www.linkedin.com/in/shijinprasad/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph -->
 </div>
@@ -848,11 +983,23 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"testi-card","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-card"><!-- wp:paragraph {"className":"testi-quote"} -->
-<p class="testi-quote">My DBA journey at IMET Worldwide shaped my leadership thinking, blending research, strategy, and innovation, while mentorship and global exposure helped me apply learning confidently in real executive roles.<br><strong>Dr. Suresh A Shan – Ph.D. (CS), DBA, MCA, MBA, M.Tech, ISB Global CIO, Independent Director</strong></p>
+<div class="wp-block-group testi-card"><!-- wp:image {"id":{{ID:home-client-8.webp}},"sizeSlug":"full","linkDestination":"none","className":"testi-avatar"} -->
+<figure class="wp-block-image size-full testi-avatar"><img src="{{URL:home-client-8.webp}}" alt="Dr. Suresh A Shan" class="wp-image-{{ID:home-client-8.webp}}"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph {"className":"testi-quote"} -->
+<p class="testi-quote">“My DBA journey at IMET Worldwide shaped my leadership thinking, blending research, strategy, and innovation, while mentorship and global exposure helped me apply learning confidently in real executive roles.”</p>
 <!-- /wp:paragraph -->
 <!-- wp:group {"className":"testi-foot","layout":{"type":"default"}} -->
-<div class="wp-block-group testi-foot"><!-- wp:paragraph {"className":"testi-linkedin"} -->
+<div class="wp-block-group testi-foot"><!-- wp:group {"className":"testi-who","layout":{"type":"default"}} -->
+<div class="wp-block-group testi-who"><!-- wp:paragraph {"className":"testi-name"} -->
+<p class="testi-name"><strong>Dr. Suresh A Shan</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"testi-role"} -->
+<p class="testi-role">Ph.D. (CS), DBA, MCA, MBA, M.Tech, ISB Global CIO, Independent Director</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"className":"testi-linkedin"} -->
 <p class="testi-linkedin"><a href="https://www.linkedin.com/in/assuresh/" target="_blank" rel="noreferrer noopener">LinkedIn</a></p>
 <!-- /wp:paragraph -->
 </div>
@@ -861,17 +1008,18 @@
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
-<!-- wp:buttons {"className":"testi-more"} -->
-<div class="wp-block-buttons testi-more"><!-- wp:button {"className":"btn-navy btn-md"} -->
-<div class="wp-block-button btn-navy btn-md"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
+<!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<div class="wp-block-group imet-container"><!-- wp:buttons {"className":"testi-more"} -->
+<div class="wp-block-buttons testi-more"><!-- wp:button {"className":"btn-navy btn-sm"} -->
+<div class="wp-block-button btn-navy btn-sm"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Talk to a Doctoral Advisor</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/testimonials -->
-<!-- wp:imet/faq {"anchor":"faq"} -->
-<section id="faq" class="wp-block-imet-faq imet-section section faq"><!-- wp:group {"className":"imet-container narrow","layout":{"type":"default"}} -->
+<!-- wp:imet/faq {"anchor":"faq","className":"is-style-home"} -->
+<section id="faq" class="wp-block-imet-faq imet-section section faq is-style-home"><!-- wp:group {"className":"imet-container narrow","layout":{"type":"default"}} -->
 <div class="wp-block-group imet-container narrow"><!-- wp:group {"className":"sec-head","layout":{"type":"default"}} -->
 <div class="wp-block-group sec-head"><!-- wp:heading {"className":"title"} -->
 <h2 class="wp-block-heading title">Frequently Asked Questions (FAQs)</h2>
@@ -1042,19 +1190,19 @@
 </div>
 <!-- /wp:group --></section>
 <!-- /wp:imet/faq -->
-<!-- wp:imet/cta -->
-<section class="wp-block-imet-cta imet-section cta-wrap"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
-<div class="wp-block-group imet-container"><!-- wp:group {"className":"cta","layout":{"type":"default"}} -->
+<!-- wp:imet/cta {"className":"is-style-home is-final"} -->
+<section class="wp-block-imet-cta imet-section cta-wrap is-style-home is-final"><!-- wp:group {"className":"imet-container","layout":{"type":"default"}} -->
+<div class="wp-block-group imet-container"><!-- wp:paragraph {"className":"cta-eyebrow"} -->
+<p class="cta-eyebrow">Ready to Lead, Not Just Work?</p>
+<!-- /wp:paragraph -->
+<!-- wp:group {"className":"cta","layout":{"type":"default"}} -->
 <div class="wp-block-group cta"><!-- wp:group {"className":"cta-text","layout":{"type":"default"}} -->
 <div class="wp-block-group cta-text"><!-- wp:heading -->
 <h2 class="wp-block-heading">Step into your next chapter as a <strong>Tech Advisor, CxO, or Boardroom Leader.</strong></h2>
 <!-- /wp:heading -->
-<!-- wp:paragraph {"className":"cta-sub"} -->
-<p class="cta-sub">Ready to Lead, Not Just Work?</p>
-<!-- /wp:paragraph -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"btn-white btn-lg"} -->
-<div class="wp-block-button btn-white btn-lg"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Start Leadership Journey Today</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"btn-white btn-sm"} -->
+<div class="wp-block-button btn-white btn-sm"><a class="wp-block-button__link wp-element-button" href="#advisor-form">Start Leadership Journey Today</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->

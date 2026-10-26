@@ -70,3 +70,17 @@ each( '.wp-block-imet-alumni-video .video-thumb a', ( a ) => {
 		play( a.closest( '.video-thumb' ), id, titleOf( a ) );
 	} );
 } );
+
+/* Home page: each of the three videos plays in place. */
+each( '.wp-block-imet-alumni-video .video-trio .video-tile', ( tile ) => {
+	const link = tile.querySelector( 'a' );
+	const id = youtubeId( link?.href );
+	if ( ! link || ! id ) {
+		return;
+	}
+	link.addEventListener( 'click', ( e ) => {
+		e.preventDefault();
+		play( link, id, titleOf( link ) );
+		tile.classList.add( 'is-playing' );
+	} );
+} );

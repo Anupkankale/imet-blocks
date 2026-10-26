@@ -232,3 +232,46 @@
 @media (max-width: 640px) {
 	.imet-section.alumni { padding: 48px 0; }
 }
+
+/* ---------- Style "Home" (block style, the Home page): three equal videos (300px, 16:9) with the title under each, then a
+   small "View More" button. A video plays in place when clicked (view.js). ---------- */
+.imet-section.alumni.is-style-home { padding: 30px 0 10px; }
+.imet-section.alumni.is-style-home .title { margin-bottom: 0; }
+.imet-section .video-trio {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 300px));
+	justify-content: center;
+	gap: 40px 60px;
+	margin: 40px auto 0;
+}
+.imet-section .video-tile { margin: 0; }
+.imet-section .video-tile a { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 8px; background: #000; }
+.imet-section .video-tile img, .imet-section .video-tile iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
+.imet-section .video-tile a::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 54px;
+	height: 38px;
+	border-radius: 10px;
+	background: #14234b url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 6.5v11l9-5.5z' fill='%23fff'/%3E%3C/svg%3E") center / 24px no-repeat;
+	transform: translate(-50%, -50%);
+	transition: background-color .25s;
+}
+.imet-section .video-tile a:is(:hover, :focus-visible)::after { background-color: var(--gold); }
+.imet-section .video-tile.is-playing a::after { display: none; }
+.imet-section .video-tile figcaption { margin: 20px 0 0; color: #000; font-size: 1rem; font-weight: 500; line-height: 1.625; text-align: center; }
+.imet-section.alumni.is-style-home .video-more { margin: 30px 0 0; }
+@media (max-width: 900px) {
+	.imet-section .video-trio { grid-template-columns: minmax(0, 340px); gap: 28px; margin-top: 28px; }
+}
+@media (max-width: 640px) {
+	.imet-section.alumni.is-style-home { padding: 32px 0 20px; }
+}
+.imet-section.alumni.is-style-home .video-more { justify-content: center; }
+.imet-section.alumni.is-style-home .video-more > .wp-block-button { width: auto; }
+@media (max-width: 640px) {
+	.imet-section .video-trio { grid-template-columns: 1fr; width: calc(100% - 20px); }
+	.imet-section .video-tile figcaption { font-size: 1.25rem; line-height: 1.4; }
+}

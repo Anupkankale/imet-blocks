@@ -35,6 +35,10 @@
 		{
 			"name": "wide",
 			"label": "Wide"
+		},
+		{
+			"name": "home",
+			"label": "Home"
 		}
 	]
 }

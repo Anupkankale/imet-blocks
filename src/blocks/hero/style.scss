@@ -408,3 +408,69 @@
 	.imet-section :is(.h-crumbs, .h-rating) { font-size: 1rem; }
 	.imet-section .h-rating strong { font-size: 1.375rem; }
 }
+
+/* ---------- Style "Home" (block style, the Home page): centred badge, title, lead and button over a soft gradient
+   image, then a row of graduate cards that glides sideways (marquee, see view.js). No form card or logo card here. ---------- */
+.imet-section.hero.is-style-home {
+	padding: 48px 0 0;
+	background: #eef0ff url("../../../assets/images/home-hero-bg.webp") center / cover no-repeat;
+}
+.imet-section.hero.is-style-home::after { content: none; }
+.imet-section .hero-home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.imet-section .h-pill {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	min-height: 32px;
+	padding: 0 28px;
+	border-radius: 16px;
+	background: #fff;
+	color: var(--navy);
+	font-size: 1rem;
+	line-height: 1.75;
+}
+.imet-section .h-pill::before {
+	content: "";
+	flex: 0 0 18px;
+	height: 18px;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2311aa63' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 17l6-6 4 4 8-8'/%3E%3Cpath d='M15 7h6v6'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.imet-section.hero.is-style-home h1 {
+	margin-top: 10px;
+	font-size: clamp(1.375rem, 1.1rem + 0.9vw, 1.75rem); /* 22px → 28px */
+	line-height: 1.43;
+}
+.imet-section.hero.is-style-home .hero-lead {
+	max-width: 936px;
+	margin: 10px auto 0;
+	font-size: 1rem;
+	line-height: 1.625;
+}
+.imet-section.hero.is-style-home .hero-lead strong { font-weight: 700; }
+.imet-section.hero.is-style-home .wp-block-buttons { justify-content: center; margin-top: 10px; }
+.imet-section .h-grads {
+	display: flex;
+	gap: 26px;
+	width: min(1040px, 100% - 40px);
+	margin: 10px auto 0;
+	overflow-x: auto;
+	scrollbar-width: none;
+}
+.imet-section .h-grads::-webkit-scrollbar { display: none; }
+.imet-section .h-grad { flex: 0 0 152px; margin: 0; }
+.imet-section .h-grad img { width: 152px; height: auto; }
+@media (max-width: 640px) {
+	.imet-section.hero.is-style-home { padding: 32px 0 0; }
+	.imet-section .h-pill { padding: 0 16px; font-size: 0.875rem; text-align: left; }
+}
+@media (max-width: 640px) {
+	.imet-section.hero.is-style-home h1 { font-size: 1.875rem; font-weight: 700; line-height: 1.17; }
+	.imet-section.hero.is-style-home .hero-lead { line-height: 1.3; }
+	.imet-section .h-grads { width: calc(100% - 20px); margin-top: 16px; }
+}

@@ -115,3 +115,28 @@
 @media (min-width: 641px) {
 	.imet-section.highlights.is-style-wide + .imet-section.cost-banner { margin: 32px auto 38px; }
 }
+
+/* ---------- Style "Home" (block style, the Home page): a 952px card, 234px tall, smaller type (Home page, 1440 frame). ---------- */
+.imet-section.cost-banner.is-style-home {
+	grid-template-columns: 306px 150px minmax(0, 1fr);
+	width: min(952px, 100% - 40px);
+	min-height: 234px;
+	margin: 20px auto;
+	border-radius: 16px;
+}
+.imet-section.cost-banner.is-style-home .cost-left { padding: 15px 15px 15px 30px; border-radius: 16px 0 0 16px; }
+.imet-section.cost-banner.is-style-home .cost-left h3 { font-size: 1.5625rem; line-height: 1.52; } /* 25px */
+.imet-section.cost-banner.is-style-home .price-tag { margin-top: 20px; padding: 0 12px; border: 2px solid #ffd385; border-radius: 10px; color: #ffd385; font-size: 1.25rem; line-height: 2.2; }
+.imet-section.cost-banner.is-style-home .cost-mid { height: 220px; margin-top: -1px; padding: 10px 10px 36px; }
+.imet-section.cost-banner.is-style-home .cost-mid .up-to { font-size: .9375rem; line-height: 1.33; }
+.imet-section.cost-banner.is-style-home .cost-mid .pct { padding-bottom: 8px; font-size: 1.875rem; line-height: 1.17; }
+.imet-section.cost-banner.is-style-home .cost-mid .merit { margin-top: 8px; font-size: .8125rem; font-weight: 600; line-height: 1.85; }
+.imet-section.cost-banner.is-style-home .cost-right { padding: 15px 30px 15px 44px; }
+.imet-section.cost-banner.is-style-home .cost-right h3 { font-size: 1.5625rem; line-height: 1.52; }
+.imet-section.cost-banner.is-style-home .cost-right p { max-width: 431px; margin: 5px 0 14px; font-size: .8125rem; line-height: 1.43; } /* 13px */
+@media (max-width: 900px) {
+	.imet-section.cost-banner.is-style-home { grid-template-columns: 1fr; }
+	.imet-section.cost-banner.is-style-home .cost-left { border-radius: 16px 16px 0 0; padding: 28px 20px; }
+	.imet-section.cost-banner.is-style-home .cost-right { padding: 28px 20px; }
+	.imet-section.cost-banner.is-style-home .cost-right p { margin-inline: auto; }
+}

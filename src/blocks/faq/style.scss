@@ -55,6 +55,25 @@
 	.imet-section.faq.is-style-compact .title { margin-bottom: 9px; }
 }
 
+/* ---------- Style "Home" (block style, the Home page): every question shown (no "See More"), as grey rounded
+   rows 10px apart in a 1040px column, 16px questions (Home page, 1440 frame). ---------- */
+.imet-section.faq.is-style-home { padding: 30px 0; }
+.imet-section.faq.is-style-home .imet-container.narrow { width: min(1040px, 100% - 40px); }
+.imet-section.faq.is-style-home .title { margin-bottom: 20px; font-size: 1.75rem; font-weight: 600; line-height: 1.43; }
+.imet-section.faq.is-style-home .faq-acc { gap: 10px; width: 100%; }
+:where(body:not(.editor-styles-wrapper)) .imet-section.faq.is-style-home .faq-acc:not(.is-expanded) details:nth-of-type(n+6) { display: block; }
+.imet-section.faq.is-style-home .faq-acc details { border-bottom: 0; border-radius: 10px; background: #f7f7f7; }
+.imet-section.faq.is-style-home .faq-acc summary { padding: 16px; color: #000; font: 400 1rem/1.75 var(--head); }
+.imet-section.faq.is-style-home .faq-acc summary::after { width: 16px; height: 16px; align-self: center; }
+.imet-section.faq.is-style-home .faq-acc details[open] summary { padding-bottom: 0; }
+.imet-section.faq.is-style-home .faq-acc details p { padding: 8px 48px 16px 16px; color: #111; font-size: .9375rem; line-height: 1.7; }
+.imet-section.faq.is-style-home .faq-acc details ul { padding: 0 48px 16px 40px; list-style: disc; color: #111; font-size: .9375rem; line-height: 1.7; }
+@media (max-width: 640px) {
+	.imet-section.faq.is-style-home { padding: 32px 0; }
+	.imet-section.faq.is-style-home .faq-acc summary { padding: 14px; font-size: .9375rem; line-height: 1.5; }
+	.imet-section.faq.is-style-home .faq-acc details p { padding: 8px 14px 14px; }
+}
+
 /* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
 @media (max-width: 640px) {
 	.imet-section.faq { padding: 48px 0; }

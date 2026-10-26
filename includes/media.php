@@ -63,7 +63,16 @@ function imet_blocks_media_files() {
 		'home-logo-23.webp' => 'ANZ logo', 'home-convocation.webp' => 'Doctorate Convocation Ceremony of IMET Worldwide',
 		'home-case-1.webp' => 'Dr. Ernesto Rufino Jr.', 'home-case-2.webp' => 'Dr. Christian Senyo Atitsogbu',
 		'home-case-3.webp' => 'Dr. Shan Shokanwar', 'home-case-4.webp' => 'Dr. Sona Saha Das',
+		'home-conv-1.webp' => 'Doctorate Convocation Ceremony of IMET Worldwide', 'home-conv-2.webp' => 'Doctorate Convocation Ceremony of IMET Worldwide',
+		'home-conv-3.webp' => 'Doctorate Convocation Ceremony of IMET Worldwide',
+		'home-bulb.webp' => 'Light bulb',
 		'home-journals.webp' => 'International journals: IEEE, ResearchGate, Elsevier Scopus, Google Scholar, UGC, Web of Science', 'home-map.webp' => 'Map of IMET Worldwide affiliated information centers across the USA, Europe, Dubai (UAE) and Singapore',
+		'home-story-1.webp' => 'Dr. Shijin Prasad', 'home-story-2.webp' => 'Dr. Shibin Chulliparambil',
+		'home-story-3.webp' => 'Dr. Abhishek Mathur', 'home-story-4.webp' => 'Dr. Prabhkar Ramakrishnan',
+		'home-client-1.webp' => 'Dr. Davinder Pal S.', 'home-client-2.webp' => 'Dinesh Singh',
+		'home-client-3.webp' => 'Meheriar Patel', 'home-client-4.webp' => 'Dr. Amey Naik',
+		'home-client-5.webp' => 'Dr. Vikrant Nivate', 'home-client-6.webp' => 'Dr. Jey Radha',
+		'home-client-7.webp' => 'Dr. Shijin Prasad R. S.', 'home-client-8.webp' => 'Dr. Suresh A Shan',
 	);
 }
 

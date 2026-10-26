@@ -4,15 +4,18 @@ All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 [Deployment → Versioning](docs/DEPLOYMENT.md#versioning)).
 
 ## 1.9.0 — 2026-10-26
-- **New page pattern: Home Page** (`patterns/home-page.php`): the content and section order of imetworldwide.com, built only from
-  existing blocks: Hero with enquiry form, alumni photo row, Highlights, Cost Banner, accreditation logos, Programs tabs
-  (Doctorate / MBA / Diploma), embassy emblems, Top Featured Programs, Why Choose IMET (Step Cards), Alumni Videos, alumni
-  employer logos, Convocation, Case Studies, journals banner, Success Stories, Affiliated Information Centers map, Client
-  Testimonials, FAQ (25 questions) and the closing Call to Action. Use **Create: Home Page** under Plugins, or the pattern
-  inserter.
-- 48 new images in `assets/images/` (home-*), imported to the Media Library with alt text.
-- Sections that need a layout the blocks don't have (the live page's centred hero over a photo row, a 7-across emblem row,
-  the 3-up "Why Choose" carousel) use the nearest block, so they look close to the live page but not identical.
+- **New page pattern: Home Page** (`patterns/home-page.php`): the content and section order of imetworldwide.com, matched to the
+  live page's spacing and layout at 1440px and 390px (every section within about 30px of the live height; the live header
+  overlay and the enquiry form are not counted). Use **Create: Home Page** under Plugins, or the pattern inserter.
+- **New block styles "Home"** (other pages are unchanged): Hero, Highlights, Cost Banner, Recognition Logos, Tabs,
+  Specializations, Step Cards, Alumni Videos, Certificate, Call to Action, Testimonials, FAQ and the blank Section. See the
+  styles table in [docs/BLOCKS.md](docs/BLOCKS.md). Pages whose hero uses the Home style also get 28px titles (25px on phones)
+  and 18px gold eyebrows without the underline.
+- Front end: graduate cards, employer logos and client testimonials glide sideways; "Why choose" and success stories have
+  arrow buttons; the three alumni videos play in place; the FAQ shows every question.
+- 64 new images in `assets/images/` (home-*), imported to the Media Library with alt text.
+- Not identical to the live page: buttons keep the plugin's button sizes (48 / 60 / 72px) instead of the live page's 40px
+  buttons; the MBA and Diploma tab panels list titles only; the live page's header, footer, popup and chat button stay in Elementor.
 
 ## 1.8.1 — 2026-10-23
 - **DBA Course Page, pixel match to the Figma (1440):** every section from the menu bar down is now within ±3px of the

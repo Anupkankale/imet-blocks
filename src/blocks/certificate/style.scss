@@ -53,3 +53,30 @@
 	.imet-section .ticks { margin-inline: auto; }
 	.imet-section .cert-card .wp-block-buttons { justify-content: center; }
 }
+
+/* ---------- Style "Home" (block style, the Home page, convocation): text on the left, on the right three portrait photos
+   in a row and a wide group photo below (Home page, 1440 frame). ---------- */
+.imet-section.cert.is-style-home { padding: 20px 0 30px; }
+.imet-section.cert.is-style-home .cert-wrap {
+	grid-template-columns: minmax(0, 538px) minmax(0, 527px);
+	justify-content: space-between;
+	gap: 30px;
+	width: min(1105px, 100% - 40px);
+	padding: 10px;
+}
+.imet-section.cert.is-style-home .cert-card { margin: 0; padding: 10px 10px 0; }
+.imet-section.cert.is-style-home .title { margin-bottom: 20px; font-size: 1.75rem; font-weight: 600; line-height: 1.43; }
+.imet-section.cert.is-style-home .cert-sub { margin-bottom: 20px; line-height: 1.625; }
+.imet-section.cert.is-style-home .cert-photos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 0; }
+.imet-section.cert.is-style-home .cert-photos figure { margin: 0; }
+.imet-section.cert.is-style-home .cert-photos img { width: 100%; height: 188px; border-radius: 16px; object-fit: cover; }
+.imet-section.cert.is-style-home .cert-photos .cert-wide { grid-column: 1 / -1; }
+.imet-section.cert.is-style-home .cert-photos .cert-wide img { height: 148px; }
+@media (max-width: 900px) {
+	.imet-section.cert.is-style-home .cert-wrap { grid-template-columns: 1fr; padding: 0; }
+}
+@media (max-width: 640px) {
+	.imet-section.cert.is-style-home { padding: 32px 0; }
+	.imet-section.cert.is-style-home .cert-photos img { height: 120px; }
+	.imet-section.cert.is-style-home .cert-photos .cert-wide img { height: 110px; }
+}

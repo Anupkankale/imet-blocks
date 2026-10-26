@@ -91,7 +91,18 @@ return array(
 			'imet-base',
 			'file:./style-index.css'
 		),
-		'viewScript' => 'file:./view.js'
+		'viewScript' => 'file:./view.js',
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Default',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'home',
+				'label' => 'Home'
+			)
+		)
 	),
 	'analytics' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -179,6 +190,17 @@ return array(
 		'style' => array(
 			'imet-base',
 			'file:./style-index.css'
+		),
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Default',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'home',
+				'label' => 'Home'
+			)
 		)
 	),
 	'cost-banner' => array(
@@ -208,6 +230,17 @@ return array(
 		'style' => array(
 			'imet-base',
 			'file:./style-index.css'
+		),
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Default',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'home',
+				'label' => 'Home'
+			)
 		)
 	),
 	'cta' => array(
@@ -247,6 +280,10 @@ return array(
 			array(
 				'name' => 'compact',
 				'label' => 'Compact'
+			),
+			array(
+				'name' => 'home',
+				'label' => 'Home'
 			)
 		)
 	),
@@ -345,8 +382,13 @@ return array(
 			array(
 				'name' => 'logos',
 				'label' => 'Logos'
+			),
+			array(
+				'name' => 'home',
+				'label' => 'Home'
 			)
-		)
+		),
+		'viewScript' => 'file:./view.js'
 	),
 	'faq' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -386,6 +428,10 @@ return array(
 			array(
 				'name' => 'compact',
 				'label' => 'Compact'
+			),
+			array(
+				'name' => 'home',
+				'label' => 'Home'
 			)
 		)
 	),
@@ -456,6 +502,10 @@ return array(
 			array(
 				'name' => 'dark',
 				'label' => 'Dark'
+			),
+			array(
+				'name' => 'home',
+				'label' => 'Home'
 			)
 		)
 	),
@@ -496,6 +546,10 @@ return array(
 			array(
 				'name' => 'wide',
 				'label' => 'Wide'
+			),
+			array(
+				'name' => 'home',
+				'label' => 'Home'
 			)
 		)
 	),
@@ -598,6 +652,17 @@ return array(
 		'style' => array(
 			'imet-base',
 			'file:./style-index.css'
+		),
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Default',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'home',
+				'label' => 'Home'
+			)
 		)
 	),
 	'specializations' => array(
@@ -638,6 +703,10 @@ return array(
 			array(
 				'name' => 'five',
 				'label' => 'Five per row'
+			),
+			array(
+				'name' => 'home',
+				'label' => 'Home'
 			)
 		)
 	),
@@ -668,7 +737,19 @@ return array(
 		'style' => array(
 			'imet-base',
 			'file:./style-index.css'
-		)
+		),
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Default',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'home',
+				'label' => 'Home'
+			)
+		),
+		'viewScript' => 'file:./view.js'
 	),
 	'subnav' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -729,7 +810,18 @@ return array(
 			'imet-base',
 			'file:./style-index.css'
 		),
-		'viewScript' => 'file:./view.js'
+		'viewScript' => 'file:./view.js',
+		'styles' => array(
+			array(
+				'name' => 'default',
+				'label' => 'Default',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'home',
+				'label' => 'Home'
+			)
+		)
 	),
 	'testimonials' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -772,6 +864,10 @@ return array(
 			array(
 				'name' => 'compact',
 				'label' => 'Compact'
+			),
+			array(
+				'name' => 'home',
+				'label' => 'Home'
 			)
 		)
 	),

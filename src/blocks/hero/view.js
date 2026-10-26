@@ -26,3 +26,6 @@ each( '.wp-block-imet-hero', ( hero ) => {
 
 /* Accreditation logos: a marquee on phones (CSS makes the row scroll there; on wider screens it fits). */
 each( '.wp-block-imet-hero .ac-logos', ( row ) => marquee( row, [ ...row.querySelectorAll( '.ac-logo' ) ], { speed: 30 } ) );
+
+/* Home page: the graduate cards glide sideways. */
+each( '.wp-block-imet-hero .h-grads', ( row ) => marquee( row, [ ...row.querySelectorAll( '.h-grad' ) ], { speed: 30 } ) );

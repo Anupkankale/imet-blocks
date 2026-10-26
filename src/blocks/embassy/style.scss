@@ -44,7 +44,44 @@
 	.imet-section.embassy.is-style-logos .emblem img { max-height: 56px; max-width: 120px; }
 }
 
+/* ---------- Style "Home" (block style, the Home page), three uses (Home page, 1440 frame):
+   accreditation logos (.is-accred, 128px logos 100px apart), embassy emblems (80px emblems 80px apart) and the alumni employer
+   logos (.is-employers, two rows of 102 x 52 logo tiles that glide sideways). ---------- */
+.imet-section.embassy.is-style-home { padding: 20px 0 50px; border-top: 0; }
+.imet-section.embassy.is-style-home .sec-head .sub { max-width: 941px; margin-bottom: 0; }
+.imet-section.embassy.is-style-home .emblem-row {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	width: min(1040px, 100% - 40px);
+	max-width: none;
+	margin: 20px auto 0;
+	overflow-x: auto;
+	scrollbar-width: none;
+}
+.imet-section.embassy.is-style-home .emblem-row::-webkit-scrollbar { display: none; }
+.imet-section.embassy.is-style-home .emblem { flex: 0 0 auto; }
+.imet-section.embassy.is-style-home .emblem img { width: 80px; height: auto; max-width: none; max-height: 91px; object-fit: contain; }
+.imet-section.embassy.is-style-home .emblem figcaption { display: none; }
+.imet-section.embassy.is-style-home.is-accred { padding: 30px 0; }
+.imet-section.embassy.is-style-home.is-accred .emblem-row { height: 83px; }
+.imet-section.embassy.is-style-home.is-accred .emblem img { width: 128px; max-height: 77px; }
+.imet-section.embassy.is-style-home.is-accred .wp-block-buttons { justify-content: center; margin-top: 20px; }
+.imet-section.embassy.is-style-home.is-employers { padding: 20px 0 30px; }
+.imet-section.embassy.is-style-home.is-employers .sec-head .sub { margin-top: 24px; }
+.imet-section.embassy.is-style-home.is-employers .emblem-row { justify-content: flex-start; gap: 15px; margin-top: 0; }
+.imet-section.embassy.is-style-home.is-employers .emblem-row { padding: 3px 0; }
+.imet-section.embassy.is-style-home.is-employers .sec-head + .emblem-row { margin-top: 35px; }
+.imet-section.embassy.is-style-home.is-employers .emblem-row + .emblem-row { margin-top: 24px; }
+.imet-section.embassy.is-style-home.is-employers .emblem img { width: 102px; height: 52px; border: 1px solid #ececec; border-radius: 8px; object-fit: contain; background: #fff; }
+.imet-section.embassy.is-style-home.is-employers .emblem-row.is-marquee { gap: 15px; }
+@media (max-width: 1100px) {
+	.imet-section.embassy.is-style-home .emblem-row { display: flex; }
+}
+
 /* Phones: every .section gets the same vertical rhythm (overrides the padding above). */
 @media (max-width: 640px) {
 	.imet-section.embassy { padding: 48px 0; }
+	.imet-section.embassy.is-style-home { padding: 32px 0; }
 }
