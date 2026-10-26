@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 3
+    groups:
+      wordpress:
+        patterns: [ "@wordpress/*" ]
+    ignore:
+      # TypeScript 7 breaks the lint plugins; see "overrides" in package.json
+      - dependency-name: typescript
+        versions: [ ">=6" ]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

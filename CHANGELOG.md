@@ -4,6 +4,10 @@ All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 [Deployment → Versioning](docs/DEPLOYMENT.md#versioning)).
 
 ## Unreleased
+- **Repo hygiene (no change to the plugin itself):** `npm run lint` works again (TypeScript pinned to 5.5 with an npm
+  override; ESLint and Stylelint configs added, existing style problems are warnings), `CONTRIBUTING.md`, pull request and
+  issue templates, `CODEOWNERS`, Dependabot, `.editorconfig`, `.nvmrc`, `.gitattributes` and `.mailmap` (one name for the
+  older git identities). The Developer guide now lists what the plugin overrides on the site and where each override stops.
 - **Automated tests:** `npm test` (static checks + Jest unit tests for `view.js`) and `npm run test:e2e` (Playwright
   on the preview page at 1440px and 390px). No change to the plugin itself.
 

@@ -212,6 +212,20 @@ Scripts are classic scripts (`viewScript`), loaded only where the block is used.
 | Form placeholder | `templates.php` | `[imet_advisor_form]` shows a note to editors and nothing to visitors. |
 | Migration | `migrate.php` | `wp imet migrate <id> [--dry-run]` turns section Groups into IMET blocks. |
 
+### What the plugin overrides on the site (and where it stops)
+
+These are deliberate. They are listed here so nobody is surprised by them.
+
+| Override | What it does | Where it stops |
+|---|---|---|
+| **Classic Editor** (`use_block_editor_for_post`, priority `PHP_INT_MAX`) | The live site runs the Classic Editor. IMET pages must open in the block editor, so the plugin has the last word on this filter. | Only pages that use the IMET Landing template or contain an `<!-- wp:imet/` block (`imet_blocks_is_imet_page()`). Every other page and post keeps the editor the site chose. |
+| **Template on save** (`save_post_page`) | A page that contains IMET blocks and has no template gets IMET Landing. | A template chosen on purpose is kept; revisions are skipped. |
+| **Landing-page HTML rewrite** (`perf.php`) | Moves stylesheets, removes Google Fonts, combines CSS, delays analytics scripts until the first interaction. | Only the IMET Landing template. It matches the Glidex/Elementor handles by name, so a theme update can need a change here; `tests/php/PerfTest.php` covers the rewrite. |
+| **Media import** (`media.php`, `admin_init`) | After a version change, the images in `assets/images/` are imported to the Media Library. | Runs once per version; images already imported are reused. |
+| **Image loading hints** (`perf.php`, `render_block_core/image`) | Hero graduate cards load at once; the images further down are lazy. | Only images with the Home page class names listed in the filter. |
+
+If you add an override, add a row here and a test next to it.
+
 ## Images and fonts
 
 - **Fonts** (`assets/fonts`):
