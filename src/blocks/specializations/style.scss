@@ -87,57 +87,89 @@
 	.imet-section.specs { padding: 48px 0; }
 }
 
-/* ---------- Style "Home" (block style, the Home page): grey band, five white cards (216px, 5px apart) each with the
-   title, a navy arrow, a thin line and the description. All five fit, so nothing scrolls on desktop. ---------- */
-.imet-section.specs.is-style-home { padding: 40px 0 30px; background: #f5f5f5; }
-.imet-section.specs.is-style-home .title { margin-bottom: 30px; font-weight: 700; }
-@media (min-width: 1101px) {
-	.imet-section.specs.is-style-home .spec-grid { --per-view: 5; --gap: 5px; width: min(1100px, 100% - 40px); padding: 0; }
-	.imet-section.specs.is-style-home .spec-card.is-clone { display: none; }
+/* ---------- Style "Home" (block style, the Home page): grey band with five white cards. Each card has the title, a navy
+   arrow, a thin line and the description. The lines line up across the row. All five cards always show: five in a row on
+   desktop, three then two on tablets, two columns on large phones, one on small phones. Nothing scrolls. ---------- */
+.imet-section.specs.is-style-home { padding: 40px 0 36px; background: #f5f5f5; }
+.imet-section.specs.is-style-home .title { margin-bottom: 28px; font-weight: 700; }
+.imet-section.specs.is-style-home .spec-grid {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	gap: 16px;
+	width: min(1180px, 100% - 40px);
+	padding: 0;
+	overflow: visible;
 }
+.imet-section.specs.is-style-home .spec-card { flex: none; }
+.imet-section.specs.is-style-home .spec-card.is-clone { display: none; }
 .imet-section.specs.is-style-home .spec-card a {
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: stretch;
 	justify-content: flex-start;
-	min-height: 213px;
-	padding: 10px 10px 0;
-	border-radius: 20px;
-	box-shadow: none;
+	min-height: 0;
+	padding: 18px 18px 22px;
+	border: 1px solid transparent;
+	border-radius: 18px;
+	box-shadow: 0 1px 2px rgba(20, 35, 75, .06);
 	font-weight: 400;
 	text-align: left;
+	transition: transform .25s, box-shadow .25s, border-color .25s;
 }
-.imet-section.specs.is-style-home .spec-card a:is(:hover, :focus-visible) { background: #fff; color: #000; box-shadow: 0 6px 18px rgba(20, 35, 75, .14); }
+.imet-section.specs.is-style-home .spec-card a:is(:hover, :focus-visible) {
+	transform: translateY(-3px);
+	border-color: #14234b;
+	background: #fff;
+	color: #000;
+	box-shadow: 0 10px 24px rgba(20, 35, 75, .14);
+}
 .imet-section.specs.is-style-home .spec-card a::after {
-	top: 17px;
-	right: 10px;
+	top: 18px;
+	right: 18px;
 	bottom: auto;
-	width: 30px;
-	height: 43px;
-	border-radius: 3px;
+	width: 32px;
+	height: 32px;
+	border-radius: 8px;
 	-webkit-mask: none;
 	mask: none;
-	background: #14234b url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 12h15m-6-7 7 7-7 7' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 20px no-repeat;
+	background: #14234b url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 12h15m-6-7 7 7-7 7' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 18px no-repeat;
 }
+.imet-section.specs.is-style-home .spec-card a:is(:hover, :focus-visible)::after { transform: translateX(3px); }
 .imet-section.specs.is-style-home .sp-title {
 	display: block;
-	width: 100%;
-	min-height: 56px;
-	padding: 8px 46px 8px 0;
-	border-bottom: 1px solid #000;
-	font-size: 1rem;
+	padding: 2px 44px 14px 0;
+	border-bottom: 1px solid #dfe2ec;
+	font-size: 1.0625rem; /* 17px */
 	font-weight: 600;
-	line-height: 1.5;
+	line-height: 1.4;
 }
-.imet-section.specs.is-style-home .sp-desc { display: block; margin-top: 12px; font-size: .875rem; line-height: 1.57; }
-.imet-section.specs.is-style-home .wp-block-buttons { justify-content: center; margin-top: 20px; }
+.imet-section.specs.is-style-home .sp-desc { display: block; margin-top: 14px; color: #333; font-size: .9375rem; line-height: 1.6; }
+.imet-section.specs.is-style-home .wp-block-buttons { justify-content: center; margin-top: 28px; }
+/* Desktop: the lines under the titles line up, whatever the number of title lines (the cards share two rows) */
+@media (min-width: 1101px) {
+	@supports (grid-template-rows: subgrid) {
+		.imet-section.specs.is-style-home .spec-grid { grid-template-rows: auto 1fr; }
+		.imet-section.specs.is-style-home :is(.spec-card, .spec-card a) { display: grid; grid-row: span 2; grid-template-rows: subgrid; }
+		.imet-section.specs.is-style-home .spec-card a { row-gap: 0; align-content: start; }
+		.imet-section.specs.is-style-home .sp-desc { margin-top: 0; padding-top: 14px; }
+	}
+}
+@media (min-width: 761px) and (max-width: 1100px) {
+	/* three, then the last two centred under them */
+	.imet-section.specs.is-style-home .spec-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); width: min(920px, 100% - 40px); }
+	.imet-section.specs.is-style-home .spec-card { grid-column: span 2; }
+	.imet-section.specs.is-style-home .spec-card:nth-child(4) { grid-column: 2 / span 2; }
+}
+@media (max-width: 760px) {
+	.imet-section.specs.is-style-home .spec-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+}
 @media (max-width: 640px) {
 	.imet-section.specs.is-style-home { padding: 32px 0; }
+	.imet-section.specs.is-style-home .title { margin-bottom: 20px; font-size: 1.5625rem; line-height: 1.3; }
 }
-@media (max-width: 640px) {
-	.imet-section.specs.is-style-home .title { font-size: 1.875rem; font-weight: 700; line-height: 1.17; margin-bottom: 20px; }
-	.imet-section.specs.is-style-home .spec-grid { display: grid; grid-template-columns: 1fr; gap: 10px; width: calc(100% - 20px); overflow: visible; padding: 0; }
-	.imet-section.specs.is-style-home .spec-card.is-clone { display: none; }
-	.imet-section.specs.is-style-home .spec-card a { min-height: 0; padding: 10px 10px 16px; }
-	.imet-section.specs.is-style-home .sp-title { min-height: 0; padding: 4px 46px 12px 0; font-size: 1.375rem; line-height: 1.4; }
-	.imet-section.specs.is-style-home .sp-desc { margin-top: 12px; font-size: 1rem; line-height: 1.25; }
+@media (max-width: 520px) {
+	.imet-section.specs.is-style-home .spec-grid { grid-template-columns: 1fr; gap: 10px; width: calc(100% - 24px); }
+	.imet-section.specs.is-style-home .spec-card a { padding: 14px 14px 16px; border-radius: 16px; }
+	.imet-section.specs.is-style-home .spec-card a::after { top: 14px; right: 14px; }
+	.imet-section.specs.is-style-home .sp-title { padding-bottom: 10px; font-size: 1.125rem; }
+	.imet-section.specs.is-style-home .sp-desc { margin-top: 10px; font-size: .9375rem; line-height: 1.5; }
 }

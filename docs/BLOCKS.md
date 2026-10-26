@@ -60,7 +60,7 @@ that don't choose it are unchanged.
 | IMET Cost Banner | **Home** | 952px card with smaller type. |
 | IMET Recognition Logos | **Home** | Accreditation logos (add class `is-accred`), 80px embassy emblems, or two gliding rows of alumni employer logos (class `is-employers`). |
 | IMET Tabs | **Home** | Plain pills over a navy panel: photo on the left, timeline of programs on the right. |
-| IMET Specializations | **Home** | Five white cards with title, navy arrow, line and description; stacked on phones. |
+| IMET Specializations | **Home** | Five white cards with title, navy arrow, line and description. The lines line up; five in a row, then 3 + 2, 2 columns, and 1 column on small phones. Nothing scrolls. |
 | IMET Step Cards | **Home** | Three pastel cards in a sideways row with arrows ("Why choose IMET"); with class `is-cases`, four portrait photo cards (case studies). |
 | IMET Alumni Videos | **Home** | Three equal videos with the title under each; each plays in place. |
 | IMET Certificate | **Home** | Text on the left, three portrait photos and a wide group photo on the right. |
