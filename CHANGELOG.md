@@ -14,6 +14,8 @@ All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 - Front end: graduate cards, employer logos and client testimonials glide sideways; "Why choose" and success stories have
   arrow buttons; the three alumni videos play in place; the FAQ shows every question.
 - 64 new images in `assets/images/` (home-*), imported to the Media Library with alt text.
+- Speed: the hero graduate cards load straight away; the images further down (logos, emblems, card and tab photos, banners, testimonials,
+  map, video thumbnails) are lazy-loaded; YouTube thumbnails now carry their width and height.
 - Not identical to the live page: buttons keep the plugin's button sizes (48 / 60 / 72px) instead of the live page's 40px
   buttons; the MBA and Diploma tab panels list titles only; the live page's header, footer, popup and chat button stay in Elementor.
 

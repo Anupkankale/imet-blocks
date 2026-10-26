@@ -30,6 +30,8 @@ add_filter( 'render_block_core/image', function ( $html, $block ) {
 		function ( $img ) use ( $src, $base, $large ) {
 			$tag = preg_replace( '#\s(?:srcset|sizes|width|height)="[^"]*"#', '', $img[0] );
 			$tag = preg_replace( '#\ssrc="[^"]*"#', ' src="' . esc_url( $src ) . '"', $tag );
+			// The thumbnail's real size, so the browser reserves the space before it loads (maxresdefault is 1280 x 720, hqdefault 480 x 360).
+			$tag = str_replace( '<img', '<img width="' . ( $large ? 1280 : 480 ) . '" height="' . ( $large ? 720 : 360 ) . '"', $tag );
 			if ( $large ) {
 				$tag = str_replace( '<img', '<img onerror="this.onerror=null;this.src=\'' . esc_url( $base . 'hqdefault.jpg' ) . '\'"', $tag );
 			}
