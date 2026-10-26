@@ -36,6 +36,10 @@
     {
       "name": "dark",
       "label": "Dark"
+    },
+    {
+      "name": "home",
+      "label": "Home"
     }
   ]
 }

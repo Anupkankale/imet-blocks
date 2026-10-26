@@ -35,6 +35,11 @@
 		{
 			"name": "logos",
 			"label": "Logos"
+		},
+		{
+			"name": "home",
+			"label": "Home"
 		}
-	]
+	],
+	"viewScript": "file:./view.js"
 }

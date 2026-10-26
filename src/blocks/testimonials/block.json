@@ -39,6 +39,10 @@
 		{
 			"name": "compact",
 			"label": "Compact"
+		},
+		{
+			"name": "home",
+			"label": "Home"
 		}
 	]
 }

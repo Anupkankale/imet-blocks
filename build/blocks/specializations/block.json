@@ -36,6 +36,10 @@
     {
       "name": "five",
       "label": "Five per row"
+    },
+    {
+      "name": "home",
+      "label": "Home"
     }
   ]
 }

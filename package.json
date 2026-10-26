@@ -1,6 +1,6 @@
 {
   "name": "imet-blocks",
-  "version": "1.8.1",
+  "version": "1.9.0",
   "private": true,
   "description": "IMET reusable section blocks.",
   "license": "GPL-2.0-or-later",
@@ -14,7 +14,8 @@
     "test:static": "node --test \"tests/static/*.check.js\"",
     "test:unit": "wp-scripts test-unit-js --testMatch \"**/tests/unit/**/*.test.js\"",
     "test:e2e": "playwright test",
-    "test:php": "vendor/bin/phpunit"
+    "test:php": "vendor/bin/phpunit",
+    "lint": "npm run lint:js && npm run lint:css"
   },
   "devDependencies": {
     "@wordpress/scripts": "^30.0.0"
@@ -27,5 +28,11 @@
     "patterns",
     "build",
     "assets"
-  ]
+  ],
+  "overrides": {
+    "typescript": "~5.5.4"
+  },
+  "engines": {
+    "node": ">=22"
+  }
 }

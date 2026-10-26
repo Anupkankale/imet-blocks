@@ -80,3 +80,62 @@
 @media (max-width: 640px) {
 	.imet-section.highlights.is-style-wide .wp-block-button__link { min-width: 0; }
 }
+
+/* ---------- Style "Home" (block style, the Home page): grey-blue band, eyebrow + title, outlined gold pills
+   (two per row), button, and the enquiry form in a white card on the right (Home page, 1440 frame). ---------- */
+.imet-section.highlights.is-style-home { padding: 10px 0; background: rgba(20, 35, 75, .06); }
+.imet-section.highlights.is-style-home .hl-grid {
+	grid-template-columns: minmax(0, 550px) minmax(0, 1fr);
+	gap: 30px;
+	width: min(1100px, 100% - 40px);
+	margin-inline: auto;
+	padding: 0 74px 0 44px;
+}
+.imet-section.highlights.is-style-home .hl-text { padding: 38px 0; }
+.imet-section.highlights.is-style-home .eyebrow-line { margin-bottom: 6px; padding-bottom: 0; }
+.imet-section.highlights.is-style-home .title { margin-bottom: 0; line-height: 1.43; }
+.imet-section.highlights.is-style-home .hl-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin: 20px 0;
+	max-width: none;
+}
+.imet-section.highlights.is-style-home .hl-list li {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	min-height: 48px;
+	padding: 5px 10px;
+	border: 2px solid var(--gold);
+	border-radius: 300px;
+	font-size: .875rem; /* 14px */
+	line-height: 1.43;
+}
+.imet-section.highlights.is-style-home .hl-list li::before { position: static; flex: 0 0 32px; }
+.imet-section.highlights.is-style-home .hl-list li:has(> strong)::before { display: none; }
+.imet-section.highlights.is-style-home .hl-list strong { padding: 4px 8px; border-radius: 4px; background: var(--gold); color: #fff; font-weight: 700; line-height: 1.7; }
+.imet-section.highlights.is-style-home .hl-list li:not(:has(> strong)) strong { all: unset; }
+.imet-section.highlights.is-style-home .wp-block-buttons { margin: 0; }
+.imet-section.highlights.is-style-home .hl-form {
+	align-self: start;
+	margin-top: 30px;
+	padding: 10px 30px 30px;
+	border-radius: 10px;
+	background: #fff;
+}
+.imet-section.highlights.is-style-home .hl-form h2 { margin: 0 0 16px; font-size: .9375rem; font-weight: 700; line-height: 1.33; text-align: center; color: #000; }
+@media (max-width: 900px) {
+	.imet-section.highlights.is-style-home .hl-grid { padding: 0; gap: 0; }
+	.imet-section.highlights.is-style-home .hl-text { padding: 28px 0; }
+	.imet-section.highlights.is-style-home .hl-form { margin: 0 0 28px; }
+	.imet-section.highlights.is-style-home .hl-list { justify-content: center; }
+}
+@media (max-width: 900px) {
+	.imet-section.highlights.is-style-home .eyebrow-line.left { display: inline-block; margin-inline: 0; }
+	.imet-section.highlights.is-style-home .eyebrow-line.left::after { content: none; }
+	.imet-section.highlights.is-style-home .hl-grid { grid-template-columns: minmax(0, 1fr); width: calc(100% - 20px); }
+	.imet-section.highlights.is-style-home .hl-list { flex-direction: column; flex-wrap: nowrap; align-items: stretch; gap: 20px; margin-inline: 0; }
+	.imet-section.highlights.is-style-home .hl-list li { font-size: 1rem; line-height: 1.4; }
+	.imet-section.highlights.is-style-home .hl-text .wp-block-buttons { justify-content: flex-start; }
+}

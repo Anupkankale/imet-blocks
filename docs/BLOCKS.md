@@ -55,6 +55,19 @@ that don't choose it are unchanged.
 | IMET Testimonials | **Compact** | Intro closer to the title, 210px cards, "View More" closer. |
 | IMET FAQ | **Compact** | Questions right under the title, 14.5px answers on taller lines, a larger "See More". |
 | IMET Call to Action | **Compact** | 38px title, two-line intro, 66px button with 24px text, 32px corners. |
+| IMET Hero | **Home** | Centred badge, title, lead and button over a soft gradient, then a row of graduate cards that glide sideways. |
+| IMET Highlights | **Home** | Grey-blue band, outlined gold pills, and the enquiry form in a white card on the right. |
+| IMET Cost Banner | **Home** | 952px card with smaller type. |
+| IMET Recognition Logos | **Home** | Accreditation logos (add class `is-accred`), 80px embassy emblems, or two gliding rows of alumni employer logos (class `is-employers`). |
+| IMET Tabs | **Home** | Plain pills over a navy panel: photo on the left, timeline of programs on the right. |
+| IMET Specializations | **Home** | Five white cards with title, navy arrow, line and description. The lines line up; five in a row, then 3 + 2, 2 columns, and 1 column on small phones. Nothing scrolls. |
+| IMET Step Cards | **Home** | Three pastel cards in a sideways row with arrows ("Why choose IMET"); with class `is-cases`, four portrait photo cards (case studies). |
+| IMET Alumni Videos | **Home** | Three equal videos with the title under each; each plays in place. |
+| IMET Certificate | **Home** | Text on the left, three portrait photos and a wide group photo on the right. |
+| IMET Call to Action | **Home** | Navy "Publish your research" banner (class `is-publish`) or the closing banner over a photo (class `is-final`). |
+| IMET Testimonials | **Home** | Success stories row of navy quote cards and photos (class `is-stories`), or client testimonial cards that glide (class `is-clients`). |
+| IMET FAQ | **Home** | Every question shown as grey rounded rows, no "See More". |
+| IMET Section (blank) | **Home** | 30px above and below, for the map under "Affiliated Information Centers". |
 
 Also available: the button class `btn-icon-download` (download icon after the text), and an optional button row after
 the photo in **IMET Program Overview**.
@@ -90,3 +103,8 @@ instead of 35px; Testimonials and FAQ keep the standard size, and Specialization
 | `btn-*` | Button | See [Buttons](EDITOR-GUIDE.md#buttons) |
 | `u-*` | Any block | Utility classes, see [Adding new sections](EDITOR-GUIDE.md#adding-new-sections) |
 | `yt-auto` | Image linked to YouTube | Shows YouTube's thumbnail instead of the chosen image |
+
+**Home Page order:** Hero (Home) → Highlights (Home, with the enquiry form) → Cost Banner (Home) → Recognition Logos (Home, accreditation) →
+Tabs (Home) → Recognition Logos (Home, embassies) → Specializations (Home) → Step Cards (Home, why choose) → Alumni Videos (Home) →
+Recognition Logos (Home, employers) → Certificate (Home) → Step Cards (Home, case studies) → Call to Action (Home, publish) →
+Testimonials (Home, success stories) → Section (Home, map) → Testimonials (Home, clients) → FAQ (Home) → Call to Action (Home, closing).

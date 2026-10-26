@@ -25,5 +25,16 @@
   "style": [
     "imet-base",
     "file:./style-index.css"
+  ],
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "home",
+      "label": "Home"
+    }
   ]
 }
