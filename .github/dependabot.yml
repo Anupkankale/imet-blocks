@@ -12,6 +12,9 @@ updates:
       # TypeScript 7 breaks the lint plugins; see "overrides" in package.json
       - dependency-name: typescript
         versions: [ ">=6" ]
+      # A major @wordpress/scripts update changes the test runner and the lint config (v37 did): do it by hand, with CI
+      - dependency-name: "@wordpress/*"
+        update-types: [ "version-update:semver-major" ]
   - package-ecosystem: github-actions
     directory: /
     schedule:

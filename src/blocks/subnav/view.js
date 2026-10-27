@@ -4,7 +4,7 @@ import { each, reduceMotion } from '../../shared/view';
 const find = ( hash ) => {
 	try {
 		return hash.length > 1 ? document.querySelector( hash ) : null;
-	} catch ( e ) {
+	} catch {
 		return null; // not a valid selector
 	}
 };
