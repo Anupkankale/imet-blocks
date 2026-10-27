@@ -4,6 +4,10 @@ All notable changes to IMET Blocks. Versions follow `major.minor.patch` (see
 [Deployment → Versioning](docs/DEPLOYMENT.md#versioning)).
 
 ## Unreleased
+- **`@wordpress/scripts` 37 (Dependabot, #16) fixed up:** unit tests run on Jest installed by the project (`jest.config.js`,
+  `jest` and `jest-environment-jsdom` as dev dependencies), the ESLint config moved to the new `eslint.config.js` format, and
+  the screen-reader-only helper uses `clip-path` (the old `clip` property is deprecated). Dependabot now skips major
+  `@wordpress/*` updates, so they are done by hand and tested.
 - **Repo hygiene (no change to the plugin itself):** `npm run lint` works again (TypeScript pinned to 5.5 with an npm
   override; ESLint and Stylelint configs added, existing style problems are warnings), `CONTRIBUTING.md`, pull request and
   issue templates, `CODEOWNERS`, Dependabot, `.editorconfig`, `.nvmrc`, `.gitattributes` and `.mailmap` (one name for the
